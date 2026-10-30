@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_esxcli_network_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_network_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/esxcli" and ProcessCommandLine contains "network") and (ProcessCommandLine contains " get" or ProcessCommandLine contains " list")

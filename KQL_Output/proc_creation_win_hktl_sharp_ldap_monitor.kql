@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_sharp_ldap_monitor.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharp_ldap_monitor.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\SharpLDAPmonitor.exe" or ProcessVersionInfoOriginalFileName =~ "SharpLDAPmonitor.exe") or (ProcessCommandLine contains "/user:" and ProcessCommandLine contains "/pass:" and ProcessCommandLine contains "/dcip:")

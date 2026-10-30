@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_certify.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_certify.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\Certify.exe" or ProcessVersionInfoOriginalFileName =~ "Certify.exe" or ProcessVersionInfoFileDescription contains "Certify") or ((ProcessCommandLine contains ".exe cas " or ProcessCommandLine contains ".exe find " or ProcessCommandLine contains ".exe pkiobjects " or ProcessCommandLine contains ".exe request " or ProcessCommandLine contains ".exe download ") and (ProcessCommandLine contains " /vulnerable" or ProcessCommandLine contains " /template:" or ProcessCommandLine contains " /altname:" or ProcessCommandLine contains " /domain:" or ProcessCommandLine contains " /path:" or ProcessCommandLine contains " /ca:"))

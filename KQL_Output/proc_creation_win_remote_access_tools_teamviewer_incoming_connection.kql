@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_remote_access_tools_teamviewer_incoming_connection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_teamviewer_incoming_connection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath =~ "TeamViewer_Desktop.exe" and InitiatingProcessFolderPath =~ "TeamViewer_Service.exe" and ProcessCommandLine endswith "TeamViewer_Desktop.exe --IPCport 5939 --Module 1"

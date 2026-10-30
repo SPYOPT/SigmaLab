@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_set_acl_susp_location.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_set_acl_susp_location.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll")) or (FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe")) and (ProcessCommandLine contains "Set-Acl " and ProcessCommandLine contains "-AclObject ") and (ProcessCommandLine contains "-Path \"C:\\Windows" or ProcessCommandLine contains "-Path 'C:\\Windows" or ProcessCommandLine contains "-Path %windir%" or ProcessCommandLine contains "-Path $env:windir") and (ProcessCommandLine contains "FullControl" or ProcessCommandLine contains "Allow")

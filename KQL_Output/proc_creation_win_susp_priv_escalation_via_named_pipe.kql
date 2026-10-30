@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_priv_escalation_via_named_pipe.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_priv_escalation_via_named_pipe.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\powershell.exe") or (ProcessVersionInfoOriginalFileName in~ ("Cmd.Exe", "PowerShell.EXE"))) and (ProcessCommandLine contains "echo" and ProcessCommandLine contains ">" and ProcessCommandLine contains "\\\\.\\pipe\\")

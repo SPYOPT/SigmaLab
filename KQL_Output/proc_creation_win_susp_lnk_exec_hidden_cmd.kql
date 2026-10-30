@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_lnk_exec_hidden_cmd.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_lnk_exec_hidden_cmd.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\explorer.exe" or InitiatingProcessCommandLine contains ".lnk") and ((ProcessCommandLine contains "                 " or ProcessCommandLine contains "\\u0009" or ProcessCommandLine contains "\\u000A" or ProcessCommandLine contains "\\u0011" or ProcessCommandLine contains "\\u0012" or ProcessCommandLine contains "\\u0013" or ProcessCommandLine contains "\\u000B" or ProcessCommandLine contains "\\u000C" or ProcessCommandLine contains "\\u000D") or ProcessCommandLine matches regex "\\n\\n\\n\\n\\n\\n")

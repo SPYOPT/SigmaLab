@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_certipy.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_certipy.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\Certipy.exe" or ProcessVersionInfoOriginalFileName =~ "Certipy.exe" or ProcessVersionInfoFileDescription contains "Certipy") or ((ProcessCommandLine contains " account " or ProcessCommandLine contains " auth " or ProcessCommandLine contains " cert " or ProcessCommandLine contains " find " or ProcessCommandLine contains " forge " or ProcessCommandLine contains " ptt " or ProcessCommandLine contains " relay " or ProcessCommandLine contains " req " or ProcessCommandLine contains " shadow " or ProcessCommandLine contains " template ") and (ProcessCommandLine contains " -bloodhound" or ProcessCommandLine contains " -ca-pfx " or ProcessCommandLine contains " -dc-ip " or ProcessCommandLine contains " -kirbi" or ProcessCommandLine contains " -old-bloodhound" or ProcessCommandLine contains " -pfx " or ProcessCommandLine contains " -target" or ProcessCommandLine contains " -template" or ProcessCommandLine contains " -username " or ProcessCommandLine contains " -vulnerable" or ProcessCommandLine contains "auth -pfx" or ProcessCommandLine contains "shadow auto" or ProcessCommandLine contains "shadow list"))

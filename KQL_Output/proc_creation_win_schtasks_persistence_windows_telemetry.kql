@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_persistence_windows_telemetry.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_persistence_windows_telemetry.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\schtasks.exe" or ProcessVersionInfoOriginalFileName =~ "schtasks.exe") and (ProcessCommandLine contains "run " and ProcessCommandLine contains "\\Application Experience\\Microsoft Compatibility Appraiser")

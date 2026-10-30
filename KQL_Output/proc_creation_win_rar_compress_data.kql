@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rar_compress_data.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rar_compress_data.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\rar.exe" and ProcessCommandLine contains " a "

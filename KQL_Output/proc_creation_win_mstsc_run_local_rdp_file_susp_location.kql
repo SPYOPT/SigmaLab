@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_mstsc_run_local_rdp_file_susp_location.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mstsc_run_local_rdp_file_susp_location.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\mstsc.exe" or ProcessVersionInfoOriginalFileName =~ "mstsc.exe") and (ProcessCommandLine endswith ".rdp" or ProcessCommandLine endswith ".rdp\"") and (ProcessCommandLine contains ":\\Users\\Public\\" or ProcessCommandLine contains ":\\Windows\\System32\\spool\\drivers\\color" or ProcessCommandLine contains ":\\Windows\\System32\\Tasks_Migrated " or ProcessCommandLine contains ":\\Windows\\Tasks\\" or ProcessCommandLine contains ":\\Windows\\Temp\\" or ProcessCommandLine contains ":\\Windows\\Tracing\\" or ProcessCommandLine contains "\\AppData\\Local\\Temp\\" or ProcessCommandLine contains "\\Downloads\\")

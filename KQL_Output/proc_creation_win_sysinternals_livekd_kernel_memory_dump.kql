@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_livekd_kernel_memory_dump.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_livekd_kernel_memory_dump.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\livekd.exe" or FolderPath endswith "\\livekd64.exe") or ProcessVersionInfoOriginalFileName =~ "livekd.exe") and (ProcessCommandLine contains " -m" or ProcessCommandLine contains " /m" or ProcessCommandLine contains " –m" or ProcessCommandLine contains " —m" or ProcessCommandLine contains " ―m")

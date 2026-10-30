@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_sticky_key_like_backdoor_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_sticky_key_like_backdoor_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\winlogon.exe" and (FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\cscript.exe" or FolderPath endswith "\\mshta.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\regsvr32.exe" or FolderPath endswith "\\rundll32.exe" or FolderPath endswith "\\wscript.exe" or FolderPath endswith "\\wt.exe") and (ProcessCommandLine contains "sethc.exe" or ProcessCommandLine contains "utilman.exe" or ProcessCommandLine contains "osk.exe" or ProcessCommandLine contains "Magnify.exe" or ProcessCommandLine contains "Narrator.exe" or ProcessCommandLine contains "DisplaySwitch.exe")

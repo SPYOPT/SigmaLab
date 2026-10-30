@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_whoami_priv_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_whoami_priv_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\whoami.exe" or ProcessVersionInfoOriginalFileName =~ "whoami.exe") and (ProcessCommandLine contains " /priv" or ProcessCommandLine contains " -priv")

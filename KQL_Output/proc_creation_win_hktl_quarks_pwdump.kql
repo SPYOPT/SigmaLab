@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_quarks_pwdump.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_quarks_pwdump.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\QuarksPwDump.exe" or (ProcessCommandLine in~ (" -dhl", " --dump-hash-local", " -dhdc", " --dump-hash-domain-cached", " --dump-bitlocker", " -dhd ", " --dump-hash-domain ", "--ntds-file"))

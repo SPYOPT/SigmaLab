@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_certutil_decode.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_decode.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\certutil.exe" or ProcessVersionInfoOriginalFileName =~ "CertUtil.exe") and (ProcessCommandLine contains "-decode " or ProcessCommandLine contains "/decode " or ProcessCommandLine contains "–decode " or ProcessCommandLine contains "—decode " or ProcessCommandLine contains "―decode " or ProcessCommandLine contains "-decodehex " or ProcessCommandLine contains "/decodehex " or ProcessCommandLine contains "–decodehex " or ProcessCommandLine contains "—decodehex " or ProcessCommandLine contains "―decodehex ")

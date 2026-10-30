@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_install_root_certificate.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_install_root_certificate.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "/update-ca-certificates" or ProcessCommandLine contains "/update-ca-trust"

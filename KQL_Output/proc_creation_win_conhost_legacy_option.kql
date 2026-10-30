@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_conhost_legacy_option.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_legacy_option.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessIntegrityLevel in~ ("High", "S-1-16-12288")) and (ProcessCommandLine contains "conhost.exe" and ProcessCommandLine contains "0xffffffff" and ProcessCommandLine contains "-ForceV1")

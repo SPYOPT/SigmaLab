@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wbadmin_restore_sensitive_files.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wbadmin_restore_sensitive_files.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\wbadmin.exe" or ProcessVersionInfoOriginalFileName =~ "WBADMIN.EXE") and ((ProcessCommandLine contains " recovery" and ProcessCommandLine contains "recoveryTarget" and ProcessCommandLine contains "itemtype:File") and (ProcessCommandLine contains "\\config\\SAM" or ProcessCommandLine contains "\\config\\SECURITY" or ProcessCommandLine contains "\\config\\SYSTEM" or ProcessCommandLine contains "\\Windows\\NTDS\\NTDS.dit"))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_dd_process_injection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_dd_process_injection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/dd" and (ProcessCommandLine contains "of=" and ProcessCommandLine contains "/proc/" and ProcessCommandLine contains "/mem")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_explorer_folder_shortcut_via_shell_binary.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_explorer_folder_shortcut_via_shell_binary.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\cmd.exe" or InitiatingProcessFolderPath endswith "\\powershell.exe" or InitiatingProcessFolderPath endswith "\\pwsh.exe") and FolderPath endswith "\\explorer.exe" and ProcessCommandLine contains "shell:mycomputerfolder"

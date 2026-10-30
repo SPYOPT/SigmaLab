@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_auditpol_nt_resource_kit_usage.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_auditpol_nt_resource_kit_usage.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "/logon:none" or ProcessCommandLine contains "/system:none" or ProcessCommandLine contains "/sam:none" or ProcessCommandLine contains "/privilege:none" or ProcessCommandLine contains "/object:none" or ProcessCommandLine contains "/process:none" or ProcessCommandLine contains "/policy:none"

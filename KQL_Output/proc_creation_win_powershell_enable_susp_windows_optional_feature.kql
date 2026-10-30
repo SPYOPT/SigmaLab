@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_enable_susp_windows_optional_feature.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_enable_susp_windows_optional_feature.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "Enable-WindowsOptionalFeature" and ProcessCommandLine contains "-Online" and ProcessCommandLine contains "-FeatureName") and (ProcessCommandLine contains "TelnetServer" or ProcessCommandLine contains "Internet-Explorer-Optional-amd64" or ProcessCommandLine contains "TFTP" or ProcessCommandLine contains "SMB1Protocol" or ProcessCommandLine contains "Client-ProjFS" or ProcessCommandLine contains "Microsoft-Windows-Subsystem-Linux")

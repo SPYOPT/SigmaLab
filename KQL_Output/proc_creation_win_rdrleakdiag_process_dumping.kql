@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rdrleakdiag_process_dumping.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rdrleakdiag_process_dumping.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\rdrleakdiag.exe" or ProcessVersionInfoOriginalFileName =~ "RdrLeakDiag.exe") and (ProcessCommandLine contains "-memdmp" or ProcessCommandLine contains "/memdmp" or ProcessCommandLine contains "–memdmp" or ProcessCommandLine contains "—memdmp" or ProcessCommandLine contains "―memdmp" or ProcessCommandLine contains "fullmemdmp") and (ProcessCommandLine contains " -o " or ProcessCommandLine contains " /o " or ProcessCommandLine contains " –o " or ProcessCommandLine contains " —o " or ProcessCommandLine contains " ―o " or ProcessCommandLine contains " -p " or ProcessCommandLine contains " /p " or ProcessCommandLine contains " –p " or ProcessCommandLine contains " —p " or ProcessCommandLine contains " ―p ")

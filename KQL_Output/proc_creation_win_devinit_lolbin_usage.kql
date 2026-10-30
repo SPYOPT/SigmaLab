@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_devinit_lolbin_usage.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_devinit_lolbin_usage.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains " -t msi-install " and ProcessCommandLine contains " -i http"

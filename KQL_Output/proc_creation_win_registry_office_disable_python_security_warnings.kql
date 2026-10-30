@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_registry_office_disable_python_security_warnings.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_office_disable_python_security_warnings.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "\\Microsoft\\Office\\" and ProcessCommandLine contains "\\Excel\\Security" and ProcessCommandLine contains "PythonFunctionWarnings") and ProcessCommandLine contains " 0"

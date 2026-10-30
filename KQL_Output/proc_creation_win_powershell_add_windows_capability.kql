@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_add_windows_capability.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_add_windows_capability.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and ProcessCommandLine contains "Add-WindowsCapability" and ProcessCommandLine contains "OpenSSH."

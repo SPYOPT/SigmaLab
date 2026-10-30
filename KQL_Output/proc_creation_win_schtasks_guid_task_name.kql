@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_guid_task_name.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_guid_task_name.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\schtasks.exe" and ProcessCommandLine contains "/Create ") and (ProcessCommandLine contains "/TN \"{" or ProcessCommandLine contains "/TN '{" or ProcessCommandLine contains "/TN {") and (ProcessCommandLine contains "}\"" or ProcessCommandLine contains "}'" or ProcessCommandLine contains "} ")

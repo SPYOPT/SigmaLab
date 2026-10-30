@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_tmutil_disable_backup.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tmutil_disable_backup.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/tmutil" or ProcessCommandLine contains "tmutil") and ProcessCommandLine contains "disable"

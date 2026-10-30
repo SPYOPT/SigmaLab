@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_process_reading_sudoers.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_process_reading_sudoers.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/cat" or FolderPath endswith "/ed" or FolderPath endswith "/egrep" or FolderPath endswith "/emacs" or FolderPath endswith "/fgrep" or FolderPath endswith "/grep" or FolderPath endswith "/head" or FolderPath endswith "/less" or FolderPath endswith "/more" or FolderPath endswith "/nano" or FolderPath endswith "/tail") and ProcessCommandLine contains " /etc/sudoers"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_sticky_keys_replace.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_sticky_keys_replace.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "copy " and ProcessCommandLine contains "/y " and ProcessCommandLine contains "C:\\windows\\system32\\cmd.exe C:\\windows\\system32\\sethc.exe"

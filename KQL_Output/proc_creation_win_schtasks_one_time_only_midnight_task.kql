@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_one_time_only_midnight_task.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_one_time_only_midnight_task.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath contains "\\schtasks.exe" or ProcessVersionInfoOriginalFileName =~ "schtasks.exe") and (ProcessCommandLine contains "wscript" or ProcessCommandLine contains "vbscript" or ProcessCommandLine contains "cscript" or ProcessCommandLine contains "wmic " or ProcessCommandLine contains "wmic.exe" or ProcessCommandLine contains "regsvr32.exe" or ProcessCommandLine contains "powershell" or ProcessCommandLine contains "\\AppData\\") and (ProcessCommandLine contains "once" and ProcessCommandLine contains "00:00")

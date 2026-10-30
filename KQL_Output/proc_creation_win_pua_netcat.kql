@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_netcat.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_netcat.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\nc.exe" or FolderPath endswith "\\ncat.exe" or FolderPath endswith "\\netcat.exe") or (ProcessCommandLine contains " -lvp " or ProcessCommandLine contains " -lvnp" or ProcessCommandLine contains " -l -v -p " or ProcessCommandLine contains " -lv -p " or ProcessCommandLine contains " -l --proxy-type http " or ProcessCommandLine contains " -vnl --exec " or ProcessCommandLine contains " -vnl -e " or ProcessCommandLine contains " --lua-exec " or ProcessCommandLine contains " --sh-exec ")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sqlcmd_veeam_db_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlcmd_veeam_db_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\sqlcmd.exe" and (ProcessCommandLine contains "VeeamBackup" and ProcessCommandLine contains "From ")) and (ProcessCommandLine contains "BackupRepositories" or ProcessCommandLine contains "Backups" or ProcessCommandLine contains "Credentials" or ProcessCommandLine contains "HostCreds" or ProcessCommandLine contains "SmbFileShares" or ProcessCommandLine contains "Ssh_creds" or ProcessCommandLine contains "VSphereInfo")

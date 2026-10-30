@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_container_residence_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_container_residence_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "awk" or FolderPath endswith "/cat" or FolderPath endswith "grep" or FolderPath endswith "/head" or FolderPath endswith "/less" or FolderPath endswith "/more" or FolderPath endswith "/nl" or FolderPath endswith "/tail") and (ProcessCommandLine contains "/proc/2/" or (ProcessCommandLine contains "/proc/" and (ProcessCommandLine endswith "/cgroup" or ProcessCommandLine endswith "/sched")))

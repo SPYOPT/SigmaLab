@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_krbrelay.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelay.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\KrbRelay.exe" or ProcessVersionInfoOriginalFileName =~ "KrbRelay.exe") or (ProcessCommandLine contains " -spn " and ProcessCommandLine contains " -clsid " and ProcessCommandLine contains " -rbcd ") or (ProcessCommandLine contains "shadowcred" and ProcessCommandLine contains "clsid" and ProcessCommandLine contains "spn") or (ProcessCommandLine contains "spn " and ProcessCommandLine contains "session " and ProcessCommandLine contains "clsid ")

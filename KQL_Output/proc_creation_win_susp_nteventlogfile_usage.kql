@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_nteventlogfile_usage.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_nteventlogfile_usage.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "Win32_NTEventlogFile" and (ProcessCommandLine contains ".BackupEventlog(" or ProcessCommandLine contains ".ChangeSecurityPermissions(" or ProcessCommandLine contains ".ChangeSecurityPermissionsEx(" or ProcessCommandLine contains ".ClearEventLog(" or ProcessCommandLine contains ".Delete(" or ProcessCommandLine contains ".DeleteEx(" or ProcessCommandLine contains ".Rename(" or ProcessCommandLine contains ".TakeOwnerShip(" or ProcessCommandLine contains ".TakeOwnerShipEx(")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_binary_padding.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_binary_padding.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/truncate" and ProcessCommandLine contains "-s +") or (FolderPath endswith "/dd" and (ProcessCommandLine contains "if=/dev/zero" or ProcessCommandLine contains "if=/dev/random" or ProcessCommandLine contains "if=/dev/urandom"))

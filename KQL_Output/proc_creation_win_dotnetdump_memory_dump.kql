@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dotnetdump_memory_dump.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dotnetdump_memory_dump.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\dotnet-dump.exe" or ProcessVersionInfoOriginalFileName =~ "dotnet-dump.dll") and ProcessCommandLine contains "collect"

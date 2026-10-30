@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_jxa_in_memory_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_jxa_in_memory_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "osascript" and ProcessCommandLine contains " -e " and ProcessCommandLine contains "eval" and ProcessCommandLine contains "NSData.dataWithContentsOfURL") and ((ProcessCommandLine contains " -l " and ProcessCommandLine contains "JavaScript") or ProcessCommandLine contains ".js")

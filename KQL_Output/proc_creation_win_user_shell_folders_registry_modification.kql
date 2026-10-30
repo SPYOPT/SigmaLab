@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_user_shell_folders_registry_modification.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_user_shell_folders_registry_modification.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\reg.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell.exe", "pwsh.dll", "reg.exe"))) and (ProcessCommandLine contains " add " or ProcessCommandLine contains "New-ItemProperty" or ProcessCommandLine contains "Set-ItemProperty" or ProcessCommandLine contains "si ") and (ProcessCommandLine contains "\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders" or ProcessCommandLine contains "\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders") and ProcessCommandLine contains "Startup"

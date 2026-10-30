@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_download_cradle_obfuscated.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_cradle_obfuscated.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\powershell.exe" and (ProcessCommandLine contains "http://127.0.0.1" and ProcessCommandLine contains "%{(IRM $_)}" and ProcessCommandLine contains "Invoke")

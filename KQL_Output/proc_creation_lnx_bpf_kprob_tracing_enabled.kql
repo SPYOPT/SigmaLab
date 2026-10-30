@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_bpf_kprob_tracing_enabled.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_bpf_kprob_tracing_enabled.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "echo 1 >" and ProcessCommandLine contains "/sys/kernel/debug/tracing/events/kprobes/") and (ProcessCommandLine contains "/myprobe/enable" or ProcessCommandLine contains "/myretprobe/enable")

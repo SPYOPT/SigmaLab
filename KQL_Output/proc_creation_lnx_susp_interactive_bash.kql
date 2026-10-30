@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_interactive_bash.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_interactive_bash.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessCommandLine =~ "bash -i" and ((ProcessCommandLine contains "-c import " or ProcessCommandLine contains "base64" or ProcessCommandLine contains "pty.spawn") or (FolderPath endswith "whoami" or FolderPath endswith "iptables" or FolderPath endswith "/ncat" or FolderPath endswith "/nc" or FolderPath endswith "/netcat"))

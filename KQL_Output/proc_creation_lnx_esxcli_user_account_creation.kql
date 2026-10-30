@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_esxcli_user_account_creation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_user_account_creation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/esxcli" and (ProcessCommandLine contains "system " and ProcessCommandLine contains "account " and ProcessCommandLine contains "add ")

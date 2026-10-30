@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_browsers_remote_debugging.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_remote_debugging.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains " --remote-debugging-" or (FolderPath endswith "\\firefox.exe" and ProcessCommandLine contains " -start-debugger-server")

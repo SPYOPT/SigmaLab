@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_takeown_recursive_own.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_takeown_recursive_own.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\takeown.exe" and (ProcessCommandLine contains "/f " and ProcessCommandLine contains "/r")

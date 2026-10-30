@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_regedit_trustedinstaller.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regedit_trustedinstaller.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\regedit.exe" and (InitiatingProcessFolderPath endswith "\\TrustedInstaller.exe" or InitiatingProcessFolderPath endswith "\\ProcessHacker.exe")

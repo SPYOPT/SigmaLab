@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_ping_hex_ip.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ping_hex_ip.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\ping.exe" and ProcessCommandLine matches regex "0x[a-fA-F0-9]{8}"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_recon_indicators.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_recon_indicators.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains " -name .htpasswd" or ProcessCommandLine contains " -perm -4000 "

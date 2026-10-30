@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_github_self_hosted_runner.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_github_self_hosted_runner.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\Runner.Worker.exe" or ProcessVersionInfoOriginalFileName =~ "Runner.Worker.dll") and ProcessCommandLine contains "spawnclient") or ((FolderPath endswith "\\Runner.Listener.exe" or ProcessVersionInfoOriginalFileName =~ "Runner.Listener.dll") and (ProcessCommandLine contains "run" or ProcessCommandLine contains "configure"))

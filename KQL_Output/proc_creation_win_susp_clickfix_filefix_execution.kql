@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_clickfix_filefix_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_clickfix_filefix_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\explorer.exe" and ProcessCommandLine contains "#") and (ProcessCommandLine contains "account" or ProcessCommandLine contains "anti-bot" or ProcessCommandLine contains "botcheck" or ProcessCommandLine contains "captcha" or ProcessCommandLine contains "challenge" or ProcessCommandLine contains "confirmation" or ProcessCommandLine contains "fraud" or ProcessCommandLine contains "human" or ProcessCommandLine contains "identification" or ProcessCommandLine contains "identificator" or ProcessCommandLine contains "identity" or ProcessCommandLine contains "robot" or ProcessCommandLine contains "validation" or ProcessCommandLine contains "verification" or ProcessCommandLine contains "verify")

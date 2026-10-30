@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_installer_susp_child_process.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_installer_susp_child_process.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "/package_script_service" or InitiatingProcessFolderPath endswith "/installer") and (FolderPath endswith "/sh" or FolderPath endswith "/bash" or FolderPath endswith "/dash" or FolderPath endswith "/python" or FolderPath endswith "/ruby" or FolderPath endswith "/perl" or FolderPath endswith "/php" or FolderPath endswith "/javascript" or FolderPath endswith "/osascript" or FolderPath endswith "/tclsh" or FolderPath endswith "/curl" or FolderPath endswith "/wget") and (ProcessCommandLine contains "preinstall" or ProcessCommandLine contains "postinstall")

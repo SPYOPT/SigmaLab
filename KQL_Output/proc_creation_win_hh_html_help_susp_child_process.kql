@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hh_html_help_susp_child_process.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_html_help_susp_child_process.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\hh.exe" and (FolderPath endswith "\\CertReq.exe" or FolderPath endswith "\\CertUtil.exe" or FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\cscript.exe" or FolderPath endswith "\\installutil.exe" or FolderPath endswith "\\MSbuild.exe" or FolderPath endswith "\\MSHTA.EXE" or FolderPath endswith "\\msiexec.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\regsvr32.exe" or FolderPath endswith "\\rundll32.exe" or FolderPath endswith "\\schtasks.exe" or FolderPath endswith "\\wmic.exe" or FolderPath endswith "\\wscript.exe")

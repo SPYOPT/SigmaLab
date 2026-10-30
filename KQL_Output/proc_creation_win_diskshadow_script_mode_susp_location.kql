@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_diskshadow_script_mode_susp_location.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_diskshadow_script_mode_susp_location.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoOriginalFileName =~ "diskshadow.exe" or FolderPath endswith "\\diskshadow.exe") and (ProcessCommandLine contains "-s " or ProcessCommandLine contains "/s " or ProcessCommandLine contains "–s " or ProcessCommandLine contains "—s " or ProcessCommandLine contains "―s ") and (ProcessCommandLine contains ":\\Temp\\" or ProcessCommandLine contains ":\\Windows\\Temp\\" or ProcessCommandLine contains "\\AppData\\Local\\" or ProcessCommandLine contains "\\AppData\\Roaming\\" or ProcessCommandLine contains "\\ProgramData\\" or ProcessCommandLine contains "\\Users\\Public\\")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_disable_firewall.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_disable_firewall.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\powershell_ise.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "Set-NetFirewallProfile " and ProcessCommandLine contains " -Enabled " and ProcessCommandLine contains " False") and (ProcessCommandLine contains " -All " or ProcessCommandLine contains "Public" or ProcessCommandLine contains "Domain" or ProcessCommandLine contains "Private")

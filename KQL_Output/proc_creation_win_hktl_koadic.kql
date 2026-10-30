@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_koadic.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_koadic.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmd.exe" or ProcessVersionInfoOriginalFileName =~ "Cmd.Exe") and (ProcessCommandLine contains "/q" and ProcessCommandLine contains "/c" and ProcessCommandLine contains "chcp")

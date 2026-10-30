@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_perl_reverse_shell.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_perl_reverse_shell.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/perl" and ProcessCommandLine contains " -e ") and ((ProcessCommandLine contains "fdopen(" and ProcessCommandLine contains "::Socket::INET") or (ProcessCommandLine contains "Socket" and ProcessCommandLine contains "connect" and ProcessCommandLine contains "open" and ProcessCommandLine contains "exec"))

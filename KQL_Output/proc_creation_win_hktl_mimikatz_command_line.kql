@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_mimikatz_command_line.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_mimikatz_command_line.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "DumpCreds" or ProcessCommandLine contains "mimikatz") or (ProcessCommandLine contains "::aadcookie" or ProcessCommandLine contains "::detours" or ProcessCommandLine contains "::memssp" or ProcessCommandLine contains "::mflt" or ProcessCommandLine contains "::ncroutemon" or ProcessCommandLine contains "::ngcsign" or ProcessCommandLine contains "::printnightmare" or ProcessCommandLine contains "::skeleton" or ProcessCommandLine contains "::preshutdown" or ProcessCommandLine contains "::mstsc" or ProcessCommandLine contains "::multirdp") or (ProcessCommandLine contains "rpc::" or ProcessCommandLine contains "token::" or ProcessCommandLine contains "crypto::" or ProcessCommandLine contains "dpapi::" or ProcessCommandLine contains "sekurlsa::" or ProcessCommandLine contains "kerberos::" or ProcessCommandLine contains "lsadump::" or ProcessCommandLine contains "privilege::" or ProcessCommandLine contains "process::" or ProcessCommandLine contains "vault::")

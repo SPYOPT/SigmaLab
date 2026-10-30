@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_file_deletion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_file_deletion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/rm" or FolderPath endswith "/shred" or FolderPath endswith "/unlink"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_netsh_port_forwarding.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_port_forwarding.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\netsh.exe" or ProcessVersionInfoOriginalFileName =~ "netsh.exe") and ((ProcessCommandLine contains "interface" and ProcessCommandLine contains "portproxy" and ProcessCommandLine contains "add" and ProcessCommandLine contains "v4tov4") or (ProcessCommandLine contains "i " and ProcessCommandLine contains "p " and ProcessCommandLine contains "a " and ProcessCommandLine contains "v ") or (ProcessCommandLine contains "connectp" and ProcessCommandLine contains "listena" and ProcessCommandLine contains "c="))

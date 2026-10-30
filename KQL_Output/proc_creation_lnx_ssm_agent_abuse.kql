@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_ssm_agent_abuse.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_ssm_agent_abuse.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/amazon-ssm-agent" and (ProcessCommandLine contains "-register " and ProcessCommandLine contains "-code " and ProcessCommandLine contains "-id " and ProcessCommandLine contains "-region ")

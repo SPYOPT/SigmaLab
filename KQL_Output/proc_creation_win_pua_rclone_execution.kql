@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_rclone_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_rclone_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "--config " and ProcessCommandLine contains "--no-check-certificate " and ProcessCommandLine contains " copy ") or ((FolderPath endswith "\\rclone.exe" or ProcessVersionInfoFileDescription =~ "Rsync for cloud storage") and (ProcessCommandLine contains "pass" or ProcessCommandLine contains "user" or ProcessCommandLine contains "copy" or ProcessCommandLine contains "sync" or ProcessCommandLine contains "config" or ProcessCommandLine contains "lsd" or ProcessCommandLine contains "remote" or ProcessCommandLine contains "ls" or ProcessCommandLine contains "mega" or ProcessCommandLine contains "pcloud" or ProcessCommandLine contains "ftp" or ProcessCommandLine contains "ignore-existing" or ProcessCommandLine contains "auto-confirm" or ProcessCommandLine contains "transfers" or ProcessCommandLine contains "multi-thread-streams" or ProcessCommandLine contains "no-check-certificate "))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_nslookup_poweshell_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_nslookup_poweshell_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\nslookup.exe" or ProcessVersionInfoOriginalFileName =~ "nslookup.exe") and ((InitiatingProcessFolderPath endswith "\\powershell.exe" or InitiatingProcessFolderPath endswith "\\pwsh.exe") and (ProcessCommandLine contains " -q=txt " or ProcessCommandLine contains " -querytype=txt " or ProcessCommandLine contains " -type=txt"))

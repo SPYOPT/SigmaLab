@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_print_dump_sensitive_files.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_print_dump_sensitive_files.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\print.exe" or ProcessVersionInfoOriginalFileName =~ "Print.EXE") and ((ProcessCommandLine contains "-D" or ProcessCommandLine contains "/D" or ProcessCommandLine contains "–D" or ProcessCommandLine contains "—D" or ProcessCommandLine contains "―D") and (ProcessCommandLine contains "\\config\\SAM" or ProcessCommandLine contains "\\config\\SECURITY" or ProcessCommandLine contains "\\config\\SYSTEM" or ProcessCommandLine contains "\\windows\\ntds\\ntds.dit"))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_install_suspicious_packages.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_install_suspicious_packages.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (((FolderPath endswith "/apt" or FolderPath endswith "/apt-get") and ProcessCommandLine contains "install") or (FolderPath endswith "/yum" and (ProcessCommandLine contains "localinstall" or ProcessCommandLine contains "install")) or (FolderPath endswith "/rpm" and ProcessCommandLine contains "-i") or (FolderPath endswith "/dpkg" and (ProcessCommandLine contains "--install" or ProcessCommandLine contains "-i"))) and (ProcessCommandLine contains "nmap" or ProcessCommandLine contains " nc" or ProcessCommandLine contains "netcat" or ProcessCommandLine contains "wireshark" or ProcessCommandLine contains "tshark" or ProcessCommandLine contains "openconnect" or ProcessCommandLine contains "proxychains" or ProcessCommandLine contains "socat")

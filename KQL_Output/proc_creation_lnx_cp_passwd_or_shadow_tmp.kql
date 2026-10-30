@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_cp_passwd_or_shadow_tmp.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_cp_passwd_or_shadow_tmp.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/cp" and ProcessCommandLine contains "/tmp/" and (ProcessCommandLine contains "passwd" or ProcessCommandLine contains "shadow")

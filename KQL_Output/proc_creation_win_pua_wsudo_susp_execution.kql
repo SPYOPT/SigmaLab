@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_wsudo_susp_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_wsudo_susp_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\wsudo.exe" or ProcessVersionInfoOriginalFileName =~ "wsudo.exe" or ProcessVersionInfoFileDescription =~ "Windows sudo utility" or InitiatingProcessFolderPath endswith "\\wsudo-bridge.exe") or (ProcessCommandLine contains "-u System" or ProcessCommandLine contains "-uSystem" or ProcessCommandLine contains "-u TrustedInstaller" or ProcessCommandLine contains "-uTrustedInstaller" or ProcessCommandLine contains " --ti ")

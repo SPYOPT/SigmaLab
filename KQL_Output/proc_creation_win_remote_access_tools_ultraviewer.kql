@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_remote_access_tools_ultraviewer.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_ultraviewer.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoProductName =~ "UltraViewer" or ProcessVersionInfoCompanyName =~ "DucFabulous Co,ltd" or ProcessVersionInfoOriginalFileName =~ "UltraViewer_Desktop.exe"

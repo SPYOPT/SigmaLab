@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_chisel.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_chisel.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\chisel.exe" or ((ProcessCommandLine contains "exe client " or ProcessCommandLine contains "exe server ") and (ProcessCommandLine contains "-socks5" or ProcessCommandLine contains "-reverse" or ProcessCommandLine contains " r:" or ProcessCommandLine contains ":127.0.0.1:" or ProcessCommandLine contains "-tls-skip-verify " or ProcessCommandLine contains ":socks"))

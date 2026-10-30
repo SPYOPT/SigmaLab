@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_system_network_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_system_network_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/firewall-cmd" or FolderPath endswith "/ufw" or FolderPath endswith "/iptables" or FolderPath endswith "/netstat" or FolderPath endswith "/ss" or FolderPath endswith "/ip" or FolderPath endswith "/ifconfig" or FolderPath endswith "/systemd-resolve" or FolderPath endswith "/route") or ProcessCommandLine contains "/etc/resolv.conf"

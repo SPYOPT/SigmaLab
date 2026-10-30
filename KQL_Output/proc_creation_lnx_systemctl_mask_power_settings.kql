@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_systemctl_mask_power_settings.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_systemctl_mask_power_settings.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/systemctl" and ProcessCommandLine contains " mask") and (ProcessCommandLine contains "suspend.target" or ProcessCommandLine contains "hibernate.target" or ProcessCommandLine contains "hybrid-sleep.target")

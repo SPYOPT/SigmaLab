@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_empire_powershell_launch.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_empire_powershell_launch.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains " -NoP -sta -NonI -W Hidden -Enc " or ProcessCommandLine contains " -noP -sta -w 1 -enc " or ProcessCommandLine contains " -NoP -NonI -W Hidden -enc " or ProcessCommandLine contains " -noP -sta -w 1 -enc" or ProcessCommandLine contains " -enc  SQB" or ProcessCommandLine contains " -nop -exec bypass -EncodedCommand "

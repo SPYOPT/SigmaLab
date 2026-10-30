@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_susp_histfile_operations.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_histfile_operations.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains ".bash_history" or ProcessCommandLine contains ".zsh_history" or ProcessCommandLine contains ".zhistory" or ProcessCommandLine contains ".history" or ProcessCommandLine contains ".sh_history" or ProcessCommandLine contains "fish_history"

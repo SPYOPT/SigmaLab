@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_find_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_find_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/find" and (ProcessCommandLine contains "-perm -4000" or ProcessCommandLine contains "-perm -2000" or ProcessCommandLine contains "-perm 0777" or ProcessCommandLine contains "-perm -222" or ProcessCommandLine contains "-perm -o w" or ProcessCommandLine contains "-perm -o x" or ProcessCommandLine contains "-perm -u=s" or ProcessCommandLine contains "-perm -g=s")

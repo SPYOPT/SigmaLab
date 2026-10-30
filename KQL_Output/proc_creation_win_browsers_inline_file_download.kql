@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_browsers_inline_file_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_inline_file_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\brave.exe" or FolderPath endswith "\\chrome.exe" or FolderPath endswith "\\msedge.exe" or FolderPath endswith "\\opera.exe" or FolderPath endswith "\\vivaldi.exe") and ProcessCommandLine contains "http" and ((ProcessCommandLine endswith ".7z" or ProcessCommandLine endswith ".dat" or ProcessCommandLine endswith ".dll" or ProcessCommandLine endswith ".exe" or ProcessCommandLine endswith ".hta" or ProcessCommandLine endswith ".ps1" or ProcessCommandLine endswith ".psm1" or ProcessCommandLine endswith ".txt" or ProcessCommandLine endswith ".vbe" or ProcessCommandLine endswith ".vbs" or ProcessCommandLine endswith ".zip") or (ProcessCommandLine contains ".7z\"" or ProcessCommandLine contains ".dat\"" or ProcessCommandLine contains ".dll\"" or ProcessCommandLine contains ".hta\"" or ProcessCommandLine contains ".ps1\"" or ProcessCommandLine contains ".psm1\"" or ProcessCommandLine contains ".txt\"" or ProcessCommandLine contains ".vbe\"" or ProcessCommandLine contains ".vbs\"" or ProcessCommandLine contains ".zip\""))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_vscode_tunnel_service_install.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vscode_tunnel_service_install.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "tunnel " and ProcessCommandLine contains "service" and ProcessCommandLine contains "internal-run" and ProcessCommandLine contains "tunnel-service.log"

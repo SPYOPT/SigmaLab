@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmdkey_adding_generic_creds.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmdkey_adding_generic_creds.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmdkey.exe" or ProcessVersionInfoOriginalFileName =~ "cmdkey.exe") and (ProcessCommandLine contains " -g" or ProcessCommandLine contains " /g" or ProcessCommandLine contains " –g" or ProcessCommandLine contains " —g" or ProcessCommandLine contains " ―g") and (ProcessCommandLine contains " -u" or ProcessCommandLine contains " /u" or ProcessCommandLine contains " –u" or ProcessCommandLine contains " —u" or ProcessCommandLine contains " ―u") and (ProcessCommandLine contains " -p" or ProcessCommandLine contains " /p" or ProcessCommandLine contains " –p" or ProcessCommandLine contains " —p" or ProcessCommandLine contains " ―p")

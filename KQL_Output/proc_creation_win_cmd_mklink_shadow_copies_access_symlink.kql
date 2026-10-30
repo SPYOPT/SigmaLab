@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_mklink_shadow_copies_access_symlink.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_mklink_shadow_copies_access_symlink.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "mklink" and ProcessCommandLine contains "HarddiskVolumeShadowCopy"

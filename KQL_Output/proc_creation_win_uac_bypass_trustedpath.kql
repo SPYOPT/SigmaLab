@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_uac_bypass_trustedpath.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_trustedpath.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath contains "C:\\Windows \\System32\\" or FolderPath contains "C:\\Windows \\SysWOW64\\"

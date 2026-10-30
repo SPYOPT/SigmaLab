@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_iox.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_iox.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\iox.exe" or (ProcessCommandLine contains ".exe fwd -l " or ProcessCommandLine contains ".exe fwd -r " or ProcessCommandLine contains ".exe proxy -l " or ProcessCommandLine contains ".exe proxy -r ") or (MD5 startswith "9DB2D314DD3F704A02051EF5EA210993" or SHA1 startswith "039130337E28A6623ECF9A0A3DA7D92C5964D8DD" or SHA256 startswith "C6CF82919B809967D9D90EA73772A8AA1C1EB3BC59252D977500F64F1A0D6731")

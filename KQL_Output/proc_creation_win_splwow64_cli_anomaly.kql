@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_splwow64_cli_anomaly.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_splwow64_cli_anomaly.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\splwow64.exe" and ProcessCommandLine endswith "splwow64.exe"

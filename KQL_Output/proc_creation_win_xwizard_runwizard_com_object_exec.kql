@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_xwizard_runwizard_com_object_exec.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_xwizard_runwizard_com_object_exec.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine =~ "RunWizard" and ProcessCommandLine matches regex "\\{[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\\}"

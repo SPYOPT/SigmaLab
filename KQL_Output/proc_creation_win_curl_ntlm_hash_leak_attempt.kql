@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_curl_ntlm_hash_leak_attempt.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_ntlm_hash_leak_attempt.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\curl.exe" or ProcessVersionInfoOriginalFileName =~ "curl.exe") and ProcessCommandLine contains "--ntlm" and ProcessCommandLine matches regex "(?i)\\s(-u|--user)\\s*:"

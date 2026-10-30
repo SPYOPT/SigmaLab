@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_susp_driver_installed_by_pnputil.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_driver_installed_by_pnputil.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "-i" or ProcessCommandLine contains "/install" or ProcessCommandLine contains "-a" or ProcessCommandLine contains "/add-driver" or ProcessCommandLine contains ".inf") and FolderPath endswith "\\pnputil.exe"

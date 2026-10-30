@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_task_folder_evasion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_task_folder_evasion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "echo " or ProcessCommandLine contains "copy " or ProcessCommandLine contains "type " or ProcessCommandLine contains "file createnew") and (ProcessCommandLine contains " C:\\Windows\\System32\\Tasks\\" or ProcessCommandLine contains " C:\\Windows\\SysWow64\\Tasks\\")

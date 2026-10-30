@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_creation_temp_folder.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_creation_temp_folder.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\schtasks.exe" and (ProcessCommandLine contains " /create " and ProcessCommandLine contains " /sc once " and ProcessCommandLine contains "\\Temp\\")

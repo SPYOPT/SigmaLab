@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_base64_decode.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_decode.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/base64" and ProcessCommandLine contains "-d"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_susp_process_creation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_susp_process_creation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "process " and ProcessCommandLine contains "call " and ProcessCommandLine contains "create ") and (ProcessCommandLine contains "rundll32" or ProcessCommandLine contains "bitsadmin" or ProcessCommandLine contains "regsvr32" or ProcessCommandLine contains "cmd.exe /c " or ProcessCommandLine contains "cmd.exe /k " or ProcessCommandLine contains "cmd.exe /r " or ProcessCommandLine contains "cmd /c " or ProcessCommandLine contains "cmd /k " or ProcessCommandLine contains "cmd /r " or ProcessCommandLine contains "powershell" or ProcessCommandLine contains "pwsh" or ProcessCommandLine contains "certutil" or ProcessCommandLine contains "cscript" or ProcessCommandLine contains "wscript" or ProcessCommandLine contains "mshta" or ProcessCommandLine contains "\\Users\\Public\\" or ProcessCommandLine contains "\\Windows\\Temp\\" or ProcessCommandLine contains "\\AppData\\Local\\" or ProcessCommandLine contains "%temp%" or ProcessCommandLine contains "%tmp%" or ProcessCommandLine contains "%ProgramData%" or ProcessCommandLine contains "%appdata%" or ProcessCommandLine contains "%comspec%" or ProcessCommandLine contains "%localappdata%")

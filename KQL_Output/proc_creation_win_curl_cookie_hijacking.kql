@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_curl_cookie_hijacking.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_cookie_hijacking.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\curl.exe" or ProcessVersionInfoOriginalFileName =~ "curl.exe") and (ProcessCommandLine matches regex "\\s-c\\s" or ProcessCommandLine contains "--cookie-jar")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_recon_system_info_uncommon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_system_info_uncommon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoFileDescription =~ "WMI Commandline Utility" or ProcessVersionInfoOriginalFileName =~ "wmic.exe" or FolderPath endswith "\\WMIC.exe") and (ProcessCommandLine contains "LOGICALDISK get Name,Size,FreeSpace" or ProcessCommandLine contains "os get Caption,OSArchitecture,Version")

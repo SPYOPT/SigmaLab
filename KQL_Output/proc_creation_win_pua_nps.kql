@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_nps.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nps.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\npc.exe" or (ProcessCommandLine contains " -server=" and ProcessCommandLine contains " -vkey=" and ProcessCommandLine contains " -password=") or ProcessCommandLine contains " -config=npc" or (MD5 startswith "AE8ACF66BFE3A44148964048B826D005" or SHA1 startswith "CEA49E9B9B67F3A13AD0BE1C2655293EA3C18181" or SHA256 startswith "5A456283392FFCEEEACA3D3426C306EB470304637520D72FED1CC1FEBBBD6856")

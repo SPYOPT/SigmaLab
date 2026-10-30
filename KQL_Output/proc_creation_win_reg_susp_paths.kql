@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_susp_paths.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_susp_paths.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\reg.exe" or ProcessVersionInfoOriginalFileName =~ "reg.exe") and (ProcessCommandLine contains "\\AppDataLow\\Software\\Microsoft\\" or ProcessCommandLine contains "\\Policies\\Microsoft\\Windows\\OOBE" or ProcessCommandLine contains "\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon" or ProcessCommandLine contains "\\SOFTWARE\\Microsoft\\Windows NT\\Currentversion\\Winlogon" or ProcessCommandLine contains "\\CurrentControlSet\\Control\\SecurityProviders\\WDigest" or ProcessCommandLine contains "\\Microsoft\\Windows Defender\\")

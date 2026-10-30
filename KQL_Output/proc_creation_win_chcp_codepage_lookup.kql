@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_chcp_codepage_lookup.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_chcp_codepage_lookup.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\cmd.exe" and (InitiatingProcessCommandLine contains " -c " or InitiatingProcessCommandLine contains " /c " or InitiatingProcessCommandLine contains " –c " or InitiatingProcessCommandLine contains " —c " or InitiatingProcessCommandLine contains " ―c " or InitiatingProcessCommandLine contains " -r " or InitiatingProcessCommandLine contains " /r " or InitiatingProcessCommandLine contains " –r " or InitiatingProcessCommandLine contains " —r " or InitiatingProcessCommandLine contains " ―r " or InitiatingProcessCommandLine contains " -k " or InitiatingProcessCommandLine contains " /k " or InitiatingProcessCommandLine contains " –k " or InitiatingProcessCommandLine contains " —k " or InitiatingProcessCommandLine contains " ―k ") and FolderPath endswith "\\chcp.com" and (ProcessCommandLine endswith "chcp" or ProcessCommandLine endswith "chcp " or ProcessCommandLine endswith "chcp  ")

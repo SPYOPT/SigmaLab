@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_lsass_dmp_cli_keywords.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_lsass_dmp_cli_keywords.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "lsass.dmp" or ProcessCommandLine contains "lsass.zip" or ProcessCommandLine contains "lsass.rar" or ProcessCommandLine contains "Andrew.dmp" or ProcessCommandLine contains "Coredump.dmp" or ProcessCommandLine contains "NotLSASS.zip" or ProcessCommandLine contains "lsass_2" or ProcessCommandLine contains "lsassdump" or ProcessCommandLine contains "lsassdmp") or (ProcessCommandLine contains "lsass" and ProcessCommandLine contains ".dmp") or (ProcessCommandLine contains "SQLDmpr" and ProcessCommandLine contains ".mdmp") or (ProcessCommandLine contains "nanodump" and ProcessCommandLine contains ".dmp")

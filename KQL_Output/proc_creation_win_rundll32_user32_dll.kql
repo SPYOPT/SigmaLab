@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rundll32_user32_dll.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_user32_dll.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\rundll32.exe" or ProcessVersionInfoOriginalFileName =~ "RUNDLL32.EXE") and InitiatingProcessFolderPath endswith "\\cmd.exe" and ProcessCommandLine contains "user32.dll," and ProcessCommandLine contains "LockWorkStation"

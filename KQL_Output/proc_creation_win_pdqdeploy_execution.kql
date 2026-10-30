@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pdqdeploy_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pdqdeploy_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoFileDescription =~ "PDQ Deploy Console" or ProcessVersionInfoProductName =~ "PDQ Deploy" or ProcessVersionInfoCompanyName =~ "PDQ.com" or ProcessVersionInfoOriginalFileName =~ "PDQDeployConsole.exe"

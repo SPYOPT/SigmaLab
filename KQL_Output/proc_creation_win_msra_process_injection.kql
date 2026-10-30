@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_msra_process_injection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msra_process_injection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\msra.exe" and InitiatingProcessCommandLine endswith "msra.exe" and (FolderPath endswith "\\arp.exe" or FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\net.exe" or FolderPath endswith "\\netstat.exe" or FolderPath endswith "\\nslookup.exe" or FolderPath endswith "\\route.exe" or FolderPath endswith "\\schtasks.exe" or FolderPath endswith "\\whoami.exe")

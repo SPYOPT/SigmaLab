@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_email_exfil.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_email_exfil.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") and (ProcessCommandLine contains "Add-PSSnapin" and ProcessCommandLine contains "Get-Recipient" and ProcessCommandLine contains "-ExpandProperty" and ProcessCommandLine contains "EmailAddresses" and ProcessCommandLine contains "SmtpAddress" and ProcessCommandLine contains "-hidetableheaders")

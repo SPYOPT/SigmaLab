@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_extrac32_ads.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_extrac32_ads.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "extrac32.exe" and ProcessCommandLine contains ".cab") and ProcessCommandLine matches regex ":[^\\\\]"

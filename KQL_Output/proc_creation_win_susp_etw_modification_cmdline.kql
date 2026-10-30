@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_etw_modification_cmdline.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_etw_modification_cmdline.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "COMPlus_ETWEnabled" or ProcessCommandLine contains "COMPlus_ETWFlags"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_kdu_driver_tool.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_kdu_driver_tool.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\kdu.exe" or FolderPath endswith "\\hamakaze.exe") or ProcessVersionInfoOriginalFileName =~ "hamakaze.exe") and (ProcessCommandLine contains "-map " or ProcessCommandLine contains "-prv " or ProcessCommandLine contains "-dse " or ProcessCommandLine contains "-ps ")

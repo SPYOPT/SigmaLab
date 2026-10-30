@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_import_cert_susp_locations.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_import_cert_susp_locations.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "Import-Certificate" and ProcessCommandLine contains " -FilePath " and ProcessCommandLine contains "Cert:\\LocalMachine\\Root") and (ProcessCommandLine contains "\\AppData\\Local\\Temp\\" or ProcessCommandLine contains ":\\Windows\\TEMP\\" or ProcessCommandLine contains "\\Desktop\\" or ProcessCommandLine contains "\\Downloads\\" or ProcessCommandLine contains "\\Perflogs\\" or ProcessCommandLine contains ":\\Users\\Public\\")

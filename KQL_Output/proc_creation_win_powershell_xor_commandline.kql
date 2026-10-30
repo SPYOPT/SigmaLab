@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_xor_commandline.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_xor_commandline.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll")) or ProcessVersionInfoFileDescription =~ "Windows PowerShell" or ProcessVersionInfoProductName =~ "PowerShell Core 6") and ProcessCommandLine contains "bxor" and (ProcessCommandLine contains "ForEach" or ProcessCommandLine contains "for(" or ProcessCommandLine contains "for " or ProcessCommandLine contains "-join " or ProcessCommandLine contains "-join'" or ProcessCommandLine contains "-join\"" or ProcessCommandLine contains "-join`" or ProcessCommandLine contains "::Join" or ProcessCommandLine contains "[char]")

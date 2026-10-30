@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_clipboard_collection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_clipboard_collection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath contains "xclip" and (ProcessCommandLine contains "-sel" and ProcessCommandLine contains "clip" and ProcessCommandLine contains "-o")

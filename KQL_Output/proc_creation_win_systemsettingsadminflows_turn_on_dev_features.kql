@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_systemsettingsadminflows_turn_on_dev_features.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_systemsettingsadminflows_turn_on_dev_features.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\SystemSettingsAdminFlows.exe" or ProcessVersionInfoOriginalFileName =~ "SystemSettingsAdminFlows.EXE") and ProcessCommandLine contains "TurnOnDeveloperFeatures" and (ProcessCommandLine contains "DeveloperUnlock" or ProcessCommandLine contains "EnableSideloading")

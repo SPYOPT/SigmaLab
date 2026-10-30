@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_rubeus.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_rubeus.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\Rubeus.exe" or ProcessVersionInfoOriginalFileName =~ "Rubeus.exe" or ProcessVersionInfoFileDescription =~ "Rubeus" or (ProcessCommandLine contains "asreproast " or ProcessCommandLine contains "dump /service:krbtgt " or ProcessCommandLine contains "dump /luid:0x" or ProcessCommandLine contains "kerberoast " or ProcessCommandLine contains "createnetonly /program:" or ProcessCommandLine contains "ptt /ticket:" or ProcessCommandLine contains "/impersonateuser:" or ProcessCommandLine contains "renew /ticket:" or ProcessCommandLine contains "asktgt /user:" or ProcessCommandLine contains "harvest /interval:" or ProcessCommandLine contains "s4u /user:" or ProcessCommandLine contains "s4u /ticket:" or ProcessCommandLine contains "hash /password:" or ProcessCommandLine contains "golden /aes256:" or ProcessCommandLine contains "silver /user:")

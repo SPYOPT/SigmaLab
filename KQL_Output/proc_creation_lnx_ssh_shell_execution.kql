@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_ssh_shell_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_ssh_shell_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/ssh" and (ProcessCommandLine contains "ProxyCommand=;" or ProcessCommandLine contains "permitlocalcommand=yes" or ProcessCommandLine contains "localhost")) and (ProcessCommandLine contains "/bin/bash" or ProcessCommandLine contains "/bin/dash" or ProcessCommandLine contains "/bin/fish" or ProcessCommandLine contains "/bin/sh" or ProcessCommandLine contains "/bin/zsh" or ProcessCommandLine contains "sh 0<&2 1>&2" or ProcessCommandLine contains "sh 1>&2 0<&2")

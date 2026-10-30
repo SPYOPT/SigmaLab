@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_awk_shell_spawn.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_awk_shell_spawn.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "/awk" or FolderPath endswith "/gawk" or FolderPath endswith "/mawk" or FolderPath endswith "/nawk") and ProcessCommandLine contains "BEGIN {system") and (ProcessCommandLine contains "/bin/bash" or ProcessCommandLine contains "/bin/dash" or ProcessCommandLine contains "/bin/fish" or ProcessCommandLine contains "/bin/sh" or ProcessCommandLine contains "/bin/zsh")

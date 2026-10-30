@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_advanced_ip_scanner.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advanced_ip_scanner.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath contains "\\advanced_ip_scanner" or ProcessVersionInfoOriginalFileName contains "advanced_ip_scanner" or ProcessVersionInfoFileDescription contains "Advanced IP Scanner") or (ProcessCommandLine contains "/portable" and ProcessCommandLine contains "/lng")

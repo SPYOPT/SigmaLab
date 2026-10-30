@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_touch_susp.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_touch_susp.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/touch" and ProcessCommandLine contains " -t " and ProcessCommandLine endswith ".service"

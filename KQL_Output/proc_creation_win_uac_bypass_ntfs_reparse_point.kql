@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_uac_bypass_ntfs_reparse_point.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_ntfs_reparse_point.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine startswith "\"C:\\Windows\\system32\\wusa.exe\"  /quiet C:\\Users\\" and ProcessCommandLine endswith "\\AppData\\Local\\Temp\\update.msu" and (ProcessIntegrityLevel in~ ("High", "System", "S-1-16-16384", "S-1-16-12288"))) or (InitiatingProcessCommandLine =~ "\"C:\\Windows\\system32\\dism.exe\" /online /quiet /norestart /add-package /packagepath:\"C:\\Windows\\system32\\pe386\" /ignorecheck" and (ProcessIntegrityLevel in~ ("High", "System")) and (ProcessCommandLine contains "C:\\Users\\" and ProcessCommandLine contains "\\AppData\\Local\\Temp\\" and ProcessCommandLine contains "\\dismhost.exe {") and FolderPath endswith "\\DismHost.exe")

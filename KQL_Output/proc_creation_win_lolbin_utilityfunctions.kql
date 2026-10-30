@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_utilityfunctions.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_utilityfunctions.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "UtilityFunctions.ps1" or ProcessCommandLine contains "RegSnapin "

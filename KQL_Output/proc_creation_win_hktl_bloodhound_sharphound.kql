@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_bloodhound_sharphound.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_bloodhound_sharphound.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoProductName contains "SharpHound" or ProcessVersionInfoFileDescription contains "SharpHound" or (ProcessVersionInfoCompanyName contains "SpecterOps" or ProcessVersionInfoCompanyName contains "evil corp") or (FolderPath contains "\\Bloodhound.exe" or FolderPath contains "\\SharpHound.exe")) or (ProcessCommandLine contains " -CollectionMethod All " or ProcessCommandLine contains " --CollectionMethods Session " or ProcessCommandLine contains " --Loop --Loopduration " or ProcessCommandLine contains " --PortScanTimeout " or ProcessCommandLine contains ".exe -c All -d " or ProcessCommandLine contains "Invoke-Bloodhound" or ProcessCommandLine contains "Get-BloodHoundData") or (ProcessCommandLine contains " -JsonFolder " and ProcessCommandLine contains " -ZipFileName ") or (ProcessCommandLine contains " DCOnly " and ProcessCommandLine contains " --NoSaveCache ")

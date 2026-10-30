@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_gpg4win_susp_location.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpg4win_susp_location.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\gpg.exe" or FolderPath endswith "\\gpg2.exe") or ProcessVersionInfoProductName =~ "GNU Privacy Guard (GnuPG)" or ProcessVersionInfoFileDescription =~ "GnuPG’s OpenPGP tool") and ProcessCommandLine contains "-passphrase" and (ProcessCommandLine contains ":\\PerfLogs\\" or ProcessCommandLine contains ":\\Temp\\" or ProcessCommandLine contains ":\\Users\\Public\\" or ProcessCommandLine contains ":\\Windows\\Temp\\" or ProcessCommandLine contains "\\AppData\\Local\\Temp\\" or ProcessCommandLine contains "\\AppData\\Roaming\\")

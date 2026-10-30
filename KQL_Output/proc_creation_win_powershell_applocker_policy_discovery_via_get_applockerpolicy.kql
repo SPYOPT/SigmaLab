@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_applocker_policy_discovery_via_get_applockerpolicy.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_applocker_policy_discovery_via_get_applockerpolicy.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and ProcessCommandLine contains "Get-AppLockerPolicy" and (ProcessCommandLine contains " -Effective" or ProcessCommandLine contains " /Effective" or ProcessCommandLine contains " –Effective" or ProcessCommandLine contains " —Effective" or ProcessCommandLine contains " ―Effective" or ProcessCommandLine contains " -Ldap " or ProcessCommandLine contains " /Ldap " or ProcessCommandLine contains " –Ldap " or ProcessCommandLine contains " —Ldap " or ProcessCommandLine contains " ―Ldap " or ProcessCommandLine contains " -Local" or ProcessCommandLine contains " /Local" or ProcessCommandLine contains " –Local" or ProcessCommandLine contains " —Local" or ProcessCommandLine contains " ―Local")

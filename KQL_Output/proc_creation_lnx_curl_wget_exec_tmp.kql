@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_curl_wget_exec_tmp.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_curl_wget_exec_tmp.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "/curl" or ProcessCommandLine contains "/wget") and (ProcessCommandLine contains "/tmp/" or ProcessCommandLine contains "/dev/shm/") and ProcessCommandLine contains "sh -c"

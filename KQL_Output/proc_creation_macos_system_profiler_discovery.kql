@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_system_profiler_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_system_profiler_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/system_profiler" or ProcessCommandLine contains "system_profiler") and (ProcessCommandLine contains "SPApplicationsDataType" or ProcessCommandLine contains "SPHardwareDataType" or ProcessCommandLine contains "SPNetworkDataType" or ProcessCommandLine contains "SPUSBDataType")

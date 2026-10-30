@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_comodo_ssh_shellhost_cmd_spawn.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_comodo_ssh_shellhost_cmd_spawn.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\ITSMService.exe" and FolderPath endswith "\\ssh-shellhost.exe" and ProcessCommandLine contains "--pty") and (ProcessCommandLine contains "bash" or ProcessCommandLine contains "cmd" or ProcessCommandLine contains "powershell" or ProcessCommandLine contains "pwsh")

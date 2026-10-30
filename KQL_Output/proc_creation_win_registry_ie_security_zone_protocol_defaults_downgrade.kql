@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_registry_ie_security_zone_protocol_defaults_downgrade.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_ie_security_zone_protocol_defaults_downgrade.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\ProtocolDefaults" and ProcessCommandLine contains "http" and ProcessCommandLine contains " 0"

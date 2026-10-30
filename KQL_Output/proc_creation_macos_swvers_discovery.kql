@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_swvers_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_swvers_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/sw_vers" and (ProcessCommandLine contains "-buildVersion" or ProcessCommandLine contains "-productName" or ProcessCommandLine contains "-productVersion")

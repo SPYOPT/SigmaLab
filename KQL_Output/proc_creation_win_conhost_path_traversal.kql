@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_conhost_path_traversal.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_path_traversal.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessCommandLine contains "conhost" and ProcessCommandLine contains "/../../"

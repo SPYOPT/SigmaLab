@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_registry_install_reg_debugger_backdoor.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_install_reg_debugger_backdoor.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "\\CurrentVersion\\Image File Execution Options\\" and (ProcessCommandLine contains "sethc.exe" or ProcessCommandLine contains "utilman.exe" or ProcessCommandLine contains "osk.exe" or ProcessCommandLine contains "magnify.exe" or ProcessCommandLine contains "narrator.exe" or ProcessCommandLine contains "displayswitch.exe" or ProcessCommandLine contains "atbroker.exe" or ProcessCommandLine contains "HelpPane.exe")

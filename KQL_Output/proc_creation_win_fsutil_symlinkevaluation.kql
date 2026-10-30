@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_fsutil_symlinkevaluation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsutil_symlinkevaluation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("Cmd.Exe", "PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "fsutil" and ProcessCommandLine contains "behavior" and ProcessCommandLine contains "set" and ProcessCommandLine contains "SymlinkEvaluation") and (ProcessCommandLine contains "R2L:1" or ProcessCommandLine contains "R2R:1" or ProcessCommandLine contains "L2L:1")

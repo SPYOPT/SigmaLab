@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_werfaultsecure_abuse.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_werfaultsecure_abuse.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\WerFaultSecure.exe" or ProcessVersionInfoOriginalFileName =~ "WerFaultSecure.exe") and (ProcessCommandLine contains " /h " and ProcessCommandLine contains " /pid " and ProcessCommandLine contains " /tid " and ProcessCommandLine contains " /encfile " and ProcessCommandLine contains " /cancel " and ProcessCommandLine contains " /type " and ProcessCommandLine contains " 268310")

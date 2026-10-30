@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_redmimicry_winnti_playbook.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_redmimicry_winnti_playbook.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\rundll32.exe" or FolderPath endswith "\\cmd.exe") and (ProcessCommandLine contains "gthread-3.6.dll" or ProcessCommandLine contains "\\Windows\\Temp\\tmp.bat" or ProcessCommandLine contains "sigcmm-2.4.dll")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_krbrelay_remote.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelay_remote.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\RemoteKrbRelay.exe" or ProcessVersionInfoOriginalFileName =~ "RemoteKrbRelay.exe") or (ProcessCommandLine contains " -clsid " and ProcessCommandLine contains " -target " and ProcessCommandLine contains " -victim ") or (ProcessCommandLine contains "-rbcd " and (ProcessCommandLine contains "-cn " or ProcessCommandLine contains "--computername ")) or (ProcessCommandLine contains "-chp " and (ProcessCommandLine contains "-chpPass " and ProcessCommandLine contains "-chpUser ")) or (ProcessCommandLine contains "-addgroupmember " and ProcessCommandLine contains "-group " and ProcessCommandLine contains "-groupuser ") or ((ProcessCommandLine contains "-smb " and ProcessCommandLine contains "--smbkeyword ") and (ProcessCommandLine contains "interactive" or ProcessCommandLine contains "secrets" or ProcessCommandLine contains "service-add"))

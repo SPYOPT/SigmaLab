@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_where_browser_data_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_where_browser_data_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\where.exe" or ProcessVersionInfoOriginalFileName =~ "where.exe") and (ProcessCommandLine contains "places.sqlite" or ProcessCommandLine contains "cookies.sqlite" or ProcessCommandLine contains "formhistory.sqlite" or ProcessCommandLine contains "logins.json" or ProcessCommandLine contains "key4.db" or ProcessCommandLine contains "key3.db" or ProcessCommandLine contains "sessionstore.jsonlz4" or ProcessCommandLine contains "History" or ProcessCommandLine contains "Bookmarks" or ProcessCommandLine contains "Cookies" or ProcessCommandLine contains "Login Data")

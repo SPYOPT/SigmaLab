@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_registry_special_accounts_hide_user.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_special_accounts_hide_user.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\reg.exe" and (ProcessCommandLine contains "\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\SpecialAccounts\\UserList" and ProcessCommandLine contains "add" and ProcessCommandLine contains "/v" and ProcessCommandLine contains "/d 0")

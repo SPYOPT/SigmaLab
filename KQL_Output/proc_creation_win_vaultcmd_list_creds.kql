@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_vaultcmd_list_creds.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vaultcmd_list_creds.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\VaultCmd.exe" or ProcessVersionInfoOriginalFileName =~ "VAULTCMD.EXE") and ProcessCommandLine contains "/listcreds:"

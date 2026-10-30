@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_use_mhsta.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_use_mhsta.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "set" and ProcessCommandLine contains "&&" and ProcessCommandLine contains "mshta" and ProcessCommandLine contains "vbscript:createobject" and ProcessCommandLine contains ".run" and ProcessCommandLine contains "(window.close)"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell_ise.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell_ise.EXE", "PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "curl " or ProcessCommandLine contains "Invoke-RestMethod" or ProcessCommandLine contains "Invoke-WebRequest" or ProcessCommandLine contains " irm " or ProcessCommandLine contains "iwr " or ProcessCommandLine contains "wget ") and (ProcessCommandLine contains "://1" or ProcessCommandLine contains "://2" or ProcessCommandLine contains "://3" or ProcessCommandLine contains "://4" or ProcessCommandLine contains "://5" or ProcessCommandLine contains "://6" or ProcessCommandLine contains "://7" or ProcessCommandLine contains "://8" or ProcessCommandLine contains "://9")

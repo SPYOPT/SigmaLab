@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_remote_desktop_tunneling.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_remote_desktop_tunneling.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains ":3389" and (ProcessCommandLine contains " -L " or ProcessCommandLine contains " -P " or ProcessCommandLine contains " -R " or ProcessCommandLine contains " -pw " or ProcessCommandLine contains " -ssh ")

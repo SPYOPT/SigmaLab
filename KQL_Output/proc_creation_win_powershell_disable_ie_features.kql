@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_disable_ie_features.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_disable_ie_features.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains " -name IEHarden " and ProcessCommandLine contains " -value 0 ") or (ProcessCommandLine contains " -name DEPOff " and ProcessCommandLine contains " -value 1 ") or (ProcessCommandLine contains " -name DisableFirstRunCustomize " and ProcessCommandLine contains " -value 2 ")

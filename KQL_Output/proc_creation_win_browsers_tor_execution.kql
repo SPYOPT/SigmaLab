@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_browsers_tor_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_tor_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoFileDescription =~ "Tor Browser" or ProcessVersionInfoProductName =~ "Tor Browser" or (FolderPath endswith "\\tor.exe" or FolderPath endswith "\\Tor Browser\\Browser\\firefox.exe")

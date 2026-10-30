@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_java_children.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_java_children.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "/java" and (ProcessCommandLine contains "/bin/sh" or ProcessCommandLine contains "bash" or ProcessCommandLine contains "dash" or ProcessCommandLine contains "ksh" or ProcessCommandLine contains "zsh" or ProcessCommandLine contains "csh" or ProcessCommandLine contains "fish" or ProcessCommandLine contains "curl" or ProcessCommandLine contains "wget" or ProcessCommandLine contains "python")

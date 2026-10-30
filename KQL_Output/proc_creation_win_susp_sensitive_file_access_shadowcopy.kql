@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_sensitive_file_access_shadowcopy.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_sensitive_file_access_shadowcopy.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy" and (ProcessCommandLine contains "\\NTDS.dit" or ProcessCommandLine contains "\\SYSTEM" or ProcessCommandLine contains "\\SECURITY")

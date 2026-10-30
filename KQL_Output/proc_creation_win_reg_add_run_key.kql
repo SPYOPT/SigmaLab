@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_add_run_key.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_add_run_key.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\reg.exe" and (ProcessCommandLine contains "reg" and ProcessCommandLine contains " add ") and (ProcessCommandLine contains "Software\\Microsoft\\Windows\\CurrentVersion\\Run" or ProcessCommandLine contains "\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run" or ProcessCommandLine contains "\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run")

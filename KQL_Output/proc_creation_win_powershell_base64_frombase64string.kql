@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_base64_frombase64string.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_frombase64string.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "OjpGcm9tQmFzZTY0U3RyaW5n" or ProcessCommandLine contains "o6RnJvbUJhc2U2NFN0cmluZ" or ProcessCommandLine contains "6OkZyb21CYXNlNjRTdHJpbm" or (ProcessCommandLine contains "OgA6AEYAcgBvAG0AQgBhAHMAZQA2ADQAUwB0AHIAaQBuAGcA" or ProcessCommandLine contains "oAOgBGAHIAbwBtAEIAYQBzAGUANgA0AFMAdAByAGkAbgBnA" or ProcessCommandLine contains "6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZw")

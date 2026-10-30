@@ -1,0 +1,29 @@
+﻿# Entorno virtual
+.venv/
+venv/
+
+# Repositorios externos clonados
+sigma/
+pySigma/
+Sigma2KQL/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Ejecutables y binarios
+*.exe
+*.dll
+
+# Configuración local
+.vscode/
+.env
+.env.*
+
+# Archivos temporales
+*.log
+*.tmp
+Thumbs.db
+
+# Archivos comprimidos
+*.zip

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rundll32_registered_com_objects.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_registered_com_objects.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\rundll32.exe" or ProcessVersionInfoOriginalFileName =~ "RUNDLL32.EXE") and ((ProcessCommandLine contains "-sta " or ProcessCommandLine contains "-localserver ") and (ProcessCommandLine contains "{" and ProcessCommandLine contains "}"))

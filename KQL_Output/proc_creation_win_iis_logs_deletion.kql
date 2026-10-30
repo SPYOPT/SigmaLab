@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_iis_logs_deletion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_logs_deletion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\powershell_ise.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("cmd.exe", "powershell.exe", "powershell_ise.exe", "pwsh.dll"))) and (ProcessCommandLine contains "del " or ProcessCommandLine contains "erase " or ProcessCommandLine contains "rm " or ProcessCommandLine contains "remove-item " or ProcessCommandLine contains "rmdir ") and ProcessCommandLine contains "\\inetpub\\logs\\"

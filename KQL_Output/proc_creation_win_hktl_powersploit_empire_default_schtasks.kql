@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_powersploit_empire_default_schtasks.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_powersploit_empire_default_schtasks.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\powershell.exe" or InitiatingProcessFolderPath endswith "\\pwsh.exe") and FolderPath endswith "\\schtasks.exe" and (ProcessCommandLine contains "/Create" and ProcessCommandLine contains "powershell.exe -NonI" and ProcessCommandLine contains "/TN Updater /TR") and (ProcessCommandLine contains "/SC ONLOGON" or ProcessCommandLine contains "/SC DAILY /ST" or ProcessCommandLine contains "/SC ONIDLE" or ProcessCommandLine contains "/SC HOURLY")

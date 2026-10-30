@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_amsi_init_failed_bypass.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_amsi_init_failed_bypass.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "System.Management.Automation.AmsiUtils" and ProcessCommandLine contains "amsiInitFailed") or (ProcessCommandLine contains "[Ref].Assembly.GetType" and ProcessCommandLine contains "SetValue($null,$true)" and ProcessCommandLine contains "NonPublic,Static")

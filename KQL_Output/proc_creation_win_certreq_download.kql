@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_certreq_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certreq_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\certreq.exe" or ProcessVersionInfoOriginalFileName =~ "CertReq.exe") and (ProcessCommandLine contains "-Post" or ProcessCommandLine contains "/Post" or ProcessCommandLine contains "–Post" or ProcessCommandLine contains "—Post" or ProcessCommandLine contains "―Post") and (ProcessCommandLine contains "-config" or ProcessCommandLine contains "/config" or ProcessCommandLine contains "–config" or ProcessCommandLine contains "—config" or ProcessCommandLine contains "―config") and ProcessCommandLine contains "http"

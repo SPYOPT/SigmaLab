@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_certoc_load_dll.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_load_dll.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\certoc.exe" or ProcessVersionInfoOriginalFileName =~ "CertOC.exe") and (ProcessCommandLine contains " -LoadDLL " or ProcessCommandLine contains " /LoadDLL " or ProcessCommandLine contains " –LoadDLL " or ProcessCommandLine contains " —LoadDLL " or ProcessCommandLine contains " ―LoadDLL ")

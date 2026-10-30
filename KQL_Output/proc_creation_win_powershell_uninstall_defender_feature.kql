@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_uninstall_defender_feature.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_uninstall_defender_feature.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell_ise.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell_ISE.EXE", "PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "Uninstall-WindowsFeature" or ProcessCommandLine contains "Remove-WindowsFeature") and ProcessCommandLine contains "Windows-Defender"

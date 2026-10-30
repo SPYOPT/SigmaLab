@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dsquery_domain_trust_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dsquery_domain_trust_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\dsquery.exe" or ProcessVersionInfoOriginalFileName =~ "dsquery.exe") and ProcessCommandLine contains "trustedDomain"

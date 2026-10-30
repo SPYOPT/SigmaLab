@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_archiver_iso_phishing.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_archiver_iso_phishing.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\Winrar.exe" or InitiatingProcessFolderPath endswith "\\7zFM.exe" or InitiatingProcessFolderPath endswith "\\peazip.exe") and (FolderPath endswith "\\isoburn.exe" or FolderPath endswith "\\PowerISO.exe" or FolderPath endswith "\\ImgBurn.exe")

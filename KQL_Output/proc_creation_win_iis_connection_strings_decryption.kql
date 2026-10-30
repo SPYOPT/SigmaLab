@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_iis_connection_strings_decryption.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_connection_strings_decryption.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\aspnet_regiis.exe" or ProcessVersionInfoOriginalFileName =~ "aspnet_regiis.exe") and (ProcessCommandLine contains "connectionStrings" and ProcessCommandLine contains " -pdf")

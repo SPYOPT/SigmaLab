@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_direct_asep_registry_keys_modification.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_direct_asep_registry_keys_modification.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\reg.exe" or ProcessVersionInfoOriginalFileName =~ "reg.exe") and ProcessCommandLine contains "add" and (ProcessCommandLine contains "\\software\\Microsoft\\Windows\\CurrentVersion\\Run" or ProcessCommandLine contains "\\software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run" or ProcessCommandLine contains "\\software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run" or ProcessCommandLine contains "\\software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit" or ProcessCommandLine contains "\\software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell" or ProcessCommandLine contains "\\software\\Microsoft\\Windows NT\\CurrentVersion\\Windows" or ProcessCommandLine contains "\\system\\CurrentControlSet\\Control\\SafeBoot\\AlternateShell")

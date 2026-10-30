@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_aspnet_compiler_susp_paths.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_aspnet_compiler_susp_paths.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath contains ":\\Windows\\Microsoft.NET\\Framework\\" or FolderPath contains ":\\Windows\\Microsoft.NET\\Framework64\\" or FolderPath contains ":\\Windows\\Microsoft.NET\\FrameworkArm\\" or FolderPath contains ":\\Windows\\Microsoft.NET\\FrameworkArm64\\") and FolderPath endswith "\\aspnet_compiler.exe" and (ProcessCommandLine contains "\\Users\\Public\\" or ProcessCommandLine contains "\\AppData\\Local\\Temp\\" or ProcessCommandLine contains "\\AppData\\Local\\Roaming\\" or ProcessCommandLine contains ":\\Temp\\" or ProcessCommandLine contains ":\\Windows\\Temp\\" or ProcessCommandLine contains ":\\Windows\\System32\\Tasks\\" or ProcessCommandLine contains ":\\Windows\\Tasks\\")

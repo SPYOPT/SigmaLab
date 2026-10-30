@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dism_enable_powershell_web_access_feature.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dism_enable_powershell_web_access_feature.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\dism.exe" or ProcessVersionInfoOriginalFileName =~ "DISM.EXE") and (ProcessCommandLine contains "WindowsPowerShellWebAccess" and ProcessCommandLine contains "/online" and ProcessCommandLine contains "/enable-feature")

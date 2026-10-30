@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_registry_set_unsecure_powershell_policy.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_set_unsecure_powershell_policy.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "\\ShellIds\\Microsoft.PowerShell\\ExecutionPolicy" or ProcessCommandLine contains "\\Policies\\Microsoft\\Windows\\PowerShell\\ExecutionPolicy") and (ProcessCommandLine contains "Bypass" or ProcessCommandLine contains "RemoteSigned" or ProcessCommandLine contains "Unrestricted")

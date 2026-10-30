@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dism_remove.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dism_remove.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\DismHost.exe" and (InitiatingProcessCommandLine contains "/Online" and InitiatingProcessCommandLine contains "/Disable-Feature")) or (FolderPath endswith "\\Dism.exe" and (ProcessCommandLine contains "/Online" and ProcessCommandLine contains "/Disable-Feature"))

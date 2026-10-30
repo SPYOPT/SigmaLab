@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\sc.exe" and (ProcessIntegrityLevel in~ ("Medium", "S-1-16-8192"))) and ((ProcessCommandLine contains "config" and ProcessCommandLine contains "binPath") or (ProcessCommandLine contains "failure" and ProcessCommandLine contains "command"))

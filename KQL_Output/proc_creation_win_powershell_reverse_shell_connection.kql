@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_reverse_shell_connection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_reverse_shell_connection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll")) or (FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe")) and (ProcessCommandLine contains " Net.Sockets.TCPClient" and ProcessCommandLine contains ".GetStream(" and ProcessCommandLine contains ".Write(")

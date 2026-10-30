@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_data_exfiltration_by_using_datasvcutil.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_data_exfiltration_by_using_datasvcutil.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "/in:" or ProcessCommandLine contains "/out:" or ProcessCommandLine contains "/uri:") and (FolderPath endswith "\\DataSvcUtil.exe" or ProcessVersionInfoOriginalFileName =~ "DataSvcUtil.exe")

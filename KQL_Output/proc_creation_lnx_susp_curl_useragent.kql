@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_curl_useragent.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_curl_useragent.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/curl" and (ProcessCommandLine contains " -A " or ProcessCommandLine contains " --user-agent ")

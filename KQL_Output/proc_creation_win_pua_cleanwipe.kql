@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_cleanwipe.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_cleanwipe.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\SepRemovalToolNative_x64.exe" or (FolderPath endswith "\\CATClean.exe" and ProcessCommandLine contains "--uninstall") or (FolderPath endswith "\\NetInstaller.exe" and ProcessCommandLine contains "-r") or (FolderPath endswith "\\WFPUnins.exe" and (ProcessCommandLine contains "/uninstall" and ProcessCommandLine contains "/enterprise"))

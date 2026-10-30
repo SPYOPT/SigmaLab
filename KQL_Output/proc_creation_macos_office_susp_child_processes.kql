@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_office_susp_child_processes.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_office_susp_child_processes.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath contains "Microsoft Word" or InitiatingProcessFolderPath contains "Microsoft Excel" or InitiatingProcessFolderPath contains "Microsoft PowerPoint" or InitiatingProcessFolderPath contains "Microsoft OneNote") and (FolderPath endswith "/bash" or FolderPath endswith "/curl" or FolderPath endswith "/dash" or FolderPath endswith "/fish" or FolderPath endswith "/osacompile" or FolderPath endswith "/osascript" or FolderPath endswith "/sh" or FolderPath endswith "/zsh" or FolderPath endswith "/python" or FolderPath endswith "/python3" or FolderPath endswith "/wget")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_procdump_lsass.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump_lsass.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains " -ma " or ProcessCommandLine contains " /ma " or ProcessCommandLine contains " –ma " or ProcessCommandLine contains " —ma " or ProcessCommandLine contains " ―ma " or ProcessCommandLine contains " -mm " or ProcessCommandLine contains " /mm " or ProcessCommandLine contains " –mm " or ProcessCommandLine contains " —mm " or ProcessCommandLine contains " ―mm " or ProcessCommandLine contains " -mp " or ProcessCommandLine contains " /mp " or ProcessCommandLine contains " –mp " or ProcessCommandLine contains " —mp " or ProcessCommandLine contains " ―mp ") and (ProcessCommandLine contains " ls" or ProcessCommandLine contains " keyiso" or ProcessCommandLine contains " samss")

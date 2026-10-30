@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_ntdllpipe_redirect.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_ntdllpipe_redirect.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "type %windir%\\system32\\ntdll.dll" or ProcessCommandLine contains "type %systemroot%\\system32\\ntdll.dll" or ProcessCommandLine contains "type c:\\windows\\system32\\ntdll.dll" or ProcessCommandLine contains "\\ntdll.dll > \\\\.\\pipe\\"

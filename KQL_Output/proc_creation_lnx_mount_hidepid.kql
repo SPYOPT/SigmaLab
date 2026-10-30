@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_mount_hidepid.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_mount_hidepid.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/mount" and (ProcessCommandLine contains "hidepid=2" and ProcessCommandLine contains " -o ")

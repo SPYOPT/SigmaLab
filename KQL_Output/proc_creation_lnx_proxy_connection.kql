@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_proxy_connection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_proxy_connection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "http_proxy=" or ProcessCommandLine contains "https_proxy="

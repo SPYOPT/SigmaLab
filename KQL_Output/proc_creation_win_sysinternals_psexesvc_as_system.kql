@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_psexesvc_as_system.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexesvc_as_system.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath =~ "C:\\Windows\\PSEXESVC.exe" and (AccountName contains "AUTHORI" or AccountName contains "AUTORI")

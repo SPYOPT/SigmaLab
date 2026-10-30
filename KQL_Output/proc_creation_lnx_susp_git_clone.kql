@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_git_clone.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_git_clone.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/git" and ProcessCommandLine contains " clone ") and (ProcessCommandLine contains "exploit" or ProcessCommandLine contains "Vulns" or ProcessCommandLine contains "vulnerability" or ProcessCommandLine contains "RCE" or ProcessCommandLine contains "RemoteCodeExecution" or ProcessCommandLine contains "Invoke-" or ProcessCommandLine contains "CVE-" or ProcessCommandLine contains "poc-" or ProcessCommandLine contains "ProofOfConcept" or ProcessCommandLine contains "proxyshell" or ProcessCommandLine contains "log4shell" or ProcessCommandLine contains "eternalblue" or ProcessCommandLine contains "eternal-blue" or ProcessCommandLine contains "MS17-")

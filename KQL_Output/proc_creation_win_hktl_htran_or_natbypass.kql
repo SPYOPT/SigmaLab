@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_htran_or_natbypass.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_htran_or_natbypass.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\htran.exe" or FolderPath endswith "\\lcx.exe") or (ProcessCommandLine contains ".exe -tran " or ProcessCommandLine contains ".exe -slave ")

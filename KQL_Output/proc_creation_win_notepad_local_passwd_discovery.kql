@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_notepad_local_passwd_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_notepad_local_passwd_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\explorer.exe" and FolderPath endswith "\\notepad.exe" and ((ProcessCommandLine contains "password" and ProcessCommandLine contains ".txt") or (ProcessCommandLine contains "password" and ProcessCommandLine contains ".csv") or (ProcessCommandLine contains "password" and ProcessCommandLine contains ".doc") or (ProcessCommandLine contains "password" and ProcessCommandLine contains ".xls"))

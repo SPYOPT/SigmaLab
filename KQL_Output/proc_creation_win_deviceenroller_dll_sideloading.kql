@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_deviceenroller_dll_sideloading.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_deviceenroller_dll_sideloading.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\deviceenroller.exe" or ProcessVersionInfoOriginalFileName =~ "deviceenroller.exe") and ProcessCommandLine contains "/PhoneDeepLink"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_python_pty_spawn.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_pty_spawn.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "/python" or FolderPath endswith "/python2" or FolderPath endswith "/python3") or (FolderPath contains "/python2." or FolderPath contains "/python3.")) and (ProcessCommandLine contains "import pty" or ProcessCommandLine contains "from pty ") and ProcessCommandLine contains "spawn"

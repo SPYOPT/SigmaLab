@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_adexplorer_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_adexplorer_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\ADExp.exe" or FolderPath endswith "\\ADExplorer.exe" or FolderPath endswith "\\ADExplorer64.exe" or FolderPath endswith "\\ADExplorer64a.exe") or ProcessVersionInfoOriginalFileName =~ "AdExp" or ProcessVersionInfoFileDescription =~ "Active Directory Editor" or ProcessVersionInfoProductName =~ "Sysinternals ADExplorer") and ProcessCommandLine contains "snapshot"

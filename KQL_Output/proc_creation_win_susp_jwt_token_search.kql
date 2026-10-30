@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_jwt_token_search.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_jwt_token_search.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "find " or ProcessCommandLine contains "find.exe" or ProcessCommandLine contains "findstr" or ProcessCommandLine contains "select-string " or ProcessCommandLine contains "strings") and (ProcessCommandLine contains "eyJ0eXAiOi" or ProcessCommandLine contains "eyJhbGciOi" or ProcessCommandLine contains " eyJ0eX" or ProcessCommandLine contains " \"eyJ0eX\"" or ProcessCommandLine contains " 'eyJ0eX'" or ProcessCommandLine contains " eyJhbG" or ProcessCommandLine contains " \"eyJhbG\"" or ProcessCommandLine contains " 'eyJhbG'")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_dumpstack_log_evasion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_dumpstack_log_evasion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\DumpStack.log" or ProcessCommandLine contains " -o DumpStack.log"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_recon_unquoted_service_search.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_unquoted_service_search.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoOriginalFileName =~ "wmic.exe" or FolderPath endswith "\\WMIC.exe") and (ProcessCommandLine contains " service get " and ProcessCommandLine contains "name,displayname,pathname,startmode")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_run_script_from_input_stream.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_run_script_from_input_stream.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") and ProcessCommandLine matches regex "\\s-\\s*<"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_embed_exe_lnk.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_embed_exe_lnk.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath =~ "C:\\Windows\\explorer.exe" and FolderPath =~ "C:\\Windows\\System32\\cmd.exe" and (ProcessCommandLine contains "powershell" and ProcessCommandLine contains ".lnk")

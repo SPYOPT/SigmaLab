@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_cobaltstrike_bloopers_modules.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_cobaltstrike_bloopers_modules.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoOriginalFileName =~ "Cmd.Exe" or FolderPath endswith "\\cmd.exe") and (ProcessCommandLine contains "Invoke-UserHunter" or ProcessCommandLine contains "Invoke-ShareFinder" or ProcessCommandLine contains "Invoke-Kerberoast" or ProcessCommandLine contains "Invoke-SMBAutoBrute" or ProcessCommandLine contains "Invoke-Nightmare" or ProcessCommandLine contains "zerologon" or ProcessCommandLine contains "av_query")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_crontab_removal.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_crontab_removal.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "crontab" and ProcessCommandLine contains " -r"

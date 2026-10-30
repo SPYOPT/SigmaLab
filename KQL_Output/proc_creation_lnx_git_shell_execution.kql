@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_git_shell_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_git_shell_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "/git" and (InitiatingProcessCommandLine contains " -p " and InitiatingProcessCommandLine contains "help") and (ProcessCommandLine contains "bash 0<&1" or ProcessCommandLine contains "dash 0<&1" or ProcessCommandLine contains "sh 0<&1")

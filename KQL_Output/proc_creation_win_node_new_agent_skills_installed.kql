@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_node_new_agent_skills_installed.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_node_new_agent_skills_installed.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\node.exe" or ProcessVersionInfoOriginalFileName =~ "node.exe") and (ProcessCommandLine contains "npx-cli.js" and ProcessCommandLine contains "skills " and ProcessCommandLine contains " add ")

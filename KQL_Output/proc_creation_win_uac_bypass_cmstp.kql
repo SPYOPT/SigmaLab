@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_uac_bypass_cmstp.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cmstp.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmstp.exe" or ProcessVersionInfoOriginalFileName =~ "CMSTP.EXE") and (ProcessCommandLine contains "/s" or ProcessCommandLine contains "-s" or ProcessCommandLine contains "/au" or ProcessCommandLine contains "-au" or ProcessCommandLine contains "/ni" or ProcessCommandLine contains "-ni")

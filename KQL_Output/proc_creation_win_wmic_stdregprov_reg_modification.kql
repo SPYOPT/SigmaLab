@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_stdregprov_reg_modification.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_stdregprov_reg_modification.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\wmic.exe" or ProcessVersionInfoOriginalFileName =~ "wmic.exe") and ((ProcessCommandLine contains "stdregprov" and ProcessCommandLine contains "call") and (ProcessCommandLine contains "CreateKey" or ProcessCommandLine contains "DeleteKey" or ProcessCommandLine contains "DeleteValue" or ProcessCommandLine contains "SetBinaryValue" or ProcessCommandLine contains "SetDWORDValue" or ProcessCommandLine contains "SetExpandedStringValue" or ProcessCommandLine contains "SetMultiStringValue" or ProcessCommandLine contains "SetQWORDValue" or ProcessCommandLine contains "SetSecurityDescriptor" or ProcessCommandLine contains "SetStringValue"))

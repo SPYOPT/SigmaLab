@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_bcp_export_data.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bcp_export_data.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\bcp.exe" or ProcessVersionInfoOriginalFileName =~ "BCP.exe") and (ProcessCommandLine contains " out " or ProcessCommandLine contains " queryout ")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_reg_loader_encoded.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_reg_loader_encoded.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\schtasks.exe" or ProcessVersionInfoOriginalFileName =~ "schtasks.exe") and ProcessCommandLine contains "/Create" and (ProcessCommandLine contains "FromBase64String" or ProcessCommandLine contains "encodedcommand") and (ProcessCommandLine contains "Get-ItemProperty" or ProcessCommandLine contains " gp ") and (ProcessCommandLine contains "HKCU:" or ProcessCommandLine contains "HKLM:" or ProcessCommandLine contains "registry::" or ProcessCommandLine contains "HKEY_")

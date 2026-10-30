@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rundll32_mshtml_runhtmlapplication.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_mshtml_runhtmlapplication.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "\\..\\" and ProcessCommandLine contains "mshtml") and (ProcessCommandLine contains "#135" or ProcessCommandLine contains "RunHTMLApplication")

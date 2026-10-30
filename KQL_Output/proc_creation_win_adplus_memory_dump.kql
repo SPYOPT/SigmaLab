@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_adplus_memory_dump.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_adplus_memory_dump.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\adplus.exe" or ProcessVersionInfoOriginalFileName =~ "Adplus.exe") and (ProcessCommandLine contains " -hang " or ProcessCommandLine contains " -pn " or ProcessCommandLine contains " -pmn " or ProcessCommandLine contains " -p " or ProcessCommandLine contains " -po " or ProcessCommandLine contains " -c " or ProcessCommandLine contains " -sc ")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_squirrel_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_squirrel_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\squirrel.exe" or FolderPath endswith "\\update.exe") and (ProcessCommandLine contains " --download " or ProcessCommandLine contains " --update " or ProcessCommandLine contains " --updateRollback=") and ProcessCommandLine contains "http"

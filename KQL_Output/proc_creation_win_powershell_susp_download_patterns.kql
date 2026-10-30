@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_susp_download_patterns.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_susp_download_patterns.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "IEX ((New-Object Net.WebClient).DownloadString" or ProcessCommandLine contains "IEX (New-Object Net.WebClient).DownloadString" or ProcessCommandLine contains "IEX((New-Object Net.WebClient).DownloadString" or ProcessCommandLine contains "IEX(New-Object Net.WebClient).DownloadString" or ProcessCommandLine contains " -command (New-Object System.Net.WebClient).DownloadFile(" or ProcessCommandLine contains " -c (New-Object System.Net.WebClient).DownloadFile("

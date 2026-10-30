@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sqlite_chromium_profile_data.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlite_chromium_profile_data.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoProductName =~ "SQLite" or (FolderPath endswith "\\sqlite.exe" or FolderPath endswith "\\sqlite3.exe")) and (ProcessCommandLine contains "\\User Data\\" or ProcessCommandLine contains "\\Opera Software\\" or ProcessCommandLine contains "\\ChromiumViewer\\") and (ProcessCommandLine contains "Login Data" or ProcessCommandLine contains "Cookies" or ProcessCommandLine contains "Web Data" or ProcessCommandLine contains "History" or ProcessCommandLine contains "Bookmarks")

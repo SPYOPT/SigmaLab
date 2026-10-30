@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_import_module_susp_dirs.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_import_module_susp_dirs.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "Import-Module \"$Env:Temp\\" or ProcessCommandLine contains "Import-Module '$Env:Temp\\" or ProcessCommandLine contains "Import-Module $Env:Temp\\" or ProcessCommandLine contains "Import-Module \"$Env:Appdata\\" or ProcessCommandLine contains "Import-Module '$Env:Appdata\\" or ProcessCommandLine contains "Import-Module $Env:Appdata\\" or ProcessCommandLine contains "Import-Module C:\\Users\\Public\\" or ProcessCommandLine contains "ipmo \"$Env:Temp\\" or ProcessCommandLine contains "ipmo '$Env:Temp\\" or ProcessCommandLine contains "ipmo $Env:Temp\\" or ProcessCommandLine contains "ipmo \"$Env:Appdata\\" or ProcessCommandLine contains "ipmo '$Env:Appdata\\" or ProcessCommandLine contains "ipmo $Env:Appdata\\" or ProcessCommandLine contains "ipmo C:\\Users\\Public\\"

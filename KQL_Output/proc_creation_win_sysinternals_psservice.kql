@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_psservice.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psservice.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoOriginalFileName =~ "psservice.exe" or (FolderPath endswith "\\PsService.exe" or FolderPath endswith "\\PsService64.exe" or FolderPath endswith "\\PsService64a.exe")

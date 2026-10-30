@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_vmware_toolbox_cmd_persistence.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vmware_toolbox_cmd_persistence.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\VMwareToolBoxCmd.exe" or ProcessVersionInfoOriginalFileName =~ "toolbox-cmd.exe") and (ProcessCommandLine contains " script " and ProcessCommandLine contains " set ")

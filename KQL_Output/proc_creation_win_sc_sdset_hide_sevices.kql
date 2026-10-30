@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sc_sdset_hide_sevices.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_sdset_hide_sevices.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\sc.exe" or ProcessVersionInfoOriginalFileName =~ "sc.exe") and (ProcessCommandLine contains "sdset" and ProcessCommandLine contains "DCLCWPDTSD")

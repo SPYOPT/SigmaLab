@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_nltest_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_nltest_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\nltest.exe" or ProcessVersionInfoOriginalFileName =~ "nltestrk.exe") and ((ProcessCommandLine contains "server" and ProcessCommandLine contains "query") or (ProcessCommandLine contains "/user" or ProcessCommandLine contains "all_trusts" or ProcessCommandLine contains "dclist:" or ProcessCommandLine contains "dnsgetdc:" or ProcessCommandLine contains "domain_trusts" or ProcessCommandLine contains "dsgetdc:" or ProcessCommandLine contains "parentdomain" or ProcessCommandLine contains "trusted_domains"))

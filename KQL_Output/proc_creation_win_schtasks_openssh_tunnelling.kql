@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_openssh_tunnelling.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_openssh_tunnelling.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\schtasks.exe" or ProcessVersionInfoOriginalFileName =~ "schtasks.exe") and ((ProcessCommandLine contains " /create " and ProcessCommandLine contains "sshd.exe" and ProcessCommandLine contains "-f") or (ProcessCommandLine contains " /create " and ProcessCommandLine contains "ssh.exe" and ProcessCommandLine contains "-i"))

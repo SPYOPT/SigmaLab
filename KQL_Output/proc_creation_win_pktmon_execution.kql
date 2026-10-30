@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pktmon_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pktmon_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\pktmon.exe" or ProcessVersionInfoOriginalFileName =~ "PktMon.exe"

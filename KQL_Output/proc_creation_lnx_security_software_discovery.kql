@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_security_software_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_security_software_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/grep" or FolderPath endswith "/egrep") and (ProcessCommandLine contains "nessusd" or ProcessCommandLine contains "td-agent" or ProcessCommandLine contains "packetbeat" or ProcessCommandLine contains "filebeat" or ProcessCommandLine contains "auditbeat" or ProcessCommandLine contains "osqueryd" or ProcessCommandLine contains "cbagentd" or ProcessCommandLine contains "falcond")

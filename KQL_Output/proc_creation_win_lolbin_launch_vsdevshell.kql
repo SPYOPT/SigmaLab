@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_launch_vsdevshell.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_launch_vsdevshell.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "Launch-VsDevShell.ps1" and (ProcessCommandLine contains "VsWherePath " or ProcessCommandLine contains "VsInstallationPath ")

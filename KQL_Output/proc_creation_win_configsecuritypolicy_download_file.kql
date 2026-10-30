@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_configsecuritypolicy_download_file.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_configsecuritypolicy_download_file.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "ConfigSecurityPolicy.exe" or FolderPath endswith "\\ConfigSecurityPolicy.exe" or ProcessVersionInfoOriginalFileName =~ "ConfigSecurityPolicy.exe") and (ProcessCommandLine contains "ftp://" or ProcessCommandLine contains "http://" or ProcessCommandLine contains "https://")

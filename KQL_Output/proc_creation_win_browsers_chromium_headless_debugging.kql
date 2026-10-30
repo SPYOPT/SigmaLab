@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_browsers_chromium_headless_debugging.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_chromium_headless_debugging.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "--remote-debugging-" and ProcessCommandLine contains "--user-data-dir" and ProcessCommandLine contains "--headless"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_bcdedit_boot_conf_tamper.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bcdedit_boot_conf_tamper.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\bcdedit.exe" or ProcessVersionInfoOriginalFileName =~ "bcdedit.exe") and ProcessCommandLine contains "set" and ((ProcessCommandLine contains "bootstatuspolicy" and ProcessCommandLine contains "ignoreallfailures") or (ProcessCommandLine contains "recoveryenabled" and ProcessCommandLine contains "no"))

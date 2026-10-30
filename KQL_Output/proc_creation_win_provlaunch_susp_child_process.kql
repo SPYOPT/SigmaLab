@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_provlaunch_susp_child_process.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_provlaunch_susp_child_process.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\provlaunch.exe" and ((FolderPath endswith "\\calc.exe" or FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\cscript.exe" or FolderPath endswith "\\mshta.exe" or FolderPath endswith "\\notepad.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\regsvr32.exe" or FolderPath endswith "\\rundll32.exe" or FolderPath endswith "\\wscript.exe") or (FolderPath contains ":\\PerfLogs\\" or FolderPath contains ":\\Temp\\" or FolderPath contains ":\\Users\\Public\\" or FolderPath contains "\\AppData\\Temp\\" or FolderPath contains "\\Windows\\System32\\Tasks\\" or FolderPath contains "\\Windows\\Tasks\\" or FolderPath contains "\\Windows\\Temp\\"))

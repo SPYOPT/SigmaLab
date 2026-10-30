@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_winget_local_install_via_manifest.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_local_install_via_manifest.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\winget.exe" or ProcessVersionInfoOriginalFileName =~ "winget.exe") and (ProcessCommandLine contains "install" or ProcessCommandLine contains " add ") and (ProcessCommandLine contains "-m " or ProcessCommandLine contains "--manifest")

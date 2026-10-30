@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_cmd_for_loop_execution_with_recursive_directory_search.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_cmd_for_loop_execution_with_recursive_directory_search.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "for /f" and ProcessCommandLine contains "tokens=" and ProcessCommandLine contains "in (" and ProcessCommandLine contains "dir") or (InitiatingProcessCommandLine contains "for /f" and InitiatingProcessCommandLine contains "tokens=" and InitiatingProcessCommandLine contains "in (" and InitiatingProcessCommandLine contains "dir")

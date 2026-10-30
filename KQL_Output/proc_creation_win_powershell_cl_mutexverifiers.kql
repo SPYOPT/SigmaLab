@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_cl_mutexverifiers.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_mutexverifiers.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((InitiatingProcessFolderPath endswith "\\powershell.exe" or InitiatingProcessFolderPath endswith "\\pwsh.exe") and FolderPath endswith "\\powershell.exe" and ProcessCommandLine contains " -nologo -windowstyle minimized -file ") and (ProcessCommandLine contains "\\AppData\\Local\\Temp\\" or ProcessCommandLine contains "\\Windows\\Temp\\")

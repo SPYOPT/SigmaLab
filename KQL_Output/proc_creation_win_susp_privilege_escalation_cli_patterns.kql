@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_privilege_escalation_cli_patterns.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_privilege_escalation_cli_patterns.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains " -u system " or ProcessCommandLine contains " --user system " or ProcessCommandLine contains " -u NT" or ProcessCommandLine contains " -u \"NT" or ProcessCommandLine contains " -u 'NT" or ProcessCommandLine contains " --system " or ProcessCommandLine contains " -u administrator ") and (ProcessCommandLine contains " -c cmd" or ProcessCommandLine contains " -c \"cmd" or ProcessCommandLine contains " -c powershell" or ProcessCommandLine contains " -c \"powershell" or ProcessCommandLine contains " --command cmd" or ProcessCommandLine contains " --command powershell" or ProcessCommandLine contains " -c whoami" or ProcessCommandLine contains " -c wscript" or ProcessCommandLine contains " -c cscript")

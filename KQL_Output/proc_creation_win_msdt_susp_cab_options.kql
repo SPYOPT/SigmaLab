@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_msdt_susp_cab_options.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msdt_susp_cab_options.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\msdt.exe" or ProcessVersionInfoOriginalFileName =~ "msdt.exe") and (ProcessCommandLine contains " -cab " or ProcessCommandLine contains " /cab " or ProcessCommandLine contains " –cab " or ProcessCommandLine contains " —cab " or ProcessCommandLine contains " ―cab ")

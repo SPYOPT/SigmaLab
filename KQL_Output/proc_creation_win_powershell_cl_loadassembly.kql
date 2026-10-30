@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_cl_loadassembly.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_loadassembly.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "LoadAssemblyFromPath " or ProcessCommandLine contains "LoadAssemblyFromNS "

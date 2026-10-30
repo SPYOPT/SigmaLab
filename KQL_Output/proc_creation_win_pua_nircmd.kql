@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_nircmd.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nircmd.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\NirCmd.exe" or ProcessVersionInfoOriginalFileName =~ "NirCmd.exe") or (ProcessCommandLine contains " execmd " or ProcessCommandLine contains ".exe script " or ProcessCommandLine contains ".exe shexec " or ProcessCommandLine contains " runinteractive ")) or ((ProcessCommandLine contains " exec " or ProcessCommandLine contains " exec2 ") and (ProcessCommandLine contains " show " or ProcessCommandLine contains " hide "))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_sharpsuccessor_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpsuccessor_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\SharpSuccessor.exe" or ProcessVersionInfoOriginalFileName =~ "SharpSuccessor.exe" or ProcessCommandLine contains "SharpSuccessor" or (ProcessCommandLine contains " add " and ProcessCommandLine contains " /impersonate" and ProcessCommandLine contains " /path" and ProcessCommandLine contains " /account" and ProcessCommandLine contains " /name")

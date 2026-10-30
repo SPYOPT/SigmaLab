@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_susp_execution_via_office_process.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_susp_execution_via_office_process.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\WINWORD.EXE" or InitiatingProcessFolderPath endswith "\\EXCEL.EXE" or InitiatingProcessFolderPath endswith "\\POWERPNT.exe" or InitiatingProcessFolderPath endswith "\\MSPUB.exe" or InitiatingProcessFolderPath endswith "\\VISIO.exe" or InitiatingProcessFolderPath endswith "\\MSACCESS.EXE" or InitiatingProcessFolderPath endswith "\\EQNEDT32.EXE" or InitiatingProcessFolderPath endswith "\\ONENOTE.EXE" or InitiatingProcessFolderPath endswith "\\wordpad.exe" or InitiatingProcessFolderPath endswith "\\wordview.exe") and (FolderPath endswith "\\wbem\\WMIC.exe" or ProcessVersionInfoOriginalFileName =~ "wmic.exe") and ((ProcessCommandLine contains "process" and ProcessCommandLine contains "create" and ProcessCommandLine contains "call") and (ProcessCommandLine contains "regsvr32" or ProcessCommandLine contains "rundll32" or ProcessCommandLine contains "msiexec" or ProcessCommandLine contains "mshta" or ProcessCommandLine contains "verclsid" or ProcessCommandLine contains "wscript" or ProcessCommandLine contains "cscript"))

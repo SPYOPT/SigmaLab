@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_mpcmdrun_remove_windows_defender_definition.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mpcmdrun_remove_windows_defender_definition.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\MpCmdRun.exe" or ProcessVersionInfoOriginalFileName =~ "MpCmdRun.exe") and (ProcessCommandLine contains " -RemoveDefinitions" and ProcessCommandLine contains " -All")

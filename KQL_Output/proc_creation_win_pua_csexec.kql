@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_csexec.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_csexec.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\csexec.exe" or ProcessVersionInfoFileDescription =~ "csexec"

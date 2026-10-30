@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_compress.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_compress.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "new-object" and ProcessCommandLine contains "text.encoding]::ascii") and (ProcessCommandLine contains "system.io.compression.deflatestream" or ProcessCommandLine contains "system.io.streamreader" or ProcessCommandLine contains "readtoend(")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_use_clip.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_use_clip.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine matches regex "(?i)echo.*clip.*&&.*(?:Clipboard|i`?n`?v`?o`?k`?e`?)"

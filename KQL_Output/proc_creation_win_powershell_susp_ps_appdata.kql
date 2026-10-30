@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_susp_ps_appdata.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_susp_ps_appdata.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "powershell.exe" or ProcessCommandLine contains "\\powershell" or ProcessCommandLine contains "\\pwsh" or ProcessCommandLine contains "pwsh.exe") and ((ProcessCommandLine contains "/c " and ProcessCommandLine contains "\\AppData\\") and (ProcessCommandLine contains "Local\\" or ProcessCommandLine contains "Roaming\\"))

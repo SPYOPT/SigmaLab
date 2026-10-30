@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_restic.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_restic.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((ProcessCommandLine contains "--password-file" and ProcessCommandLine contains "init" and ProcessCommandLine contains " -r ") or (ProcessCommandLine contains "--use-fs-snapshot" and ProcessCommandLine contains "backup" and ProcessCommandLine contains " -r ")) or ((ProcessCommandLine contains "sftp:" or ProcessCommandLine contains "rest:http" or ProcessCommandLine contains "s3:s3." or ProcessCommandLine contains "s3.http" or ProcessCommandLine contains "azure:" or ProcessCommandLine contains " gs:" or ProcessCommandLine contains "rclone:" or ProcessCommandLine contains "swift:" or ProcessCommandLine contains " b2:") and (ProcessCommandLine contains " init " and ProcessCommandLine contains " -r "))

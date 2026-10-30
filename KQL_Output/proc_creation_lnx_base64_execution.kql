@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_base64_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "base64 " and ((ProcessCommandLine contains "| bash " or ProcessCommandLine contains "| sh " or ProcessCommandLine contains "|bash " or ProcessCommandLine contains "|sh ") or (ProcessCommandLine endswith " |sh" or ProcessCommandLine endswith "| bash" or ProcessCommandLine endswith "| sh" or ProcessCommandLine endswith "|bash"))

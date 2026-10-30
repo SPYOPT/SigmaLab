@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wbadmin_delete_all_backups.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wbadmin_delete_all_backups.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\wbadmin.exe" or ProcessVersionInfoOriginalFileName =~ "WBADMIN.EXE") and ((ProcessCommandLine contains "delete" and ProcessCommandLine contains "backup") and ProcessCommandLine contains "keepVersions:0")

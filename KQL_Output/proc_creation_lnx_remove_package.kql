@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_remove_package.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_remove_package.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/yum" and (ProcessCommandLine contains "erase" or ProcessCommandLine contains "remove")) or ((FolderPath endswith "/apt" or FolderPath endswith "/apt-get") and (ProcessCommandLine contains "remove" or ProcessCommandLine contains "purge")) or (FolderPath endswith "/dpkg" and (ProcessCommandLine contains "--remove " or ProcessCommandLine contains " -r ")) or (FolderPath endswith "/rpm" and ProcessCommandLine contains " -e ")

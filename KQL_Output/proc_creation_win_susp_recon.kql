@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\tree.com" or FolderPath endswith "\\WMIC.exe" or FolderPath endswith "\\doskey.exe" or FolderPath endswith "\\sc.exe") or (ProcessVersionInfoOriginalFileName in~ ("wmic.exe", "DOSKEY.EXE", "sc.exe"))) and (InitiatingProcessCommandLine contains " > %TEMP%\\" or InitiatingProcessCommandLine contains " > %TMP%\\")

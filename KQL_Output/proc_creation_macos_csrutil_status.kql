@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_csrutil_status.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_csrutil_status.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/csrutil" and ProcessCommandLine contains "status"

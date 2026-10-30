@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_curl_insecure_connection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_insecure_connection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\curl.exe" or ProcessVersionInfoOriginalFileName =~ "curl.exe") and (ProcessCommandLine matches regex "\\s-k\\s" or ProcessCommandLine contains "--insecure")

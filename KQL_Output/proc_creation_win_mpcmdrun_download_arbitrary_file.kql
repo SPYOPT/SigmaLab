@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_mpcmdrun_download_arbitrary_file.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mpcmdrun_download_arbitrary_file.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoOriginalFileName =~ "MpCmdRun.exe" or FolderPath endswith "\\MpCmdRun.exe" or ProcessCommandLine contains "MpCmdRun.exe" or ProcessVersionInfoFileDescription =~ "Microsoft Malware Protection Command Line Utility") and (ProcessCommandLine contains "DownloadFile" and ProcessCommandLine contains "url")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmi_persistence_script_event_consumer.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmi_persistence_script_event_consumer.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath =~ "C:\\WINDOWS\\system32\\wbem\\scrcons.exe" and InitiatingProcessFolderPath =~ "C:\\Windows\\System32\\svchost.exe"

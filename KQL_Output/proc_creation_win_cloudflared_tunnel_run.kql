@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cloudflared_tunnel_run.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cloudflared_tunnel_run.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains " tunnel " and ProcessCommandLine contains " run ") and (ProcessCommandLine contains "-config " or ProcessCommandLine contains "-credentials-contents " or ProcessCommandLine contains "-credentials-file " or ProcessCommandLine contains "-token ")

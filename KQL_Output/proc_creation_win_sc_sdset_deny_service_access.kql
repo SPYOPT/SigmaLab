@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sc_sdset_deny_service_access.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_sdset_deny_service_access.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\sc.exe" or ProcessVersionInfoOriginalFileName =~ "sc.exe") and (ProcessCommandLine contains "sdset" and ProcessCommandLine contains "D;") and (ProcessCommandLine contains ";IU" or ProcessCommandLine contains ";SU" or ProcessCommandLine contains ";BA" or ProcessCommandLine contains ";SY" or ProcessCommandLine contains ";WD")

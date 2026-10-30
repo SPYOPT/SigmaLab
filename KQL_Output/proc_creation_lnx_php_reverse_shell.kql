@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_php_reverse_shell.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_php_reverse_shell.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath contains "/php" and (ProcessCommandLine contains " -r " and ProcessCommandLine contains "fsockopen") and (ProcessCommandLine contains "ash" or ProcessCommandLine contains "bash" or ProcessCommandLine contains "bsh" or ProcessCommandLine contains "csh" or ProcessCommandLine contains "ksh" or ProcessCommandLine contains "pdksh" or ProcessCommandLine contains "sh" or ProcessCommandLine contains "tcsh" or ProcessCommandLine contains "zsh")

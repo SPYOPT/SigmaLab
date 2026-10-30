@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_python_reverse_shell.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_reverse_shell.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath contains "python" and (ProcessCommandLine contains " -c " and ProcessCommandLine contains "import" and ProcessCommandLine contains "pty" and ProcessCommandLine contains "socket" and ProcessCommandLine contains "spawn" and ProcessCommandLine contains ".connect")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_curl_upload_file_sharing_websites.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_upload_file_sharing_websites.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\curl.exe" or ProcessVersionInfoOriginalFileName =~ "curl.exe") and (ProcessCommandLine contains "0x0.st" or ProcessCommandLine contains "bashupload.com" or ProcessCommandLine contains "chunk.io" or ProcessCommandLine contains "file.io" or ProcessCommandLine contains "filebin.net" or ProcessCommandLine contains "pastebin" or ProcessCommandLine contains "send.firefox.com" or ProcessCommandLine contains "temp.sh" or ProcessCommandLine contains "transfer.sh" or ProcessCommandLine contains "ufile.io" or ProcessCommandLine contains "uploadfiles.io" or ProcessCommandLine contains "wetransfer.com" or ProcessCommandLine contains "x0.at") and ((ProcessCommandLine contains " --form" or ProcessCommandLine contains " --upload-file" or ProcessCommandLine contains " --data" or ProcessCommandLine contains " -X POST" or ProcessCommandLine contains " --request POST ") or (ProcessCommandLine matches regex "\\s-[FTd]\\s" or ProcessCommandLine matches regex "\\s-sT\\s"))

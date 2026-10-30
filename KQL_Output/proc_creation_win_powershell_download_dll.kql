@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_download_dll.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_dll.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "Invoke-RestMethod " or ProcessCommandLine contains "Invoke-WebRequest " or ProcessCommandLine contains "IRM " or ProcessCommandLine contains "IWR ") and (ProcessCommandLine contains "http" and ProcessCommandLine contains "OutFile" and ProcessCommandLine contains ".dll")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_pssuspend_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_pssuspend_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoOriginalFileName =~ "pssuspend.exe" or (FolderPath endswith "\\pssuspend.exe" or FolderPath endswith "\\pssuspend64.exe" or FolderPath endswith "\\pssuspend64a.exe")

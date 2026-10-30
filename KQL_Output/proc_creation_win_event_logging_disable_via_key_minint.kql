@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_event_logging_disable_via_key_minint.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_event_logging_disable_via_key_minint.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\reg.exe" or ProcessVersionInfoOriginalFileName =~ "reg.exe") and (ProcessCommandLine contains " add " and ProcessCommandLine contains "\\SYSTEM\\CurrentControlSet\\Control\\MiniNt")) or (((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\powershell_ise.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "New-Item " or ProcessCommandLine contains "ni ") and ProcessCommandLine contains "\\SYSTEM\\CurrentControlSet\\Control\\MiniNt")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_goldendmsa.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_goldendmsa.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\GoldenDMSA.exe" or ((ProcessCommandLine contains "wordlist" or ProcessCommandLine contains "bruteforce") and (ProcessCommandLine contains " -s " and ProcessCommandLine contains "S-1-5-21-" and ProcessCommandLine contains " -d " and ProcessCommandLine contains " -k "))

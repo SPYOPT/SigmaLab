@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_remote_time_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_time_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\net.exe" or FolderPath endswith "\\net1.exe") and ProcessCommandLine contains "time") or (FolderPath endswith "\\w32tm.exe" and ProcessCommandLine contains "tz")

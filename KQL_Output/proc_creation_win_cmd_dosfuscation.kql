@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_dosfuscation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_dosfuscation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "^^" or ProcessCommandLine contains "^|^" or ProcessCommandLine contains ",;," or ProcessCommandLine contains ";;;;" or ProcessCommandLine contains ";; ;;" or ProcessCommandLine contains "(,(," or ProcessCommandLine contains "%COMSPEC:~" or ProcessCommandLine contains " c^m^d" or ProcessCommandLine contains "^c^m^d" or ProcessCommandLine contains " c^md" or ProcessCommandLine contains " cm^d" or ProcessCommandLine contains "^cm^d" or ProcessCommandLine contains " s^et " or ProcessCommandLine contains " s^e^t " or ProcessCommandLine contains " se^t "

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_ioreg_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_ioreg_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/ioreg" or ProcessCommandLine contains "ioreg") and (ProcessCommandLine contains "-l" or ProcessCommandLine contains "-c") and (ProcessCommandLine contains "AppleAHCIDiskDriver" or ProcessCommandLine contains "IOPlatformExpertDevice" or ProcessCommandLine contains "Oracle" or ProcessCommandLine contains "Parallels" or ProcessCommandLine contains "USB Vendor Name" or ProcessCommandLine contains "VirtualBox" or ProcessCommandLine contains "VMware")

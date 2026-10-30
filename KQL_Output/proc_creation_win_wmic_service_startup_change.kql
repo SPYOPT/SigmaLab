@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_service_startup_change.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_service_startup_change.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\WMIC.exe" or ProcessVersionInfoOriginalFileName =~ "wmic.exe") and ((ProcessCommandLine contains " service " and ProcessCommandLine contains "ChangeStartMode") and (ProcessCommandLine contains "Manual" or ProcessCommandLine contains "Disabled"))

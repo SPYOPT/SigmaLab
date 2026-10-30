@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_certutil_export_pfx.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_export_pfx.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\certutil.exe" or ProcessVersionInfoOriginalFileName =~ "CertUtil.exe") and (ProcessCommandLine contains "-exportPFX " or ProcessCommandLine contains "/exportPFX " or ProcessCommandLine contains "–exportPFX " or ProcessCommandLine contains "—exportPFX " or ProcessCommandLine contains "―exportPFX ")

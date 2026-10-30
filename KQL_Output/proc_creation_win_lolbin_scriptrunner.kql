@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_scriptrunner.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_scriptrunner.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\ScriptRunner.exe" or ProcessVersionInfoOriginalFileName =~ "ScriptRunner.exe") and ProcessCommandLine contains " -appvscript "

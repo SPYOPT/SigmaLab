@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_shadow_copies_creation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_shadow_copies_creation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\wmic.exe" or FolderPath endswith "\\vssadmin.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll", "wmic.exe", "VSSADMIN.EXE"))) and (ProcessCommandLine contains "shadow" and ProcessCommandLine contains "create")

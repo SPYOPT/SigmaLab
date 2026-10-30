@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_netsh_fw_rules_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_fw_rules_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\netsh.exe" or ProcessVersionInfoOriginalFileName =~ "netsh.exe") and ((ProcessCommandLine contains "netsh" and ProcessCommandLine contains "show " and ProcessCommandLine contains "firewall ") and (ProcessCommandLine contains "config " or ProcessCommandLine contains "state " or ProcessCommandLine contains "rule " or ProcessCommandLine contains "name=all"))

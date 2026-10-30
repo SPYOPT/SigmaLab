@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_sharp_impersonation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharp_impersonation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\SharpImpersonation.exe" or ProcessVersionInfoOriginalFileName =~ "SharpImpersonation.exe") or ((ProcessCommandLine contains " user:" and ProcessCommandLine contains " binary:") or (ProcessCommandLine contains " user:" and ProcessCommandLine contains " shellcode:") or (ProcessCommandLine contains " technique:CreateProcessAsUserW" or ProcessCommandLine contains " technique:ImpersonateLoggedOnuser"))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wmic_recon_volume.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_volume.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\WMIC.exe" or ProcessVersionInfoOriginalFileName =~ "wmic.exe") and ((ProcessCommandLine contains " volumename" or ProcessCommandLine contains " logicaldisk") or (ProcessCommandLine contains "path" and ProcessCommandLine contains "win32_logicaldisk") or (ProcessCommandLine contains " volume" and ProcessCommandLine contains " list "))

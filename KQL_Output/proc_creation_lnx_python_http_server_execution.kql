@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_python_http_server_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_http_server_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "/python" or FolderPath endswith "/python2" or FolderPath endswith "/python3") or (FolderPath contains "/python2." or FolderPath contains "/python3.")) and (ProcessCommandLine contains "http.server" or ProcessCommandLine contains "SimpleHTTPServer")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dnscmd_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnscmd_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\dnscmd.exe" and (ProcessCommandLine contains "/enumrecords" or ProcessCommandLine contains "/enumzones" or ProcessCommandLine contains "/ZonePrint" or ProcessCommandLine contains "/info")

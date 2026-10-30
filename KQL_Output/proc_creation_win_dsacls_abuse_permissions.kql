@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dsacls_abuse_permissions.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dsacls_abuse_permissions.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\dsacls.exe" or ProcessVersionInfoOriginalFileName =~ "DSACLS.EXE") and ProcessCommandLine contains " /G " and (ProcessCommandLine contains "GR" or ProcessCommandLine contains "GE" or ProcessCommandLine contains "GW" or ProcessCommandLine contains "GA" or ProcessCommandLine contains "WP" or ProcessCommandLine contains "WD")

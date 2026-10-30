@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_tar_compression.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tar_compression.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\tar.exe" or ProcessVersionInfoOriginalFileName =~ "bsdtar") and (ProcessCommandLine contains "-c" or ProcessCommandLine contains "-r" or ProcessCommandLine contains "-u")

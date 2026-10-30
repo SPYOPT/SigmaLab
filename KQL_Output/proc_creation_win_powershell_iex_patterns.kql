@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_iex_patterns.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_iex_patterns.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") and (ProcessCommandLine contains " | iex;" or ProcessCommandLine contains " | iex " or ProcessCommandLine contains " | iex}" or ProcessCommandLine contains " | IEX ;" or ProcessCommandLine contains " | IEX -Error" or ProcessCommandLine contains " | IEX (new" or ProcessCommandLine contains ");IEX ")) and (ProcessCommandLine contains "::FromBase64String" or ProcessCommandLine contains ".GetString([System.Convert]::")) or (ProcessCommandLine contains ")|iex;$" or ProcessCommandLine contains ");iex($" or ProcessCommandLine contains ");iex $" or ProcessCommandLine contains " | IEX | " or ProcessCommandLine contains " | iex\\\"")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_payload_decoded_and_decrypted.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_payload_decoded_and_decrypted.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/openssl" and (ProcessCommandLine contains "/Volumes/" and ProcessCommandLine contains "enc" and ProcessCommandLine contains "-base64" and ProcessCommandLine contains " -d ")

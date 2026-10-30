@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_base64_invoke.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_invoke.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and ProcessCommandLine contains " -e" and (ProcessCommandLine contains "SQBuAHYAbwBrAGUALQ" or ProcessCommandLine contains "kAbgB2AG8AawBlAC0A" or ProcessCommandLine contains "JAG4AdgBvAGsAZQAtA" or ProcessCommandLine contains "SW52b2tlL" or ProcessCommandLine contains "ludm9rZS" or ProcessCommandLine contains "JbnZva2Ut")

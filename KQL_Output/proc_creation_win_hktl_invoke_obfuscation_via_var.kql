@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_var.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_var.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "&&set" and ProcessCommandLine contains "cmd" and ProcessCommandLine contains "/c" and ProcessCommandLine contains "-f") and (ProcessCommandLine contains "{0}" or ProcessCommandLine contains "{1}" or ProcessCommandLine contains "{2}" or ProcessCommandLine contains "{3}" or ProcessCommandLine contains "{4}" or ProcessCommandLine contains "{5}")

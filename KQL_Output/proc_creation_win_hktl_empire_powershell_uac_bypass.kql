@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_empire_powershell_uac_bypass.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_empire_powershell_uac_bypass.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains " -NoP -NonI -w Hidden -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update)" or ProcessCommandLine contains " -NoP -NonI -c $x=$((gp HKCU:Software\\Microsoft\\Windows Update).Update);"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_computer_discovery_get_adcomputer.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_computer_discovery_get_adcomputer.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and ((ProcessCommandLine contains "Get-ADComputer " and ProcessCommandLine contains " -Filter *") and (ProcessCommandLine contains " > " or ProcessCommandLine contains " | Select " or ProcessCommandLine contains "Out-File" or ProcessCommandLine contains "Set-Content" or ProcessCommandLine contains "Add-Content"))

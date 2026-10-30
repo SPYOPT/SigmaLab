@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_x509enrollment.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_x509enrollment.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "X509Enrollment.CBinaryConverter" or ProcessCommandLine contains "884e2002-217d-11da-b2a4-000e7bbb2b09"

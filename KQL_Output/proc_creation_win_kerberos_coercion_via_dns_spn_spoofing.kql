@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_kerberos_coercion_via_dns_spn_spoofing.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_kerberos_coercion_via_dns_spn_spoofing.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "UWhRCA" and ProcessCommandLine contains "BAAAA"

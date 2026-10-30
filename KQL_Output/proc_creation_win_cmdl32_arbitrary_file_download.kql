@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmdl32_arbitrary_file_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmdl32_arbitrary_file_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmdl32.exe" or ProcessVersionInfoOriginalFileName =~ "CMDL32.EXE") and (ProcessCommandLine contains "/vpn" and ProcessCommandLine contains "/lan")

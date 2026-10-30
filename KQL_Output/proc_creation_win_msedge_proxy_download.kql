@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_msedge_proxy_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msedge_proxy_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\msedge_proxy.exe" or ProcessVersionInfoOriginalFileName =~ "msedge_proxy.exe") and (ProcessCommandLine contains "http://" or ProcessCommandLine contains "https://")

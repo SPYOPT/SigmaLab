@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_defender_remove_context_menu.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_defender_remove_context_menu.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell_ise.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\reg.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell_ise.EXE", "PowerShell.EXE", "pwsh.dll", "reg.exe"))) and (ProcessCommandLine contains "del" or ProcessCommandLine contains "Remove-Item" or ProcessCommandLine contains "ri ") and ProcessCommandLine contains "\\shellex\\ContextMenuHandlers\\EPP"

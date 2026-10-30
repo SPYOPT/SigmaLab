@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_msix_ai_stub_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msix_ai_stub_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\AI_STUBS\\AiStubX64Elevated.exe" or FolderPath endswith "\\AI_STUBS\\AiStubX86Elevated.exe" or FolderPath endswith "\\AI_STUBS\\AiStubX64.exe" or FolderPath endswith "\\AI_STUBS\\AiStubX86.exe") and ProcessVersionInfoOriginalFileName =~ "popupwrapper.exe"

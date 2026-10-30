@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_defender_default_action_modified.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_defender_default_action_modified.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "Set-MpPreference" and (ProcessCommandLine contains "-LowThreatDefaultAction" or ProcessCommandLine contains "-ModerateThreatDefaultAction" or ProcessCommandLine contains "-HighThreatDefaultAction" or ProcessCommandLine contains "-SevereThreatDefaultAction" or ProcessCommandLine contains "-ltdefac " or ProcessCommandLine contains "-mtdefac " or ProcessCommandLine contains "-htdefac " or ProcessCommandLine contains "-stdefac ") and (ProcessCommandLine contains "Allow" or ProcessCommandLine contains "6" or ProcessCommandLine contains "NoAction" or ProcessCommandLine contains "9")

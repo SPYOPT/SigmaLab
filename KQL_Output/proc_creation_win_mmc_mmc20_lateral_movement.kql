@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_mmc_mmc20_lateral_movement.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mmc_mmc20_lateral_movement.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\svchost.exe" and FolderPath endswith "\\mmc.exe" and ProcessCommandLine contains "-Embedding"

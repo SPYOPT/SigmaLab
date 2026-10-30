@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wpbbin_potential_persistence.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wpbbin_potential_persistence.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath =~ "C:\\Windows\\System32\\wpbbin.exe"

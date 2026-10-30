@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_crassus.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_crassus.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\Crassus.exe" or ProcessVersionInfoOriginalFileName =~ "Crassus.exe" or ProcessVersionInfoFileDescription contains "Crassus"

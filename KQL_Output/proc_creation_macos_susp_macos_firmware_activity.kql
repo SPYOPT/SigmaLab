@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_susp_macos_firmware_activity.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_macos_firmware_activity.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath =~ "/usr/sbin/firmwarepasswd" and (ProcessCommandLine contains "setpasswd" or ProcessCommandLine contains "full" or ProcessCommandLine contains "delete" or ProcessCommandLine contains "check")

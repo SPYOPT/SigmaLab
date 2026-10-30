@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_vim_shell_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_vim_shell_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "/rvim" or FolderPath endswith "/vi" or FolderPath endswith "/vim" or FolderPath endswith "/vimdiff") and (ProcessCommandLine contains " --cmd " or ProcessCommandLine contains " -c")) and (ProcessCommandLine contains ":!/" or ProcessCommandLine contains ":!$" or ProcessCommandLine contains ":!.." or ProcessCommandLine contains ":lua " or ProcessCommandLine contains ":py " or ProcessCommandLine contains ":shell" or ProcessCommandLine contains "/bin/bash" or ProcessCommandLine contains "/bin/dash" or ProcessCommandLine contains "/bin/fish" or ProcessCommandLine contains "/bin/sh" or ProcessCommandLine contains "/bin/csh" or ProcessCommandLine contains "/bin/ksh" or ProcessCommandLine contains "/bin/zsh" or ProcessCommandLine contains "/bin/tmux")

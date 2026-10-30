@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_regsvr32_remote_share.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_remote_share.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\regsvr32.exe" or ProcessVersionInfoOriginalFileName =~ "\\REGSVR32.EXE") and ProcessCommandLine contains " \\\\"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_vsiisexelauncher.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_vsiisexelauncher.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\VSIISExeLauncher.exe" or ProcessVersionInfoOriginalFileName =~ "VSIISExeLauncher.exe") and (ProcessCommandLine contains " -p " or ProcessCommandLine contains " -a ")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_cap_setuid.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_cap_setuid.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/setcap" and ProcessCommandLine contains "cap_setuid"

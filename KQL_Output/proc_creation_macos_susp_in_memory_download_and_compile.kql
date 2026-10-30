@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_susp_in_memory_download_and_compile.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_in_memory_download_and_compile.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "osacompile" and ProcessCommandLine contains "curl"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_system_info_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_system_info_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/uname" or FolderPath endswith "/hostname" or FolderPath endswith "/uptime" or FolderPath endswith "/lspci" or FolderPath endswith "/dmidecode" or FolderPath endswith "/lscpu" or FolderPath endswith "/lsmod"

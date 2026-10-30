@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_gcc_shell_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_gcc_shell_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "/c89" or FolderPath endswith "/c99" or FolderPath endswith "/gcc") and ProcessCommandLine contains "-wrapper") and (ProcessCommandLine contains "/bin/bash,-s" or ProcessCommandLine contains "/bin/dash,-s" or ProcessCommandLine contains "/bin/fish,-s" or ProcessCommandLine contains "/bin/sh,-s" or ProcessCommandLine contains "/bin/zsh,-s")

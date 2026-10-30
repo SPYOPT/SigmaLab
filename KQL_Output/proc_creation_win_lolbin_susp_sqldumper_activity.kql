@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_susp_sqldumper_activity.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_sqldumper_activity.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\sqldumper.exe" and (ProcessCommandLine contains "0x0110" or ProcessCommandLine contains "0x01100:40")

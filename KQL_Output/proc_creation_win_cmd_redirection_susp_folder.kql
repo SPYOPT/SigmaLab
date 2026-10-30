@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_redirection_susp_folder.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_redirection_susp_folder.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmd.exe" or ProcessVersionInfoOriginalFileName =~ "Cmd.Exe") and (((ProcessCommandLine contains ">" and ProcessCommandLine contains "%APPDATA%\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "%TEMP%\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "%TMP%\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "%USERPROFILE%\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "C:\\ProgramData\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "C:\\Temp\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "C:\\Users\\Public\\") or (ProcessCommandLine contains ">" and ProcessCommandLine contains "C:\\Windows\\Temp\\")) or ((ProcessCommandLine contains " >" or ProcessCommandLine contains "\">" or ProcessCommandLine contains "'>") and (ProcessCommandLine contains "C:\\Users\\" and ProcessCommandLine contains "\\AppData\\Local\\")))

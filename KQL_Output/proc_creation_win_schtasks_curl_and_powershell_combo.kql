@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_curl_and_powershell_combo.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_curl_and_powershell_combo.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\schtasks.exe" and (ProcessCommandLine contains " -create " or ProcessCommandLine contains " /create " or ProcessCommandLine contains " –create " or ProcessCommandLine contains " —create " or ProcessCommandLine contains " ―create ")) and (ProcessCommandLine contains "curl " and ProcessCommandLine contains "http" and ProcessCommandLine contains "-o") and ProcessCommandLine contains "powershell"

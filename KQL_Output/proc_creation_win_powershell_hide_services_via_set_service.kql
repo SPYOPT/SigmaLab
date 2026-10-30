@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_hide_services_via_set_service.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_hide_services_via_set_service.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\pwsh.exe" or ProcessVersionInfoOriginalFileName =~ "pwsh.dll") and (ProcessCommandLine contains "Set-Service " and ProcessCommandLine contains "DCLCWPDTSD") and (ProcessCommandLine contains "-SecurityDescriptorSddl " or ProcessCommandLine contains "-sd ")

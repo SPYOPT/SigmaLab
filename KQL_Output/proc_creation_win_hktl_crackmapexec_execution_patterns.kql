@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_crackmapexec_execution_patterns.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_execution_patterns.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "cmd.exe /Q /c " and ProcessCommandLine contains " 1> \\" and ProcessCommandLine contains "\\" and ProcessCommandLine contains "\\" and ProcessCommandLine contains " 2>&1") or (ProcessCommandLine contains "cmd.exe /C " and ProcessCommandLine contains " > \\" and ProcessCommandLine contains "\\" and ProcessCommandLine contains "\\" and ProcessCommandLine contains " 2>&1") or (ProcessCommandLine contains "cmd.exe /C " and ProcessCommandLine contains " > " and ProcessCommandLine contains "\\Temp\\" and ProcessCommandLine contains " 2>&1") or ProcessCommandLine contains "powershell.exe -exec bypass -noni -nop -w 1 -C \"" or ProcessCommandLine contains "powershell.exe -noni -nop -w 1 -enc "

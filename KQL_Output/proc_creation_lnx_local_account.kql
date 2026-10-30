@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_local_account.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_local_account.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/lastlog" or ProcessCommandLine contains "'x:0:'" or ((FolderPath endswith "/cat" or FolderPath endswith "/ed" or FolderPath endswith "/head" or FolderPath endswith "/more" or FolderPath endswith "/nano" or FolderPath endswith "/tail" or FolderPath endswith "/vi" or FolderPath endswith "/vim" or FolderPath endswith "/less" or FolderPath endswith "/emacs" or FolderPath endswith "/sqlite3" or FolderPath endswith "/makemap") and (ProcessCommandLine contains "/etc/passwd" or ProcessCommandLine contains "/etc/shadow" or ProcessCommandLine contains "/etc/sudoers" or ProcessCommandLine contains "/etc/spwd.db" or ProcessCommandLine contains "/etc/pwd.db" or ProcessCommandLine contains "/etc/master.passwd")) or FolderPath endswith "/id" or (FolderPath endswith "/lsof" and ProcessCommandLine contains "-u")

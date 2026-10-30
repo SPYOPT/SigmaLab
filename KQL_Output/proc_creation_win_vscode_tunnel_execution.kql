@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_vscode_tunnel_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vscode_tunnel_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (isnull(ProcessVersionInfoOriginalFileName) and ProcessCommandLine endswith ".exe tunnel") or (ProcessCommandLine contains ".exe tunnel" and ProcessCommandLine contains "--accept-server-license-terms") or (InitiatingProcessCommandLine endswith " tunnel" and FolderPath endswith "\\cmd.exe" and (ProcessCommandLine contains "/d /c " and ProcessCommandLine contains "\\servers\\Stable-" and ProcessCommandLine contains "code-server.cmd"))

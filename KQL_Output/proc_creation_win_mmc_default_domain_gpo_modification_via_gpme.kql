@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_mmc_default_domain_gpo_modification_via_gpme.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mmc_default_domain_gpo_modification_via_gpme.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\mmc.exe" or ProcessVersionInfoOriginalFileName =~ "MMC.exe") and (ProcessCommandLine contains "gpme.msc" and ProcessCommandLine contains "gpobject:") and (ProcessCommandLine contains "31B2F340-016D-11D2-945F-00C04FB984F9" or ProcessCommandLine contains "6AC1786C-016F-11D2-945F-00C04FB984F9")

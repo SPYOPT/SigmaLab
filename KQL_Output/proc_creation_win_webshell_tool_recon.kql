@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_webshell_tool_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_webshell_tool_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((InitiatingProcessFolderPath endswith "\\caddy.exe" or InitiatingProcessFolderPath endswith "\\httpd.exe" or InitiatingProcessFolderPath endswith "\\nginx.exe" or InitiatingProcessFolderPath endswith "\\php-cgi.exe" or InitiatingProcessFolderPath endswith "\\w3wp.exe" or InitiatingProcessFolderPath endswith "\\ws_tomcatservice.exe") or ((InitiatingProcessFolderPath endswith "\\java.exe" or InitiatingProcessFolderPath endswith "\\javaw.exe") and (InitiatingProcessFolderPath contains "-tomcat-" or InitiatingProcessFolderPath contains "\\tomcat")) or ((InitiatingProcessFolderPath endswith "\\java.exe" or InitiatingProcessFolderPath endswith "\\javaw.exe") and (ProcessCommandLine contains "CATALINA_HOME" or ProcessCommandLine contains "catalina.jar"))) and (ProcessCommandLine contains "perl --help" or ProcessCommandLine contains "perl -h" or ProcessCommandLine contains "python --help" or ProcessCommandLine contains "python -h" or ProcessCommandLine contains "python3 --help" or ProcessCommandLine contains "python3 -h" or ProcessCommandLine contains "wget --help")

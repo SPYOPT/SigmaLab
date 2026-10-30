@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_chflags_hidden_flag.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_chflags_hidden_flag.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/chflags" and ProcessCommandLine contains "hidden "

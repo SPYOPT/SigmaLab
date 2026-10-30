@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_dseditgroup_add_to_admin_group.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_dseditgroup_add_to_admin_group.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/dseditgroup" and (ProcessCommandLine contains " -o edit " and ProcessCommandLine contains " -a " and ProcessCommandLine contains " -t user" and ProcessCommandLine contains "admin")

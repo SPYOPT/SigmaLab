@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_ldifde_file_load.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ldifde_file_load.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\ldifde.exe" or ProcessVersionInfoOriginalFileName =~ "ldifde.exe") and (ProcessCommandLine contains "-i" and ProcessCommandLine contains "-f")

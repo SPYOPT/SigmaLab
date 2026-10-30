@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_shadowcopy_deletion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_shadowcopy_deletion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "Get-WmiObject" or ProcessCommandLine contains "gwmi" or ProcessCommandLine contains "Get-CimInstance" or ProcessCommandLine contains "gcim") and ProcessCommandLine contains "Win32_ShadowCopy" and (ProcessCommandLine contains ".Delete()" or ProcessCommandLine contains "Remove-WmiObject" or ProcessCommandLine contains "rwmi" or ProcessCommandLine contains "Remove-CimInstance" or ProcessCommandLine contains "rcim")

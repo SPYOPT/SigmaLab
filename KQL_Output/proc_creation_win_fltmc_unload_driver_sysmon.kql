@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_fltmc_unload_driver_sysmon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fltmc_unload_driver_sysmon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\fltMC.exe" or ProcessVersionInfoOriginalFileName =~ "fltMC.exe") and (ProcessCommandLine contains "unload" and ProcessCommandLine contains "sysmon")

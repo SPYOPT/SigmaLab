@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_cmdlet_invocation_via_exported_commands_array_index.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cmdlet_invocation_via_exported_commands_array_index.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell.exe", "pwsh.dll"))) and ((ProcessCommandLine contains "Get-Module " or ProcessCommandLine contains "gmo ") and (ProcessCommandLine contains "ListAvailable" and ProcessCommandLine contains "Microsoft.PowerShell.Utility" and ProcessCommandLine contains "ExportedCommands" and ProcessCommandLine contains "Values")) and ProcessCommandLine matches regex ".*\\[.*\\].*"

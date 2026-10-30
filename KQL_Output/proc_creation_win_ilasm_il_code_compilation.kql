@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_ilasm_il_code_compilation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ilasm_il_code_compilation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\ilasm.exe" or ProcessVersionInfoOriginalFileName =~ "ilasm.exe") and (ProcessCommandLine contains " /dll" or ProcessCommandLine contains " /exe")

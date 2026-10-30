@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_zipexec.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_zipexec.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "/generic:Microsoft_Windows_Shell_ZipFolder:filename=" and ProcessCommandLine contains ".zip" and ProcessCommandLine contains "/pass:" and ProcessCommandLine contains "/user:") or (ProcessCommandLine contains "/delete" and ProcessCommandLine contains "Microsoft_Windows_Shell_ZipFolder:filename=" and ProcessCommandLine contains ".zip")

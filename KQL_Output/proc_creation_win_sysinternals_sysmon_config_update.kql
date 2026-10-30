@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_sysmon_config_update.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_sysmon_config_update.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\Sysmon64.exe" or FolderPath endswith "\\Sysmon64a.exe" or FolderPath endswith "\\Sysmon.exe") or ProcessVersionInfoFileDescription =~ "System activity monitor") and (ProcessCommandLine contains "-c" or ProcessCommandLine contains "/c" or ProcessCommandLine contains "–c" or ProcessCommandLine contains "—c" or ProcessCommandLine contains "―c")

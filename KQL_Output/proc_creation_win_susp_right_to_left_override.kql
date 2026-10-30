@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_right_to_left_override.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_right_to_left_override.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "\\u202e" or ProcessCommandLine contains "[U+202E]" or ProcessCommandLine contains "‮"

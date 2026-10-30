@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_net_use_and_exec_combo.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_net_use_and_exec_combo.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath contains "\\cmd.exe" or ProcessVersionInfoOriginalFileName =~ "Cmd.EXE") and (ProcessCommandLine contains " net use http" and ProcessCommandLine contains "& start /b " and ProcessCommandLine contains "\\DavWWWRoot\\") and (ProcessCommandLine contains ".exe " or ProcessCommandLine contains ".dll " or ProcessCommandLine contains ".bat " or ProcessCommandLine contains ".vbs " or ProcessCommandLine contains ".ps1 ")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_use_of_te_bin.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_use_of_te_bin.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\te.exe" or InitiatingProcessFolderPath endswith "\\te.exe" or ProcessVersionInfoOriginalFileName =~ "\\te.exe"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_certutil_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\certutil.exe" or ProcessVersionInfoOriginalFileName =~ "CertUtil.exe") and (ProcessCommandLine contains "urlcache " or ProcessCommandLine contains "verifyctl " or ProcessCommandLine contains "URL ") and ProcessCommandLine contains "http"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_impacket_lateral_movement.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impacket_lateral_movement.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((InitiatingProcessFolderPath endswith "\\wmiprvse.exe" or InitiatingProcessFolderPath endswith "\\mmc.exe" or InitiatingProcessFolderPath endswith "\\explorer.exe" or InitiatingProcessFolderPath endswith "\\services.exe") and (ProcessCommandLine contains "cmd.exe" and ProcessCommandLine contains "/Q" and ProcessCommandLine contains "/c" and ProcessCommandLine contains "\\\\127.0.0.1\\" and ProcessCommandLine contains "&1")) or ((InitiatingProcessCommandLine contains "svchost.exe -k netsvcs" or InitiatingProcessCommandLine contains "taskeng.exe") and (ProcessCommandLine contains "cmd.exe" and ProcessCommandLine contains "/C" and ProcessCommandLine contains "Windows\\Temp\\" and ProcessCommandLine contains "&1"))

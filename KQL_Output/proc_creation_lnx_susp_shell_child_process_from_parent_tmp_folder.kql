@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_shell_child_process_from_parent_tmp_folder.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_shell_child_process_from_parent_tmp_folder.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath startswith "/tmp/" and (FolderPath endswith "/bash" or FolderPath endswith "/csh" or FolderPath endswith "/dash" or FolderPath endswith "/fish" or FolderPath endswith "/ksh" or FolderPath endswith "/sh" or FolderPath endswith "/zsh")

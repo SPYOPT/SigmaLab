@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_file_and_directory_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_file_and_directory_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath =~ "/usr/bin/file" and ProcessCommandLine matches regex "(.){200,}") or (FolderPath =~ "/bin/ls" and ProcessCommandLine contains "-R") or FolderPath =~ "/usr/bin/find" or FolderPath =~ "/usr/bin/mdfind" or FolderPath =~ "/tree"

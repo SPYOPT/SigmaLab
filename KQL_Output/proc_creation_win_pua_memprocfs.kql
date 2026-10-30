@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_memprocfs.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_memprocfs.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\MemProcFS.exe" or ProcessVersionInfoOriginalFileName =~ "MemProcFS.exe" or ProcessVersionInfoFileDescription =~ "MemProcFS") and ProcessCommandLine contains "-device"

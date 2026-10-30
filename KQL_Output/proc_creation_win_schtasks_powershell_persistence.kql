@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_powershell_persistence.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_powershell_persistence.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath =~ "C:\\WINDOWS\\System32\\svchost.exe" and (InitiatingProcessCommandLine contains "-k netsvcs" and InitiatingProcessCommandLine contains "-s Schedule") and (ProcessCommandLine endswith " -windowstyle hidden" or ProcessCommandLine endswith " -w hidden" or ProcessCommandLine endswith " -ep bypass" or ProcessCommandLine endswith " -noni")

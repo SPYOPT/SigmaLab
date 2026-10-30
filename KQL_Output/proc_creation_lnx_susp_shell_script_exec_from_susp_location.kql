@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_shell_script_exec_from_susp_location.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_shell_script_exec_from_susp_location.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/bash" or FolderPath endswith "/csh" or FolderPath endswith "/dash" or FolderPath endswith "/fish" or FolderPath endswith "/ksh" or FolderPath endswith "/sh" or FolderPath endswith "/zsh") and ProcessCommandLine contains " -c " and ProcessCommandLine contains "/tmp/"

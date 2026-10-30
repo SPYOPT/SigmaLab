@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_cobaltstrike_bloopers_cmd.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_cobaltstrike_bloopers_cmd.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoOriginalFileName =~ "Cmd.Exe" or FolderPath endswith "\\cmd.exe") and ((ProcessCommandLine startswith "cmd " or ProcessCommandLine startswith "cmd.exe" or ProcessCommandLine startswith "c:\\windows\\system32\\cmd.exe") and (ProcessCommandLine contains "psinject" or ProcessCommandLine contains "spawnas" or ProcessCommandLine contains "make_token" or ProcessCommandLine contains "remote-exec" or ProcessCommandLine contains "rev2self" or ProcessCommandLine contains "dcsync" or ProcessCommandLine contains "logonpasswords" or ProcessCommandLine contains "execute-assembly" or ProcessCommandLine contains "getsystem"))

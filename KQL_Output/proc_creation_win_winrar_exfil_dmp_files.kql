@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_winrar_exfil_dmp_files.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winrar_exfil_dmp_files.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\rar.exe" or FolderPath endswith "\\winrar.exe") or ProcessVersionInfoFileDescription =~ "Command line RAR") and (ProcessCommandLine contains ".dmp" or ProcessCommandLine contains ".dump" or ProcessCommandLine contains ".hdmp")

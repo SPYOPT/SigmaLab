@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_imagingdevices_unusual_parents.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_imagingdevices_unusual_parents.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((InitiatingProcessFolderPath endswith "\\WmiPrvSE.exe" or InitiatingProcessFolderPath endswith "\\svchost.exe" or InitiatingProcessFolderPath endswith "\\dllhost.exe") and FolderPath endswith "\\ImagingDevices.exe") or InitiatingProcessFolderPath endswith "\\ImagingDevices.exe"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_vbscript_registry_modification.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vbscript_registry_modification.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "CreateObject" and ProcessCommandLine contains "Wscript.shell" and ProcessCommandLine contains ".RegWrite"

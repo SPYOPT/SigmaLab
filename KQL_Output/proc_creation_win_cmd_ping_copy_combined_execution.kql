@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_ping_copy_combined_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_ping_copy_combined_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmd.exe" or ProcessVersionInfoOriginalFileName =~ "Cmd.Exe") and (ProcessCommandLine contains "ping" and ProcessCommandLine contains "copy ") and (ProcessCommandLine contains " -n " or ProcessCommandLine contains " /n " or ProcessCommandLine contains " –n " or ProcessCommandLine contains " —n " or ProcessCommandLine contains " ―n ") and (ProcessCommandLine contains " -y " or ProcessCommandLine contains " /y " or ProcessCommandLine contains " –y " or ProcessCommandLine contains " —y " or ProcessCommandLine contains " ―y ")

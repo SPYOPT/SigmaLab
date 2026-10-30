@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_schtasks_system_process.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_system_process.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\schtasks.exe" or ProcessVersionInfoOriginalFileName =~ "schtasks.exe") and ((ProcessCommandLine contains " -create " or ProcessCommandLine contains " /create " or ProcessCommandLine contains " –create " or ProcessCommandLine contains " —create " or ProcessCommandLine contains " ―create ") and (ProcessCommandLine contains " audiodg" or ProcessCommandLine contains " conhost" or ProcessCommandLine contains " dwm.exe" or ProcessCommandLine contains " explorer" or ProcessCommandLine contains " lsass" or ProcessCommandLine contains " lsm" or ProcessCommandLine contains " mmc" or ProcessCommandLine contains " msiexec" or ProcessCommandLine contains " regsvr32" or ProcessCommandLine contains " rundll32" or ProcessCommandLine contains " services" or ProcessCommandLine contains " spoolsv" or ProcessCommandLine contains " svchost" or ProcessCommandLine contains " taskeng" or ProcessCommandLine contains " taskhost" or ProcessCommandLine contains " wininit" or ProcessCommandLine contains " winlogon"))

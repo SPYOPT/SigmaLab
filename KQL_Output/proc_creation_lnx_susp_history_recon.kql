@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_history_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_history_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/cat" or FolderPath endswith "/head" or FolderPath endswith "/tail" or FolderPath endswith "/more") and ((ProcessCommandLine contains "/.bash_history" or ProcessCommandLine contains "/.zsh_history") or (ProcessCommandLine endswith "_history" or ProcessCommandLine endswith ".history" or ProcessCommandLine endswith "zhistory"))

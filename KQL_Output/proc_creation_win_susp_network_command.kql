@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_network_command.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_network_command.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine matches regex "ipconfig\\s+/all" or ProcessCommandLine matches regex "netsh\\s+interface show interface" or ProcessCommandLine matches regex "arp\\s+-a" or ProcessCommandLine matches regex "nbtstat\\s+-n" or ProcessCommandLine matches regex "net\\s+config" or ProcessCommandLine matches regex "route\\s+print"

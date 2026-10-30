@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_base64_shebang_cli.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_shebang_cli.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "IyEvYmluL2Jhc2" or ProcessCommandLine contains "IyEvYmluL2Rhc2" or ProcessCommandLine contains "IyEvYmluL3pza" or ProcessCommandLine contains "IyEvYmluL2Zpc2" or ProcessCommandLine contains "IyEvYmluL3No"

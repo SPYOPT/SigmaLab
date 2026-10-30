@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_bitlocker.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_bitlocker.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "REG" and ProcessCommandLine contains "ADD" and ProcessCommandLine contains "\\SOFTWARE\\Policies\\Microsoft\\FVE" and ProcessCommandLine contains "/v" and ProcessCommandLine contains "/f") and (ProcessCommandLine contains "EnableBDEWithNoTPM" or ProcessCommandLine contains "UseAdvancedStartup" or ProcessCommandLine contains "UseTPM" or ProcessCommandLine contains "UseTPMKey" or ProcessCommandLine contains "UseTPMKeyPIN" or ProcessCommandLine contains "RecoveryKeyMessageSource" or ProcessCommandLine contains "UseTPMPIN" or ProcessCommandLine contains "RecoveryKeyMessage")

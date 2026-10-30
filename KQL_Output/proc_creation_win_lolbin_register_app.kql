@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_register_app.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_register_app.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "\\register_app.vbs" and ProcessCommandLine contains "-register"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_logman_disable_eventlog.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_logman_disable_eventlog.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\logman.exe" or ProcessVersionInfoOriginalFileName =~ "Logman.exe") and (ProcessCommandLine contains "stop " or ProcessCommandLine contains "delete ") and (ProcessCommandLine contains "Circular Kernel Context Logger" or ProcessCommandLine contains "EventLog-" or ProcessCommandLine contains "SYSMON TRACE" or ProcessCommandLine contains "SysmonDnsEtwSession")

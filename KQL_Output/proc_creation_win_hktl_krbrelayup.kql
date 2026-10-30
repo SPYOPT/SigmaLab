@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_krbrelayup.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelayup.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\KrbRelayUp.exe" or ProcessVersionInfoOriginalFileName =~ "KrbRelayUp.exe") or (ProcessCommandLine contains " relay " and ProcessCommandLine contains " -Domain " and ProcessCommandLine contains " -ComputerName ") or (ProcessCommandLine contains " krbscm " and ProcessCommandLine contains " -sc ") or (ProcessCommandLine contains " spawn " and ProcessCommandLine contains " -d " and ProcessCommandLine contains " -cn " and ProcessCommandLine contains " -cp ")

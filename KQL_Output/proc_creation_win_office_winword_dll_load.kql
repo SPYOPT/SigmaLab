@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_office_winword_dll_load.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_winword_dll_load.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\WINWORD.exe" or ProcessVersionInfoOriginalFileName =~ "WinWord.exe") and (ProcessCommandLine contains "/l " and ProcessCommandLine contains ".dll")

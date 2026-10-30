@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_devcon_disable_vmci_driver.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_devcon_disable_vmci_driver.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\devcon.exe" or ProcessVersionInfoOriginalFileName =~ "DevCon.exe") and ProcessCommandLine contains " disable " and (ProcessCommandLine contains "15AD&DEV_0740" or ProcessCommandLine contains "VMWVMCIHOSTDEV")

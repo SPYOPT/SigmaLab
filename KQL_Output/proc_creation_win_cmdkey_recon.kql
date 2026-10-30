@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmdkey_recon.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmdkey_recon.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmdkey.exe" or ProcessVersionInfoOriginalFileName =~ "cmdkey.exe") and (ProcessCommandLine contains " -l" or ProcessCommandLine contains " /l" or ProcessCommandLine contains " –l" or ProcessCommandLine contains " —l" or ProcessCommandLine contains " ―l")

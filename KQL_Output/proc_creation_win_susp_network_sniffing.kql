@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_network_sniffing.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_network_sniffing.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\tshark.exe" and ProcessCommandLine contains "-i") or FolderPath endswith "\\windump.exe"

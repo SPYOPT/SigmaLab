@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_zip_compress.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_zip_compress.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "Compress-Archive -Path" and ProcessCommandLine contains "-DestinationPath $env:TEMP") or (ProcessCommandLine contains "Compress-Archive -Path" and ProcessCommandLine contains "-DestinationPath" and ProcessCommandLine contains "\\AppData\\Local\\Temp\\") or (ProcessCommandLine contains "Compress-Archive -Path" and ProcessCommandLine contains "-DestinationPath" and ProcessCommandLine contains ":\\Windows\\Temp\\")

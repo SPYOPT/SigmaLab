@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_registry_provlaunch_provisioning_command.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_provlaunch_provisioning_command.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "SOFTWARE\\Microsoft\\Provisioning\\Commands\\"

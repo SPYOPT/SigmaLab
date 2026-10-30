@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_office_outlook_enable_unsafe_client_mail_rules.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_enable_unsafe_client_mail_rules.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "\\Outlook\\Security\\EnableUnsafeClientMailRules"

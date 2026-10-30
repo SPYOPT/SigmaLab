@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_elavated_msi_spawned_shell.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_elavated_msi_spawned_shell.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\cmd.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("Cmd.Exe", "PowerShell.EXE", "pwsh.dll"))) and ((InitiatingProcessFolderPath contains "\\Windows\\Installer\\" and InitiatingProcessFolderPath contains "msi") and InitiatingProcessFolderPath endswith "tmp")

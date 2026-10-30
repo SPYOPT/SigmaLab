@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_edrsilencer.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_edrsilencer.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\EDRSilencer.exe" or ProcessVersionInfoOriginalFileName =~ "EDRSilencer.exe" or ProcessVersionInfoFileDescription contains "EDRSilencer"

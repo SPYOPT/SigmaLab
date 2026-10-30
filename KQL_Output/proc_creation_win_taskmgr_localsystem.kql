@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_taskmgr_localsystem.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_taskmgr_localsystem.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (AccountName contains "AUTHORI" or AccountName contains "AUTORI") and FolderPath endswith "\\taskmgr.exe"

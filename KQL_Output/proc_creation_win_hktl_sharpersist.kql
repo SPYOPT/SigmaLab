@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_sharpersist.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpersist.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\SharPersist.exe" or ProcessVersionInfoProductName =~ "SharPersist") or (ProcessCommandLine contains " -t schtask -c " or ProcessCommandLine contains " -t startupfolder -c ") or (ProcessCommandLine contains " -t reg -c " and ProcessCommandLine contains " -m add") or (ProcessCommandLine contains " -t service -c " and ProcessCommandLine contains " -m add") or (ProcessCommandLine contains " -t schtask -c " and ProcessCommandLine contains " -m add")

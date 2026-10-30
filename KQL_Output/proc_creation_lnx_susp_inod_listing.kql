@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_inod_listing.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_inod_listing.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/ls" and (ProcessCommandLine endswith " /" or ProcessCommandLine contains " / ") and ProcessCommandLine matches regex "(?:\\s-[^-\\s]{0,20}i|\\s--inode\\s)" and ProcessCommandLine matches regex "(?:\\s-[^-\\s]{0,20}d|\\s--directory\\s)"

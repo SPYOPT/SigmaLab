@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_adsi_create_user.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_adsi_create_user.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and ProcessCommandLine contains "[ADSI]" and (ProcessCommandLine contains ".Create(\"user" or ProcessCommandLine contains ".Create('user") and (ProcessCommandLine contains "WinNT://" or ProcessCommandLine contains "LDAP://")

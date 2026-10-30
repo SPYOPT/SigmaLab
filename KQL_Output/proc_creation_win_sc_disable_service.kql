@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sc_disable_service.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_disable_service.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\sc.exe" or ProcessVersionInfoOriginalFileName =~ "sc.exe") and ((ProcessCommandLine contains " config " and ProcessCommandLine contains "start") and (ProcessCommandLine contains "disabled" or ProcessCommandLine contains "demand"))

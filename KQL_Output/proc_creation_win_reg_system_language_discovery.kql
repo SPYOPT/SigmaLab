@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_system_language_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_system_language_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\reg.exe" or ProcessVersionInfoOriginalFileName =~ "reg.exe") and (ProcessCommandLine contains "query" and ProcessCommandLine contains "Control\\Nls\\Language")

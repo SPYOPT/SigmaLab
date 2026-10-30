@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_forfiles_proxy_execution_.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_forfiles_proxy_execution_.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\forfiles.exe" or ProcessVersionInfoOriginalFileName =~ "forfiles.exe") and (ProcessCommandLine contains " -c " or ProcessCommandLine contains " /c " or ProcessCommandLine contains " –c " or ProcessCommandLine contains " —c " or ProcessCommandLine contains " ―c ")

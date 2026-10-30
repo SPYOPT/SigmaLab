@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_secedit_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_secedit_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\secedit.exe" or ProcessVersionInfoOriginalFileName =~ "SeCEdit") and ((ProcessCommandLine contains "/export" and ProcessCommandLine contains "/cfg") or (ProcessCommandLine contains "/configure" and ProcessCommandLine contains "/db"))

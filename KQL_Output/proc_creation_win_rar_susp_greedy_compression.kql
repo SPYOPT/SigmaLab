@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rar_susp_greedy_compression.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rar_susp_greedy_compression.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\rar.exe" or ProcessVersionInfoFileDescription =~ "Command line RAR") or (ProcessCommandLine contains ".exe a " or ProcessCommandLine contains " a -m")) and ((ProcessCommandLine contains " -hp" and ProcessCommandLine contains " -r ") and ((ProcessCommandLine contains " " and ProcessCommandLine contains ":*.") or (ProcessCommandLine contains " " and ProcessCommandLine contains ":\*.") or (ProcessCommandLine contains " " and ProcessCommandLine contains ":\\$Recycle.bin\\") or (ProcessCommandLine contains " " and ProcessCommandLine contains ":\\PerfLogs\\") or (ProcessCommandLine contains " " and ProcessCommandLine contains ":\\Temp") or (ProcessCommandLine contains " " and ProcessCommandLine contains ":\\Users\\Public\\") or (ProcessCommandLine contains " " and ProcessCommandLine contains ":\\Windows\\") or ProcessCommandLine contains " %public%"))

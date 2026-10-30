@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_regasm_no_flag_or_dll_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_no_flag_or_dll_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\RegAsm.exe" or ProcessVersionInfoOriginalFileName =~ "RegAsm.exe") and (ProcessCommandLine endswith "RegAsm" or ProcessCommandLine endswith "RegAsm.exe" or ProcessCommandLine endswith "RegAsm.exe\"" or ProcessCommandLine endswith "RegAsm.exe'")

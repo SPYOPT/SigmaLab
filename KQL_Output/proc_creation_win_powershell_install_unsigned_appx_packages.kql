@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_install_unsigned_appx_packages.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_install_unsigned_appx_packages.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "Add-AppPackage " or ProcessCommandLine contains "Add-AppxPackage ") and ProcessCommandLine contains " -AllowUnsigned"

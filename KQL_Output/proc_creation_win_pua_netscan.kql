@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_netscan.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_netscan.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\netscan.exe" or ProcessVersionInfoProductName =~ "Network Scanner" or ProcessVersionInfoFileDescription =~ "Application for scanning networks"

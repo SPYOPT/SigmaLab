@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_iis_appcmd_susp_rewrite_rule.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_appcmd_susp_rewrite_rule.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\appcmd.exe" or ProcessVersionInfoOriginalFileName =~ "appcmd.exe") and (ProcessCommandLine contains "set" and ProcessCommandLine contains "config" and ProcessCommandLine contains "section:system.webServer/rewrite/globalRules" and ProcessCommandLine contains "commit:")

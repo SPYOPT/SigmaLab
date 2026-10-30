@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_celery_worker_shell_spawn.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_celery_worker_shell_spawn.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "/ash" or FolderPath endswith "/bash" or FolderPath endswith "/busybox" or FolderPath endswith "/csh" or FolderPath endswith "/dash" or FolderPath endswith "/fish" or FolderPath endswith "/ksh" or FolderPath endswith "/sh" or FolderPath endswith "/tcsh" or FolderPath endswith "/zsh") and InitiatingProcessCommandLine contains "celery") and ((InitiatingProcessFolderPath endswith "/python" or InitiatingProcessFolderPath endswith "/python3") or InitiatingProcessFolderPath contains "/python3.")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_csi_use_of_csharp_console.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_csi_use_of_csharp_console.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\csi.exe" and (InitiatingProcessFolderPath endswith "\\powershell.exe" or InitiatingProcessFolderPath endswith "\\pwsh.exe" or InitiatingProcessFolderPath endswith "\\powershell_ise.exe") and ProcessVersionInfoOriginalFileName =~ "csi.exe"

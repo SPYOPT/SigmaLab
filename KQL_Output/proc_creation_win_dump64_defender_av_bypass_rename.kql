@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dump64_defender_av_bypass_rename.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dump64_defender_av_bypass_rename.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath startswith ":\\Program Files" and FolderPath contains "\\Microsoft Visual Studio\\" and FolderPath endswith "\\dump64.exe") and (ProcessVersionInfoOriginalFileName =~ "procdump" or (ProcessCommandLine contains " -ma " or ProcessCommandLine contains " -mp "))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_tail_base64_decode_from_image.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tail_base64_decode_from_image.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/bash" and (ProcessCommandLine contains "tail" and ProcessCommandLine contains "-c") and (ProcessCommandLine contains "base64" and ProcessCommandLine contains "-d" and ProcessCommandLine contains ">") and (ProcessCommandLine contains ".avif" or ProcessCommandLine contains ".gif" or ProcessCommandLine contains ".jfif" or ProcessCommandLine contains ".jpeg" or ProcessCommandLine contains ".jpg" or ProcessCommandLine contains ".pjp" or ProcessCommandLine contains ".pjpeg" or ProcessCommandLine contains ".png" or ProcessCommandLine contains ".svg" or ProcessCommandLine contains ".webp")

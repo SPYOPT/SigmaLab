@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_msdeploy.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_msdeploy.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "verb:sync" and ProcessCommandLine contains "-source:RunCommand" and ProcessCommandLine contains "-dest:runCommand") and FolderPath endswith "\\msdeploy.exe"

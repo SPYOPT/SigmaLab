@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_grep_os_arch_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_grep_os_arch_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/grep" and (ProcessCommandLine endswith "aarch64" or ProcessCommandLine endswith "arm" or ProcessCommandLine endswith "i386" or ProcessCommandLine endswith "i686" or ProcessCommandLine endswith "mips" or ProcessCommandLine endswith "x86_64")

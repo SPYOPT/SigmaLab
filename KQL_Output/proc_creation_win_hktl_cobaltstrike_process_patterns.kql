@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_cobaltstrike_process_patterns.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_cobaltstrike_process_patterns.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine endswith "cmd.exe /C whoami" and InitiatingProcessFolderPath startswith "C:\\Temp\\") or ((InitiatingProcessFolderPath endswith "\\runonce.exe" or InitiatingProcessFolderPath endswith "\\dllhost.exe") and (ProcessCommandLine contains "cmd.exe /c echo" and ProcessCommandLine contains "> \\\\.\\pipe")) or ((InitiatingProcessCommandLine contains "cmd.exe /C echo" and InitiatingProcessCommandLine contains " > \\\\.\\pipe") and ProcessCommandLine endswith "conhost.exe 0xffffffff -ForceV1") or (InitiatingProcessCommandLine endswith "/C whoami" and ProcessCommandLine endswith "conhost.exe 0xffffffff -ForceV1")

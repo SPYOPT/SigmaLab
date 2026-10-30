@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_add_safeboot.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_add_safeboot.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\reg.exe" or ProcessVersionInfoOriginalFileName =~ "reg.exe") and ProcessCommandLine contains "\\SYSTEM\\CurrentControlSet\\Control\\SafeBoot" and (ProcessCommandLine contains " copy " or ProcessCommandLine contains " add ")

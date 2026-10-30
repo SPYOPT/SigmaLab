@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_netsh_fw_enable_group_rule.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_fw_enable_group_rule.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\netsh.exe" or ProcessVersionInfoOriginalFileName =~ "netsh.exe") and (ProcessCommandLine contains "advfirewall" and ProcessCommandLine contains "firewall" and ProcessCommandLine contains "set" and ProcessCommandLine contains "rule" and ProcessCommandLine contains "group=" and ProcessCommandLine contains "new" and ProcessCommandLine contains "enable=Yes")

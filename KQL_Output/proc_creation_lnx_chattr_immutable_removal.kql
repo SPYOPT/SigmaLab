@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_chattr_immutable_removal.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_chattr_immutable_removal.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/chattr" and ProcessCommandLine contains " -i "

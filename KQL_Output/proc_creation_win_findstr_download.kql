@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_findstr_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "findstr" or FolderPath endswith "findstr.exe" or ProcessVersionInfoOriginalFileName =~ "FINDSTR.EXE") and ((ProcessCommandLine contains " -v " or ProcessCommandLine contains " /v " or ProcessCommandLine contains " –v " or ProcessCommandLine contains " —v " or ProcessCommandLine contains " ―v ") and (ProcessCommandLine contains " -l " or ProcessCommandLine contains " /l " or ProcessCommandLine contains " –l " or ProcessCommandLine contains " —l " or ProcessCommandLine contains " ―l ") and ProcessCommandLine contains "\\\\")

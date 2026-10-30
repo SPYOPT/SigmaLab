@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_public_folder.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_public_folder.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") and (ProcessCommandLine contains "-f C:\\Users\\Public" or ProcessCommandLine contains "-f \"C:\\Users\\Public" or ProcessCommandLine contains "-f %Public%" or ProcessCommandLine contains "-fi C:\\Users\\Public" or ProcessCommandLine contains "-fi \"C:\\Users\\Public" or ProcessCommandLine contains "-fi %Public%" or ProcessCommandLine contains "-fil C:\\Users\\Public" or ProcessCommandLine contains "-fil \"C:\\Users\\Public" or ProcessCommandLine contains "-fil %Public%" or ProcessCommandLine contains "-file C:\\Users\\Public" or ProcessCommandLine contains "-file \"C:\\Users\\Public" or ProcessCommandLine contains "-file %Public%")

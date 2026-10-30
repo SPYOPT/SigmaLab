@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_software_discovery.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_software_discovery.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\reg.exe" and (ProcessCommandLine contains "query" and ProcessCommandLine contains "\\software\\" and ProcessCommandLine contains "/v" and ProcessCommandLine contains "svcversion")

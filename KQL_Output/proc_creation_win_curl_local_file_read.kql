@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_curl_local_file_read.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_local_file_read.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\curl.exe" or ProcessVersionInfoOriginalFileName =~ "curl.exe") and ProcessCommandLine contains "file:///"

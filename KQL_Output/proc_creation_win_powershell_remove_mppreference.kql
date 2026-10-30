@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_remove_mppreference.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_remove_mppreference.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "Remove-MpPreference" and (ProcessCommandLine contains "-ControlledFolderAccessProtectedFolders " or ProcessCommandLine contains "-AttackSurfaceReductionRules_Ids " or ProcessCommandLine contains "-AttackSurfaceReductionRules_Actions " or ProcessCommandLine contains "-CheckForSignaturesBeforeRunningScan ")

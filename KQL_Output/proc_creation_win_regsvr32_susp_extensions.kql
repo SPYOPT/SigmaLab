@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_regsvr32_susp_extensions.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_susp_extensions.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\regsvr32.exe" or ProcessVersionInfoOriginalFileName =~ "REGSVR32.EXE") and (ProcessCommandLine endswith ".bin" or ProcessCommandLine endswith ".bmp" or ProcessCommandLine endswith ".cr2" or ProcessCommandLine endswith ".dat" or ProcessCommandLine endswith ".eps" or ProcessCommandLine endswith ".gif" or ProcessCommandLine endswith ".ico" or ProcessCommandLine endswith ".jpeg" or ProcessCommandLine endswith ".jpg" or ProcessCommandLine endswith ".log" or ProcessCommandLine endswith ".nef" or ProcessCommandLine endswith ".orf" or ProcessCommandLine endswith ".png" or ProcessCommandLine endswith ".raw" or ProcessCommandLine endswith ".rtf" or ProcessCommandLine endswith ".sr2" or ProcessCommandLine endswith ".temp" or ProcessCommandLine endswith ".tif" or ProcessCommandLine endswith ".tiff" or ProcessCommandLine endswith ".tmp" or ProcessCommandLine endswith ".txt")

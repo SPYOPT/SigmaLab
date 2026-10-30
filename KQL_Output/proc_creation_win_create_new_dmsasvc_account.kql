@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_create_new_dmsasvc_account.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_create_new_dmsasvc_account.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\powershell_ise.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell.exe", "pwsh.dll", "powershell_ise.exe"))) and (ProcessCommandLine contains "New-ADServiceAccount" and ProcessCommandLine contains "-CreateDelegatedServiceAccount" and ProcessCommandLine contains "-path")

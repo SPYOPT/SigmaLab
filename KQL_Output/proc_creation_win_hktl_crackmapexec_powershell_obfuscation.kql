@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_crackmapexec_powershell_obfuscation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_powershell_obfuscation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and ((ProcessCommandLine contains "join" and ProcessCommandLine contains "split") or ProcessCommandLine contains "( $ShellId[1]+$ShellId[13]+'x')" or (ProcessCommandLine contains "( $PSHome[" and ProcessCommandLine contains "]+$PSHOME[" and ProcessCommandLine contains "]+") or ProcessCommandLine contains "( $env:Public[13]+$env:Public[5]+'x')" or (ProcessCommandLine contains "( $env:ComSpec[4," and ProcessCommandLine contains ",25]-Join'')") or ProcessCommandLine contains "[1,3]+'x'-Join'')")

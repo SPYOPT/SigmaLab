@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_ngrok.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_ngrok.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains " tcp 139" or ProcessCommandLine contains " tcp 445" or ProcessCommandLine contains " tcp 3389" or ProcessCommandLine contains " tcp 5985" or ProcessCommandLine contains " tcp 5986") or (ProcessCommandLine contains " start " and ProcessCommandLine contains "--all" and ProcessCommandLine contains "--config" and ProcessCommandLine contains ".yml") or (FolderPath endswith "ngrok.exe" and (ProcessCommandLine contains " tcp " or ProcessCommandLine contains " http " or ProcessCommandLine contains " authtoken ")) or (ProcessCommandLine contains ".exe authtoken " or ProcessCommandLine contains ".exe start --all")

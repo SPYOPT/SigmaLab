@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_screensaver.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_screensaver.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\reg.exe" and (ProcessCommandLine contains "HKEY_CURRENT_USER\\Control Panel\\Desktop" or ProcessCommandLine contains "HKCU\\Control Panel\\Desktop")) and ((ProcessCommandLine contains "/v ScreenSaveActive" and ProcessCommandLine contains "/t REG_SZ" and ProcessCommandLine contains "/d 1" and ProcessCommandLine contains "/f") or (ProcessCommandLine contains "/v ScreenSaveTimeout" and ProcessCommandLine contains "/t REG_SZ" and ProcessCommandLine contains "/d " and ProcessCommandLine contains "/f") or (ProcessCommandLine contains "/v ScreenSaverIsSecure" and ProcessCommandLine contains "/t REG_SZ" and ProcessCommandLine contains "/d 0" and ProcessCommandLine contains "/f") or (ProcessCommandLine contains "/v SCRNSAVE.EXE" and ProcessCommandLine contains "/t REG_SZ" and ProcessCommandLine contains "/d " and ProcessCommandLine contains ".scr" and ProcessCommandLine contains "/f"))

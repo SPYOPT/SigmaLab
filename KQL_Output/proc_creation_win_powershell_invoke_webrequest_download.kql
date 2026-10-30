@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_invoke_webrequest_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_invoke_webrequest_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell_ise.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell_ise.EXE", "PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "curl " or ProcessCommandLine contains "Invoke-WebRequest" or ProcessCommandLine contains "iwr " or ProcessCommandLine contains "wget ") and (ProcessCommandLine contains " -ur" or ProcessCommandLine contains " -o") and (ProcessCommandLine contains "\\AppData\\" or ProcessCommandLine contains "\\Desktop\\" or ProcessCommandLine contains "\\Temp\\" or ProcessCommandLine contains "\\Users\\Public\\" or ProcessCommandLine contains "%AppData%" or ProcessCommandLine contains "%Public%" or ProcessCommandLine contains "%Temp%" or ProcessCommandLine contains "%tmp%" or ProcessCommandLine contains ":\\Windows\\")

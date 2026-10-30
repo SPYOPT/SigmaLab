@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rundll32_setupapi_installhinfsection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_setupapi_installhinfsection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\runonce.exe" and InitiatingProcessFolderPath endswith "\\rundll32.exe" and (InitiatingProcessCommandLine contains "setupapi.dll" and InitiatingProcessCommandLine contains "InstallHinfSection")

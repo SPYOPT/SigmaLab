@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_mklink_osk_cmd.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_mklink_osk_cmd.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmd.exe" or ProcessVersionInfoOriginalFileName =~ "Cmd.Exe") and (ProcessCommandLine contains "mklink" and ProcessCommandLine contains "\\osk.exe" and ProcessCommandLine contains "\\cmd.exe")

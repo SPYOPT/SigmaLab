@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_automated_collection.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_automated_collection.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains ".doc" or ProcessCommandLine contains ".docx" or ProcessCommandLine contains ".xls" or ProcessCommandLine contains ".xlsx" or ProcessCommandLine contains ".ppt" or ProcessCommandLine contains ".pptx" or ProcessCommandLine contains ".rtf" or ProcessCommandLine contains ".pdf" or ProcessCommandLine contains ".txt") and ((ProcessCommandLine contains "dir " and ProcessCommandLine contains " /b " and ProcessCommandLine contains " /s ") or (ProcessVersionInfoOriginalFileName =~ "FINDSTR.EXE" and (ProcessCommandLine contains " /e " or ProcessCommandLine contains " /si ")))

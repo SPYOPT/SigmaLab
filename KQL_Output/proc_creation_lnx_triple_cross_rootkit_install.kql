@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_triple_cross_rootkit_install.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_triple_cross_rootkit_install.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/sudo" and (ProcessCommandLine contains " tc " and ProcessCommandLine contains " enp0s3 ") and (ProcessCommandLine contains " qdisc " or ProcessCommandLine contains " filter ")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_procdump_evasion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump_evasion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "copy procdump" or ProcessCommandLine contains "move procdump") or ((ProcessCommandLine contains "copy " and ProcessCommandLine contains ".dmp ") and (ProcessCommandLine contains "2.dmp" or ProcessCommandLine contains "lsass" or ProcessCommandLine contains "out.dmp")) or (ProcessCommandLine contains "copy lsass.exe_" or ProcessCommandLine contains "move lsass.exe_")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_adfind_enumeration.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_adfind_enumeration.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "lockoutduration" or ProcessCommandLine contains "lockoutthreshold" or ProcessCommandLine contains "lockoutobservationwindow" or ProcessCommandLine contains "maxpwdage" or ProcessCommandLine contains "minpwdage" or ProcessCommandLine contains "minpwdlength" or ProcessCommandLine contains "pwdhistorylength" or ProcessCommandLine contains "pwdproperties") or ProcessCommandLine contains "-sc admincountdmp" or ProcessCommandLine contains "-sc exchaddresses"

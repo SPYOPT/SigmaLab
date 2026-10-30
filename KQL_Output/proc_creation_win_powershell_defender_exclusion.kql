@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_defender_exclusion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_defender_exclusion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "Add-MpPreference " or ProcessCommandLine contains "Set-MpPreference ") and (ProcessCommandLine contains " -ExclusionPath " or ProcessCommandLine contains " -ExclusionExtension " or ProcessCommandLine contains " -ExclusionProcess " or ProcessCommandLine contains " -ExclusionIpAddress ")

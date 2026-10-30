@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_download_iex.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_iex.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains ".DownloadString(" or ProcessCommandLine contains ".DownloadFile(" or ProcessCommandLine contains "Invoke-WebRequest " or ProcessCommandLine contains "iwr " or ProcessCommandLine contains "Invoke-RestMethod " or ProcessCommandLine contains "irm ") and (ProcessCommandLine contains ";iex $" or ProcessCommandLine contains "| IEX" or ProcessCommandLine contains "|IEX " or ProcessCommandLine contains "I`E`X" or ProcessCommandLine contains "I`EX" or ProcessCommandLine contains "IE`X" or ProcessCommandLine contains "iex " or ProcessCommandLine contains "IEX (" or ProcessCommandLine contains "IEX(" or ProcessCommandLine contains "Invoke-Expression")

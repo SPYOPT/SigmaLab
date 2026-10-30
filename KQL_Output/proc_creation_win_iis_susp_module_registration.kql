@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_iis_susp_module_registration.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_susp_module_registration.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where InitiatingProcessFolderPath endswith "\\w3wp.exe" and (ProcessCommandLine contains "appcmd.exe add module" or (ProcessCommandLine contains " system.enterpriseservices.internal.publish" and FolderPath endswith "\\powershell.exe") or (ProcessCommandLine contains "gacutil" and ProcessCommandLine contains " /I"))

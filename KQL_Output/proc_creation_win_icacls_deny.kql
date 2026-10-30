@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_icacls_deny.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_icacls_deny.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoOriginalFileName =~ "iCACLS.EXE" or FolderPath endswith "\\icacls.exe") and (ProcessCommandLine contains "/deny" and ProcessCommandLine contains "S-1-1-0:")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_sysinternals_accesschk_check_permissions.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_accesschk_check_permissions.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessVersionInfoProductName endswith "AccessChk" or ProcessVersionInfoFileDescription contains "Reports effective permissions" or (FolderPath endswith "\\accesschk.exe" or FolderPath endswith "\\accesschk64.exe" or FolderPath endswith "\\accesschk64a.exe") or ProcessVersionInfoOriginalFileName =~ "accesschk.exe") and (ProcessCommandLine contains "uwcqv " or ProcessCommandLine contains "kwsu " or ProcessCommandLine contains "qwsu " or ProcessCommandLine contains "uwdqs ")

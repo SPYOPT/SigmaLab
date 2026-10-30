@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_winrm_execution_via_scripting_api_winrm_vbs.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winrm_execution_via_scripting_api_winrm_vbs.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cscript.exe" or ProcessVersionInfoOriginalFileName =~ "cscript.exe") and (ProcessCommandLine contains "winrm" and ProcessCommandLine contains "invoke Create wmicimv2/Win32_" and ProcessCommandLine contains "-r:http")

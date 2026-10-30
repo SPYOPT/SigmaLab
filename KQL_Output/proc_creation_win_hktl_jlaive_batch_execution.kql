@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_jlaive_batch_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_jlaive_batch_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (InitiatingProcessFolderPath endswith "\\cmd.exe" and InitiatingProcessCommandLine endswith ".bat") and ((FolderPath endswith "\\xcopy.exe" and (ProcessCommandLine contains "powershell.exe" and ProcessCommandLine contains ".bat.exe")) or (FolderPath endswith "\\xcopy.exe" and (ProcessCommandLine contains "pwsh.exe" and ProcessCommandLine contains ".bat.exe")) or (FolderPath endswith "\\attrib.exe" and (ProcessCommandLine contains "+s" and ProcessCommandLine contains "+h" and ProcessCommandLine contains ".bat.exe")))

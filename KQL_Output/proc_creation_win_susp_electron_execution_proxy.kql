@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_electron_execution_proxy.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_electron_execution_proxy.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\chrome.exe" or FolderPath endswith "\\code.exe" or FolderPath endswith "\\discord.exe" or FolderPath endswith "\\GitHubDesktop.exe" or FolderPath endswith "\\keybase.exe" or FolderPath endswith "\\msedge_proxy.exe" or FolderPath endswith "\\msedge.exe" or FolderPath endswith "\\msedgewebview2.exe" or FolderPath endswith "\\msteams.exe" or FolderPath endswith "\\slack.exe" or FolderPath endswith "\\Teams.exe") or (ProcessVersionInfoOriginalFileName in~ ("chrome.exe", "code.exe", "discord.exe", "GitHubDesktop.exe", "keybase.exe", "msedge_proxy.exe", "msedge.exe", "msedgewebview2.exe", "msteams.exe", "slack.exe", "Teams.exe"))) and (ProcessCommandLine contains "--browser-subprocess-path" or ProcessCommandLine contains "--gpu-launcher" or ProcessCommandLine contains "--renderer-cmd-prefix" or ProcessCommandLine contains "--utility-cmd-prefix")

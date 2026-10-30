@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_findstr_lnk.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_lnk.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\find.exe" or FolderPath endswith "\\findstr.exe") or (ProcessVersionInfoOriginalFileName in~ ("FIND.EXE", "FINDSTR.EXE"))) and (ProcessCommandLine endswith ".lnk" or ProcessCommandLine endswith ".lnk\"" or ProcessCommandLine endswith ".lnk'")

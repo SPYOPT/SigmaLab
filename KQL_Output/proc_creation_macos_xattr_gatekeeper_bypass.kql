@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_xattr_gatekeeper_bypass.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_xattr_gatekeeper_bypass.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/xattr" and (ProcessCommandLine contains "-d" and ProcessCommandLine contains "com.apple.quarantine")

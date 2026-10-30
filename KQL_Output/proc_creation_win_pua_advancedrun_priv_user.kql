@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_advancedrun_priv_user.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advancedrun_priv_user.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "/EXEFilename" or ProcessCommandLine contains "/CommandLine") and ((ProcessCommandLine contains " /RunAs 8 " or ProcessCommandLine contains " /RunAs 4 " or ProcessCommandLine contains " /RunAs 10 " or ProcessCommandLine contains " /RunAs 11 ") or (ProcessCommandLine endswith "/RunAs 8" or ProcessCommandLine endswith "/RunAs 4" or ProcessCommandLine endswith "/RunAs 10" or ProcessCommandLine endswith "/RunAs 11"))

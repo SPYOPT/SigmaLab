@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_susp_grpconv.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_grpconv.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "grpconv.exe -o" or ProcessCommandLine contains "grpconv -o"

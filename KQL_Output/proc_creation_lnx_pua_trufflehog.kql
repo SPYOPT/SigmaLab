@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_pua_trufflehog.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_pua_trufflehog.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/trufflehog" or ((ProcessCommandLine contains " docker --image " or ProcessCommandLine contains " Git " or ProcessCommandLine contains " GitHub " or ProcessCommandLine contains " Jira " or ProcessCommandLine contains " Slack " or ProcessCommandLine contains " Confluence " or ProcessCommandLine contains " SharePoint " or ProcessCommandLine contains " s3 " or ProcessCommandLine contains " gcs ") and ProcessCommandLine contains " --results=verified")

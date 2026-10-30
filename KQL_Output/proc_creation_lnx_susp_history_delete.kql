@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_susp_history_delete.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_history_delete.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/rm" or FolderPath endswith "/unlink" or FolderPath endswith "/shred") and ((ProcessCommandLine contains "/.bash_history" or ProcessCommandLine contains "/.zsh_history") or (ProcessCommandLine endswith "_history" or ProcessCommandLine endswith ".history" or ProcessCommandLine endswith "zhistory"))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_dtrace_kernel_dump.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dtrace_kernel_dump.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\dtrace.exe" and ProcessCommandLine contains "lkd(0)") or (ProcessCommandLine contains "syscall:::return" and ProcessCommandLine contains "lkd(")

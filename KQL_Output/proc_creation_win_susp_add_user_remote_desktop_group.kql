@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_add_user_remote_desktop_group.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_remote_desktop_group.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((ProcessCommandLine contains "localgroup " and ProcessCommandLine contains " /add") or (ProcessCommandLine contains "Add-LocalGroupMember " and ProcessCommandLine contains " -Group ")) and (ProcessCommandLine contains "Remote Desktop Users" or ProcessCommandLine contains "Utilisateurs du Bureau à distance" or ProcessCommandLine contains "Usuarios de escritorio remoto")

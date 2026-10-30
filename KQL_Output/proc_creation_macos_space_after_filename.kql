@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_space_after_filename.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_space_after_filename.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine endswith " " or FolderPath endswith " "

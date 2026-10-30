@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_import_from_suspicious_paths.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_import_from_suspicious_paths.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\reg.exe" or ProcessVersionInfoOriginalFileName =~ "reg.exe") and ProcessCommandLine contains " import " and (ProcessCommandLine contains "C:\\Users\\" or ProcessCommandLine contains "%temp%" or ProcessCommandLine contains "%tmp%" or ProcessCommandLine contains "%appdata%" or ProcessCommandLine contains "\\AppData\\Local\\Temp\\" or ProcessCommandLine contains "C:\\Windows\\Temp\\" or ProcessCommandLine contains "C:\\ProgramData\\")

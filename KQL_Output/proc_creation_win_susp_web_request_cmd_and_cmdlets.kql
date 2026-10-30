@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "[System.Net.WebRequest]::create" or ProcessCommandLine contains "curl " or ProcessCommandLine contains "Invoke-RestMethod" or ProcessCommandLine contains "Invoke-WebRequest" or ProcessCommandLine contains " irm " or ProcessCommandLine contains "iwr " or ProcessCommandLine contains "Resume-BitsTransfer" or ProcessCommandLine contains "Start-BitsTransfer" or ProcessCommandLine contains "wget " or ProcessCommandLine contains "WinHttp.WinHttpRequest"

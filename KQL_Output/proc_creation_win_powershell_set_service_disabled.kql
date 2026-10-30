@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_set_service_disabled.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_set_service_disabled.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\powershell.exe" or ProcessVersionInfoOriginalFileName =~ "PowerShell.EXE") and ((ProcessCommandLine contains "Set-Service" and ProcessCommandLine contains "-StartupType") and (ProcessCommandLine contains "Disabled" or ProcessCommandLine contains "Manual"))

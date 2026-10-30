@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_rdp_enable_or_disable_via_win32_terminalservicesetting_wmi_class.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rdp_enable_or_disable_via_win32_terminalservicesetting_wmi_class.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\wmic.exe" or FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") or (ProcessVersionInfoOriginalFileName in~ ("wmic.exe", "PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "rdtoggle" or ProcessCommandLine contains "Win32_TerminalServiceSetting") and ProcessCommandLine contains "SetAllowTSConnections"

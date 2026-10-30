@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_lolbin_pester.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pester.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((InitiatingProcessFolderPath endswith "\\powershell.exe" or InitiatingProcessFolderPath endswith "\\pwsh.exe") and InitiatingProcessCommandLine contains "\\WindowsPowerShell\\Modules\\Pester\\") and (InitiatingProcessCommandLine contains "{ Invoke-Pester -EnableExit ;" or InitiatingProcessCommandLine contains "{ Get-Help \"")

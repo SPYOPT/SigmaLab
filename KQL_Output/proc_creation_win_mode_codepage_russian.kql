@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_mode_codepage_russian.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mode_codepage_russian.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\mode.com" or ProcessVersionInfoOriginalFileName =~ "MODE.COM") and ((ProcessCommandLine contains " con " and ProcessCommandLine contains " cp " and ProcessCommandLine contains " select=") and (ProcessCommandLine endswith "=1251" or ProcessCommandLine endswith "=866"))

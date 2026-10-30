@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_jamf_usage.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_jamf_usage.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/jamf" and (ProcessCommandLine contains "createAccount" or ProcessCommandLine contains "manage" or ProcessCommandLine contains "removeFramework" or ProcessCommandLine contains "removeMdmProfile" or ProcessCommandLine contains "resetPassword" or ProcessCommandLine contains "setComputerName")

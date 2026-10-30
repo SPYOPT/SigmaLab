@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_local_groups.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_local_groups.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/groups" or ((FolderPath endswith "/cat" or FolderPath endswith "/ed" or FolderPath endswith "/head" or FolderPath endswith "/less" or FolderPath endswith "/more" or FolderPath endswith "/nano" or FolderPath endswith "/tail" or FolderPath endswith "/vi" or FolderPath endswith "/vim") and ProcessCommandLine contains "/etc/group")

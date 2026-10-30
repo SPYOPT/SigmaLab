@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_fsutil_usage.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsutil_usage.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\fsutil.exe" or ProcessVersionInfoOriginalFileName =~ "fsutil.exe") and (ProcessCommandLine contains "deletejournal" or ProcessCommandLine contains "createjournal" or ProcessCommandLine contains "setZeroData")

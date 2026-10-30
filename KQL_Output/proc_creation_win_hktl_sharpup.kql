@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_sharpup.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpup.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\SharpUp.exe" or ProcessVersionInfoFileDescription =~ "SharpUp" or (ProcessCommandLine contains "HijackablePaths" or ProcessCommandLine contains "UnquotedServicePath" or ProcessCommandLine contains "ProcessDLLHijack" or ProcessCommandLine contains "ModifiableServiceBinaries" or ProcessCommandLine contains "ModifiableScheduledTask" or ProcessCommandLine contains "DomainGPPPassword" or ProcessCommandLine contains "CachedGPPPassword")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_gui_input_capture.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_gui_input_capture.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/osascript" and (ProcessCommandLine contains "-e" and ProcessCommandLine contains "display" and ProcessCommandLine contains "dialog" and ProcessCommandLine contains "answer") and (ProcessCommandLine contains "admin" or ProcessCommandLine contains "administrator" or ProcessCommandLine contains "authenticate" or ProcessCommandLine contains "authentication" or ProcessCommandLine contains "credentials" or ProcessCommandLine contains "pass" or ProcessCommandLine contains "password" or ProcessCommandLine contains "unlock")

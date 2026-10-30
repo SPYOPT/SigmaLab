@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wusa_cab_files_extraction_from_susp_paths.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wusa_cab_files_extraction_from_susp_paths.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\wusa.exe" and ProcessCommandLine contains "/extract:") and (ProcessCommandLine contains ":\\PerfLogs\\" or ProcessCommandLine contains ":\\Users\\Public\\" or ProcessCommandLine contains ":\\Windows\\Temp\\" or ProcessCommandLine contains "\\Appdata\\Local\\Temp\\")

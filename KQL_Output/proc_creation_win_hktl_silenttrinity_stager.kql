@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_silenttrinity_stager.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_silenttrinity_stager.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoFileDescription contains "st2stager"

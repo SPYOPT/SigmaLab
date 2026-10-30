@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_nice_shell_execution.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_nice_shell_execution.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/nice" and (ProcessCommandLine endswith "/bin/bash" or ProcessCommandLine endswith "/bin/dash" or ProcessCommandLine endswith "/bin/fish" or ProcessCommandLine endswith "/bin/sh" or ProcessCommandLine endswith "/bin/zsh")

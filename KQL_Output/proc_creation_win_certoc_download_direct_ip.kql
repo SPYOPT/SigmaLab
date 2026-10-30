@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_certoc_download_direct_ip.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_download_direct_ip.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\certoc.exe" or ProcessVersionInfoOriginalFileName =~ "CertOC.exe") and ProcessCommandLine matches regex "://[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}" and ProcessCommandLine contains "-GetCACAPS"

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_plink_susp_tunneling.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_plink_susp_tunneling.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\plink.exe" and ProcessCommandLine contains ":127.0.0.1:3389") or ((FolderPath endswith "\\plink.exe" and ProcessCommandLine contains ":3389") and (ProcessCommandLine contains " -P 443" or ProcessCommandLine contains " -P 22"))

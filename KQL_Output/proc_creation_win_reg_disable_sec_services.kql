@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_disable_sec_services.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_disable_sec_services.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessCommandLine contains "reg" and ProcessCommandLine contains "add") and ((ProcessCommandLine contains "d 4" and ProcessCommandLine contains "v Start") and (ProcessCommandLine contains "\\AppIDSvc" or ProcessCommandLine contains "\\MsMpSvc" or ProcessCommandLine contains "\\NisSrv" or ProcessCommandLine contains "\\SecurityHealthService" or ProcessCommandLine contains "\\Sense" or ProcessCommandLine contains "\\UsoSvc" or ProcessCommandLine contains "\\WdBoot" or ProcessCommandLine contains "\\WdFilter" or ProcessCommandLine contains "\\WdNisDrv" or ProcessCommandLine contains "\\WdNisSvc" or ProcessCommandLine contains "\\WinDefend" or ProcessCommandLine contains "\\wscsvc" or ProcessCommandLine contains "\\wuauserv"))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_create_account.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_create_account.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/dscl" and ProcessCommandLine contains "create") or (FolderPath endswith "/sysadminctl" and ProcessCommandLine contains "addUser")

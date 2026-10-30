@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_desktopimgdownldr_remote_file_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_desktopimgdownldr_remote_file_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "\\desktopimgdownldr.exe" and InitiatingProcessFolderPath endswith "\\desktopimgdownldr.exe" and ProcessCommandLine contains "/lockscreenurl:http"

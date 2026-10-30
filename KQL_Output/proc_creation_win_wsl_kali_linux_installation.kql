@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_wsl_kali_linux_installation.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wsl_kali_linux_installation.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\wsl.exe" or ProcessVersionInfoOriginalFileName =~ "wsl") and (ProcessCommandLine contains " --install " or ProcessCommandLine contains " -i ") and ProcessCommandLine contains "kali"

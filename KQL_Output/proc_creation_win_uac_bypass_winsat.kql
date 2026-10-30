@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_uac_bypass_winsat.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_winsat.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (ProcessIntegrityLevel in~ ("High", "System", "S-1-16-16384", "S-1-16-12288")) and InitiatingProcessFolderPath endswith "\\AppData\\Local\\Temp\\system32\\winsat.exe" and InitiatingProcessCommandLine contains "C:\\Windows \\system32\\winsat.exe"

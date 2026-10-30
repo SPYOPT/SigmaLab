@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_reg_system_restore_modification.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_system_restore_modification.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe" or FolderPath endswith "\\reg.exe") or (ProcessVersionInfoOriginalFileName in~ ("powershell.exe", "pwsh.dll", "reg.exe"))) and (ProcessCommandLine contains " add " or ProcessCommandLine contains "Set-ItemProperty" or ProcessCommandLine contains "New-ItemProperty") and (ProcessCommandLine contains "\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\SystemRestore" or ProcessCommandLine contains "\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SystemRestore") and (ProcessCommandLine contains "DisableConfig" or ProcessCommandLine contains "DisableSR")

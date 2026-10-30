@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_powershell_decrypt_pattern.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_decrypt_pattern.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\powershell.exe" or FolderPath endswith "\\pwsh.exe") and (ProcessVersionInfoOriginalFileName in~ ("PowerShell.EXE", "pwsh.dll"))) and (ProcessCommandLine contains "Get-ChildItem " or ProcessCommandLine contains "dir " or ProcessCommandLine contains "gci " or ProcessCommandLine contains "ls ") and (ProcessCommandLine contains "Get-Content " or ProcessCommandLine contains "gc " or ProcessCommandLine contains "cat " or ProcessCommandLine contains "type " or ProcessCommandLine contains "ReadAllBytes") and ((ProcessCommandLine contains " ^| " and ProcessCommandLine contains "*.lnk" and ProcessCommandLine contains "-Recurse" and ProcessCommandLine contains "-Skip ") or (ProcessCommandLine contains " -ExpandProperty " and ProcessCommandLine contains "*.lnk" and ProcessCommandLine contains "WriteAllBytes" and ProcessCommandLine contains " .length "))

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_pua_advancedrun.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advancedrun.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ProcessVersionInfoOriginalFileName =~ "AdvancedRun.exe" or (ProcessCommandLine contains " /EXEFilename " and ProcessCommandLine contains " /Run") or (ProcessCommandLine contains " /WindowState 0" and ProcessCommandLine contains " /RunAs " and ProcessCommandLine contains " /CommandLine ")

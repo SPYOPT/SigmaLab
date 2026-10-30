@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_lnx_auditctl_clear_rules.yml
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_auditctl_clear_rules.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where FolderPath endswith "/auditctl" and ProcessCommandLine matches regex "-D"

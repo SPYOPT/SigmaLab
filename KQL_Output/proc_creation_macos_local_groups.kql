@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_macos_local_groups.yml
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_local_groups.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "/dscacheutil" and (ProcessCommandLine contains "-q" and ProcessCommandLine contains "group")) or (FolderPath endswith "/cat" and ProcessCommandLine contains "/etc/group") or (FolderPath endswith "/dscl" and (ProcessCommandLine contains "-list" and ProcessCommandLine contains "/groups"))

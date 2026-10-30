@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_conhost_headless_powershell.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_headless_powershell.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\conhost.exe" or ProcessVersionInfoOriginalFileName =~ "CONHOST.EXE") and (ProcessCommandLine contains "--headless" and ProcessCommandLine contains "powershell")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_office_arbitrary_cli_download.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_arbitrary_cli_download.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((FolderPath endswith "\\EXCEL.EXE" or FolderPath endswith "\\MSOXMLED.EXE" or FolderPath endswith "\\POWERPNT.EXE" or FolderPath endswith "\\WINWORD.exe") or (ProcessVersionInfoOriginalFileName in~ ("Excel.exe", "msoxmled.exe", "POWERPNT.EXE", "WinWord.exe"))) and (ProcessCommandLine contains "http://" or ProcessCommandLine contains "https://")

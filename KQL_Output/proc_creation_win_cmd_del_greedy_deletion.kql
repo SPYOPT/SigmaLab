@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_cmd_del_greedy_deletion.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_del_greedy_deletion.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where (FolderPath endswith "\\cmd.exe" or ProcessVersionInfoOriginalFileName =~ "Cmd.Exe") and (ProcessCommandLine contains "del " or ProcessCommandLine contains "erase ") and (ProcessCommandLine contains "\\*.au3" or ProcessCommandLine contains "\\*.dll" or ProcessCommandLine contains "\\*.exe" or ProcessCommandLine contains "\\*.js")

@@ -1,0 +1,7 @@
+// Regla Sigma: proc_creation_win_hktl_covenant.yml
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_covenant.yml
+// Pipeline: microsoft_xdr
+// Requiere validación en el entorno de destino.
+
+DeviceProcessEvents
+| where ((ProcessCommandLine contains "-Sta" and ProcessCommandLine contains "-Nop" and ProcessCommandLine contains "-Window" and ProcessCommandLine contains "Hidden") and (ProcessCommandLine contains "-Command" or ProcessCommandLine contains "-EncodedCommand")) or (ProcessCommandLine contains "sv o (New-Object IO.MemorySteam);sv d " or ProcessCommandLine contains "mshta file.hta" or ProcessCommandLine contains "GruntHTTP" or ProcessCommandLine contains "-EncodedCommand cwB2ACAAbwAgA")

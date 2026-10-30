@@ -15,7 +15,87 @@ __pycache__/
 *.exe
 *.dll
 
-# Configuración local
+# Configuración local# ==================================================
+# ENTORNOS VIRTUALES DE PYTHON
+# Se reconstruyen utilizando requirements.txt
+# ==================================================
+.venv/
+venv/
+env/
+ENV/
+
+# ==================================================
+# CACHÉ Y ARCHIVOS GENERADOS POR PYTHON
+# ==================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==================================================
+# EJECUTABLES Y BINARIOS
+# Evita subir sigma.exe y otros archivos bloqueados
+# ==================================================
+*.exe
+*.dll
+*.pyd
+*.so
+
+# ==================================================
+# REPOSITORIOS EXTERNOS CLONADOS
+# Tu solución utiliza estos proyectos, pero no debes
+# volver a publicarlos dentro de tu repositorio
+# ==================================================
+sigma/
+pySigma/
+Sigma2KQL/
+
+# ==================================================
+# CREDENCIALES Y CONFIGURACIÓN SENSIBLE
+# ==================================================
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+secrets.json
+credentials.json
+
+# ==================================================
+# CONFIGURACIÓN LOCAL DE EDITORES
+# ==================================================
+.vscode/
+.idea/
+
+# ==================================================
+# ARCHIVOS TEMPORALES Y DEL SISTEMA
+# ==================================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ==================================================
+# ARCHIVOS COMPRIMIDOS
+# ==================================================
+*.zip
+*.7z
+*.rar
+
+# ==================================================
+# SALIDAS TEMPORALES
+# No se ignoran los archivos KQL ni los CSV finales
+# ==================================================
+KQL_Output/*.log
 .vscode/
 .env
 .env.*

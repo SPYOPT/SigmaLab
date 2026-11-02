@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_susp_sensitive_file_access_shadowcopy.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_sensitive_file_access_shadowcopy.yml
+// ID Sigma: f57f8d16-1f39-4dcb-a604-6c73d9b54b3d
+// Título: Sensitive File Access Via Volume Shadow Copy Backup
+// Descripción: Detects a command that accesses the VolumeShadowCopy in order to extract sensitive files such as the Security or SAM registry hives or the AD database (ntds.dit)
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_sensitive_file_access_shadowcopy.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

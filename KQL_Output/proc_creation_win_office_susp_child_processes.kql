@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_office_susp_child_processes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_susp_child_processes.yml
+// ID Sigma: 438025f9-5856-4663-83f7-52f878a70a50
+// Título: Suspicious Microsoft Office Child Process
+// Descripción: Detects a suspicious process spawning from one of the Microsoft Office suite products (Word, Excel, PowerPoint, Publisher, Visio, etc.)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_susp_child_processes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

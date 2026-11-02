@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_pcalua.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pcalua.yml
+// ID Sigma: 0955e4e1-c281-4fb9-9ee1-5ee7b4b754d2
+// Título: Use of Pcalua For Execution
+// Descripción: Detects execition of commands and binaries from the context of The program compatibility assistant (Pcalua.exe). This can be used as a LOLBIN in order to bypass application whitelisting.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pcalua.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

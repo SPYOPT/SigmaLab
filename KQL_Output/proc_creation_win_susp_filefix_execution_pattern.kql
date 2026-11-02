@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_susp_filefix_execution_pattern.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_filefix_execution_pattern.yml
+// ID Sigma: b5b29e4e-31fa-4fdf-b058-296e7a1aa0c2
+// Título: Suspicious FileFix Execution Pattern
+// Descripción: Detects suspicious FileFix execution patterns where users are tricked into running malicious commands through browser file upload dialog manipulation.
+This attack typically begins when users visit malicious websites impersonating legitimate services or news platforms,
+which may display fake CAPTCHA challenges or direct instructions to open file explorer and paste clipboard content.
+The clipboard content usually contains commands that download and execute malware, such as information stealing tools.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_filefix_execution_pattern.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

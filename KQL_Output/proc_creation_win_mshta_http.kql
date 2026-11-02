@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mshta_http.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_http.yml
+// ID Sigma: b98d0db6-511d-45de-ad02-e82a98729620
+// Título: Remotely Hosted HTA File Executed Via Mshta.EXE
+// Descripción: Detects execution of the "mshta" utility with an argument containing the "http" keyword, which could indicate that an attacker is executing a remotely hosted malicious hta file
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_http.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

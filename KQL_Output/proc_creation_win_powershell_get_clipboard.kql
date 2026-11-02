@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_get_clipboard.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_get_clipboard.yml
+// ID Sigma: b9aeac14-2ffd-4ad3-b967-1354a4e628c3
+// Título: PowerShell Get-Clipboard Cmdlet Via CLI
+// Descripción: Detects usage of the 'Get-Clipboard' cmdlet via CLI
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_get_clipboard.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

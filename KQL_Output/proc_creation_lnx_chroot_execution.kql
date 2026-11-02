@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_lnx_chroot_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_chroot_execution.yml
+// ID Sigma: f2bed782-994e-4f40-9cd5-518198cb3fba
+// Título: Linux Sudo Chroot Execution
+// Descripción: Detects the execution of 'sudo' command with '--chroot' option, which is used to change the root directory for command execution.
+Attackers may use this technique to evade detection and execute commands in a modified environment.
+This can be part of a privilege escalation strategy, as it allows the execution of commands with elevated privileges in a controlled environment as seen in CVE-2025-32463.
+While investigating, look out for unusual or unexpected use of 'sudo --chroot' in conjunction with other commands or scripts such as execution from temporary directories or unusual user accounts.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_chroot_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

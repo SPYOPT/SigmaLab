@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_registry_office_disable_python_security_warnings.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_office_disable_python_security_warnings.yml
+// ID Sigma: 023c654f-8f16-44d9-bb2b-00ff36a62af9
+// Título: Python Function Execution Security Warning Disabled In Excel
+// Descripción: Detects changes to the registry value "PythonFunctionWarnings" that would prevent any warnings or alerts from showing when Python functions are about to be executed.
+Threat actors could run malicious code through the new Microsoft Excel feature that allows Python to run within the spreadsheet.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_office_disable_python_security_warnings.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mshta_susp_child_processes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_susp_child_processes.yml
+// ID Sigma: 03cc0c25-389f-4bf8-b48d-11878079f1ca
+// Título: Suspicious MSHTA Child Process
+// Descripción: Detects a suspicious process spawning from an "mshta.exe" process, which could be indicative of a malicious HTA script execution
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_susp_child_processes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

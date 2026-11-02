@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_embed_exe_lnk.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_embed_exe_lnk.yml
+// ID Sigma: 30e92f50-bb5a-4884-98b5-d20aa80f3d7a
+// Título: Hidden Powershell in Link File Pattern
+// Descripción: Detects events that appear when a user click on a link file with a powershell command in it
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_embed_exe_lnk.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

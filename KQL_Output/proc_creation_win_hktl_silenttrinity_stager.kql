@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_silenttrinity_stager.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_silenttrinity_stager.yml
+// ID Sigma: 03552375-cc2c-4883-bbe4-7958d5a980be
+// Título: HackTool - SILENTTRINITY Stager Execution
+// Descripción: Detects SILENTTRINITY stager use via PE metadata
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_silenttrinity_stager.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

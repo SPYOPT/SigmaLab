@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_wbadmin_restore_file.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wbadmin_restore_file.yml
+// ID Sigma: 6fe4aa1e-0531-4510-8be2-782154b73b48
+// Título: File Recovery From Backup Via Wbadmin.EXE
+// Descripción: Detects the recovery of files from backups via "wbadmin.exe".
+Attackers can restore sensitive files such as NTDS.DIT or Registry Hives from backups in order to potentially extract credentials.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wbadmin_restore_file.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

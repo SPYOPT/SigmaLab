@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dns_exfiltration_tools_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dns_exfiltration_tools_execution.yml
+// ID Sigma: 98a96a5a-64a0-4c42-92c5-489da3866cb0
+// Título: DNS Exfiltration and Tunneling Tools Execution
+// Descripción: Well-known DNS Exfiltration tools execution
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dns_exfiltration_tools_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

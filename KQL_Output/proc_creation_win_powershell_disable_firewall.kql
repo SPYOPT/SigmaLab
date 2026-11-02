@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_disable_firewall.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_disable_firewall.yml
+// ID Sigma: 12f6b752-042d-483e-bf9c-915a6d06ad75
+// Título: Windows Firewall Disabled via PowerShell
+// Descripción: Detects attempts to disable the Windows Firewall using PowerShell
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_disable_firewall.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

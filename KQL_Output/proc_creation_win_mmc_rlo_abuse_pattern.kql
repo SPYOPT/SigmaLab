@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mmc_rlo_abuse_pattern.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mmc_rlo_abuse_pattern.yml
+// ID Sigma: 9cfe4b27-1e56-48b4-b7a8-d46851c91a44
+// Título: MMC Executing Files with Reversed Extensions Using RTLO Abuse
+// Descripción: Detects malicious behavior where the MMC utility (`mmc.exe`) executes files with reversed extensions caused by Right-to-Left Override (RLO) abuse, disguising them as document formats.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mmc_rlo_abuse_pattern.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

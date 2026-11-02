@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_wuauclt_no_cli_flags_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wuauclt_no_cli_flags_execution.yml
+// ID Sigma: 52d097e2-063e-4c9c-8fbb-855c8948d135
+// Título: Suspicious Windows Update Agent Empty Cmdline
+// Descripción: Detects suspicious Windows Update Agent activity in which a wuauclt.exe process command line doesn't contain any command line flags
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wuauclt_no_cli_flags_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

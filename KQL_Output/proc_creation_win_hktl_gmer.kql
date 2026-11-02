@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_gmer.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_gmer.yml
+// ID Sigma: 9082ff1f-88ab-4678-a3cc-5bcff99fc74d
+// Título: HackTool - GMER Rootkit Detector and Remover Execution
+// Descripción: Detects the execution GMER tool based on image and hash fields.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_gmer.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

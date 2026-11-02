@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_base64_iex.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_iex.yml
+// ID Sigma: 88f680b8-070e-402c-ae11-d2914f2257f1
+// Título: PowerShell Base64 Encoded IEX Cmdlet
+// Descripción: Detects usage of a base64 encoded "IEX" cmdlet in a process command line
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_iex.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

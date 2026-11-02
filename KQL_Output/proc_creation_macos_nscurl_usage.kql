@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_nscurl_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_nscurl_usage.yml
+// ID Sigma: 6d8a7cf1-8085-423b-b87d-7e880faabbdf
+// Título: File Download Via Nscurl - MacOS
+// Descripción: Detects the execution of the nscurl utility in order to download files.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_nscurl_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

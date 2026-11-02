@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_recon_csproduct.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_csproduct.yml
+// ID Sigma: 3e3ceccd-6c06-48b8-b5ff-ab1d25db8c1d
+// Título: Hardware Model Reconnaissance Via Wmic.EXE
+// Descripción: Detects the execution of WMIC with the "csproduct" which is used to obtain information such as hardware models and vendor information
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_csproduct.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

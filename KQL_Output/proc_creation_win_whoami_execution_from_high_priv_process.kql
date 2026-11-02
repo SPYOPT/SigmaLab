@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_whoami_execution_from_high_priv_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_whoami_execution_from_high_priv_process.yml
+// ID Sigma: 79ce34ca-af29-4d0e-b832-fc1b377020db
+// Título: Whoami.EXE Execution From Privileged Process
+// Descripción: Detects the execution of "whoami.exe" by privileged accounts that are often abused by threat actors
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_whoami_execution_from_high_priv_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

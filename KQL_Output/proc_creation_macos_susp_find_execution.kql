@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_susp_find_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_find_execution.yml
+// ID Sigma: 85de3a19-b675-4a51-bfc6-b11a5186c971
+// Título: Potential Discovery Activity Using Find - MacOS
+// Descripción: Detects usage of "find" binary in a suspicious manner to perform discovery
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_find_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

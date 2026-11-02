@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_grep_os_arch_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_grep_os_arch_discovery.yml
+// ID Sigma: d27ab432-2199-483f-a297-03633c05bae6
+// Título: OS Architecture Discovery Via Grep
+// Descripción: Detects the use of grep to identify information about the operating system architecture. Often combined beforehand with the execution of "uname" or "cat /proc/cpuinfo"
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_grep_os_arch_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

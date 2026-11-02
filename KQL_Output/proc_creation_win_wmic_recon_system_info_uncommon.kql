@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_wmic_recon_system_info_uncommon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_system_info_uncommon.yml
+// ID Sigma: 9d5a1274-922a-49d0-87f3-8c653483b909
+// Título: Uncommon System Information Discovery Via Wmic.EXE
+// Descripción: Detects the use of the WMI command-line (WMIC) utility to identify and display various system information,
+including OS, CPU, GPU, and disk drive names; memory capacity; display resolution; and baseboard, BIOS,
+and GPU driver products/versions.
+Some of these commands were used by Aurora Stealer in late 2022/early 2023.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_system_info_uncommon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_recycle_bin_fake_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_recycle_bin_fake_execution.yml
+// ID Sigma: 5ce0f04e-3efc-42af-839d-5b3a543b76c0
+// Título: Suspicious Process Execution From Fake Recycle.Bin Folder
+// Descripción: Detects process execution from a fake recycle bin folder, often used to avoid security solution.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_recycle_bin_fake_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_takeown_recursive_own.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_takeown_recursive_own.yml
+// ID Sigma: 554601fb-9b71-4bcc-abf4-21a611be4fde
+// Título: Suspicious Recursive Takeown
+// Descripción: Adversaries can interact with the DACLs using built-in Windows commands takeown which can grant adversaries higher permissions on specific files and folders
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_takeown_recursive_own.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_impacket_tools.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impacket_tools.yml
+// ID Sigma: 4627c6ae-6899-46e2-aa0c-6ebcb1becd19
+// Título: HackTool - Impacket Tools Execution
+// Descripción: Detects the execution of different compiled Windows binaries of the impacket toolset (based on names or part of their names - could lead to false positives)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impacket_tools.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

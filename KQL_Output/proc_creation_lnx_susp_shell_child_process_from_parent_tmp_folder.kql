@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_shell_child_process_from_parent_tmp_folder.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_shell_child_process_from_parent_tmp_folder.yml
+// ID Sigma: 2fade0b6-7423-4835-9d4f-335b39b83867
+// Título: Shell Execution Of Process Located In Tmp Directory
+// Descripción: Detects execution of shells from a parent process located in a temporary (/tmp) directory
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_shell_child_process_from_parent_tmp_folder.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_susp_use_of_te_bin.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_use_of_te_bin.yml
+// ID Sigma: 634b00d5-ccc3-4a06-ae3b-0ec8444dd51b
+// Título: Malicious Windows Script Components File Execution by TAEF Detection
+// Descripción: Windows Test Authoring and Execution Framework (TAEF) framework allows you to run automation by executing tests files written on different languages (C, C#, Microsoft COM Scripting interfaces
+Adversaries may execute malicious code (such as WSC file with VBScript, dll and so on) directly by running te.exe
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_use_of_te_bin.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

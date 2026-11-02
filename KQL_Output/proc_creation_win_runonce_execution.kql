@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_runonce_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_runonce_execution.yml
+// ID Sigma: 198effb6-6c98-4d0c-9ea3-451fa143c45c
+// Título: Run Once Task Execution as Configured in Registry
+// Descripción: This rule detects the execution of Run Once task as configured in the registry
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_runonce_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

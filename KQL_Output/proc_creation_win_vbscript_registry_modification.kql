@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_vbscript_registry_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vbscript_registry_modification.yml
+// ID Sigma: 921aa10f-2e74-4cca-9498-98f9ca4d6fdf
+// Título: Registry Modification Attempt Via VBScript
+// Descripción: Detects attempts to modify the registry using VBScript's CreateObject("Wscript.shell") and RegWrite methods via common LOLBINs.
+It could be an attempt to modify the registry for persistence without using straightforward methods like regedit.exe, reg.exe, or PowerShell.
+Threat Actors may use this technique to evade detection by security solutions that monitor for direct registry modifications through traditional tools.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vbscript_registry_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

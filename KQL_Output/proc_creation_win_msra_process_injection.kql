@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_msra_process_injection.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msra_process_injection.yml
+// ID Sigma: 744a188b-0415-4792-896f-11ddb0588dbc
+// Título: Potential Process Injection Via Msra.EXE
+// Descripción: Detects potential process injection via Microsoft Remote Asssistance (Msra.exe) by looking at suspicious child processes spawned from the aforementioned process. It has been a target used by many threat actors and used for discovery and persistence tactics
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msra_process_injection.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

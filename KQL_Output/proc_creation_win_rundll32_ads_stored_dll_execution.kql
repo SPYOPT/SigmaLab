@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_ads_stored_dll_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_ads_stored_dll_execution.yml
+// ID Sigma: 9248c7e1-2bf3-4661-a22c-600a8040b446
+// Título: Potential Rundll32 Execution With DLL Stored In ADS
+// Descripción: Detects execution of rundll32 where the DLL being called is stored in an Alternate Data Stream (ADS).
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_ads_stored_dll_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

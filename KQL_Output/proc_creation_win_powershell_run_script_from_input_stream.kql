@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_run_script_from_input_stream.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_run_script_from_input_stream.yml
+// ID Sigma: c83bf4b5-cdf0-437c-90fa-43d734f7c476
+// Título: Run PowerShell Script from Redirected Input Stream
+// Descripción: Detects PowerShell script execution via input stream redirect
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_run_script_from_input_stream.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

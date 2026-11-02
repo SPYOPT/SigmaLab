@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_psexec_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexec_execution.yml
+// ID Sigma: 730fc21b-eaff-474b-ad23-90fd265d4988
+// Título: Psexec Execution
+// Descripción: Detects user accept agreement execution in psexec commandline
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexec_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

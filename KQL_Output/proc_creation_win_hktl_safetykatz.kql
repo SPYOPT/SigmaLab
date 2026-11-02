@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_safetykatz.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_safetykatz.yml
+// ID Sigma: b1876533-4ed5-4a83-90f3-b8645840a413
+// Título: HackTool - SafetyKatz Execution
+// Descripción: Detects the execution of the hacktool SafetyKatz via PE information and default Image name
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_safetykatz.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

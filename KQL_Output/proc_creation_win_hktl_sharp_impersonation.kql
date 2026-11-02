@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sharp_impersonation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharp_impersonation.yml
+// ID Sigma: f89b08d0-77ad-4728-817b-9b16c5a69c7a
+// Título: HackTool - SharpImpersonation Execution
+// Descripción: Detects execution of the SharpImpersonation tool. Which can be used to manipulate tokens on a Windows computers remotely (PsExec/WmiExec) or interactively
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharp_impersonation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

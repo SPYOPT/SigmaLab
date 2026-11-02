@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_sysmon_uninstall.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_sysmon_uninstall.yml
+// ID Sigma: 6a5f68d1-c4b5-46b9-94ee-5324892ea939
+// Título: Uninstall Sysinternals Sysmon
+// Descripción: Detects the removal of Sysmon, which could be a potential attempt at defense evasion
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_sysmon_uninstall.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

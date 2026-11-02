@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_local_groups.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_local_groups.yml
+// ID Sigma: 676381a6-15ca-4d73-a9c8-6a22e970b90d
+// Título: Local Groups Discovery - Linux
+// Descripción: Detects enumeration of local system groups. Adversaries may attempt to find local system groups and permission settings
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_local_groups.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

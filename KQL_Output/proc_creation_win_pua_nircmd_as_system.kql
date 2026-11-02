@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_nircmd_as_system.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nircmd_as_system.yml
+// ID Sigma: d9047477-0359-48c9-b8c7-792cedcdc9c4
+// Título: PUA - NirCmd Execution As LOCAL SYSTEM
+// Descripción: Detects the use of NirCmd tool for command execution as SYSTEM user
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nircmd_as_system.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_dotnetdump_memory_dump.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dotnetdump_memory_dump.yml
+// ID Sigma: 53d8d3e1-ca33-4012-adf3-e05a4d652e34
+// Título: Process Memory Dump Via Dotnet-Dump
+// Descripción: Detects the execution of "dotnet-dump" with the "collect" flag. The execution could indicate potential process dumping of critical processes such as LSASS.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dotnetdump_memory_dump.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

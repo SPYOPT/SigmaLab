@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_bpftrace_unsafe_option_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_bpftrace_unsafe_option_usage.yml
+// ID Sigma: f8341cb2-ee25-43fa-a975-d8a5a9714b39
+// Título: BPFtrace Unsafe Option Usage
+// Descripción: Detects the usage of the unsafe bpftrace option
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_bpftrace_unsafe_option_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

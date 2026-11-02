@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_download_file_sharing_domains.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_download_file_sharing_domains.yml
+// ID Sigma: 42a5f1e7-9603-4f6d-97ae-3f37d130d794
+// Título: Suspicious File Downloaded From File-Sharing Website Via Certutil.EXE
+// Descripción: Detects the execution of certutil with certain flags that allow the utility to download files from file-sharing websites.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_download_file_sharing_domains.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

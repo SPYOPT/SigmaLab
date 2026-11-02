@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rdrleakdiag_process_dumping.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rdrleakdiag_process_dumping.yml
+// ID Sigma: edadb1e5-5919-4e4c-8462-a9e643b02c4b
+// Título: Process Memory Dump via RdrLeakDiag.EXE
+// Descripción: Detects the use of the Microsoft Windows Resource Leak Diagnostic tool "rdrleakdiag.exe" to dump process memory
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rdrleakdiag_process_dumping.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

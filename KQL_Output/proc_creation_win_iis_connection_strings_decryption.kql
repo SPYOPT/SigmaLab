@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_iis_connection_strings_decryption.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_connection_strings_decryption.yml
+// ID Sigma: 97dbf6e2-e436-44d8-abee-4261b24d3e41
+// Título: Microsoft IIS Connection Strings Decryption
+// Descripción: Detects use of aspnet_regiis to decrypt Microsoft IIS connection strings. An attacker with Microsoft IIS web server access via a webshell or alike can decrypt and dump any hardcoded connection strings, such as the MSSQL service account password using aspnet_regiis command.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_connection_strings_decryption.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

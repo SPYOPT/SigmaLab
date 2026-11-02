@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_sysadminctl_add_user_to_admin_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_sysadminctl_add_user_to_admin_group.yml
+// ID Sigma: 652c098d-dc11-4ba6-8566-c20e89042f2b
+// Título: User Added To Admin Group Via Sysadminctl
+// Descripción: Detects attempts to create and add an account to the admin group via "sysadminctl"
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_sysadminctl_add_user_to_admin_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

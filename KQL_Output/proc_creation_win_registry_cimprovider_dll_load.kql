@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_registry_cimprovider_dll_load.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_cimprovider_dll_load.yml
+// ID Sigma: a2910908-e86f-4687-aeba-76a5f996e652
+// Título: DLL Execution Via Register-cimprovider.exe
+// Descripción: Detects using register-cimprovider.exe to execute arbitrary dll file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_cimprovider_dll_load.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

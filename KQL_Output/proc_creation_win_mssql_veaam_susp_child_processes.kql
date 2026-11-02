@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mssql_veaam_susp_child_processes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mssql_veaam_susp_child_processes.yml
+// ID Sigma: d55b793d-f847-4eea-b59a-5ab09908ac90
+// Título: Suspicious Child Process Of Veeam Dabatase
+// Descripción: Detects suspicious child processes of the Veeam service process. This could indicate potential RCE or SQL Injection.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mssql_veaam_susp_child_processes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

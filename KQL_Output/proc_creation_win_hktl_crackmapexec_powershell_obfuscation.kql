@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_crackmapexec_powershell_obfuscation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_powershell_obfuscation.yml
+// ID Sigma: 6f8b3439-a203-45dc-a88b-abf57ea15ccf
+// Título: HackTool - CrackMapExec PowerShell Obfuscation
+// Descripción: The CrachMapExec pentesting framework implements a PowerShell obfuscation with some static strings detected by this rule.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_powershell_obfuscation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

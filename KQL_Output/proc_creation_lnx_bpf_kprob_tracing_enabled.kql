@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_bpf_kprob_tracing_enabled.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_bpf_kprob_tracing_enabled.yml
+// ID Sigma: 7692f583-bd30-4008-8615-75dab3f08a99
+// Título: Enable BPF Kprobes Tracing
+// Descripción: Detects common command used to enable bpf kprobes tracing
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_bpf_kprob_tracing_enabled.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

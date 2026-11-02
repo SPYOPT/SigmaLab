@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_certutil_certificate_installation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_certificate_installation.yml
+// ID Sigma: d2125259-ddea-4c1c-9c22-977eb5b29cf0
+// Título: New Root Certificate Installed Via Certutil.EXE
+// Descripción: Detects execution of "certutil" with the "addstore" flag in order to install a new certificate on the system.
+Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_certificate_installation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_tscon_localsystem.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tscon_localsystem.yml
+// ID Sigma: 9847f263-4a81-424f-970c-875dab15b79b
+// Título: Suspicious TSCON Start as SYSTEM
+// Descripción: Detects a tscon.exe start as LOCAL SYSTEM
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tscon_localsystem.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

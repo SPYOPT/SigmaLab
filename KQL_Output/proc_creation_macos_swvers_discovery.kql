@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_swvers_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_swvers_discovery.yml
+// ID Sigma: 5de06a6f-673a-4fc0-8d48-bcfe3837b033
+// Título: System Information Discovery Using sw_vers
+// Descripción: Detects the use of "sw_vers" for system information discovery
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_swvers_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

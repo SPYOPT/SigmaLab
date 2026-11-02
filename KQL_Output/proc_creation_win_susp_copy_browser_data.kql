@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_susp_copy_browser_data.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_copy_browser_data.yml
+// ID Sigma: 47147b5b-9e17-4d76-b8d2-7bac24c5ce1b
+// Título: Potential Browser Data Stealing
+// Descripción: Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
+Web browsers commonly save credentials such as website usernames and passwords so that they do not need to be entered manually in the future.
+Web browsers typically store the credentials in an encrypted format within a credential store.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_copy_browser_data.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

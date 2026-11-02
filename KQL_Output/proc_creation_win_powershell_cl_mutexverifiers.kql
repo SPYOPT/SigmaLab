@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_cl_mutexverifiers.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_mutexverifiers.yml
+// ID Sigma: 1e0e1a81-e79b-44bc-935b-ddb9c8006b3d
+// Título: Potential Script Proxy Execution Via CL_Mutexverifiers.ps1
+// Descripción: Detects the use of the Microsoft signed script "CL_mutexverifiers" to proxy the execution of additional PowerShell script commands
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_mutexverifiers.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

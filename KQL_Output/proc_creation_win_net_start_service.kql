@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_net_start_service.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_start_service.yml
+// ID Sigma: 2a072a96-a086-49fa-bcb5-15cc5a619093
+// Título: Start Windows Service Via Net.EXE
+// Descripción: Detects the usage of the "net.exe" command to start a service using the "start" flag
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_start_service.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

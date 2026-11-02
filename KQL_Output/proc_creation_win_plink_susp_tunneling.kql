@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_plink_susp_tunneling.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_plink_susp_tunneling.yml
+// ID Sigma: f38ce0b9-5e97-4b47-a211-7dc8d8b871da
+// Título: Potential RDP Tunneling Via Plink
+// Descripción: Execution of plink to perform data exfiltration and tunneling
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_plink_susp_tunneling.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

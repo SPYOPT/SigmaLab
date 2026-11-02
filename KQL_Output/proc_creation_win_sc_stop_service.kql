@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sc_stop_service.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_stop_service.yml
+// ID Sigma: 81bcb81b-5b1f-474b-b373-52c871aaa7b1
+// Título: Stop Windows Service Via Sc.EXE
+// Descripción: Detects the stopping of a Windows service via the "sc.exe" utility
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_stop_service.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

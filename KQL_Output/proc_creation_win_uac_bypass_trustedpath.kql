@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_trustedpath.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_trustedpath.yml
+// ID Sigma: 4ac47ed3-44c2-4b1f-9d51-bf46e8914126
+// Título: TrustedPath UAC Bypass Pattern
+// Descripción: Detects indicators of a UAC bypass method by mocking directories
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_trustedpath.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hh_chm_remote_download_or_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_chm_remote_download_or_execution.yml
+// ID Sigma: f57c58b3-ee69-4ef5-9041-455bf39aaa89
+// Título: Remote CHM File Download/Execution Via HH.EXE
+// Descripción: Detects the usage of "hh.exe" to execute/download remotely hosted ".chm" files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_chm_remote_download_or_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

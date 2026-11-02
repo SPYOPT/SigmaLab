@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_psexesvc.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexesvc.yml
+// ID Sigma: fdfcbd78-48f1-4a4b-90ac-d82241e368c5
+// Título: PsExec Service Execution
+// Descripción: Detects launch of the PSEXESVC service, which means that this system was the target of a psexec remote execution
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexesvc.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

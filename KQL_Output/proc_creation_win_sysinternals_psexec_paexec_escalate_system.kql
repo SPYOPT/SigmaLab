@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_psexec_paexec_escalate_system.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexec_paexec_escalate_system.yml
+// ID Sigma: 8834e2f7-6b4b-4f09-8906-d2276470ee23
+// Título: PsExec/PAExec Escalation to LOCAL SYSTEM
+// Descripción: Detects suspicious commandline flags used by PsExec and PAExec to escalate a command line to LOCAL_SYSTEM rights
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psexec_paexec_escalate_system.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

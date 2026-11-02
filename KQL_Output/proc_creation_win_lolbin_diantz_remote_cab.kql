@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_diantz_remote_cab.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_diantz_remote_cab.yml
+// ID Sigma: 185d7418-f250-42d0-b72e-0c8b70661e93
+// Título: Suspicious Diantz Download and Compress Into a CAB File
+// Descripción: Download and compress a remote file and store it in a cab file on local machine.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_diantz_remote_cab.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

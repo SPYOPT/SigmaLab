@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
+// ID Sigma: 1edff897-9146-48d2-9066-52e8d8f80a2f
+// Título: Suspicious Invoke-WebRequest Execution With DirectIP
+// Descripción: Detects calls to PowerShell with Invoke-WebRequest cmdlet using direct IP access
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

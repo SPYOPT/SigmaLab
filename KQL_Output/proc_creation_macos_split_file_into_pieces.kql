@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_split_file_into_pieces.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_split_file_into_pieces.yml
+// ID Sigma: 7f2bb9d5-6395-4de5-969c-70c11fbe6b12
+// Título: Split A File Into Pieces
+// Descripción: Detection use of the command "split" to split files into parts and possible transfer.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_split_file_into_pieces.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

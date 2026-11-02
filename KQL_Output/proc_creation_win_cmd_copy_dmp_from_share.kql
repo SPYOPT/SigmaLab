@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_copy_dmp_from_share.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_copy_dmp_from_share.yml
+// ID Sigma: 044ba588-dff4-4918-9808-3f95e8160606
+// Título: Copy .DMP/.DUMP Files From Remote Share Via Cmd.EXE
+// Descripción: Detects usage of the copy builtin cmd command to copy files with the ".dmp"/".dump" extension from a remote share
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_copy_dmp_from_share.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_setspn_spn_enumeration.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_setspn_spn_enumeration.yml
+// ID Sigma: 1eeed653-dbc8-4187-ad0c-eeebb20e6599
+// Título: Potential SPN Enumeration Via Setspn.EXE
+// Descripción: Detects service principal name (SPN) enumeration used for Kerberoasting
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_setspn_spn_enumeration.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

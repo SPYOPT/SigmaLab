@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_registry_set_unsecure_powershell_policy.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_set_unsecure_powershell_policy.yml
+// ID Sigma: cf2e938e-9a3e-4fe8-a347-411642b28a9f
+// Título: Potential PowerShell Execution Policy Tampering - ProcCreation
+// Descripción: Detects changes to the PowerShell execution policy registry key in order to bypass signing requirements for script execution from the CommandLine
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_set_unsecure_powershell_policy.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_netcat.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_netcat.yml
+// ID Sigma: e31033fc-33f0-4020-9a16-faf9b31cbf08
+// Título: PUA - Netcat Suspicious Execution
+// Descripción: Detects execution of Netcat. Adversaries may use a non-application layer protocol for communication between host and C2 server or among infected hosts within a network
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_netcat.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

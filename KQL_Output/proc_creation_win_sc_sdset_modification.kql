@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sc_sdset_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_sdset_modification.yml
+// ID Sigma: 98c5aeef-32d5-492f-b174-64a691896d25
+// Título: Service Security Descriptor Tampering Via Sc.EXE
+// Descripción: Detection of sc.exe utility adding a new service with special permission which hides that service.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_sdset_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

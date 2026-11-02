@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_esentutl_sensitive_file_copy.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_esentutl_sensitive_file_copy.yml
+// ID Sigma: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f
+// Título: Copying Sensitive Files with Credential Data
+// Descripción: Files with well-known filenames (sensitive files with credential data) copying
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_esentutl_sensitive_file_copy.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

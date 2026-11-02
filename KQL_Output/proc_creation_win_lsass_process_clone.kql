@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lsass_process_clone.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lsass_process_clone.yml
+// ID Sigma: c8da0dfd-4ed0-4b68-962d-13c9c884384e
+// Título: Potential Credential Dumping Via LSASS Process Clone
+// Descripción: Detects a suspicious LSASS process process clone that could be a sign of credential dumping activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lsass_process_clone.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

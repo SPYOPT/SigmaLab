@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_pingcastle.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_pingcastle.yml
+// ID Sigma: b1cb4ab6-ac31-43f4-adf1-d9d08957419c
+// Título: PUA - PingCastle Execution
+// Descripción: Detects the execution of PingCastle, a tool designed to quickly assess the Active Directory security level.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_pingcastle.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

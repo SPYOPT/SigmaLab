@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_sdclt.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_sdclt.yml
+// ID Sigma: 40f9af16-589d-4984-b78d-8c2aec023197
+// Título: Potential UAC Bypass Via Sdclt.EXE
+// Descripción: A General detection for sdclt being spawned as an elevated process. This could be an indicator of sdclt being used for bypass UAC techniques.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_sdclt.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

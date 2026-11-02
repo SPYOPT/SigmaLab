@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_pua_pingcastle_script_parent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_pingcastle_script_parent.yml
+// ID Sigma: b37998de-a70b-4f33-b219-ec36bf433dc0
+// Título: PUA - PingCastle Execution From Potentially Suspicious Parent
+// Descripción: Detects the execution of PingCastle, a tool designed to quickly assess the Active Directory security level via a script located in a potentially suspicious or uncommon location.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_pingcastle_script_parent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

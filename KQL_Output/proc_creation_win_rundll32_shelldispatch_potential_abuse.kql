@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_shelldispatch_potential_abuse.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_shelldispatch_potential_abuse.yml
+// ID Sigma: 82343930-652f-43f5-ab70-2ee9fdd6d5e9
+// Título: Potential ShellDispatch.DLL Functionality Abuse
+// Descripción: Detects potential "ShellDispatch.dll" functionality abuse to execute arbitrary binaries via "ShellExecute"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_shelldispatch_potential_abuse.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

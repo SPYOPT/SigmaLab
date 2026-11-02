@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_powershell_adsi_create_user.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_adsi_create_user.yml
+// ID Sigma: 7c9fed65-039a-4055-8c23-fa763d94aff6
+// Título: New User Account Creation Attempt Via ADSI in CommandLine
+// Descripción: Detects PowerShell command line arguments containing ADSI (Active Directory Service Interfaces) patterns
+trying to create a new user account via the WinNT or LDAP provider. This is an uncommon method to create
+user accounts and may indicate an attempt to evade detection by avoiding more commonly monitored commands
+such as "net user", "New-LocalUser" or "New-ADUser".
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_adsi_create_user.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

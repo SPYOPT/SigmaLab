@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_base64_shebang_cli.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_shebang_cli.yml
+// ID Sigma: fe2f9663-41cb-47e2-b954-8a228f3b9dff
+// Título: Linux Base64 Encoded Shebang In CLI
+// Descripción: Detects the presence of a base64 version of the shebang in the commandline, which could indicate a malicious payload about to be decoded
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_shebang_cli.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

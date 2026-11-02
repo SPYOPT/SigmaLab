@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_use_mhsta.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_use_mhsta.yml
+// ID Sigma: ac20ae82-8758-4f38-958e-b44a3140ca88
+// Título: Invoke-Obfuscation Via Use MSHTA
+// Descripción: Detects Obfuscated Powershell via use MSHTA in Scripts
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_use_mhsta.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

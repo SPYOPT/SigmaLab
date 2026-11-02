@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_advanced_ip_scanner.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advanced_ip_scanner.yml
+// ID Sigma: bef37fa2-f205-4a7b-b484-0759bfd5f86f
+// Título: PUA - Advanced IP Scanner Execution
+// Descripción: Detects the use of Advanced IP Scanner. Seems to be a popular tool for ransomware groups.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advanced_ip_scanner.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_iis_appcmd_susp_rewrite_rule.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_appcmd_susp_rewrite_rule.yml
+// ID Sigma: 7c8af9b2-dcae-41a2-a9db-b28c288b5f08
+// Título: Suspicious IIS URL GlobalRules Rewrite Via AppCmd
+// Descripción: Detects usage of "appcmd" to create new global URL rewrite rules. This behaviour has been observed being used by threat actors to add new rules so they can access their webshells.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_appcmd_susp_rewrite_rule.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

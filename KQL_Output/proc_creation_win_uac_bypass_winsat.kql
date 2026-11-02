@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_winsat.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_winsat.yml
+// ID Sigma: 7a01183d-71a2-46ad-ad5c-acd989ac1793
+// Título: UAC Bypass Abusing Winsat Path Parsing - Process
+// Descripción: Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_winsat.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

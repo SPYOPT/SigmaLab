@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dfsvc_suspicious_child_processes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dfsvc_suspicious_child_processes.yml
+// ID Sigma: 67bc0e75-c0a9-4cfc-8754-84a505b63c04
+// Título: Potentially Suspicious Child Process Of ClickOnce Application
+// Descripción: Detects potentially suspicious child processes of a ClickOnce deployment application
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dfsvc_suspicious_child_processes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_mimikatz_command_line.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_mimikatz_command_line.yml
+// ID Sigma: a642964e-bead-4bed-8910-1bb4d63e3b4d
+// Título: HackTool - Mimikatz Execution
+// Descripción: Detection well-known mimikatz command line arguments
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_mimikatz_command_line.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

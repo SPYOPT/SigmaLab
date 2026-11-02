@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_dumping_sensitive_hives.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_dumping_sensitive_hives.yml
+// ID Sigma: fd877b94-9bb5-4191-bb25-d79cbd93c167
+// Título: Dumping of Sensitive Hives Via Reg.EXE
+// Descripción: Detects the usage of "reg.exe" in order to dump sensitive registry hives. This includes SAM, SYSTEM and SECURITY hives.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_dumping_sensitive_hives.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

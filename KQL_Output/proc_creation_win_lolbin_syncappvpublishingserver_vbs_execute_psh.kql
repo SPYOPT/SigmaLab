@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh.yml
+// ID Sigma: 36475a7d-0f6d-4dce-9b01-6aeb473bbaf1
+// Título: SyncAppvPublishingServer VBS Execute Arbitrary PowerShell Code
+// Descripción: Executes arbitrary PowerShell code using SyncAppvPublishingServer.vbs
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

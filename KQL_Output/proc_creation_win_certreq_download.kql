@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_certreq_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certreq_download.yml
+// ID Sigma: 4480827a-9799-4232-b2c4-ccc6c4e9e12b
+// Título: Suspicious CertReq Command to Download
+// Descripción: Detects a suspicious CertReq execution downloading a file.
+This behavior is often used by attackers to download additional payloads or configuration files.
+Certreq is a built-in Windows utility used to request and retrieve certificates from a certification authority (CA). However, it can be abused by threat actors for malicious purposes.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certreq_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

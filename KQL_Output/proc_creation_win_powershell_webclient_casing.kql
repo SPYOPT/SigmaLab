@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_webclient_casing.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_webclient_casing.yml
+// ID Sigma: c86133ad-4725-4bd0-8170-210788e0a7ba
+// Título: Net WebClient Casing Anomalies
+// Descripción: Detects PowerShell command line contents that include a suspicious abnormal casing in the Net.Webclient (e.g. nEt.WEbCliEnT) string as used in obfuscation techniques
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_webclient_casing.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

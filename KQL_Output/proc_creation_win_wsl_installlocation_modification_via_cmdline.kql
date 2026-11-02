@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_wsl_installlocation_modification_via_cmdline.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wsl_installlocation_modification_via_cmdline.yml
+// ID Sigma: f9f62824-de4e-40ca-afe7-8358f76a876d
+// Título: Suspicious WSL InstallLocation Registry Key Modification Via CommandLine
+// Descripción: Detects the use of reg.exe or PowerShell to modify the WSL InstallLocation registry key via command-line arguments.
+Legitimate modifications to this key are performed exclusively by the Windows Installer (msiexec.exe) during WSL package installation or update.
+Manual use of reg.exe or PowerShell to set this value strongly indicates an attempt to redirect WSL execution to a malicious binary.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wsl_installlocation_modification_via_cmdline.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

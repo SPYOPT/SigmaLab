@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_java_children.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_java_children.yml
+// ID Sigma: d292e0af-9a18-420c-9525-ec0ac3936892
+// Título: Suspicious Java Children Processes
+// Descripción: Detects java process spawning suspicious children
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_java_children.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

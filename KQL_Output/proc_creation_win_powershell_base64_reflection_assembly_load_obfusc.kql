@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_base64_reflection_assembly_load_obfusc.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_reflection_assembly_load_obfusc.yml
+// ID Sigma: 9c0295ce-d60d-40bd-bd74-84673b7592b1
+// Título: Suspicious Encoded And Obfuscated Reflection Assembly Load Function Call
+// Descripción: Detects suspicious base64 encoded and obfuscated "LOAD" keyword used in .NET "reflection.assembly"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_reflection_assembly_load_obfusc.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_registry_new_network_provider.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_new_network_provider.yml
+// ID Sigma: baef1ec6-2ca9-47a3-97cc-4cf2bda10b77
+// Título: Potential Credential Dumping Attempt Using New NetworkProvider - CLI
+// Descripción: Detects when an attacker tries to add a new network provider in order to dump clear text credentials, similar to how the NPPSpy tool does it
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_new_network_provider.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

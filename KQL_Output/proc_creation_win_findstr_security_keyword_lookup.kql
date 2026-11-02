@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_findstr_security_keyword_lookup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_security_keyword_lookup.yml
+// ID Sigma: 4fe074b4-b833-4081-8f24-7dcfeca72b42
+// Título: Security Tools Keyword Lookup Via Findstr.EXE
+// Descripción: Detects execution of "findstr" to search for common names of security tools. Attackers often pipe the results of recon commands such as "tasklist" or "whoami" to "findstr" in order to filter out the results.
+This detection focuses on the keywords that the attacker might use as a filter.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_security_keyword_lookup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

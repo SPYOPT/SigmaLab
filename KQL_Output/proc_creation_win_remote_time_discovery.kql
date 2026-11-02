@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_remote_time_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_time_discovery.yml
+// ID Sigma: b243b280-65fe-48df-ba07-6ddea7646427
+// Título: Discovery of a System Time
+// Descripción: Identifies use of various commands to query a systems time. This technique may be used before executing a scheduled task or to discover the time zone of a target system.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_time_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

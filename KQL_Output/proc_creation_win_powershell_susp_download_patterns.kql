@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_susp_download_patterns.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_susp_download_patterns.yml
+// ID Sigma: e6c54d94-498c-4562-a37c-b469d8e9a275
+// Título: Suspicious PowerShell Download and Execute Pattern
+// Descripción: Detects suspicious PowerShell download patterns that are often used in malicious scripts, stagers or downloaders (make sure that your backend applies the strings case-insensitive)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_susp_download_patterns.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

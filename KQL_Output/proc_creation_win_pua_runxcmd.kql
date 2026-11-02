@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_runxcmd.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_runxcmd.yml
+// ID Sigma: 93199800-b52a-4dec-b762-75212c196542
+// Título: PUA - RunXCmd Execution
+// Descripción: Detects the use of the RunXCmd tool to execute commands with System or TrustedInstaller accounts
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_runxcmd.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

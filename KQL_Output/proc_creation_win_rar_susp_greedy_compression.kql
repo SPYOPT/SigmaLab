@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rar_susp_greedy_compression.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rar_susp_greedy_compression.yml
+// ID Sigma: afe52666-401e-4a02-b4ff-5d128990b8cb
+// Título: Suspicious Greedy Compression Using Rar.EXE
+// Descripción: Detects RAR usage that creates an archive from a suspicious folder, either a system folder or one of the folders often used by attackers for staging purposes
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rar_susp_greedy_compression.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

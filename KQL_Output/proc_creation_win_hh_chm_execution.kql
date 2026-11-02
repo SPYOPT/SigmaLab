@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hh_chm_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_chm_execution.yml
+// ID Sigma: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84
+// Título: HH.EXE Execution
+// Descripción: Detects the execution of "hh.exe" to open ".chm" files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_chm_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

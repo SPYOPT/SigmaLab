@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_pssuspend_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_pssuspend_susp_execution.yml
+// ID Sigma: 4beb6ae0-f85b-41e2-8f18-8668abc8af78
+// Título: Sysinternals PsSuspend Suspicious Execution
+// Descripción: Detects suspicious execution of Sysinternals PsSuspend, where the utility is used to suspend critical processes such as AV or EDR to bypass defenses
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_pssuspend_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

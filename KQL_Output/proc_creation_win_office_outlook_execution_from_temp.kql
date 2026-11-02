@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_office_outlook_execution_from_temp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_execution_from_temp.yml
+// ID Sigma: a018fdc3-46a3-44e5-9afb-2cd4af1d4b39
+// Título: Suspicious Execution From Outlook Temporary Folder
+// Descripción: Detects a suspicious program execution in Outlook temp folder
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_execution_from_temp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

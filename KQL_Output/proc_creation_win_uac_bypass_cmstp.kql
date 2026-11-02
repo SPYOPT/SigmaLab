@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_cmstp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cmstp.yml
+// ID Sigma: e66779cc-383e-4224-a3a4-267eeb585c40
+// Título: Bypass UAC via CMSTP
+// Descripción: Detect commandline usage of Microsoft Connection Manager Profile Installer (cmstp.exe) to install specially formatted local .INF files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cmstp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

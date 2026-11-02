@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mpcmdrun_download_arbitrary_file.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mpcmdrun_download_arbitrary_file.yml
+// ID Sigma: 46123129-1024-423e-9fae-43af4a0fa9a5
+// Título: File Download Via Windows Defender MpCmpRun.EXE
+// Descripción: Detects the use of Windows Defender MpCmdRun.EXE to download files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mpcmdrun_download_arbitrary_file.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

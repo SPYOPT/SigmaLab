@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_findstr_lsass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_lsass.yml
+// ID Sigma: fe63010f-8823-4864-a96b-a7b4a0f7b929
+// Título: LSASS Process Reconnaissance Via Findstr.EXE
+// Descripción: Detects findstring commands that include the keyword lsass, which indicates recon actviity for the LSASS process PID
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_lsass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

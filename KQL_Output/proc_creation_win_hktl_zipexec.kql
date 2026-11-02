@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_zipexec.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_zipexec.yml
+// ID Sigma: 90dcf730-1b71-4ae7-9ffc-6fcf62bd0132
+// Título: Suspicious ZipExec Execution
+// Descripción: ZipExec is a Proof-of-Concept (POC) tool to wrap binary-based tools into a password-protected zip file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_zipexec.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_dnx_execute_csharp_code.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnx_execute_csharp_code.yml
+// ID Sigma: 81ebd28b-9607-4478-bf06-974ed9d53ed7
+// Título: Potential Application Whitelisting Bypass via Dnx.EXE
+// Descripción: Detects the execution of Dnx.EXE. The Dnx utility allows for the execution of C# code.
+Attackers might abuse this in order to bypass application whitelisting.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnx_execute_csharp_code.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

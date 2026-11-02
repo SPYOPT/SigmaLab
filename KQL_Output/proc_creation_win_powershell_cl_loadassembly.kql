@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_cl_loadassembly.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_loadassembly.yml
+// ID Sigma: c57872c7-614f-4d7f-a40d-b78c8df2d30d
+// Título: Assembly Loading Via CL_LoadAssembly.ps1
+// Descripción: Detects calls to "LoadAssemblyFromPath" or "LoadAssemblyFromNS" that are part of the "CL_LoadAssembly.ps1" script. This can be abused to load different assemblies and bypass App locker controls.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_loadassembly.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_audio_capture.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_audio_capture.yml
+// ID Sigma: 932fb0d8-692b-4b0f-a26e-5643a50fe7d6
+// Título: Audio Capture via PowerShell
+// Descripción: Detects audio capture via PowerShell Cmdlet.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_audio_capture.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

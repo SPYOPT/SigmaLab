@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_create_account.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_create_account.yml
+// ID Sigma: 51719bf5-e4fd-4e44-8ba8-b830e7ac0731
+// Título: Creation Of A Local User Account
+// Descripción: Detects the creation of a new user account. Such accounts may be used for persistence that do not require persistent remote access tools to be deployed on the system.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_create_account.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

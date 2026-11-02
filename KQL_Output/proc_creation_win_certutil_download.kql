@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_download.yml
+// ID Sigma: 19b08b1c-861d-4e75-a1ef-ea0c1baf202b
+// Título: Suspicious Download Via Certutil.EXE
+// Descripción: Detects the execution of certutil with certain flags that allow the utility to download files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

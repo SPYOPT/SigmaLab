@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_diskshadow_child_process_susp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_diskshadow_child_process_susp.yml
+// ID Sigma: 9f546b25-5f12-4c8d-8532-5893dcb1e4b8
+// Título: Potentially Suspicious Child Process Of DiskShadow.EXE
+// Descripción: Detects potentially suspicious child processes of "Diskshadow.exe". This could be an attempt to bypass parent/child relationship detection or application whitelisting rules.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_diskshadow_child_process_susp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_inline_vbs.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_inline_vbs.yml
+// ID Sigma: 1cc50f3f-1fc8-4acf-b2e9-6f172e1fdebd
+// Título: Suspicious Rundll32 Invoking Inline VBScript
+// Descripción: Detects suspicious process related to rundll32 based on command line that invokes inline VBScript as seen being used by UNC2452
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_inline_vbs.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

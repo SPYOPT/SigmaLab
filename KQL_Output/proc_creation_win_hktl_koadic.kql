@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_koadic.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_koadic.yml
+// ID Sigma: 5cddf373-ef00-4112-ad72-960ac29bac34
+// Título: HackTool - Koadic Execution
+// Descripción: Detects command line parameters used by Koadic hack tool
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_koadic.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

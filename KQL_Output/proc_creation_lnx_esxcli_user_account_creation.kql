@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_esxcli_user_account_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_user_account_creation.yml
+// ID Sigma: b28e4eb3-8bbc-4f0c-819f-edfe8e2f25db
+// Título: ESXi Account Creation Via ESXCLI
+// Descripción: Detects user account creation on ESXi system via esxcli
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_user_account_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
+// ID Sigma: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+// Título: Usage Of Web Request Commands And Cmdlets
+// Descripción: Detects the use of various web request commands with commandline tools and Windows PowerShell cmdlets (including aliases) via CommandLine
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_frombase64string.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_frombase64string.yml
+// ID Sigma: e32d4572-9826-4738-b651-95fa63747e8a
+// Título: Base64 Encoded PowerShell Command Detected
+// Descripción: Detects usage of the "FromBase64String" function in the commandline which is used to decode a base64 encoded string
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_frombase64string.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

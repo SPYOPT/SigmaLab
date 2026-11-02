@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_sticky_key_like_backdoor_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_sticky_key_like_backdoor_execution.yml
+// ID Sigma: 2fdefcb3-dbda-401e-ae23-f0db027628bc
+// Título: Sticky Key Like Backdoor Execution
+// Descripción: Detects the usage and installation of a backdoor that uses an option to register a malicious debugger for built-in tools that are accessible in the login screen
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_sticky_key_like_backdoor_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

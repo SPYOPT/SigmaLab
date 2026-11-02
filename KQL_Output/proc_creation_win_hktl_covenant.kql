@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_covenant.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_covenant.yml
+// ID Sigma: c260b6db-48ba-4b4a-a76f-2f67644e99d2
+// Título: HackTool - Covenant PowerShell Launcher
+// Descripción: Detects suspicious command lines used in Covenant luanchers
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_covenant.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

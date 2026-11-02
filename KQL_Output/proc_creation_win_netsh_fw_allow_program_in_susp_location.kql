@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_netsh_fw_allow_program_in_susp_location.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_fw_allow_program_in_susp_location.yml
+// ID Sigma: a35f5a72-f347-4e36-8895-9869b0d5fc6d
+// Título: Suspicious Program Location Whitelisted In Firewall Via Netsh.EXE
+// Descripción: Detects Netsh command execution that whitelists a program located in a suspicious location in the Windows Firewall
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_fw_allow_program_in_susp_location.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

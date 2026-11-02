@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_reagentc_disable_windows_recovery_environment.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reagentc_disable_windows_recovery_environment.yml
+// ID Sigma: db1c21e4-cd66-4b4e-85ca-590f0780529c
+// Título: Windows Recovery Environment Disabled Via Reagentc
+// Descripción: Detects attempts to disable windows recovery environment using Reagentc.
+ReAgentc.exe is a command-line tool in Windows used to manage the Windows Recovery Environment (WinRE).
+It allows users to enable, disable, and configure WinRE, which is used for troubleshooting and repairing common boot issues.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reagentc_disable_windows_recovery_environment.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

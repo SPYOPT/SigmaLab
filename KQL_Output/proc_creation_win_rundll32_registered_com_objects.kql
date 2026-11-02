@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_registered_com_objects.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_registered_com_objects.yml
+// ID Sigma: f1edd233-30b5-4823-9e6a-c4171b24d316
+// Título: Rundll32 Registered COM Objects
+// Descripción: load malicious registered COM objects
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_registered_com_objects.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

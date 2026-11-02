@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_devinit_lolbin_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_devinit_lolbin_usage.yml
+// ID Sigma: 90d50722-0483-4065-8e35-57efaadd354d
+// Título: Arbitrary MSI Download Via Devinit.EXE
+// Descripción: Detects a certain command line flag combination used by "devinit.exe", which can be abused as a LOLBIN to download arbitrary MSI packages on a Windows system
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_devinit_lolbin_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

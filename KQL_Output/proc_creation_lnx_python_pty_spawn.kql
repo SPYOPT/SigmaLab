@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_python_pty_spawn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_pty_spawn.yml
+// ID Sigma: c4042d54-110d-45dd-a0e1-05c47822c937
+// Título: Python Spawning Pretty TTY Via PTY Module
+// Descripción: Detects a python process calling to the PTY module in order to spawn a pretty tty which could be indicative of potential reverse shell activity.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_pty_spawn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

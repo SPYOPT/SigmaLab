@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_auditpol_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_auditpol_susp_execution.yml
+// ID Sigma: 0a13e132-651d-11eb-ae93-0242ac130002
+// Título: Audit Policy Tampering Via Auditpol
+// Descripción: Threat actors can use auditpol binary to change audit policy configuration to impair detection capability.
+This can be carried out by selectively disabling/removing certain audit policies as well as restoring a custom policy owned by the threat actor.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_auditpol_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

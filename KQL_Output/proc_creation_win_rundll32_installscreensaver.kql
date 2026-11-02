@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_installscreensaver.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_installscreensaver.yml
+// ID Sigma: 15bd98ea-55f4-4d37-b09a-e7caa0fa2221
+// Título: Rundll32 InstallScreenSaver Execution
+// Descripción: An attacker may execute an application as a SCR File using rundll32.exe desk.cpl,InstallScreenSaver
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_installscreensaver.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

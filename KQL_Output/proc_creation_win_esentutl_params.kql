@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_esentutl_params.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_esentutl_params.yml
+// ID Sigma: 7df1713a-1a5b-4a4b-a071-dc83b144a101
+// Título: Esentutl Gather Credentials
+// Descripción: Conti recommendation to its affiliates to use esentutl to access NTDS dumped file. Trickbot also uses this utilities to get MSEdge info via its module pwgrab.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_esentutl_params.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

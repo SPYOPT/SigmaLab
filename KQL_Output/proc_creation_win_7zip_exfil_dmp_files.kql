@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_7zip_exfil_dmp_files.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_7zip_exfil_dmp_files.yml
+// ID Sigma: ec570e53-4c76-45a9-804d-dc3f355ff7a7
+// Título: 7Zip Compressing Dump Files
+// Descripción: Detects execution of 7z in order to compress a file with a ".dmp"/".dump" extension, which could be a step in a process of dump file exfiltration.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_7zip_exfil_dmp_files.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

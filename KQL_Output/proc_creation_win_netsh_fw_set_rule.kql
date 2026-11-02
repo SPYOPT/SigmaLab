@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_netsh_fw_set_rule.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_fw_set_rule.yml
+// ID Sigma: a70dcb37-3bee-453a-99df-d0c683151be6
+// Título: Firewall Rule Update Via Netsh.EXE
+// Descripción: Detects execution of netsh with the "advfirewall" and the "set" option in order to set new values for properties of a existing rule
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_fw_set_rule.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_changepk_slui.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_changepk_slui.yml
+// ID Sigma: 503d581c-7df0-4bbe-b9be-5840c0ecc1fc
+// Título: UAC Bypass Using ChangePK and SLUI
+// Descripción: Detects an UAC bypass that uses changepk.exe and slui.exe (UACMe 61)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_changepk_slui.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

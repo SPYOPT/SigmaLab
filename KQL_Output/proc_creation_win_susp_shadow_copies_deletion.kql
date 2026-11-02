@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_shadow_copies_deletion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_shadow_copies_deletion.yml
+// ID Sigma: c947b146-0abc-4c87-9c64-b17e9d7274a2
+// Título: Shadow Copies Deletion Using Operating Systems Utilities
+// Descripción: Shadow Copies deletion using operating systems utilities
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_shadow_copies_deletion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

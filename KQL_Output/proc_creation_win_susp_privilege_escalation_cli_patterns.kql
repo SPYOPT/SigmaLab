@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_privilege_escalation_cli_patterns.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_privilege_escalation_cli_patterns.yml
+// ID Sigma: 50d66fb0-03f8-4da0-8add-84e77d12a020
+// Título: Suspicious RunAs-Like Flag Combination
+// Descripción: Detects suspicious command line flags that let the user set a target user and command as e.g. seen in PsExec-like tools
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_privilege_escalation_cli_patterns.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

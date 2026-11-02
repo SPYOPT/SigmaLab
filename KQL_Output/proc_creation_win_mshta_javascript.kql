@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mshta_javascript.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_javascript.yml
+// ID Sigma: 67f113fa-e23d-4271-befa-30113b3e08b1
+// Título: Suspicious JavaScript Execution Via Mshta.EXE
+// Descripción: Detects execution of javascript code using "mshta.exe".
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_javascript.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

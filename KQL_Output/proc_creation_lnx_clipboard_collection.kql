@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_lnx_clipboard_collection.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_clipboard_collection.yml
+// ID Sigma: ec127035-a636-4b9a-8555-0efd4e59f316
+// Título: Clipboard Collection with Xclip Tool
+// Descripción: Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed.
+Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_clipboard_collection.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

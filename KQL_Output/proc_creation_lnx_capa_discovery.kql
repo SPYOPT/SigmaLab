@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_capa_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_capa_discovery.yml
+// ID Sigma: d8d97d51-122d-4cdd-9e2f-01b4b4933530
+// Título: Capabilities Discovery - Linux
+// Descripción: Detects usage of "getcap" binary. This is often used during recon activity to determine potential binaries that can be abused as GTFOBins or other.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_capa_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

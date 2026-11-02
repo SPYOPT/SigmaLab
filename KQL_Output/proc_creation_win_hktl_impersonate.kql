@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_impersonate.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impersonate.yml
+// ID Sigma: cf0c254b-22f1-4b2b-8221-e137b3c0af94
+// Título: HackTool - Impersonate Execution
+// Descripción: Detects execution of the Impersonate tool. Which can be used to manipulate tokens on a Windows computers remotely (PsExec/WmiExec) or interactively
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impersonate.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

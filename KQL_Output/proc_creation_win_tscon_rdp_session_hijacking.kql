@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_tscon_rdp_session_hijacking.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tscon_rdp_session_hijacking.yml
+// ID Sigma: 224f140f-3553-4cd1-af78-13d81bf9f7cc
+// Título: Potential RDP Session Hijacking Activity
+// Descripción: Detects potential RDP Session Hijacking activity on Windows systems
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tscon_rdp_session_hijacking.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

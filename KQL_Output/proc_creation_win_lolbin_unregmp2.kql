@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_unregmp2.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_unregmp2.yml
+// ID Sigma: 727454c0-d851-48b0-8b89-385611ab0704
+// Título: Lolbin Unregmp2.exe Use As Proxy
+// Descripción: Detect usage of the "unregmp2.exe" binary as a proxy to launch a custom version of "wmpnscfg.exe"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_unregmp2.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_pua_netscan.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_netscan.yml
+// ID Sigma: ca387a8e-1c84-4da3-9993-028b45342d30
+// Título: PUA - SoftPerfect Netscan Execution
+// Descripción: Detects usage of SoftPerfect's "netscan.exe". An application for scanning networks.
+It is actively used in-the-wild by threat actors to inspect and understand the network architecture of a victim.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_netscan.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

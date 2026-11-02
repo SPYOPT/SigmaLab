@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_odbcconf_driver_install.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_odbcconf_driver_install.yml
+// ID Sigma: 3f5491e2-8db8-496b-9e95-1029fce852d4
+// Título: Driver/DLL Installation Via Odbcconf.EXE
+// Descripción: Detects execution of "odbcconf" with "INSTALLDRIVER" which installs a new ODBC driver. Attackers abuse this to install and run malicious DLLs.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_odbcconf_driver_install.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

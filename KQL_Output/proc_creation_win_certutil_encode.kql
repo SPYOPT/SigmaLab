@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_encode.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_encode.yml
+// ID Sigma: e62a9f0c-ca1e-46b2-85d5-a6da77f86d1a
+// Título: File Encoded To Base64 Via Certutil.EXE
+// Descripción: Detects the execution of certutil with the "encode" flag to encode a file to base64. This can be abused by threat actors and attackers for data exfiltration
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_encode.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

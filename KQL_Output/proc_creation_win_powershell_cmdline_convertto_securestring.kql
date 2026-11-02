@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_cmdline_convertto_securestring.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cmdline_convertto_securestring.yml
+// ID Sigma: 74403157-20f5-415d-89a7-c505779585cf
+// Título: ConvertTo-SecureString Cmdlet Usage Via CommandLine
+// Descripción: Detects usage of the "ConvertTo-SecureString" cmdlet via the commandline. Which is fairly uncommon and could indicate potential suspicious activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cmdline_convertto_securestring.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

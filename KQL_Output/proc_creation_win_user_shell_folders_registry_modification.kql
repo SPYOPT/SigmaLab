@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_user_shell_folders_registry_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_user_shell_folders_registry_modification.yml
+// ID Sigma: 8f3ab69a-aa22-4943-aa58-e0a52fdf6818
+// Título: User Shell Folders Registry Modification via CommandLine
+// Descripción: Detects modifications to User Shell Folders registry values via reg.exe or PowerShell, which could indicate persistence attempts.
+Attackers may modify User Shell Folders registry values to point to malicious executables or scripts that will be executed during startup.
+This technique is often used to maintain persistence on a compromised system by ensuring that malicious payloads are executed automatically.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_user_shell_folders_registry_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_iis_appcmd_http_logging.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_appcmd_http_logging.yml
+// ID Sigma: e4ed6030-ffe5-4e6a-8a8a-ab3c1ab9d94e
+// Título: Disable Windows IIS HTTP Logging
+// Descripción: Disables HTTP logging on a Windows IIS web server as seen by Threat Group 3390 (Bronze Union)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_appcmd_http_logging.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

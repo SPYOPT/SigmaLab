@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_shadowcopy_deletion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_shadowcopy_deletion.yml
+// ID Sigma: 21ff4ca9-f13a-41ad-b828-0077b2af2e40
+// Título: Deletion of Volume Shadow Copies via WMI with PowerShell
+// Descripción: Detects deletion of Windows Volume Shadow Copies with PowerShell code and Get-WMIObject. This technique is used by numerous ransomware families such as Sodinokibi/REvil
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_shadowcopy_deletion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

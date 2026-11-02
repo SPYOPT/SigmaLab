@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_without_parameters.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_without_parameters.yml
+// ID Sigma: 5bb68627-3198-40ca-b458-49f973db8752
+// Título: Rundll32 Execution Without Parameters
+// Descripción: Detects rundll32 execution without parameters as observed when running Metasploit windows/smb/psexec exploit module
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_without_parameters.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

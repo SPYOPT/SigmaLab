@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_decode_gzip.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_decode_gzip.yml
+// ID Sigma: 98767d61-b2e8-4d71-b661-e36783ee24c1
+// Título: Gzip Archive Decode Via PowerShell
+// Descripción: Detects attempts of decoding encoded Gzip archives via PowerShell.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_decode_gzip.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

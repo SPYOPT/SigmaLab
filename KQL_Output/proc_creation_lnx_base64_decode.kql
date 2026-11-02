@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_base64_decode.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_decode.yml
+// ID Sigma: e2072cab-8c9a-459b-b63c-40ae79e27031
+// Título: Decode Base64 Encoded Text
+// Descripción: Detects usage of base64 utility to decode arbitrary base64-encoded text
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_base64_decode.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

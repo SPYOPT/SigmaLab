@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_jlaive_batch_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_jlaive_batch_execution.yml
+// ID Sigma: 0a99eb3e-1617-41bd-b095-13dc767f3def
+// Título: HackTool - Jlaive In-Memory Assembly Execution
+// Descripción: Detects the use of Jlaive to execute assemblies in a copied PowerShell
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_jlaive_batch_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

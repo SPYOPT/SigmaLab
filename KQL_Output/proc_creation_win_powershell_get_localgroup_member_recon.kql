@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_get_localgroup_member_recon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_get_localgroup_member_recon.yml
+// ID Sigma: c8a180d6-47a3-4345-a609-53f9c3d834fc
+// Título: Suspicious Reconnaissance Activity Using Get-LocalGroupMember Cmdlet
+// Descripción: Detects suspicious reconnaissance command line activity on Windows systems using the PowerShell Get-LocalGroupMember Cmdlet
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_get_localgroup_member_recon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

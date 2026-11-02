@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_env_shell_invocation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_env_shell_invocation.yml
+// ID Sigma: bed978f8-7f3a-432b-82c5-9286a9b3031a
+// Título: Shell Invocation via Env Command - Linux
+// Descripción: Detects the use of the env command to invoke a shell. This may indicate an attempt to bypass restricted environments, escalate privileges, or execute arbitrary commands.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_env_shell_invocation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

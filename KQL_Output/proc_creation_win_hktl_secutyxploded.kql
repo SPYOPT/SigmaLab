@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_secutyxploded.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_secutyxploded.yml
+// ID Sigma: 7679d464-4f74-45e2-9e01-ac66c5eb041a
+// Título: HackTool - SecurityXploded Execution
+// Descripción: Detects the execution of SecurityXploded Tools
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_secutyxploded.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

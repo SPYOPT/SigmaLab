@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_pcwrun_follina.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pcwrun_follina.yml
+// ID Sigma: 6004abd0-afa4-4557-ba90-49d172e0a299
+// Título: Execute Pcwrun.EXE To Leverage Follina
+// Descripción: Detects indirect command execution via Program Compatibility Assistant "pcwrun.exe" leveraging the follina (CVE-2022-30190) vulnerability
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pcwrun_follina.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

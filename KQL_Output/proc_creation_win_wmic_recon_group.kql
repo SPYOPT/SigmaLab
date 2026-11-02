@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_wmic_recon_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_group.yml
+// ID Sigma: 164eda96-11b2-430b-85ff-6a265c15bf32
+// Título: Local Groups Reconnaissance Via Wmic.EXE
+// Descripción: Detects the execution of "wmic" with the "group" flag.
+Adversaries may attempt to find local system groups and permission settings.
+The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group.
+Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

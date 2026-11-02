@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mstsc_rdp_hijack_shadowing.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mstsc_rdp_hijack_shadowing.yml
+// ID Sigma: 6ba5a05f-b095-4f0a-8654-b825f4f16334
+// Título: Potential MSTSC Shadowing Activity
+// Descripción: Detects RDP session hijacking by using MSTSC shadowing
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mstsc_rdp_hijack_shadowing.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

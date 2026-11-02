@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ultravnc_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ultravnc_susp_execution.yml
+// ID Sigma: 871b9555-69ca-4993-99d3-35a59f9f3599
+// Título: Suspicious UltraVNC Execution
+// Descripción: Detects suspicious UltraVNC command line flag combination that indicate a auto reconnect upon execution, e.g. startup (as seen being used by Gamaredon threat group)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ultravnc_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

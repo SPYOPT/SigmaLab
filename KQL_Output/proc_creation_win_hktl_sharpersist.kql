@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sharpersist.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpersist.yml
+// ID Sigma: 26488ad0-f9fd-4536-876f-52fea846a2e4
+// Título: HackTool - SharPersist Execution
+// Descripción: Detects the execution of the hacktool SharPersist - used to deploy various different kinds of persistence mechanisms
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpersist.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

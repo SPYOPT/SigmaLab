@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_shutdown_logoff.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_shutdown_logoff.yml
+// ID Sigma: ec290c06-9b6b-4338-8b6b-095c0f284f10
+// Título: Suspicious Execution of Shutdown to Log Out
+// Descripción: Detects the rare use of the command line tool shutdown to logoff a user
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_shutdown_logoff.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

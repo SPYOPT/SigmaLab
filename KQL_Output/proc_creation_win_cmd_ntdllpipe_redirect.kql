@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_ntdllpipe_redirect.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_ntdllpipe_redirect.yml
+// ID Sigma: bbc865e4-7fcd-45a6-8ff1-95ced28ec5b2
+// Título: NtdllPipe Like Activity Execution
+// Descripción: Detects command that type the content of ntdll.dll to a different file or a pipe in order to evade AV / EDR detection. As seen being used in the POC NtdllPipe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_ntdllpipe_redirect.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

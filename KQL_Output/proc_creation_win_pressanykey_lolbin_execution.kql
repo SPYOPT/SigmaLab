@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pressanykey_lolbin_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pressanykey_lolbin_execution.yml
+// ID Sigma: a20391f8-76fb-437b-abc0-dba2df1952c6
+// Título: Visual Studio NodejsTools PressAnyKey Arbitrary Binary Execution
+// Descripción: Detects child processes of Microsoft.NodejsTools.PressAnyKey.exe that can be used to execute any other binary
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pressanykey_lolbin_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

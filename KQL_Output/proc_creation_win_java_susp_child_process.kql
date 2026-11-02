@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_java_susp_child_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_java_susp_child_process.yml
+// ID Sigma: 0d34ed8b-1c12-4ff2-828c-16fc860b766d
+// Título: Suspicious Processes Spawned by Java.EXE
+// Descripción: Detects suspicious processes spawned from a Java host process which could indicate a sign of exploitation (e.g. log4j)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_java_susp_child_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

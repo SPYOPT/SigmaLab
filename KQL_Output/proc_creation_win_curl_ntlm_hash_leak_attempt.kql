@@ -1,6 +1,19 @@
 // Regla Sigma: proc_creation_win_curl_ntlm_hash_leak_attempt.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_ntlm_hash_leak_attempt.yml
+// ID Sigma: 916eb839-895e-47f8-99ee-3008bf377a3e
+// Título: NTLM Hash Leak Via Curl NTLM Authentication
+// Descripción: Detects the use of curl with NTLM authentication and empty credentials (-u :), which can be abused to leak the currently logged-in user's NTLMv2 challenge-response to an
+attacker-controlled server, enabling offline cracking or relay attacks.
+When no credentials are provided, the Microsoft-shipped curl passes a NULL identity to Windows SSPI, which automatically falls back to the current user's logon session credentials
+stored in LSASS — without requiring a plaintext password.
+This behavior is exclusive to the curl binary shipped by Microsoft (available since Windows 10 / Windows Server 2019), which is built with SSPI support.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_ntlm_hash_leak_attempt.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

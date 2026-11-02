@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_pubprn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pubprn.yml
+// ID Sigma: 1fb76ab8-fa60-4b01-bddd-71e89bf555da
+// Título: Pubprn.vbs Proxy Execution
+// Descripción: Detects the use of the 'Pubprn.vbs' Microsoft signed script to execute commands.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pubprn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

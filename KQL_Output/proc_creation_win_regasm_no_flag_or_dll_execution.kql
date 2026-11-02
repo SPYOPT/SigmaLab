@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_regasm_no_flag_or_dll_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_no_flag_or_dll_execution.yml
+// ID Sigma: 651f87f7-12db-47f9-84c5-f27b081b94b6
+// Título: RegAsm.EXE Execution Without CommandLine Flags or Files
+// Descripción: Detects the execution of "RegAsm.exe" without a commandline flag or file, which might indicate potential process injection activity.
+Usually "RegAsm.exe" should point to a dedicated DLL file or call the help with the "/?" flag.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_no_flag_or_dll_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

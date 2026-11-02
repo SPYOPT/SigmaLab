@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_curl_insecure_proxy_or_doh.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_insecure_proxy_or_doh.yml
+// ID Sigma: 2c1486f5-02e8-4f86-9099-b97f2da4ed77
+// Título: Insecure Proxy/DOH Transfer Via Curl.EXE
+// Descripción: Detects execution of "curl.exe" with the "insecure" flag over proxy or DOH.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_insecure_proxy_or_doh.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

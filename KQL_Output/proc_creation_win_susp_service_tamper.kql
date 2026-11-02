@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_susp_service_tamper.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_service_tamper.yml
+// ID Sigma: ce72ef99-22f1-43d4-8695-419dcb5d9330
+// Título: Suspicious Windows Service Tampering
+// Descripción: Detects the usage of binaries such as 'net', 'sc' or 'powershell' in order to stop, pause, disable or delete critical or important Windows services such as AV, Backup, etc. As seen being used in some ransomware scripts
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_service_tamper.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

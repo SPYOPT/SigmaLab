@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_lnx_pnscan_binary_cli_pattern.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_pnscan_binary_cli_pattern.yml
+// ID Sigma: 97de11cd-4b67-4abf-9a8b-1020e670aa9e
+// Título: Pnscan Binary Data Transmission Activity
+// Descripción: Detects command line patterns associated with the use of Pnscan for sending and receiving binary data across the network.
+This behavior has been identified in a Linux malware campaign targeting Docker, Apache Hadoop, Redis, and Confluence and was previously used by the threat actor known as TeamTNT
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_pnscan_binary_cli_pattern.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

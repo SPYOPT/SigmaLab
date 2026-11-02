@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_reg_enable_windows_recall.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_enable_windows_recall.yml
+// ID Sigma: 817f252c-5143-4dae-b418-48c3e9f63728
+// Título: Windows Recall Feature Enabled Via Reg.EXE
+// Descripción: Detects the enabling of the Windows Recall feature via registry manipulation.
+Windows Recall can be enabled by deleting the existing "DisableAIDataAnalysis" value, or setting it to 0.
+Adversaries may enable Windows Recall as part of post-exploitation discovery and collection activities.
+This rule assumes that Recall is already explicitly disabled on the host, and subsequently enabled by the adversary.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_enable_windows_recall.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

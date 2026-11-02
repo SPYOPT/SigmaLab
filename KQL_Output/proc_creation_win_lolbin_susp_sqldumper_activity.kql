@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_susp_sqldumper_activity.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_sqldumper_activity.yml
+// ID Sigma: 23ceaf5c-b6f1-4a32-8559-f2ff734be516
+// Título: Dumping Process via Sqldumper.exe
+// Descripción: Detects process dump via legitimate sqldumper.exe binary
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_sqldumper_activity.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

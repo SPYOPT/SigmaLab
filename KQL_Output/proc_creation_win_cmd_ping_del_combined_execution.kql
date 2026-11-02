@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_ping_del_combined_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_ping_del_combined_execution.yml
+// ID Sigma: 54786ddc-5b8a-11ed-9b6a-0242ac120002
+// Título: Suspicious Ping/Del Command Combination
+// Descripción: Detects a method often used by ransomware. Which combines the "ping" to wait a couple of seconds and then "del" to delete the file in question. Its used to hide the file responsible for the initial infection for example
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_ping_del_combined_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_security_susp_node_js_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_security_susp_node_js_execution.yml
+// ID Sigma: ba3874b9-0fae-465f-836c-eb5d071a1789
+// Título: NodeJS Execution of JavaScript File
+// Descripción: Detects execution of JavaScript or JSC files using NodeJs binary node.exe, that could be potentially suspicious.
+Node.js is a popular open-source JavaScript runtime that runs code outside browsers and is widely used for both frontend and backend development.
+Adversaries have been observed abusing Node.js to disguise malware as legitimate processes, evade security defenses, and maintain persistence within target systems.
+Because Node.js is commonly used, this rule may generate false positives in some environments. However, if such activity is unusual in your environment, it is highly suspicious and warrants immediate investigation.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_security_susp_node_js_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

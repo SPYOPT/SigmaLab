@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_sftp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_sftp.yml
+// ID Sigma: a85ffc3a-e8fd-4040-93bf-78aff284d801
+// Título: Use Of The SFTP.EXE Binary As A LOLBIN
+// Descripción: Detects the usage of the "sftp.exe" binary as a LOLBIN by abusing the "-D" flag
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_sftp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_eventvwr_recentviews.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_eventvwr_recentviews.yml
+// ID Sigma: 30fc8de7-d833-40c4-96b6-28319fbc4f6c
+// Título: UAC Bypass Using Event Viewer RecentViews
+// Descripción: Detects the pattern of UAC Bypass using Event Viewer RecentViews
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_eventvwr_recentviews.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

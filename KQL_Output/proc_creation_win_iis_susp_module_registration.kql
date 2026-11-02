@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_iis_susp_module_registration.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_susp_module_registration.yml
+// ID Sigma: 043c4b8b-3a54-4780-9682-081cb6b8185c
+// Título: Suspicious IIS Module Registration
+// Descripción: Detects a suspicious IIS module registration as described in Microsoft threat report on IIS backdoors
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_susp_module_registration.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

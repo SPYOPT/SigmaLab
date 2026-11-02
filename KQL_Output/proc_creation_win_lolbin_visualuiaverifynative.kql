@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_visualuiaverifynative.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_visualuiaverifynative.yml
+// ID Sigma: b30a8bc5-e21b-4ca2-9420-0a94019ac56a
+// Título: Use of VisualUiaVerifyNative.exe
+// Descripción: VisualUiaVerifyNative.exe is a Windows SDK that can be used for AWL bypass and is listed in Microsoft's recommended block rules.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_visualuiaverifynative.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

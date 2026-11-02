@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_msiexec_web_install.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msiexec_web_install.yml
+// ID Sigma: f7b5f842-a6af-4da5-9e95-e32478f3cd2f
+// Título: MsiExec Web Install
+// Descripción: Detects suspicious msiexec process starts with web addresses as parameter
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msiexec_web_install.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

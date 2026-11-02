@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_imagingdevices_unusual_parents.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_imagingdevices_unusual_parents.yml
+// ID Sigma: f11f2808-adb4-46c0-802a-8660db50fa99
+// Título: ImagingDevices Unusual Parent/Child Processes
+// Descripción: Detects unusual parent or children of the ImagingDevices.exe (Windows Contacts) process as seen being used with Bumblebee activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_imagingdevices_unusual_parents.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

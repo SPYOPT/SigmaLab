@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_webbrowserpassview.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_webbrowserpassview.yml
+// ID Sigma: d0dae994-26c6-4d2d-83b5-b3c8b79ae513
+// Título: PUA - WebBrowserPassView Execution
+// Descripción: Detects the execution of WebBrowserPassView.exe. A password recovery tool that reveals the passwords stored by the following Web browsers, Internet Explorer (Version 4.0 - 11.0), Mozilla Firefox (All Versions), Google Chrome, Safari, and Opera
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_webbrowserpassview.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

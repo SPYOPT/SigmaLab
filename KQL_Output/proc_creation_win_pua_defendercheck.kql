@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_defendercheck.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_defendercheck.yml
+// ID Sigma: f0ca6c24-3225-47d5-b1f5-352bf07ecfa7
+// Título: PUA - DefenderCheck Execution
+// Descripción: Detects the use of DefenderCheck, a tool to evaluate the signatures used in Microsoft Defender. It can be used to figure out the strings / byte chains used in Microsoft Defender to detect a tool and thus used for AV evasion.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_defendercheck.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

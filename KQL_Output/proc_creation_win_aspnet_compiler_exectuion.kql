@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_aspnet_compiler_exectuion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_aspnet_compiler_exectuion.yml
+// ID Sigma: a01b8329-5953-4f73-ae2d-aa01e1f35f00
+// Título: AspNetCompiler Execution
+// Descripción: Detects execution of "aspnet_compiler.exe" which can be abused to compile and execute C# code.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_aspnet_compiler_exectuion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

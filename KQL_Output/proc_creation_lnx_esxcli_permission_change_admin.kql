@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_esxcli_permission_change_admin.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_permission_change_admin.yml
+// ID Sigma: 9691f58d-92c1-4416-8bf3-2edd753ec9cf
+// Título: ESXi Admin Permission Assigned To Account Via ESXCLI
+// Descripción: Detects execution of the "esxcli" command with the "system" and "permission" flags in order to assign admin permissions to an account.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_permission_change_admin.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

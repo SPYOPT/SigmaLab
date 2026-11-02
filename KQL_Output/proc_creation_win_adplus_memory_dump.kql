@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_adplus_memory_dump.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_adplus_memory_dump.yml
+// ID Sigma: 2f869d59-7f6a-4931-992c-cce556ff2d53
+// Título: Potential Adplus.EXE Abuse
+// Descripción: Detects execution of "AdPlus.exe", a binary that is part of the Windows SDK that can be used as a LOLBIN in order to dump process memory and execute arbitrary commands.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_adplus_memory_dump.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

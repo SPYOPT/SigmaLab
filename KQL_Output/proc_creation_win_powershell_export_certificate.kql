@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_export_certificate.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_export_certificate.yml
+// ID Sigma: 9e716b33-63b2-46da-86a4-bd3c3b9b5dfb
+// Título: Certificate Exported Via PowerShell
+// Descripción: Detects calls to cmdlets that are used to export certificates from the local certificate store. Threat actors were seen abusing this to steal private keys from compromised machines.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_export_certificate.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

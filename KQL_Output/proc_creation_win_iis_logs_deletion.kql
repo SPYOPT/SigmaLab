@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_iis_logs_deletion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_logs_deletion.yml
+// ID Sigma: 0649be4a-aeb0-45b0-b89e-7f1668f6d9c0
+// Título: IIS WebServer Log Deletion via CommandLine Utilities
+// Descripción: Detects attempts to delete Internet Information Services (IIS) log files via command line utilities, which is a common defense evasion technique used by attackers to cover their tracks.
+Threat actors often abuse vulnerabilities in web applications hosted on IIS servers to gain initial access and later delete IIS logs to evade detection.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_iis_logs_deletion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

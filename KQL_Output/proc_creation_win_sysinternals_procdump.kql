@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_procdump.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump.yml
+// ID Sigma: 2e65275c-8288-4ab4-aeb7-6274f58b6b20
+// Título: Procdump Execution
+// Descripción: Detects usage of the SysInternals Procdump utility
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

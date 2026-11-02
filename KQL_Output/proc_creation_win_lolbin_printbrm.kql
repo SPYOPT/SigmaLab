@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_printbrm.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_printbrm.yml
+// ID Sigma: cafeeba3-01da-4ab4-b6c4-a31b1d9730c7
+// Título: PrintBrm ZIP Creation of Extraction
+// Descripción: Detects the execution of the LOLBIN PrintBrm.exe, which can be used to create or extract ZIP files. PrintBrm.exe should not be run on a normal workstation.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_printbrm.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

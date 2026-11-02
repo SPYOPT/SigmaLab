@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_nltest_recon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_nltest_recon.yml
+// ID Sigma: 5cc90652-4cbd-4241-aa3b-4b462fa5a248
+// Título: Potential Recon Activity Via Nltest.EXE
+// Descripción: Detects nltest commands that can be used for information discovery
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_nltest_recon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

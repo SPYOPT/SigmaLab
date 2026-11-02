@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pdqdeploy_runner_susp_children.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pdqdeploy_runner_susp_children.yml
+// ID Sigma: 12b8e9f5-96b2-41e1-9a42-8c6779a5c184
+// Título: Potentially Suspicious Execution Of PDQDeployRunner
+// Descripción: Detects suspicious execution of "PDQDeployRunner" which is part of the PDQDeploy service stack that is responsible for executing commands and packages on a remote machines
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pdqdeploy_runner_susp_children.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

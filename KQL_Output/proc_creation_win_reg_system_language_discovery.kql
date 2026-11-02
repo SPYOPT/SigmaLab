@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_reg_system_language_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_system_language_discovery.yml
+// ID Sigma: c43a5405-e8e1-4221-9ac9-dbe3fa14e886
+// Título: System Language Discovery via Reg.Exe
+// Descripción: Detects the usage of Reg.Exe to query system language settings.
+Attackers may discover the system language to determine the geographic location of victims, customize payloads for specific regions,
+or avoid targeting certain locales to evade detection.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_system_language_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

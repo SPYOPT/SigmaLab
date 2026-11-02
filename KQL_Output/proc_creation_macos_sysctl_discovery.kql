@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_macos_sysctl_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_sysctl_discovery.yml
+// ID Sigma: 6ff08e55-ea53-4f27-94a1-eff92e6d9d5c
+// Título: System Information Discovery Via Sysctl - MacOS
+// Descripción: Detects the execution of "sysctl" with specific arguments that have been used by threat actors and malware. It provides system hardware information.
+This process is primarily used to detect and avoid virtualization and analysis environments.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_sysctl_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

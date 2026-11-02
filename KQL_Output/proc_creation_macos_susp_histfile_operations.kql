@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_susp_histfile_operations.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_histfile_operations.yml
+// ID Sigma: 508a9374-ad52-4789-b568-fc358def2c65
+// Título: Suspicious History File Operations
+// Descripción: Detects commandline operations on shell history files
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_histfile_operations.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

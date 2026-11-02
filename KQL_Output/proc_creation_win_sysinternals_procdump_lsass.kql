@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_sysinternals_procdump_lsass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump_lsass.yml
+// ID Sigma: 5afee48e-67dd-4e03-a783-f74259dcf998
+// Título: Potential LSASS Process Dump Via Procdump
+// Descripción: Detects potential credential harvesting attempts through LSASS memory dumps using ProcDump.
+This rule identifies suspicious command-line patterns that combine memory dump flags (-ma, -mm, -mp) with LSASS-related process markers.
+LSASS (Local Security Authority Subsystem Service) contains sensitive authentication data including plaintext passwords, NTLM hashes, and Kerberos tickets in memory.
+Attackers commonly dump LSASS memory to extract credentials for lateral movement and privilege escalation.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump_lsass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_node_abuse.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_node_abuse.yml
+// ID Sigma: 6640f31c-01ad-49b5-beb5-83498a5cd8bd
+// Título: Potential Arbitrary Code Execution Via Node.EXE
+// Descripción: Detects the execution node.exe which is shipped with multiple software such as VMware, Adobe...etc. In order to execute arbitrary code. For example to establish reverse shell as seen in Log4j attacks...etc
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_node_abuse.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

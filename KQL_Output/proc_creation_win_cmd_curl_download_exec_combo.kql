@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_curl_download_exec_combo.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_curl_download_exec_combo.yml
+// ID Sigma: 21dd6d38-2b18-4453-9404-a0fe4a0cc288
+// Título: Curl Download And Execute Combination
+// Descripción: Adversaries can use curl to download payloads remotely and execute them. Curl is included by default in Windows 10 build 17063 and later.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_curl_download_exec_combo.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

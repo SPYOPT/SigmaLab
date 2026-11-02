@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_net_use_mount_admin_share.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_use_mount_admin_share.yml
+// ID Sigma: 3abd6094-7027-475f-9630-8ab9be7b9725
+// Título: Windows Admin Share Mount Via Net.EXE
+// Descripción: Detects when an admin share is mounted using net.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_use_mount_admin_share.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_ntlm_coercion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_ntlm_coercion.yml
+// ID Sigma: 6c6d9280-e6d0-4b9d-80ac-254701b64916
+// Título: Potential NTLM Coercion Via Certutil.EXE
+// Descripción: Detects possible NTLM coercion via certutil using the 'syncwithWU' flag
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_ntlm_coercion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

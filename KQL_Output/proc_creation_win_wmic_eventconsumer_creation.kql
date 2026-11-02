@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_wmic_eventconsumer_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_eventconsumer_creation.yml
+// ID Sigma: ebef4391-1a81-4761-a40a-1db446c0e625
+// Título: NewActiveScriptEventConsumer Creation Attempt via Wmic.EXE
+// Descripción: Detects the attempt to create an ActiveScriptEventConsumer via WMIC.EXE.
+An ActiveScriptEventConsumer is a built-in Windows Management Instrumentation (WMI) class that
+automatically executes a predefined script (in VBScript or JScript) whenever a specific system event occurs.
+Adversaries often abuse ActiveScriptEventConsumer to maintain persistence on a compromised host by executing a malicious script whenever a specific event occurs.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_eventconsumer_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

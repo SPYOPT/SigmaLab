@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sharpup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpup.yml
+// ID Sigma: c484e533-ee16-4a93-b6ac-f0ea4868b2f1
+// Título: HackTool - SharpUp PrivEsc Tool Execution
+// Descripción: Detects the use of SharpUp, a tool for local privilege escalation
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

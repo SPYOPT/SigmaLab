@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_unusual_parent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_unusual_parent.yml
+// ID Sigma: 4b991083-3d0e-44ce-8fc4-b254025d8d4b
+// Título: Unusual Parent Process For Cmd.EXE
+// Descripción: Detects suspicious parent process for cmd.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_unusual_parent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_advpack_obfuscated_ordinal_call.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_advpack_obfuscated_ordinal_call.yml
+// ID Sigma: a1473adb-5338-4a20-b4c3-126763e2d3d3
+// Título: Suspicious Advpack Call Via Rundll32.EXE
+// Descripción: Detects execution of "rundll32" calling "advpack.dll" with potential obfuscated ordinal calls in order to leverage the "RegisterOCX" function
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_advpack_obfuscated_ordinal_call.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

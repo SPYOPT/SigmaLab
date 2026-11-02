@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_rundll32_mshtml_runhtmlapplication.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_mshtml_runhtmlapplication.yml
+// ID Sigma: 4782eb5a-a513-4523-a0ac-f3082b26ac5c
+// Título: Mshtml.DLL RunHTMLApplication Suspicious Usage
+// Descripción: Detects execution of commands that leverage the "mshtml.dll" RunHTMLApplication export to run arbitrary code via different protocol handlers (vbscript, javascript, file, http...)
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_mshtml_runhtmlapplication.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

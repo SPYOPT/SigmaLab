@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_ntds.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_ntds.yml
+// ID Sigma: 8bc64091-6875-4881-aaf9-7bd25b5dda08
+// Título: Suspicious Process Patterns NTDS.DIT Exfil
+// Descripción: Detects suspicious process patterns used in NTDS.DIT exfiltration
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_ntds.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

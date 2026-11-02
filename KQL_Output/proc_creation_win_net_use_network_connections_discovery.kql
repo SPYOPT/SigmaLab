@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_net_use_network_connections_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_use_network_connections_discovery.yml
+// ID Sigma: 1c67a717-32ba-409b-a45d-0fb704a73a81
+// Título: System Network Connections Discovery Via Net.EXE
+// Descripción: Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_use_network_connections_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

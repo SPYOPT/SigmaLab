@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_vaultcmd_list_creds.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vaultcmd_list_creds.yml
+// ID Sigma: 58f50261-c53b-4c88-bd12-1d71f12eda4c
+// Título: Windows Credential Manager Access via VaultCmd
+// Descripción: List credentials currently stored in Windows Credential Manager via the native Windows utility vaultcmd.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vaultcmd_list_creds.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

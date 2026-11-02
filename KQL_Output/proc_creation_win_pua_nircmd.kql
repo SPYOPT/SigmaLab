@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_nircmd.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nircmd.yml
+// ID Sigma: 4e2ed651-1906-4a59-a78a-18220fca1b22
+// Título: PUA - NirCmd Execution
+// Descripción: Detects the use of NirCmd tool for command execution, which could be the result of legitimate administrative activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nircmd.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

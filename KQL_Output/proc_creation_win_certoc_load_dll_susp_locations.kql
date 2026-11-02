@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certoc_load_dll_susp_locations.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_load_dll_susp_locations.yml
+// ID Sigma: 84232095-ecca-4015-b0d7-7726507ee793
+// Título: Suspicious DLL Loaded via CertOC.EXE
+// Descripción: Detects when a user installs certificates by using CertOC.exe to load the target DLL file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_load_dll_susp_locations.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

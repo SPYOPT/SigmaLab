@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_openwith.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_openwith.yml
+// ID Sigma: cec8e918-30f7-4e2d-9bfa-a59cc97ae60f
+// Título: OpenWith.exe Executes Specified Binary
+// Descripción: The OpenWith.exe executes other binary
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_openwith.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

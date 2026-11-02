@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_clear_system_logs.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_clear_system_logs.yml
+// ID Sigma: acf61bd8-d814-4272-81f0-a7a269aa69aa
+// Título: Indicator Removal on Host - Clear Mac System Logs
+// Descripción: Detects deletion of local audit logs
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_clear_system_logs.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

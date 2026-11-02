@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_reg_delete_runmru.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_delete_runmru.yml
+// ID Sigma: c11aecef-9c37-45a6-9c07-bc0782f963fd
+// Título: RunMRU Registry Key Deletion
+// Descripción: Detects deletion of the RunMRU registry key, which stores the history of commands executed via the Run dialog.
+In the clickfix techniques, the phishing lures instruct users to open a run dialog through (Win + R) and execute malicious commands.
+Adversaries may delete this key to cover their tracks after executing commands.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_delete_runmru.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

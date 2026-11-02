@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wscript_cscript_uncommon_extension_exec.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wscript_cscript_uncommon_extension_exec.yml
+// ID Sigma: 99b7460d-c9f1-40d7-a316-1f36f61d52ee
+// Título: Cscript/Wscript Uncommon Script Extension Execution
+// Descripción: Detects Wscript/Cscript executing a file with an uncommon (i.e. non-script) extension
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wscript_cscript_uncommon_extension_exec.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

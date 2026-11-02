@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_visual_basic_compiler.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_visual_basic_compiler.yml
+// ID Sigma: 7b10f171-7f04-47c7-9fa2-5be43c76e535
+// Título: Visual Basic Command Line Compiler Usage
+// Descripción: Detects successful code compilation via Visual Basic Command Line Compiler that utilizes Windows Resource to Object Converter.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_visual_basic_compiler.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

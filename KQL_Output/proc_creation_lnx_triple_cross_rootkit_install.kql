@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_triple_cross_rootkit_install.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_triple_cross_rootkit_install.yml
+// ID Sigma: 22236d75-d5a0-4287-bf06-c93b1770860f
+// Título: Triple Cross eBPF Rootkit Install Commands
+// Descripción: Detects default install commands of the Triple Cross eBPF rootkit based on the "deployer.sh" script
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_triple_cross_rootkit_install.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

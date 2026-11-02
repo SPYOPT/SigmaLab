@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_susp_cmd_for_loop_execution_with_recursive_directory_search.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_cmd_for_loop_execution_with_recursive_directory_search.yml
+// ID Sigma: 2782fbd8-b662-4eb5-9962-5bfbfb671e7b
+// Título: Suspicious Usage of For Loop with Recursive Directory Search in CMD
+// Descripción: Detects suspicious usage of the cmd.exe 'for /f' loop combined with the 'tokens=' parameter and a recursive directory listing.
+This pattern may indicate an attempt to discover and execute system binaries dynamically, for example powershell, a technique sometimes used by attackers to evade detection.
+This behavior has been observed in various malicious lnk files.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_cmd_for_loop_execution_with_recursive_directory_search.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

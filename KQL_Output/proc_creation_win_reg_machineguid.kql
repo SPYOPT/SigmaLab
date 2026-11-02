@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_machineguid.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_machineguid.yml
+// ID Sigma: f5240972-3938-4e56-8e4b-e33893176c1f
+// Título: Suspicious Query of MachineGUID
+// Descripción: Use of reg to get MachineGuid information
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_machineguid.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

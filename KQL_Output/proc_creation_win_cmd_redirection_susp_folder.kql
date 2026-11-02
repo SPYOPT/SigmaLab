@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_cmd_redirection_susp_folder.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_redirection_susp_folder.yml
+// ID Sigma: 8e0bb260-d4b2-4fff-bb8d-3f82118e6892
+// Título: Potentially Suspicious CMD Shell Output Redirect
+// Descripción: Detects inline Windows shell commands redirecting output via the ">" symbol to a suspicious location.
+This technique is sometimes used by malicious actors in order to redirect the output of reconnaissance commands such as "hostname" and "dir" to files for future exfiltration.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_redirection_susp_folder.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

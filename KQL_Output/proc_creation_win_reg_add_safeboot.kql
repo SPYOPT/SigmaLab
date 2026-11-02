@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_add_safeboot.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_add_safeboot.yml
+// ID Sigma: d7662ff6-9e97-4596-a61d-9839e32dee8d
+// Título: Add SafeBoot Keys Via Reg Utility
+// Descripción: Detects execution of "reg.exe" commands with the "add" or "copy" flags on safe boot registry keys. Often used by attacker to allow the ransomware to work in safe mode as some security products do not
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_add_safeboot.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

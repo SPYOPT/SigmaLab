@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_sysvol_access.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_sysvol_access.yml
+// ID Sigma: 05f3c945-dcc8-4393-9f3d-af65077a8f86
+// Título: Suspicious SYSVOL Domain Group Policy Access
+// Descripción: Detects Access to Domain Group Policies stored in SYSVOL
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_sysvol_access.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

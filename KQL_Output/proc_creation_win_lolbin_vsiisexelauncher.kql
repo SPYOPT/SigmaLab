@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_vsiisexelauncher.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_vsiisexelauncher.yml
+// ID Sigma: 18749301-f1c5-4efc-a4c3-276ff1f5b6f8
+// Título: Use of VSIISExeLauncher.exe
+// Descripción: The "VSIISExeLauncher.exe" binary part of the Visual Studio/VS Code can be used to execute arbitrary binaries
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_vsiisexelauncher.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_powersploit_empire_default_schtasks.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_powersploit_empire_default_schtasks.yml
+// ID Sigma: 56c217c3-2de2-479b-990f-5c109ba8458f
+// Título: HackTool - Default PowerSploit/Empire Scheduled Task Creation
+// Descripción: Detects the creation of a schtask via PowerSploit or Empire Default Configuration.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_powersploit_empire_default_schtasks.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

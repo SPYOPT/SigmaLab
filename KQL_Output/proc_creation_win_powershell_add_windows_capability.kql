@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_add_windows_capability.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_add_windows_capability.yml
+// ID Sigma: b36d01a3-ddaf-4804-be18-18a6247adfcd
+// Título: Add Windows Capability Via PowerShell Cmdlet
+// Descripción: Detects usage of the "Add-WindowsCapability" cmdlet to add Windows capabilities. Notable capabilities could be "OpenSSH" and others.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_add_windows_capability.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

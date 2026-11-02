@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mshta_lethalhta_technique.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_lethalhta_technique.yml
+// ID Sigma: ed5d72a6-f8f4-479d-ba79-02f6a80d7471
+// Título: Potential LethalHTA Technique Execution
+// Descripción: Detects potential LethalHTA technique where the "mshta.exe" is spawned by an "svchost.exe" process
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_lethalhta_technique.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

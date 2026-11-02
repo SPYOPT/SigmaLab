@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_hktl_sharpmove.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpmove.yml
+// ID Sigma: 055fb54c-a8f4-4aee-bd44-f74cf30a0d9d
+// Título: HackTool - SharpMove Tool Execution
+// Descripción: Detects the execution of SharpMove, a .NET utility performing multiple tasks such as "Task Creation", "SCM" query, VBScript execution using WMI via its PE metadata and command line options.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpmove.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

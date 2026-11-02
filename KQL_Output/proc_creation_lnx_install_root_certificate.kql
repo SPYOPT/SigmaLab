@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_install_root_certificate.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_install_root_certificate.yml
+// ID Sigma: 78a80655-a51e-4669-bc6b-e9d206a462ee
+// Título: Install Root Certificate
+// Descripción: Detects installation of new certificate on the system which attackers may use to avoid warnings when connecting to controlled web servers or C2s
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_install_root_certificate.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

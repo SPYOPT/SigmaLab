@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_crackmapexec_patterns.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_patterns.yml
+// ID Sigma: f26307d8-14cd-47e3-a26b-4b4769f24af6
+// Título: HackTool - CrackMapExec Process Patterns
+// Descripción: Detects suspicious process patterns found in logs when CrackMapExec is used
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_patterns.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

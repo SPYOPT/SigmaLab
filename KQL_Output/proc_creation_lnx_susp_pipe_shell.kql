@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_pipe_shell.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_pipe_shell.yml
+// ID Sigma: 880973f3-9708-491c-a77b-2a35a1921158
+// Título: Linux Shell Pipe to Shell
+// Descripción: Detects suspicious process command line that starts with a shell that executes something and finally gets piped into another shell
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_pipe_shell.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_vscode_tunnel_remote_shell_.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vscode_tunnel_remote_shell_.yml
+// ID Sigma: f4a623c2-4ef5-4c33-b811-0642f702c9f1
+// Título: Visual Studio Code Tunnel Shell Execution
+// Descripción: Detects the execution of a shell (powershell, bash, wsl...) via Visual Studio Code tunnel. Attackers can abuse this functionality to establish a C2 channel and execute arbitrary commands on the system.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vscode_tunnel_remote_shell_.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

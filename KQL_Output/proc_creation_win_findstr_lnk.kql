@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_findstr_lnk.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_lnk.yml
+// ID Sigma: 33339be3-148b-4e16-af56-ad16ec6c7e7b
+// Título: Findstr Launching .lnk File
+// Descripción: Detects usage of findstr to identify and execute a lnk file as seen within the HHS redirect attack
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_lnk.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

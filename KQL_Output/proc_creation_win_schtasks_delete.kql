@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_schtasks_delete.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_delete.yml
+// ID Sigma: dbc1f800-0fe0-4bc0-9c66-292c2abe3f78
+// Título: Delete Important Scheduled Task
+// Descripción: Detects when adversaries stop services or processes by deleting their respective scheduled tasks in order to conduct data destructive activities
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_delete.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

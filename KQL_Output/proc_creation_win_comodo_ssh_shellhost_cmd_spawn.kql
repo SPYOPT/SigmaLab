@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_comodo_ssh_shellhost_cmd_spawn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_comodo_ssh_shellhost_cmd_spawn.yml
+// ID Sigma: 7f3a9c2d-4e8b-4a7f-9d3e-5c6f8a9b2e1d
+// Título: OpenEDR Spawning Command Shell
+// Descripción: Detects the OpenEDR ssh-shellhost.exe spawning a command shell (cmd.exe) or PowerShell with PTY (pseudo-terminal) capabilities.
+This may indicate remote command execution through OpenEDR's remote management features, which could be legitimate administrative activity or potential abuse of the remote access tool.
+Threat actors may leverage OpenEDR's remote shell capabilities to execute commands on compromised systems, facilitating lateral movement or other command-and-control operations.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_comodo_ssh_shellhost_cmd_spawn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

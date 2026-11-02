@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_wmic_recon_volume.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_volume.yml
+// ID Sigma: c79da740-5030-45ec-a2e0-479e824a562c
+// Título: System Disk And Volume Reconnaissance Via Wmic.EXE
+// Descripción: An adversary might use WMI to discover information about the system, such as the volume name, size,
+free space, and other disk information. This can be done using the 'wmic' command-line utility and has been
+observed being used by threat actors such as Volt Typhoon.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_volume.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

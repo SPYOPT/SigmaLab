@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_obfuscation_via_utf8.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_obfuscation_via_utf8.yml
+// ID Sigma: e312efd0-35a1-407f-8439-b8d434b438a6
+// Título: Potential PowerShell Obfuscation Via WCHAR/CHAR
+// Descripción: Detects suspicious encoded character syntax often used for defense evasion
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_obfuscation_via_utf8.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

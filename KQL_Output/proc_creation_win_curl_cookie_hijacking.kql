@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_curl_cookie_hijacking.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_cookie_hijacking.yml
+// ID Sigma: 5a6e1e16-07de-48d8-8aae-faa766c05e88
+// Título: Potential Cookies Session Hijacking
+// Descripción: Detects execution of "curl.exe" with the "-c" flag in order to save cookie data.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_cookie_hijacking.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

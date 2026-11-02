@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_remotefxvgpudisablement_abuse.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_remotefxvgpudisablement_abuse.yml
+// ID Sigma: a6fc3c46-23b8-4996-9ea2-573f4c4d88c5
+// Título: RemoteFXvGPUDisablement Abuse Via AtomicTestHarnesses
+// Descripción: Detects calls to the AtomicTestHarnesses "Invoke-ATHRemoteFXvGPUDisablementCommand" which is designed to abuse the "RemoteFXvGPUDisablement.exe" binary to run custom PowerShell code via module load-order hijacking.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_remotefxvgpudisablement_abuse.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

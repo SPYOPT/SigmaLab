@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_dscl_add_user_to_admin_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_dscl_add_user_to_admin_group.yml
+// ID Sigma: b743623c-2776-40e0-87b1-682b975d0ca5
+// Título: User Added To Admin Group Via Dscl
+// Descripción: Detects attempts to create and add an account to the admin group via "dscl"
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_dscl_add_user_to_admin_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

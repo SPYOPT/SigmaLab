@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_adfind_enumeration.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_adfind_enumeration.yml
+// ID Sigma: 455b9d50-15a1-4b99-853f-8d37655a4c1b
+// Título: PUA - Suspicious ActiveDirectory Enumeration Via AdFind.EXE
+// Descripción: Detects active directory enumeration activity using known AdFind CLI flags
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_adfind_enumeration.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

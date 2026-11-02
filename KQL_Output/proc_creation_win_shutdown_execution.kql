@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_shutdown_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_shutdown_execution.yml
+// ID Sigma: 34ebb878-1b15-4895-b352-ca2eeb99b274
+// Título: Suspicious Execution of Shutdown
+// Descripción: Use of the commandline to shutdown or reboot windows
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_shutdown_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

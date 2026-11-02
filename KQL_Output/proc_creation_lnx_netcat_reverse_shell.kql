@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_netcat_reverse_shell.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_netcat_reverse_shell.yml
+// ID Sigma: 7f734ed0-4f47-46c0-837f-6ee62505abd9
+// Título: Potential Netcat Reverse Shell Execution
+// Descripción: Detects execution of netcat with the "-e" or "-c" flags followed by common shells, which are commonly used to spawn reverse shells.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_netcat_reverse_shell.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

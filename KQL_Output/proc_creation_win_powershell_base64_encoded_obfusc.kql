@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_base64_encoded_obfusc.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_encoded_obfusc.yml
+// ID Sigma: 8d01b53f-456f-48ee-90f6-bc28e67d4e35
+// Título: Suspicious Obfuscated PowerShell Code
+// Descripción: Detects suspicious UTF16 and base64 encoded and often obfuscated PowerShell code often used in command lines
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_encoded_obfusc.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

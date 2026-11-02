@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_nohup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_nohup.yml
+// ID Sigma: e4ffe466-6ff8-48d4-94bd-e32d1a6061e2
+// Título: Nohup Execution
+// Descripción: Detects usage of nohup which could be leveraged by an attacker to keep a process running or break out from restricted environments
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_nohup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_python_reverse_shell.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_reverse_shell.yml
+// ID Sigma: 32e62bc7-3de0-4bb1-90af-532978fe42c0
+// Título: Python Reverse Shell Execution Via PTY And Socket Modules
+// Descripción: Detects the execution of python with calls to the socket and pty module in order to connect and spawn a potential reverse shell.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_reverse_shell.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

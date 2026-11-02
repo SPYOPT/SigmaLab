@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regasm_regsvcs_uncommon_location_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_regsvcs_uncommon_location_execution.yml
+// ID Sigma: cc368ed0-2411-45dc-a222-510ace303cb2
+// Título: Potentially Suspicious Execution Of Regasm/Regsvcs From Uncommon Location
+// Descripción: Detects potentially suspicious execution of the Regasm/Regsvcs utilities from a potentially suspicious location
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_regsvcs_uncommon_location_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

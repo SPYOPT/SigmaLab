@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_find_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_find_execution.yml
+// ID Sigma: 8344c0e5-5783-47cc-9cf9-a0f7fd03e6cf
+// Título: Potential Discovery Activity Using Find - Linux
+// Descripción: Detects usage of "find" binary in a suspicious manner to perform discovery
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_find_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

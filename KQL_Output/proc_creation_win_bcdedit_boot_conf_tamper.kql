@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_bcdedit_boot_conf_tamper.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bcdedit_boot_conf_tamper.yml
+// ID Sigma: 1444443e-6757-43e4-9ea4-c8fc705f79a2
+// Título: Boot Configuration Tampering Via Bcdedit.EXE
+// Descripción: Detects the use of the bcdedit command to tamper with the boot configuration data. This technique is often times used by malware or attackers as a destructive way before launching ransomware.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bcdedit_boot_conf_tamper.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

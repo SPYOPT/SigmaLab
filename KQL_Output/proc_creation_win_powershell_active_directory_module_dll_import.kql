@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_active_directory_module_dll_import.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_active_directory_module_dll_import.yml
+// ID Sigma: 70bc5215-526f-4477-963c-a47a5c9ebd12
+// Título: Potential Active Directory Enumeration Using AD Module - ProcCreation
+// Descripción: Detects usage of the "Import-Module" cmdlet to load the "Microsoft.ActiveDirectory.Management.dl" DLL. Which is often used by attackers to perform AD enumeration.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_active_directory_module_dll_import.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

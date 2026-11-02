@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_fodhelper.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_fodhelper.yml
+// ID Sigma: 7f741dcf-fc22-4759-87b4-9ae8376676a2
+// Título: Bypass UAC via Fodhelper.exe
+// Descripción: Identifies use of Fodhelper.exe to bypass User Account Control. Adversaries use this technique to execute privileged processes.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_fodhelper.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

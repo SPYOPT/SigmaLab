@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_diantz_ads.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_diantz_ads.yml
+// ID Sigma: 6b369ced-4b1d-48f1-b427-fdc0de0790bd
+// Título: Suspicious Diantz Alternate Data Stream Execution
+// Descripción: Compress target file into a cab file stored in the Alternate Data Stream (ADS) of the target file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_diantz_ads.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

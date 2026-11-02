@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_recon_unquoted_service_search.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_unquoted_service_search.yml
+// ID Sigma: 68bcd73b-37ef-49cb-95fc-edc809730be6
+// Título: Potential Unquoted Service Path Reconnaissance Via Wmic.EXE
+// Descripción: Detects known WMI recon method to look for unquoted service paths using wmic. Often used by pentester and attacker enumeration scripts
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_unquoted_service_search.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

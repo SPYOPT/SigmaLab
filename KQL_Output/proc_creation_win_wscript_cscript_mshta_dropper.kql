@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wscript_cscript_mshta_dropper.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wscript_cscript_mshta_dropper.yml
+// ID Sigma: cea72823-df4d-4567-950c-0b579eaf0846
+// Título: Potential Dropper Script Execution Via WScript/CScript/MSHTA
+// Descripción: Detects wscript/cscript/mshta executions of scripts located in user directories
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wscript_cscript_mshta_dropper.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

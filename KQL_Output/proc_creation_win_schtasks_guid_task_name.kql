@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_schtasks_guid_task_name.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_guid_task_name.yml
+// ID Sigma: ff2fff64-4cd6-4a2b-ba7d-e28a30bbe66b
+// Título: Suspicious Scheduled Task Name As GUID
+// Descripción: Detects creation of a scheduled task with a GUID like name
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_guid_task_name.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

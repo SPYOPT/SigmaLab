@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_squirrel_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_squirrel_download.yml
+// ID Sigma: 1e75c1cc-c5d4-42aa-ac3d-91b0b68b3b4c
+// Título: Arbitrary File Download Via Squirrel.EXE
+// Descripción: Detects the usage of the "Squirrel.exe" to download arbitrary files. This binary is part of multiple Electron based software installations (Slack, Teams, Discord, etc.)
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_squirrel_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

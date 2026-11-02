@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_getprocess_lsass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_getprocess_lsass.yml
+// ID Sigma: b2815d0d-7481-4bf0-9b6c-a4c48a94b349
+// Título: PowerShell Get-Process LSASS
+// Descripción: Detects a "Get-Process" cmdlet and it's aliases on lsass process, which is in almost all cases a sign of malicious activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_getprocess_lsass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_powershell_applocker_policy_discovery_via_get_applockerpolicy.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_applocker_policy_discovery_via_get_applockerpolicy.yml
+// ID Sigma: f14b1e99-5e53-4598-98dc-6f20ad7b35e0
+// Título: PowerShell AppLocker Policy Discovery Via Get-AppLockerPolicy
+// Descripción: Detects AppLocker policy enumeration attempts via PowerShell using the Get-AppLockerPolicy cmdlet and an policy scope of either Effective, LDAP, or Local.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_applocker_policy_discovery_via_get_applockerpolicy.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

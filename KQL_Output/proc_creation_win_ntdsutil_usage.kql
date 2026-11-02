@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ntdsutil_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ntdsutil_usage.yml
+// ID Sigma: 2afafd61-6aae-4df4-baed-139fa1f4c345
+// Título: Invocation of Active Directory Diagnostic Tool (ntdsutil.exe)
+// Descripción: Detects execution of ntdsutil.exe, which can be used for various attacks against the NTDS database (NTDS.DIT)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ntdsutil_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

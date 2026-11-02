@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_macos_tmutil_exclude_file_from_backup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tmutil_exclude_file_from_backup.yml
+// ID Sigma: 9acf45ed-3a26-4062-bf08-56857613eb52
+// Título: New File Exclusion Added To Time Machine Via Tmutil - MacOS
+// Descripción: Detects the addition of a new file or path exclusion to MacOS Time Machine via the "tmutil" utility.
+An adversary could exclude a path from Time Machine backups to prevent certain files from being backed up.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tmutil_exclude_file_from_backup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

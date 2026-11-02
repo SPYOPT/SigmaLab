@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_msdt_susp_cab_options.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msdt_susp_cab_options.yml
+// ID Sigma: dc4576d4-7467-424f-9eee-fd2b02855fe0
+// Título: Suspicious Cabinet File Execution Via Msdt.EXE
+// Descripción: Detects execution of msdt.exe using the "cab" flag which could indicates suspicious diagcab files with embedded answer files leveraging CVE-2022-30190
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msdt_susp_cab_options.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

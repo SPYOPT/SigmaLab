@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_browsers_chromium_load_extension.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_chromium_load_extension.yml
+// ID Sigma: 88d6e60c-759d-4ac1-a447-c0f1466c2d21
+// Título: Chromium Browser Instance Executed With Custom Extension
+// Descripción: Detects a Chromium based browser process with the 'load-extension' flag to start a instance with a custom extension
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_chromium_load_extension.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

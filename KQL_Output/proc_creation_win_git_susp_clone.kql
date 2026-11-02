@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_git_susp_clone.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_git_susp_clone.yml
+// ID Sigma: aef9d1f1-7396-4e92-a927-4567c7a495c1
+// Título: Suspicious Git Clone
+// Descripción: Detects execution of "git" in order to clone a remote repository that contain suspicious keywords which might be suspicious
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_git_susp_clone.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

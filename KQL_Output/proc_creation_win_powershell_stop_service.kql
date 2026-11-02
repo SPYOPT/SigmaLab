@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_stop_service.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_stop_service.yml
+// ID Sigma: c49c5062-0966-4170-9efd-9968c913a6cf
+// Título: Stop Windows Service Via PowerShell Stop-Service
+// Descripción: Detects the stopping of a Windows service via the PowerShell Cmdlet "Stop-Service"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_stop_service.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

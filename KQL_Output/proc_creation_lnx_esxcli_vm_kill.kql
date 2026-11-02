@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_esxcli_vm_kill.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_vm_kill.yml
+// ID Sigma: 2992ac4d-31e9-4325-99f2-b18a73221bb2
+// Título: ESXi VM Kill Via ESXCLI
+// Descripción: Detects execution of the "esxcli" command with the "vm" and "kill" flag in order to kill/shutdown a specific VM.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_vm_kill.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

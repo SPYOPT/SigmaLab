@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_cleanwipe.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_cleanwipe.yml
+// ID Sigma: f44800ac-38ec-471f-936e-3fa7d9c53100
+// Título: PUA - CleanWipe Execution
+// Descripción: Detects the use of CleanWipe a tool usually used to delete Symantec antivirus.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_cleanwipe.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

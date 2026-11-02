@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ping_hex_ip.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ping_hex_ip.yml
+// ID Sigma: 1a0d4aba-7668-4365-9ce4-6d79ab088dfd
+// Título: Ping Hex IP
+// Descripción: Detects a ping command that uses a hex encoded IP address
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ping_hex_ip.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

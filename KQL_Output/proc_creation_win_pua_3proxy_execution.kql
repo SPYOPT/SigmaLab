@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_3proxy_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_3proxy_execution.yml
+// ID Sigma: f38a82d2-fba3-4781-b549-525efbec8506
+// Título: PUA - 3Proxy Execution
+// Descripción: Detects the use of 3proxy, a tiny free proxy server
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_3proxy_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

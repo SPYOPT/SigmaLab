@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_base64_invoke.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_invoke.yml
+// ID Sigma: 6385697e-9f1b-40bd-8817-f4a91f40508e
+// Título: PowerShell Base64 Encoded Invoke Keyword
+// Descripción: Detects UTF-8 and UTF-16 Base64 encoded powershell 'Invoke-' calls
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_invoke.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

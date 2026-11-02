@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regsvr32_http_ip_pattern.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_http_ip_pattern.yml
+// ID Sigma: 2dd2c217-bf68-437a-b57c-fe9fd01d5de8
+// Título: Potentially Suspicious Regsvr32 HTTP IP Pattern
+// Descripción: Detects regsvr32 execution to download and install DLLs located remotely where the address is an IP address.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_http_ip_pattern.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

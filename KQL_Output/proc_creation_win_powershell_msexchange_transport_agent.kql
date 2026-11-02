@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_msexchange_transport_agent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_msexchange_transport_agent.yml
+// ID Sigma: 83809e84-4475-4b69-bc3e-4aad8568612f
+// Título: MSExchange Transport Agent Installation
+// Descripción: Detects the Installation of a Exchange Transport Agent
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_msexchange_transport_agent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

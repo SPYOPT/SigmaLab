@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_crypto_mining.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_crypto_mining.yml
+// ID Sigma: 9069ea3c-b213-4c52-be13-86506a227ab1
+// Título: Linux Crypto Mining Indicators
+// Descripción: Detects command line parameters or strings often used by crypto miners
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_crypto_mining.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

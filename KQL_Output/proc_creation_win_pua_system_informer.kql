@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_system_informer.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_system_informer.yml
+// ID Sigma: 5722dff1-4bdd-4949-86ab-fbaf707e767a
+// Título: PUA - System Informer Execution
+// Descripción: Detects the execution of System Informer, a task manager tool to view and manipulate processes, kernel options and other low level operations
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_system_informer.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

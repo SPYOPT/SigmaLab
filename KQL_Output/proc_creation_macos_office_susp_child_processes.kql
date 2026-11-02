@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_office_susp_child_processes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_office_susp_child_processes.yml
+// ID Sigma: 69483748-1525-4a6c-95ca-90dc8d431b68
+// Título: Suspicious Microsoft Office Child Process - MacOS
+// Descripción: Detects suspicious child processes spawning from microsoft office suite applications such as word or excel. This could indicates malicious macro execution
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_office_susp_child_processes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

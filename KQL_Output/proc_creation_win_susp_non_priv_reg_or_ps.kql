@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_non_priv_reg_or_ps.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_non_priv_reg_or_ps.yml
+// ID Sigma: 8f02c935-effe-45b3-8fc9-ef8696a9e41d
+// Título: Non-privileged Usage of Reg or Powershell
+// Descripción: Search for usage of reg or Powershell by non-privileged users to modify service configuration in registry
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_non_priv_reg_or_ps.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

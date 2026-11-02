@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_system_shutdown_reboot.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_system_shutdown_reboot.yml
+// ID Sigma: 40b1fbe2-18ea-4ee7-be47-0294285811de
+// Título: System Shutdown/Reboot - MacOs
+// Descripción: Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_system_shutdown_reboot.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

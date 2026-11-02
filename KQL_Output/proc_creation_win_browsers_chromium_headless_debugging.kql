@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_browsers_chromium_headless_debugging.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_chromium_headless_debugging.yml
+// ID Sigma: 3e8207c5-fcd2-4ea6-9418-15d45b4890e4
+// Título: Potential Data Stealing Via Chromium Headless Debugging
+// Descripción: Detects chromium based browsers starting in headless and debugging mode and pointing to a user profile. This could be a sign of data stealing or remote control
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_chromium_headless_debugging.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

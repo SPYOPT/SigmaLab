@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_office_onenote_embedded_script_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_onenote_embedded_script_execution.yml
+// ID Sigma: 84b1706c-932a-44c4-ae28-892b28a25b94
+// Título: OneNote.EXE Execution of Malicious Embedded Scripts
+// Descripción: Detects the execution of malicious OneNote documents that contain embedded scripts.
+When a user clicks on a OneNote attachment and then on the malicious link inside the ".one" file, it exports and executes the malicious embedded script from specific directories.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_onenote_embedded_script_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

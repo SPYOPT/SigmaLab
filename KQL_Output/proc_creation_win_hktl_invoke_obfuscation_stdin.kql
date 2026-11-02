@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_stdin.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_stdin.yml
+// ID Sigma: 6c96fc76-0eb1-11eb-adc1-0242ac120002
+// Título: Invoke-Obfuscation STDIN+ Launcher
+// Descripción: Detects Obfuscated use of stdin to execute PowerShell
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_stdin.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

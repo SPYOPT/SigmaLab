@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regedit_trustedinstaller.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regedit_trustedinstaller.yml
+// ID Sigma: 883835a7-df45-43e4-bf1d-4268768afda4
+// Título: Regedit as Trusted Installer
+// Descripción: Detects a regedit started with TrustedInstaller privileges or by ProcessHacker.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regedit_trustedinstaller.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

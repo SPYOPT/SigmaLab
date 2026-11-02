@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_clip_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_clip_execution.yml
+// ID Sigma: ddeff553-5233-4ae9-bbab-d64d2bd634be
+// Título: Data Copied To Clipboard Via Clip.EXE
+// Descripción: Detects the execution of clip.exe in order to copy data to the clipboard. Adversaries may collect data stored in the clipboard from users copying information within or between applications.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_clip_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

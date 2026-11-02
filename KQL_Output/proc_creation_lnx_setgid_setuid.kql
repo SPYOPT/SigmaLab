@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_setgid_setuid.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_setgid_setuid.yml
+// ID Sigma: c21c4eaa-ba2e-419a-92b2-8371703cbe21
+// Título: Setuid and Setgid
+// Descripción: Detects suspicious change of file privileges with chown and chmod commands
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_setgid_setuid.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

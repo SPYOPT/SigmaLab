@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_msconfig_gui.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_msconfig_gui.yml
+// ID Sigma: ad92e3f9-7eb6-460e-96b1-582b0ccbb980
+// Título: UAC Bypass Using MSConfig Token Modification - Process
+// Descripción: Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_msconfig_gui.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

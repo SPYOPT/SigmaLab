@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certoc_load_dll.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_load_dll.yml
+// ID Sigma: 242301bc-f92f-4476-8718-78004a6efd9f
+// Título: DLL Loaded via CertOC.EXE
+// Descripción: Detects when a user installs certificates by using CertOC.exe to loads the target DLL file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_load_dll.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

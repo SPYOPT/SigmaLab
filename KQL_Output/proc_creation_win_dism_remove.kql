@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dism_remove.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dism_remove.yml
+// ID Sigma: 43e32da2-fdd0-4156-90de-50dfd62636f9
+// Título: Dism Remove Online Package
+// Descripción: Deployment Image Servicing and Management tool. DISM is used to enumerate, install, uninstall, configure, and update features and packages in Windows images
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dism_remove.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

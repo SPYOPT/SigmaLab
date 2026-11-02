@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_esxcli_vsan_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_vsan_discovery.yml
+// ID Sigma: d54c2f06-aca9-4e2b-81c9-5317858f4b79
+// Título: ESXi VSAN Information Discovery Via ESXCLI
+// Descripción: Detects execution of the "esxcli" command with the "vsan" flag in order to retrieve information about virtual storage. Seen used by malware such as DarkSide.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_vsan_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

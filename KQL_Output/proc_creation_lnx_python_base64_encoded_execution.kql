@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_lnx_python_base64_encoded_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_base64_encoded_execution.yml
+// ID Sigma: 55e862a8-dd9c-4651-807a-f21fcad56716
+// Título: Python One-Liners with Base64 Decoding - Linux
+// Descripción: Detects the use of Python's base64 decoding functions in command line executions on Linux systems.
+Malicious scripts often use python one-liners to decode and execute base64-encoded payloads, which is a common technique for obfuscation and evasion.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_base64_encoded_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

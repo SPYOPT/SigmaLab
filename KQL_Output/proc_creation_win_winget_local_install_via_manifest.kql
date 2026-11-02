@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_winget_local_install_via_manifest.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_local_install_via_manifest.yml
+// ID Sigma: 313d6012-51a0-4d93-8dfc-de8553239e25
+// Título: Install New Package Via Winget Local Manifest
+// Descripción: Detects usage of winget to install applications via manifest file. Adversaries can abuse winget to download payloads remotely and execute them.
+The manifest option enables you to install an application by passing in a YAML file directly to the client.
+Winget can be used to download and install exe, msi or msix files later.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_local_install_via_manifest.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

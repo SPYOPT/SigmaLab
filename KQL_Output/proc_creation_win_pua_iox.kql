@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_iox.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_iox.yml
+// ID Sigma: d7654f02-e04b-4934-9838-65c46f187ebc
+// Título: PUA- IOX Tunneling Tool Execution
+// Descripción: Detects the use of IOX - a tool for port forwarding and intranet proxy purposes
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_iox.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

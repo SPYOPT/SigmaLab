@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dirlister_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dirlister_execution.yml
+// ID Sigma: b4dc61f5-6cce-468e-a608-b48b469feaa2
+// Título: DirLister Execution
+// Descripción: Detect the usage of "DirLister.exe" a utility for quickly listing folder or drive contents. It was seen used by BlackCat ransomware to create a list of accessible directories and files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dirlister_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

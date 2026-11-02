@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_security_software_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_security_software_discovery.yml
+// ID Sigma: c9d8b7fd-78e4-44fe-88f6-599135d46d60
+// Título: Security Software Discovery - Linux
+// Descripción: Detects usage of system utilities (only grep and egrep for now) to discover security software discovery
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_security_software_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

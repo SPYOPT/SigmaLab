@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_python_adidnsdump.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_python_adidnsdump.yml
+// ID Sigma: 26d3f0a2-f514-4a3f-a8a7-e7e48a8d9160
+// Título: PUA - Adidnsdump Execution
+// Descripción: This tool enables enumeration and exporting of all DNS records in the zone for recon purposes of internal networks Python 3 and python.exe must be installed,
+Usee to Query/modify DNS records for Active Directory integrated DNS via LDAP
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_python_adidnsdump.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_defender_disable_feature.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_defender_disable_feature.yml
+// ID Sigma: 1ec65a5f-9473-4f12-97da-622044d6df21
+// Título: Powershell Defender Disable Scan Feature
+// Descripción: Detects requests to disable Microsoft Defender features using PowerShell commands
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_defender_disable_feature.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

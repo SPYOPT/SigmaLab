@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_sys.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_sys.yml
+// ID Sigma: 731231b9-0b5d-4219-94dd-abb6959aa7ea
+// Título: Suspicious Rundll32 Activity Invoking Sys File
+// Descripción: Detects suspicious process related to rundll32 based on command line that includes a *.sys file as seen being used by UNC2452
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_sys.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

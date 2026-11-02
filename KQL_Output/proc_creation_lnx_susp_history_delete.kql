@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_history_delete.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_history_delete.yml
+// ID Sigma: 1182f3b3-e716-4efa-99ab-d2685d04360f
+// Título: History File Deletion
+// Descripción: Detects events in which a history file gets deleted, e.g. the ~/bash_history to remove traces of malicious activity
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_history_delete.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

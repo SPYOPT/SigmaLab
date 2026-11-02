@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ilasm_il_code_compilation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ilasm_il_code_compilation.yml
+// ID Sigma: 850d55f9-6eeb-4492-ad69-a72338f65ba4
+// Título: C# IL Code Compilation Via Ilasm.EXE
+// Descripción: Detects the use of "Ilasm.EXE" in order to compile C# intermediate (IL) code to EXE or DLL.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ilasm_il_code_compilation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

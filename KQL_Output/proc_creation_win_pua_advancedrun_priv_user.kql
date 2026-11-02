@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_advancedrun_priv_user.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advancedrun_priv_user.yml
+// ID Sigma: fa00b701-44c6-4679-994d-5a18afa8a707
+// Título: PUA - AdvancedRun Suspicious Execution
+// Descripción: Detects the execution of AdvancedRun utility in the context of the TrustedInstaller, SYSTEM, Local Service or Network Service accounts
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_advancedrun_priv_user.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

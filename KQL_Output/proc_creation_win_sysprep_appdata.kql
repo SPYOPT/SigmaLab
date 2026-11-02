@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysprep_appdata.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysprep_appdata.yml
+// ID Sigma: d5b9ae7a-e6fc-405e-80ff-2ff9dcc64e7e
+// Título: Sysprep on AppData Folder
+// Descripción: Detects suspicious sysprep process start with AppData folder as target (as used by Trojan Syndicasec in Thrip report by Symantec)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysprep_appdata.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

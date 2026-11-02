@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_encode_susp_extensions.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_encode_susp_extensions.yml
+// ID Sigma: ea0cdc3e-2239-4f26-a947-4e8f8224e464
+// Título: Suspicious File Encoded To Base64 Via Certutil.EXE
+// Descripción: Detects the execution of certutil with the "encode" flag to encode a file to base64 where the extensions of the file is suspicious
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_encode_susp_extensions.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

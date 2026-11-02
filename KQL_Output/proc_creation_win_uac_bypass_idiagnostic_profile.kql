@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_idiagnostic_profile.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_idiagnostic_profile.yml
+// ID Sigma: 4cbef972-f347-4170-b62a-8253f6168e6d
+// Título: UAC Bypass Using IDiagnostic Profile
+// Descripción: Detects the "IDiagnosticProfileUAC" UAC bypass technique
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_idiagnostic_profile.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

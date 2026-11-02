@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_susp_lsass_dmp_cli_keywords.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_lsass_dmp_cli_keywords.yml
+// ID Sigma: ffa6861c-4461-4f59-8a41-578c39f3f23e
+// Título: LSASS Dump Keyword In CommandLine
+// Descripción: Detects the presence of the keywords "lsass" and ".dmp" in the commandline, which could indicate a potential attempt to dump or create a dump of the lsass process.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_lsass_dmp_cli_keywords.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

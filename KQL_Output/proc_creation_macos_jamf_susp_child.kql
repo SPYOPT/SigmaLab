@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_jamf_susp_child.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_jamf_susp_child.yml
+// ID Sigma: 2316929c-01aa-438c-970f-099145ab1ee6
+// Título: JAMF MDM Potential Suspicious Child Process
+// Descripción: Detects potential suspicious child processes of "jamf". Could be a sign of potential abuse of Jamf as a C2 server as seen by Typhon MythicAgent.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_jamf_susp_child.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

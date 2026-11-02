@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_lnx_susp_exec_from_dev_shm.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_exec_from_dev_shm.yml
+// ID Sigma: 5cd16c8f-44a6-4654-81e7-a84d6db507d4
+// Título: Process Execution From Shared Memory Directory
+// Descripción: Detects the execution of a binary from the Linux shared memory directory /dev/shm.
+This directory is a tmpfs mount backed entirely by RAM and is abused by attackers for fileless malware staging because files written there never touch physical disk and may evade disk-based detection.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_exec_from_dev_shm.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_lnx_av_kaspersky_av_disabled.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_av_kaspersky_av_disabled.yml
+// ID Sigma: 36388120-b3f1-4ce9-b50b-280d9a7f4c04
+// Título: Kaspersky Endpoint Security Stopped Via CommandLine - Linux
+// Descripción: Detects execution of the Kaspersky init.d stop script on Linux systems either directly or via systemctl.
+This activity may indicate a manual interruption of the antivirus service by an administrator, or it could be a sign of potential tampering or evasion attempts by malicious actors.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_av_kaspersky_av_disabled.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

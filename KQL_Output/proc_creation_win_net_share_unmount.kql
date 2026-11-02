@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_net_share_unmount.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_share_unmount.yml
+// ID Sigma: cb7c4a03-2871-43c0-9bbb-18bbdb079896
+// Título: Unmount Share Via Net.EXE
+// Descripción: Detects when when a mounted share is removed. Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_share_unmount.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

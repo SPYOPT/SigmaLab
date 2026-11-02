@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_krbrelayup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelayup.yml
+// ID Sigma: 12827a56-61a4-476a-a9cb-f3068f191073
+// Título: HackTool - KrbRelayUp Execution
+// Descripción: Detects KrbRelayUp used to perform a universal no-fix local privilege escalation in Windows domain environments where LDAP signing is not enforced
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelayup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

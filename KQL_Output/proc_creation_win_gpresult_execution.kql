@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_gpresult_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpresult_execution.yml
+// ID Sigma: e56d3073-83ff-4021-90fe-c658e0709e72
+// Título: Gpresult Display Group Policy Information
+// Descripción: Detects cases in which a user uses the built-in Windows utility gpresult to display the Resultant Set of Policy (RSoP) information
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpresult_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

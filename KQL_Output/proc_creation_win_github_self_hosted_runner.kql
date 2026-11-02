@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_github_self_hosted_runner.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_github_self_hosted_runner.yml
+// ID Sigma: 5bac7a56-da88-4c27-922e-c81e113b20cb
+// Título: Github Self-Hosted Runner Execution
+// Descripción: Detects GitHub self-hosted runners executing workflows on local infrastructure that could be abused for persistence and code execution.
+Shai-Hulud is an npm supply chain worm targeting CI/CD environments.
+It installs runners on compromised systems to maintain access after credential theft, leveraging their access to secrets and internal networks.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_github_self_hosted_runner.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

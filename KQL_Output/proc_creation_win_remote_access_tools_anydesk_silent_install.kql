@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_remote_access_tools_anydesk_silent_install.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_anydesk_silent_install.yml
+// ID Sigma: 114e7f1c-f137-48c8-8f54-3088c24ce4b9
+// Título: Remote Access Tool - AnyDesk Silent Installation
+// Descripción: Detects AnyDesk Remote Desktop silent installation. Which can be used by attackers to gain remote access.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_anydesk_silent_install.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

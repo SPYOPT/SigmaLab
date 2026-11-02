@@ -1,6 +1,20 @@
 // Regla Sigma: proc_creation_win_wmi_persistence_script_event_consumer.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmi_persistence_script_event_consumer.yml
+// ID Sigma: ec1d5e28-8f3b-4188-a6f8-6e8df81dc28e
+// Título: WMI Persistence - Script Event Consumer
+// Descripción: Detects the execution of a script event consumer. When scrcons.exe launches, it does so in response to the creation of an ActiveScriptEventConsumer instance
+and will execute registered JScript or VBScript code as a result.
+Script event consumers are a built-in Windows Management Instrumentation (WMI) class that
+automatically executes a predefined script (in VBScript or JScript) whenever a specific system event occurs.
+Adversaries often abuse script event consumers to maintain persistence on a compromised host
+by executing a malicious script whenever a specific event occurs.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmi_persistence_script_event_consumer.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

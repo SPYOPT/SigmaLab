@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_touch_susp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_touch_susp.yml
+// ID Sigma: 31545105-3444-4584-bebf-c466353230d2
+// Título: Touch Suspicious Service File
+// Descripción: Detects usage of the "touch" process in service file.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_touch_susp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

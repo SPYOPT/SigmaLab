@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ssh_rdp_tunneling.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ssh_rdp_tunneling.yml
+// ID Sigma: f7d7ebd5-a016-46e2-9c54-f9932f2d386d
+// Título: Potential RDP Tunneling Via SSH
+// Descripción: Execution of ssh.exe to perform data exfiltration and tunneling through RDP
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ssh_rdp_tunneling.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

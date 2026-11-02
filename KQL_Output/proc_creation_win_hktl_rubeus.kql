@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_rubeus.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_rubeus.yml
+// ID Sigma: 7ec2c172-dceb-4c10-92c9-87c1881b7e18
+// Título: HackTool - Rubeus Execution
+// Descripción: Detects the execution of the hacktool Rubeus via PE information of command line parameters
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_rubeus.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_nslookup_domain_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_nslookup_domain_discovery.yml
+// ID Sigma: e6313acd-208c-44fc-a0ff-db85d572e90e
+// Título: Network Reconnaissance Activity
+// Descripción: Detects a set of suspicious network related commands often used in recon stages
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_nslookup_domain_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

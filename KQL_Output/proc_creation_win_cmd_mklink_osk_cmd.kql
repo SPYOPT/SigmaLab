@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_mklink_osk_cmd.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_mklink_osk_cmd.yml
+// ID Sigma: e9b61244-893f-427c-b287-3e708f321c6b
+// Título: Potential Privilege Escalation Using Symlink Between Osk and Cmd
+// Descripción: Detects the creation of a symbolic link between "cmd.exe" and the accessibility on-screen keyboard binary (osk.exe) using "mklink". This technique provides an elevated command prompt to the user from the login screen without the need to log in.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_mklink_osk_cmd.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

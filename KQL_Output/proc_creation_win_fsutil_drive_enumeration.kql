@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_fsutil_drive_enumeration.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsutil_drive_enumeration.yml
+// ID Sigma: 63de06b9-a385-40b5-8b32-73f2b9ef84b6
+// Título: Fsutil Drive Enumeration
+// Descripción: Attackers may leverage fsutil to enumerated connected drives.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsutil_drive_enumeration.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

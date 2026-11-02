@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uninstall_crowdstrike_falcon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uninstall_crowdstrike_falcon.yml
+// ID Sigma: f0f7be61-9cf5-43be-9836-99d6ef448a18
+// Título: Uninstall Crowdstrike Falcon Sensor
+// Descripción: Adversaries may disable security tools to avoid possible detection of their tools and activities by uninstalling Crowdstrike Falcon
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uninstall_crowdstrike_falcon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

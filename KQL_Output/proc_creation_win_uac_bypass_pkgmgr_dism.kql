@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_pkgmgr_dism.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_pkgmgr_dism.yml
+// ID Sigma: a743ceba-c771-4d75-97eb-8a90f7f4844c
+// Título: UAC Bypass Using PkgMgr and DISM
+// Descripción: Detects the pattern of UAC Bypass using pkgmgr.exe and dism.exe (UACMe 23)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_pkgmgr_dism.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

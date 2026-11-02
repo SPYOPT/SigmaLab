@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_priv_escalation_via_named_pipe.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_priv_escalation_via_named_pipe.yml
+// ID Sigma: 9bd04a79-dabe-4f1f-a5ff-92430265c96b
+// Título: Privilege Escalation via Named Pipe Impersonation
+// Descripción: Detects a remote file copy attempt to a hidden network share. This may indicate lateral movement or data staging activity.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_priv_escalation_via_named_pipe.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

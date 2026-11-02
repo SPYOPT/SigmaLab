@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_data_exfiltration_by_using_datasvcutil.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_data_exfiltration_by_using_datasvcutil.yml
+// ID Sigma: e290b10b-1023-4452-a4a9-eb31a9013b3a
+// Título: LOLBAS Data Exfiltration by DataSvcUtil.exe
+// Descripción: Detects when a user performs data exfiltration by using DataSvcUtil.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_data_exfiltration_by_using_datasvcutil.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

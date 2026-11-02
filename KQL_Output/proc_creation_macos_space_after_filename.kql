@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_space_after_filename.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_space_after_filename.yml
+// ID Sigma: b6e2a2e3-2d30-43b1-a4ea-071e36595690
+// Título: Space After Filename - macOS
+// Descripción: Detects attempts to masquerade as legitimate files by adding a space to the end of the filename.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_space_after_filename.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

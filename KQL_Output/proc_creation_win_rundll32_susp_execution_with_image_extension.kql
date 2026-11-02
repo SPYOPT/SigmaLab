@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_susp_execution_with_image_extension.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_susp_execution_with_image_extension.yml
+// ID Sigma: 4aa6040b-3f28-44e3-a769-9208e5feb5ec
+// Título: Suspicious Rundll32 Execution With Image Extension
+// Descripción: Detects the execution of Rundll32.exe with DLL files masquerading as image files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_susp_execution_with_image_extension.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

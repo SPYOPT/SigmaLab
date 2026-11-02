@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_lnx_cap_setgid.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_cap_setgid.yml
+// ID Sigma: 3a716279-c18c-4488-83be-f9ececbfb9fc
+// Título: Linux Setgid Capability Set on a Binary via Setcap Utility
+// Descripción: Detects the use of the 'setcap' utility to set the 'setgid' capability (cap_setgid) on a binary file.
+This capability allows a non privileged process to make arbitrary manipulations of group IDs (GIDs), including setting its current GID to a value that would otherwise be restricted (i.e. GID 0, the root group).
+This behavior can be used by adversaries to backdoor a binary in order to escalate privileges again in the future if needed.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_cap_setgid.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

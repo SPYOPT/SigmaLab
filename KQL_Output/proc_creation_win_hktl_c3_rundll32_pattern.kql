@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_c3_rundll32_pattern.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_c3_rundll32_pattern.yml
+// ID Sigma: b18c9d4c-fac9-4708-bd06-dd5bfacf200f
+// Título: HackTool - F-Secure C3 Load by Rundll32
+// Descripción: F-Secure C3 produces DLLs with a default exported StartNodeRelay function.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_c3_rundll32_pattern.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

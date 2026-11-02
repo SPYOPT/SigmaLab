@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ssh_port_forward.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ssh_port_forward.yml
+// ID Sigma: 327f48c1-a6db-4eb8-875a-f6981f1b0183
+// Título: Port Forwarding Activity Via SSH.EXE
+// Descripción: Detects port forwarding activity via SSH.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ssh_port_forward.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

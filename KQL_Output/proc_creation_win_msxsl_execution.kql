@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_msxsl_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msxsl_execution.yml
+// ID Sigma: 9e50a8b3-dd05-4eb8-9153-bdb6b79d50b0
+// Título: Msxsl.EXE Execution
+// Descripción: Detects the execution of the MSXSL utility. This can be used to execute Extensible Stylesheet Language (XSL) files. These files are commonly used to describe the processing and rendering of data within XML files.
+Adversaries can abuse this functionality to execute arbitrary files while potentially bypassing application whitelisting defenses.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msxsl_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

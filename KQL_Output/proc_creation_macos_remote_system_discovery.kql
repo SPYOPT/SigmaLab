@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_remote_system_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_remote_system_discovery.yml
+// ID Sigma: 10227522-8429-47e6-a301-f2b2d014e7ad
+// Título: Macos Remote System Discovery
+// Descripción: Detects the enumeration of other remote systems.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_remote_system_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

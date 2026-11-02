@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_download_susp_file_sharing_domains.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_susp_file_sharing_domains.yml
+// ID Sigma: b6e04788-29e1-4557-bb14-77f761848ab8
+// Título: Potentially Suspicious File Download From File Sharing Domain Via PowerShell.EXE
+// Descripción: Detects potentially suspicious file downloads from file sharing domains using PowerShell.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_susp_file_sharing_domains.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

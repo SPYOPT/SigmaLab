@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_curl_useragent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_curl_useragent.yml
+// ID Sigma: b86d356d-6093-443d-971c-9b07db583c68
+// Título: Suspicious Curl Change User Agents - Linux
+// Descripción: Detects a suspicious curl process start on linux with set useragent options
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_curl_useragent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_whoami_as_param.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_whoami_as_param.yml
+// ID Sigma: e9142d84-fbe0-401d-ac50-3e519fb00c89
+// Título: WhoAmI as Parameter
+// Descripción: Detects a suspicious process command line that uses whoami as first parameter (as e.g. used by EfsPotato)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_whoami_as_param.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

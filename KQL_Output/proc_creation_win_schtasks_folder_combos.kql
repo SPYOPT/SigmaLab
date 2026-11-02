@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_schtasks_folder_combos.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_folder_combos.yml
+// ID Sigma: 8a8379b8-780b-4dbf-b1e9-31c8d112fefb
+// Título: Schtasks From Suspicious Folders
+// Descripción: Detects scheduled task creations that have suspicious action command and folder combinations
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_folder_combos.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_winrar_exfil_dmp_files.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winrar_exfil_dmp_files.yml
+// ID Sigma: 1ac14d38-3dfc-4635-92c7-e3fd1c5f5bfc
+// Título: Winrar Compressing Dump Files
+// Descripción: Detects execution of WinRAR in order to compress a file with a ".dmp"/".dump" extension, which could be a step in a process of dump file exfiltration.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winrar_exfil_dmp_files.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

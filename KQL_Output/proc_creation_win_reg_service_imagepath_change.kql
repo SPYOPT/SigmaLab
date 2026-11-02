@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_reg_service_imagepath_change.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_service_imagepath_change.yml
+// ID Sigma: 9b0b7ac3-6223-47aa-a3fd-e8f211e637db
+// Título: Changing Existing Service ImagePath Value Via Reg.EXE
+// Descripción: Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services.
+Adversaries may use flaws in the permissions for registry to redirect from the originally specified executable to one that they control, in order to launch their own code at Service start.
+Windows stores local service configuration information in the Registry under HKLM\SYSTEM\CurrentControlSet\Services
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_service_imagepath_change.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_pester.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pester.yml
+// ID Sigma: 18988e1b-9087-4f8a-82fe-0414dce49878
+// Título: Execute Code with Pester.bat as Parent
+// Descripción: Detects code execution via Pester.bat (Pester - Powershell Modulte for testing)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pester.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

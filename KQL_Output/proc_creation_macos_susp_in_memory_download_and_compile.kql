@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_susp_in_memory_download_and_compile.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_in_memory_download_and_compile.yml
+// ID Sigma: 13db8d2e-7723-4c2c-93c1-a4d36994f7ef
+// Título: Potential In-Memory Download And Compile Of Payloads
+// Descripción: Detects potential in-memory downloading and compiling of applets using curl and osacompile as seen used by XCSSET malware
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_susp_in_memory_download_and_compile.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

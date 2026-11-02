@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_susp_hidden_dir_index_allocation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_hidden_dir_index_allocation.yml
+// ID Sigma: 0900463c-b33b-49a8-be1d-552a3b553dae
+// Título: Potential Hidden Directory Creation Via NTFS INDEX_ALLOCATION Stream - CLI
+// Descripción: Detects command line containing reference to the "::$index_allocation" stream, which can be used as a technique to prevent access to folders or files from tooling such as "explorer.exe" or "powershell.exe"
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_hidden_dir_index_allocation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

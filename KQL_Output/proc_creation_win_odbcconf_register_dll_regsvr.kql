@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_odbcconf_register_dll_regsvr.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_odbcconf_register_dll_regsvr.yml
+// ID Sigma: 9f0a8bf3-a65b-440a-8c1e-5cb1547c8e70
+// Título: New DLL Registered Via Odbcconf.EXE
+// Descripción: Detects execution of "odbcconf" with "REGSVR" in order to register a new DLL (equivalent to running regsvr32). Attackers abuse this to install and run malicious DLLs.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_odbcconf_register_dll_regsvr.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

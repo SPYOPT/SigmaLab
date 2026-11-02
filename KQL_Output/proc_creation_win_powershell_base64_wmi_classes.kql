@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_base64_wmi_classes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_wmi_classes.yml
+// ID Sigma: 1816994b-42e1-4fb1-afd2-134d88184f71
+// Título: PowerShell Base64 Encoded WMI Classes
+// Descripción: Detects calls to base64 encoded WMI class such as "Win32_ShadowCopy", "Win32_ScheduledJob", etc.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_wmi_classes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

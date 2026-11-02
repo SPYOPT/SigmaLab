@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_susp_homoglyph_cyrillic_lookalikes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_homoglyph_cyrillic_lookalikes.yml
+// ID Sigma: 32e280f1-8ad4-46ef-9e80-910657611fbc
+// Título: Potential Homoglyph Attack Using Lookalike Characters
+// Descripción: Detects the presence of unicode characters which are homoglyphs, or identical in appearance, to ASCII letter characters.
+This is used as an obfuscation and masquerading techniques. Only "perfect" homoglyphs are included; these are characters that
+are indistinguishable from ASCII characters and thus may make excellent candidates for homoglyph attack characters.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_homoglyph_cyrillic_lookalikes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

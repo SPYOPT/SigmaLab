@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_dumpstack_log_evasion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_dumpstack_log_evasion.yml
+// ID Sigma: 4f647cfa-b598-4e12-ad69-c68dd16caef8
+// Título: DumpStack.log Defender Evasion
+// Descripción: Detects the use of the filename DumpStack.log to evade Microsoft Defender
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_dumpstack_log_evasion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

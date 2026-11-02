@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_taskmgr_localsystem.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_taskmgr_localsystem.yml
+// ID Sigma: 9fff585c-c33e-4a86-b3cd-39312079a65f
+// Título: Taskmgr as LOCAL_SYSTEM
+// Descripción: Detects the creation of taskmgr.exe process in context of LOCAL_SYSTEM
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_taskmgr_localsystem.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

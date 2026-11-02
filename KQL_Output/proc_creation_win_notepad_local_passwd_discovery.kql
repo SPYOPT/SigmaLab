@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_notepad_local_passwd_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_notepad_local_passwd_discovery.yml
+// ID Sigma: 3b4e950b-a3ea-44d3-877e-432071990709
+// Título: Notepad Password Files Discovery
+// Descripción: Detects the execution of Notepad to open a file that has the string "password" which may indicate unauthorized access to credentials or suspicious activity.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_notepad_local_passwd_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

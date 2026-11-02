@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_delete_safeboot.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_delete_safeboot.yml
+// ID Sigma: fc0e89b5-adb0-43c1-b749-c12a10ec37de
+// Título: SafeBoot Registry Key Deleted Via Reg.EXE
+// Descripción: Detects execution of "reg.exe" commands with the "delete" flag on safe boot registry keys. Often used by attacker to prevent safeboot execution of security products
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_delete_safeboot.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

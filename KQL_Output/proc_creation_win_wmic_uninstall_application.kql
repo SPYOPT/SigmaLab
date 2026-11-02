@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_uninstall_application.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_uninstall_application.yml
+// ID Sigma: b53317a0-8acf-4fd1-8de8-a5401e776b96
+// Título: Application Removed Via Wmic.EXE
+// Descripción: Detects the removal or uninstallation of an application via "Wmic.EXE".
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_uninstall_application.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

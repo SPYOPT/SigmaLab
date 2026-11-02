@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_net_user_add_never_expire.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_user_add_never_expire.yml
+// ID Sigma: b9f0e6f5-09b4-4358-bae4-08408705bd5c
+// Título: New User Created Via Net.EXE With Never Expire Option
+// Descripción: Detects creation of local users via the net.exe command with the option "never expire"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_net_user_add_never_expire.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

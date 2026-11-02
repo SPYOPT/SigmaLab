@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_python_shell_os_system.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_shell_os_system.yml
+// ID Sigma: 2d2f44ff-4611-4778-a8fc-323a0e9850cc
+// Título: Inline Python Execution - Spawn Shell Via OS System Library
+// Descripción: Detects execution of inline Python code via the "-c" in order to call the "system" function from the "os" library, and spawn a shell.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_shell_os_system.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

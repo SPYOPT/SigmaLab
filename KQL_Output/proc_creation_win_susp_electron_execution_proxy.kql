@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_electron_execution_proxy.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_electron_execution_proxy.yml
+// ID Sigma: 378a05d8-963c-46c9-bcce-13c7657eac99
+// Título: Potentially Suspicious Electron Application CommandLine
+// Descripción: Detects potentially suspicious CommandLine of electron apps (teams, discord, slack, etc.). This could be a sign of abuse to proxy execution through a signed binary.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_electron_execution_proxy.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

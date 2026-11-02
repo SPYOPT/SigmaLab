@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_add_user_remote_desktop_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_remote_desktop_group.yml
+// ID Sigma: ffa28e60-bdb1-46e0-9f82-05f7a61cc06e
+// Título: User Added to Remote Desktop Users Group
+// Descripción: Detects addition of users to the local Remote Desktop Users group via "Net" or "Add-LocalGroupMember".
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_remote_desktop_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_git_clone.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_git_clone.yml
+// ID Sigma: cfec9d29-64ec-4a0f-9ffe-0fdb856d5446
+// Título: Suspicious Git Clone - Linux
+// Descripción: Detects execution of "git" in order to clone a remote repository that contain suspicious keywords which might be suspicious
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_git_clone.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

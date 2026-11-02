@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_userdel.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_userdel.yml
+// ID Sigma: 08f26069-6f80-474b-8d1f-d971c6fedea0
+// Título: User Has Been Deleted Via Userdel
+// Descripción: Detects execution of the "userdel" binary. Which is used to delete a user account and related files. This is sometimes abused by threat actors in order to cover their tracks
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_userdel.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

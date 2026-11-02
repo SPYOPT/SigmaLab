@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_kd_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_kd_execution.yml
+// ID Sigma: 27ee9438-90dc-4bef-904b-d3ef927f5e7e
+// Título: Windows Kernel Debugger Execution
+// Descripción: Detects execution of the Windows Kernel Debugger "kd.exe".
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_kd_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

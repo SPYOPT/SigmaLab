@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dnscmd_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnscmd_discovery.yml
+// ID Sigma: b6457d63-d2a2-4e29-859d-4e7affc153d1
+// Título: Potential Discovery Activity Via Dnscmd.EXE
+// Descripción: Detects an attempt to leverage dnscmd.exe to enumerate the DNS zones of a domain. DNS zones used to host the DNS records for a particular domain.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnscmd_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

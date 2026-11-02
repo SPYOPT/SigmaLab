@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_seatbelt.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_seatbelt.yml
+// ID Sigma: 38646daa-e78f-4ace-9de0-55547b2d30da
+// Título: PUA - Seatbelt Execution
+// Descripción: Detects the execution of the PUA/Recon tool Seatbelt via PE information of command line parameters
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_seatbelt.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

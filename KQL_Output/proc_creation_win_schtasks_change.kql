@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_schtasks_change.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_change.yml
+// ID Sigma: 1c0e41cd-21bb-4433-9acc-4a2cd6367b9b
+// Título: Suspicious Modification Of Scheduled Tasks
+// Descripción: Detects when an attacker tries to modify an already existing scheduled tasks to run from a suspicious location
+Attackers can create a simple looking task in order to avoid detection on creation as it's often the most focused on
+Instead they modify the task after creation to include their malicious payload
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_change.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,21 @@
 // Regla Sigma: proc_creation_win_node_new_agent_skills_installed.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_node_new_agent_skills_installed.yml
+// ID Sigma: afa71271-6a97-4e47-810f-83120fb1a4ce
+// Título: New Agent Skills Installation Attempt Via Node.EXE
+// Descripción: Detects the attempt to install new skills for AI agents using the "npx skills" command.
+Agent skills enhance AI agents with new capabilities, but attackers may abuse this mechanism to inject malicious commands executed by the agent on behalf of the user.
+The "npx skills" command can install skills for various agents (e.g., Claude Code, Cursor, and others).
+Analysts should review any installed skills to verify their legitimacy.
+Note: Tune this rule based on whether AI agent tooling is allowed in your environment.
+In environments where such tooling is authorized, this detection may reflect normal activity and the alert level should be adjusted accordingly.
+In environments where AI agent tooling is not permitted, this activity is likely suspicious and may require immediate investigation.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_node_new_agent_skills_installed.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

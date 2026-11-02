@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_installutil_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_installutil_download.yml
+// ID Sigma: 75edd216-1939-4c73-8d61-7f3a0d85b5cc
+// Título: File Download Via InstallUtil.EXE
+// Descripción: Detects use of .NET InstallUtil.exe in order to download arbitrary files. The files will be written to "%LOCALAPPDATA%\Microsoft\Windows\INetCache\IE\"
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_installutil_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

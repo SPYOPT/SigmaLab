@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_sc_query_interesting_services.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_query_interesting_services.yml
+// ID Sigma: e83e8899-c9b2-483b-b355-5decc942b959
+// Título: Interesting Service Enumeration Via Sc.EXE
+// Descripción: Detects the enumeration and query of interesting and in some cases sensitive services on the system via "sc.exe".
+Attackers often try to enumerate the services currently running on a system in order to find different attack vectors.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_query_interesting_services.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

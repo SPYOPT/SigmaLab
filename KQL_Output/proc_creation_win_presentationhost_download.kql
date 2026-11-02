@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_presentationhost_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_presentationhost_download.yml
+// ID Sigma: b124ddf4-778d-418e-907f-6dd3fc0d31cd
+// Título: Arbitrary File Download Via PresentationHost.EXE
+// Descripción: Detects usage of "PresentationHost" which is a utility that runs ".xbap" (Browser Applications) files to download arbitrary files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_presentationhost_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

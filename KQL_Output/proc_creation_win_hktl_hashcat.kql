@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_hashcat.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_hashcat.yml
+// ID Sigma: 39b31e81-5f5f-4898-9c0e-2160cfc0f9bf
+// Título: HackTool - Hashcat Password Cracker Execution
+// Descripción: Execute Hashcat.exe with provided SAM file from registry of Windows and Password list to crack against
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_hashcat.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

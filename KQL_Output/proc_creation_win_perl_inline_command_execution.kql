@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_perl_inline_command_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_perl_inline_command_execution.yml
+// ID Sigma: f426547a-e0f7-441a-b63e-854ac5bdf54d
+// Título: Perl Inline Command Execution
+// Descripción: Detects execution of perl using the "-e"/"-E" flags. This is could be used as a way to launch a reverse shell or execute live perl code.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_perl_inline_command_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_curl_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_curl_usage.yml
+// ID Sigma: ea34fb97-e2c4-4afb-810f-785e4459b194
+// Título: Curl Usage on Linux
+// Descripción: Detects a curl process start on linux, which indicates a file download from a remote location or a simple web request to a remote server
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_curl_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

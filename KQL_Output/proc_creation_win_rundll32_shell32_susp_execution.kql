@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_shell32_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_shell32_susp_execution.yml
+// ID Sigma: 32b96012-7892-429e-b26c-ac2bf46066ff
+// Título: Shell32 DLL Execution in Suspicious Directory
+// Descripción: Detects shell32.dll executing a DLL in a suspicious directory
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_shell32_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

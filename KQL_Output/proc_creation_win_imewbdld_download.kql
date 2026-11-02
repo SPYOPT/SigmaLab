@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_imewbdld_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_imewbdld_download.yml
+// ID Sigma: 863218bd-c7d0-4c52-80cd-0a96c09f54af
+// Título: Arbitrary File Download Via IMEWDBLD.EXE
+// Descripción: Detects usage of "IMEWDBLD.exe" to download arbitrary files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_imewbdld_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

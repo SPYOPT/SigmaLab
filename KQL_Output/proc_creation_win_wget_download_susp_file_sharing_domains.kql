@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wget_download_susp_file_sharing_domains.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wget_download_susp_file_sharing_domains.yml
+// ID Sigma: a0d7e4d2-bede-4141-8896-bc6e237e977c
+// Título: Suspicious File Download From File Sharing Domain Via Wget.EXE
+// Descripción: Detects potentially suspicious file downloads from file sharing domains using wget.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wget_download_susp_file_sharing_domains.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

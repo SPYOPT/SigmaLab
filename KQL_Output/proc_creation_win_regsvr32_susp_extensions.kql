@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regsvr32_susp_extensions.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_susp_extensions.yml
+// ID Sigma: 089fc3d2-71e8-4763-a8a5-c97fbb0a403e
+// Título: Regsvr32 DLL Execution With Suspicious File Extension
+// Descripción: Detects the execution of REGSVR32.exe with DLL files masquerading as other files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_susp_extensions.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

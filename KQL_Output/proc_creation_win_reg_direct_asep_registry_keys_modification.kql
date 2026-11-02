@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_direct_asep_registry_keys_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_direct_asep_registry_keys_modification.yml
+// ID Sigma: 24357373-078f-44ed-9ac4-6d334a668a11
+// Título: Direct Autorun Keys Modification
+// Descripción: Detects direct modification of autostart extensibility point (ASEP) in registry using reg.exe.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_direct_asep_registry_keys_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

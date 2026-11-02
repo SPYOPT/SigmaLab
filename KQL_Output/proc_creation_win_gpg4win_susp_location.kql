@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_gpg4win_susp_location.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpg4win_susp_location.yml
+// ID Sigma: e1e0b7d7-e10b-4ee4-ac49-a4bda05d320d
+// Título: File Encryption/Decryption Via Gpg4win From Suspicious Locations
+// Descripción: Detects usage of Gpg4win to encrypt/decrypt files located in potentially suspicious locations.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpg4win_susp_location.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

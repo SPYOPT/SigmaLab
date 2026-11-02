@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_service_dacl_modification_set_service.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_service_dacl_modification_set_service.yml
+// ID Sigma: a95b9b42-1308-4735-a1af-abb1c5e6f5ac
+// Título: Suspicious Service DACL Modification Via Set-Service Cmdlet
+// Descripción: Detects suspicious DACL modifications via the "Set-Service" cmdlet using the "SecurityDescriptorSddl" flag (Only available with PowerShell 7) that can be used to hide services or make them unstopable
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_service_dacl_modification_set_service.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

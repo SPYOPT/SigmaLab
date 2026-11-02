@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_hktl_netexec.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_netexec.yml
+// ID Sigma: 7638e5fe-600c-4289-a968-f49dd537ec7d
+// Título: HackTool - NetExec Execution
+// Descripción: Detects execution of the hacktool NetExec.
+NetExec (formerly CrackMapExec) is a widely used post-exploitation tool designed for Active Directory penetration testing and network enumeration
+In enterprise environments, the use of NetExec is considered suspicious or potentially malicious because it enables attackers to enumerate hosts, exploit network services, and move laterally across systems.
+Threat actors and red teams commonly use NetExec to identify vulnerable systems, harvest credentials, and execute commands remotely.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_netexec.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_registry_typed_paths_persistence.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_typed_paths_persistence.yml
+// ID Sigma: ec88289a-7e1a-4cc3-8d18-bd1f60e4b9ba
+// Título: Persistence Via TypedPaths - CommandLine
+// Descripción: Detects modification addition to the 'TypedPaths' key in the user or admin registry via the commandline. Which might indicate persistence attempt
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_typed_paths_persistence.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

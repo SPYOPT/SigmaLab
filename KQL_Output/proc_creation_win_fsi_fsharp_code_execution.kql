@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_fsi_fsharp_code_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsi_fsharp_code_execution.yml
+// ID Sigma: b96b2031-7c17-4473-afe7-a30ce714db29
+// Título: Use of FSharp Interpreters
+// Descripción: Detects the execution of FSharp Interpreters "FsiAnyCpu.exe" and "FSi.exe"
+Both can be used for AWL bypass and to execute F# code via scripts or inline.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsi_fsharp_code_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

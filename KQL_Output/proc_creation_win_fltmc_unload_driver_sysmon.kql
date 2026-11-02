@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_fltmc_unload_driver_sysmon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fltmc_unload_driver_sysmon.yml
+// ID Sigma: 4d7cda18-1b12-4e52-b45c-d28653210df8
+// Título: Sysmon Driver Unloaded Via Fltmc.EXE
+// Descripción: Detects possible Sysmon filter driver unloaded via fltmc.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fltmc_unload_driver_sysmon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_inveigh.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_inveigh.yml
+// ID Sigma: b99a1518-1ad5-4f65-bc95-1ffff97a8fd0
+// Título: HackTool - Inveigh Execution
+// Descripción: Detects the use of Inveigh a cross-platform .NET IPv4/IPv6 machine-in-the-middle tool
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_inveigh.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

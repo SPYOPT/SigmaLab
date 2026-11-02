@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_event_logging_disable_via_key_minint.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_event_logging_disable_via_key_minint.yml
+// ID Sigma: 1a4bd6af-99ac-4466-b5b2-7b72b4a05462
+// Título: Security Event Logging Disabled via MiniNt Registry Key - Process
+// Descripción: Detects attempts to disable security event logging by adding the `MiniNt` registry key.
+This key is used to disable the Windows Event Log service, which collects and stores event logs from the operating system and applications.
+Adversaries may want to disable this service to prevent logging of security events that could be used to detect their activities.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_event_logging_disable_via_key_minint.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

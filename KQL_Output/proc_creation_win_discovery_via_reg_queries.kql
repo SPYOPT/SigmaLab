@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_discovery_via_reg_queries.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_discovery_via_reg_queries.yml
+// ID Sigma: 0022869c-49f7-4ff2-ba03-85ac42ddac58
+// Título: System Information Discovery via Registry Queries
+// Descripción: Detects attempts to query system information directly from the Windows Registry.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_discovery_via_reg_queries.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

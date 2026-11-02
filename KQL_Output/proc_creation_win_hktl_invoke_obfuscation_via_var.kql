@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_var.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_var.yml
+// ID Sigma: e9f55347-2928-4c06-88e5-1a7f8169942e
+// Título: Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION
+// Descripción: Detects Obfuscated Powershell via VAR++ LAUNCHER
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_var.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

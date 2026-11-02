@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_devtoolslauncher.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_devtoolslauncher.yml
+// ID Sigma: cc268ac1-42d9-40fd-9ed3-8c4e1a5b87e6
+// Título: Devtoolslauncher.exe Executes Specified Binary
+// Descripción: The Devtoolslauncher.exe executes other binary
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_devtoolslauncher.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_wsreset_integrity_level.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_wsreset_integrity_level.yml
+// ID Sigma: 89a9a0e0-f61a-42e5-8957-b1479565a658
+// Título: UAC Bypass WSReset
+// Descripción: Detects the pattern of UAC Bypass via WSReset usable by default sysmon-config
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_wsreset_integrity_level.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

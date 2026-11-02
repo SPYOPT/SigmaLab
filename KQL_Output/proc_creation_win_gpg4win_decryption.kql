@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_gpg4win_decryption.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpg4win_decryption.yml
+// ID Sigma: 037dcd71-33a8-4392-bb01-293c94663e5a
+// Título: File Decryption Using Gpg4win
+// Descripción: Detects usage of Gpg4win to decrypt files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_gpg4win_decryption.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

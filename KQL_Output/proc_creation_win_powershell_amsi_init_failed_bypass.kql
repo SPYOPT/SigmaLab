@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_amsi_init_failed_bypass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_amsi_init_failed_bypass.yml
+// ID Sigma: 30edb182-aa75-42c0-b0a9-e998bb29067c
+// Título: Potential AMSI Bypass Via .NET Reflection
+// Descripción: Detects Request to "amsiInitFailed" that can be used to disable AMSI Scanning
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_amsi_init_failed_bypass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

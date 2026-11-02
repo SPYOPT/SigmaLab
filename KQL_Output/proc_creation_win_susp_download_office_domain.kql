@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_download_office_domain.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_download_office_domain.yml
+// ID Sigma: 00d49ed5-4491-4271-a8db-650a4ef6f8c1
+// Título: Suspicious Download from Office Domain
+// Descripción: Detects suspicious ways to download files from Microsoft domains that are used to store attachments in Emails or OneNote documents
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_download_office_domain.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

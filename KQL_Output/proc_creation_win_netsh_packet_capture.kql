@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_netsh_packet_capture.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_packet_capture.yml
+// ID Sigma: d3c3861d-c504-4c77-ba55-224ba82d0118
+// Título: New Network Trace Capture Started Via Netsh.EXE
+// Descripción: Detects the execution of netsh with the "trace" flag in order to start a network capture
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_packet_capture.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

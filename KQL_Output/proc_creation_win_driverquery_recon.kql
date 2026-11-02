@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_driverquery_recon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_driverquery_recon.yml
+// ID Sigma: 9fc3072c-dc8f-4bf7-b231-18950000fadd
+// Título: Potential Recon Activity Using DriverQuery.EXE
+// Descripción: Detect usage of the "driverquery" utility to perform reconnaissance on installed drivers
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_driverquery_recon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

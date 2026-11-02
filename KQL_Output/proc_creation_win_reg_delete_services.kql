@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_delete_services.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_delete_services.yml
+// ID Sigma: 05b2aa93-1210-42c8-8d9a-2fcc13b284f5
+// Título: Service Registry Key Deleted Via Reg.EXE
+// Descripción: Detects execution of "reg.exe" commands with the "delete" flag on services registry key. Often used by attacker to remove AV software services
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_delete_services.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

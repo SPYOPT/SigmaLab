@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_public_folder.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_public_folder.yml
+// ID Sigma: fb9d3ff7-7348-46ab-af8c-b55f5fbf39b4
+// Título: Execution of Powershell Script in Public Folder
+// Descripción: This rule detects execution of PowerShell scripts located in the "C:\Users\Public" folder
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_public_folder.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

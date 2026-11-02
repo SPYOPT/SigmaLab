@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_office_arbitrary_cli_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_arbitrary_cli_download.yml
+// ID Sigma: 4ae3e30b-b03f-43aa-87e3-b622f4048eed
+// Título: Potential Arbitrary File Download Using Office Application
+// Descripción: Detects potential arbitrary file download using a Microsoft Office application
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_arbitrary_cli_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

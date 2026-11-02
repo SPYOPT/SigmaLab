@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_pua_process_hacker.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_process_hacker.yml
+// ID Sigma: 811e0002-b13b-4a15-9d00-a613fce66e42
+// Título: PUA - Process Hacker Execution
+// Descripción: Detects the execution of Process Hacker based on binary metadata information (Image, Hash, Imphash, etc).
+Process Hacker is a tool to view and manipulate processes, kernel options and other low level options.
+Threat actors abused older vulnerable versions to manipulate system processes.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_process_hacker.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

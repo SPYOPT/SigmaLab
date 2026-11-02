@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_find_cred_in_files.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_find_cred_in_files.yml
+// ID Sigma: 53b1b378-9b06-4992-b972-dde6e423d2b4
+// Título: Credentials In Files
+// Descripción: Detecting attempts to extract passwords with grep and laZagne
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_find_cred_in_files.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

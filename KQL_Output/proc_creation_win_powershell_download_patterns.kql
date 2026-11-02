@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_download_patterns.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_patterns.yml
+// ID Sigma: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
+// Título: PowerShell Download Pattern
+// Descripción: Detects a Powershell process that contains download commands in its command line string
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_patterns.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_shadow_copies_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_shadow_copies_creation.yml
+// ID Sigma: b17ea6f7-6e90-447e-a799-e6c0a493d6ce
+// Título: Shadow Copies Creation Using Operating Systems Utilities
+// Descripción: Shadow Copies creation using operating systems utilities, possible credential access
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_shadow_copies_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

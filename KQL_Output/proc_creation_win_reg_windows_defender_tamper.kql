@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_reg_windows_defender_tamper.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_windows_defender_tamper.yml
+// ID Sigma: 452bce90-6fb0-43cc-97a5-affc283139b3
+// Título: Suspicious Windows Defender Registry Key Tampering Via Reg.EXE
+// Descripción: Detects the usage of "reg.exe" to tamper with different Windows Defender registry keys in order to disable some important features related to protection and detection
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_windows_defender_tamper.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

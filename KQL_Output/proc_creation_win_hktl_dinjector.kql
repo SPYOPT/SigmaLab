@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_dinjector.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_dinjector.yml
+// ID Sigma: d78b5d61-187d-44b6-bf02-93486a80de5a
+// Título: HackTool - DInjector PowerShell Cradle Execution
+// Descripción: Detects the use of the Dinject PowerShell cradle based on the specific flags
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_dinjector.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

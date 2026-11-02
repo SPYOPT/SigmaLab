@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_bitsadmin_download_susp_extensions.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bitsadmin_download_susp_extensions.yml
+// ID Sigma: 5b80a791-ad9b-4b75-bcc1-ad4e1e89c200
+// Título: File With Suspicious Extension Downloaded Via Bitsadmin
+// Descripción: Detects usage of bitsadmin downloading a file with a suspicious extension
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bitsadmin_download_susp_extensions.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

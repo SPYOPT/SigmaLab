@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_createdump_lolbin_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_createdump_lolbin_execution.yml
+// ID Sigma: 515c8be5-e5df-4c5e-8f6d-a4a2f05e4b48
+// Título: CreateDump Process Dump
+// Descripción: Detects uses of the createdump.exe LOLOBIN utility to dump process memory
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_createdump_lolbin_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

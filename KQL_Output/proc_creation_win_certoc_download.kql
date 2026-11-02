@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certoc_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_download.yml
+// ID Sigma: 70ad0861-d1fe-491c-a45f-fa48148a300d
+// Título: File Download via CertOC.EXE
+// Descripción: Detects when a user downloads a file by using CertOC.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

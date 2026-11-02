@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_recon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_recon.yml
+// ID Sigma: aa2efee7-34dd-446e-8a37-40790a66efd7
+// Título: Recon Information for Export with Command Prompt
+// Descripción: Once established within a system or network, an adversary may use automated techniques for collecting internal data.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_recon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

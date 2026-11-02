@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_bitsadmin_download_susp_targetfolder.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bitsadmin_download_susp_targetfolder.yml
+// ID Sigma: 2ddef153-167b-4e89-86b6-757a9e65dcac
+// Título: File Download Via Bitsadmin To A Suspicious Target Folder
+// Descripción: Detects usage of bitsadmin downloading a file to a suspicious target folder
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bitsadmin_download_susp_targetfolder.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

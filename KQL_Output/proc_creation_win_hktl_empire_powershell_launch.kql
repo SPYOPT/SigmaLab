@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_empire_powershell_launch.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_empire_powershell_launch.yml
+// ID Sigma: 79f4ede3-402e-41c8-bc3e-ebbf5f162581
+// Título: HackTool - Empire PowerShell Launch Parameters
+// Descripción: Detects suspicious powershell command line parameters used in Empire
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_empire_powershell_launch.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

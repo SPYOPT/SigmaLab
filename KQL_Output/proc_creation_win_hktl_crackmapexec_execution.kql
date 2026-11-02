@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_crackmapexec_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_execution.yml
+// ID Sigma: 42a993dd-bb3e-48c8-b372-4d6684c4106c
+// Título: HackTool - CrackMapExec Execution
+// Descripción: This rule detect common flag combinations used by CrackMapExec in order to detect its use even if the binary has been replaced.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_crackmapexec_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_cobaltstrike_bloopers_modules.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_cobaltstrike_bloopers_modules.yml
+// ID Sigma: 4f154fb6-27d1-4813-a759-78b93e0b9c48
+// Título: Operator Bloopers Cobalt Strike Modules
+// Descripción: Detects Cobalt Strike module/commands accidentally entered in CMD shell
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_cobaltstrike_bloopers_modules.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

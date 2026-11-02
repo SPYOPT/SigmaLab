@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ssm_agent_abuse.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ssm_agent_abuse.yml
+// ID Sigma: d20ee2f4-822c-4827-9e15-41500b1fff10
+// Título: Potential Amazon SSM Agent Hijacking
+// Descripción: Detects potential Amazon SSM agent hijack attempts as outlined in the Mitiga research report.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ssm_agent_abuse.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_progname.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_progname.yml
+// ID Sigma: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
+// Título: Suspicious Program Names
+// Descripción: Detects suspicious patterns in program names or folders that are often found in malicious samples or hacktools
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_progname.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

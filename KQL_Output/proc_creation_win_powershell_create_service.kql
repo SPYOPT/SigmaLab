@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_create_service.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_create_service.yml
+// ID Sigma: c02e96b7-c63a-4c47-bd83-4a9f74afcfb2
+// Título: New Service Creation Using PowerShell
+// Descripción: Detects the creation of a new service using powershell.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_create_service.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

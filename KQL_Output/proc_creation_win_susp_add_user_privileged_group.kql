@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_add_user_privileged_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_privileged_group.yml
+// ID Sigma: 10fb649c-3600-4d37-b1e6-56ea90bb7e09
+// Título: User Added To Highly Privileged Group
+// Descripción: Detects addition of users to highly privileged groups via "Net" or "Add-LocalGroupMember".
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_privileged_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

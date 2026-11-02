@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_infdefaultinstall_execute_sct_scripts.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_infdefaultinstall_execute_sct_scripts.yml
+// ID Sigma: ce7cf472-6fcc-490a-9481-3786840b5d9b
+// Título: InfDefaultInstall.exe .inf Execution
+// Descripción: Executes SCT script using scrobj.dll from a command in entered into a specially prepared INF file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_infdefaultinstall_execute_sct_scripts.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

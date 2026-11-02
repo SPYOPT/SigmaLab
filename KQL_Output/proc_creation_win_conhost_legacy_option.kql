@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_conhost_legacy_option.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_legacy_option.yml
+// ID Sigma: 3037d961-21e9-4732-b27a-637bcc7bf539
+// Título: Suspicious High IntegrityLevel Conhost Legacy Option
+// Descripción: ForceV1 asks for information directly from the kernel space. Conhost connects to the console application. High IntegrityLevel means the process is running with elevated privileges, such as an Administrator context.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_legacy_option.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

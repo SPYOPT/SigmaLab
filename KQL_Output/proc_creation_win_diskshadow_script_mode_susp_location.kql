@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_diskshadow_script_mode_susp_location.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_diskshadow_script_mode_susp_location.yml
+// ID Sigma: fa1a7e52-3d02-435b-81b8-00da14dd66c1
+// Título: Diskshadow Script Mode - Execution From Potential Suspicious Location
+// Descripción: Detects execution of "Diskshadow.exe" in script mode using the "/s" flag where the script is located in a potentially suspicious location.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_diskshadow_script_mode_susp_location.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

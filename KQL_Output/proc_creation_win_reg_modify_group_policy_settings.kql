@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_modify_group_policy_settings.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_modify_group_policy_settings.yml
+// ID Sigma: ada4b0c4-758b-46ac-9033-9004613a150d
+// Título: Modify Group Policy Settings
+// Descripción: Detect malicious GPO modifications can be used to implement many other malicious behaviors.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_modify_group_policy_settings.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

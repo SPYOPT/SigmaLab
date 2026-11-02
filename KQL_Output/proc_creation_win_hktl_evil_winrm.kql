@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_evil_winrm.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_evil_winrm.yml
+// ID Sigma: a197e378-d31b-41c0-9635-cfdf1c1bb423
+// Título: HackTool - WinRM Access Via Evil-WinRM
+// Descripción: Adversaries may use Valid Accounts to log into a computer using the Remote Desktop Protocol (RDP). The adversary may then perform actions as the logged-on user.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_evil_winrm.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

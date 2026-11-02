@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sqlite_firefox_gecko_profile_data.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlite_firefox_gecko_profile_data.yml
+// ID Sigma: 4833155a-4053-4c9c-a997-777fcea0baa7
+// Título: SQLite Firefox Profile Data DB Access
+// Descripción: Detect usage of the "sqlite" binary to query databases in Firefox and other Gecko-based browsers for potential data stealing.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlite_firefox_gecko_profile_data.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

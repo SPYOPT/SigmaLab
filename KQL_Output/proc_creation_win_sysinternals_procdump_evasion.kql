@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_procdump_evasion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump_evasion.yml
+// ID Sigma: 79b06761-465f-4f88-9ef2-150e24d3d737
+// Título: Potential SysInternals ProcDump Evasion
+// Descripción: Detects uses of the SysInternals ProcDump utility in which ProcDump or its output get renamed, or a dump file is moved or copied to a different name
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_procdump_evasion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

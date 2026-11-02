@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_curl_upload_file_sharing_websites.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_upload_file_sharing_websites.yml
+// ID Sigma: e328cc73-f92a-42fb-b3fa-7c2cffda981a
+// Título: Curl File Upload To File Sharing Websites
+// Descripción: Detects usage of curl to upload files to known file sharing domains, which may indicate data exfiltration.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_upload_file_sharing_websites.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

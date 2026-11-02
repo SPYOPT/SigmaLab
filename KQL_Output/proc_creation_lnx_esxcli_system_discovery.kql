@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_esxcli_system_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_system_discovery.yml
+// ID Sigma: e80273e1-9faf-40bc-bd85-dbaff104c4e9
+// Título: ESXi System Information Discovery Via ESXCLI
+// Descripción: Detects execution of the "esxcli" command with the "system" flag in order to retrieve information about the different component of the system. Such as accounts, modules, NTP, etc.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_esxcli_system_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

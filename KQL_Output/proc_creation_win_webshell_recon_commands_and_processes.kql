@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_webshell_recon_commands_and_processes.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_webshell_recon_commands_and_processes.yml
+// ID Sigma: bed2a484-9348-4143-8a8a-b801c979301c
+// Título: Webshell Detection With Command Line Keywords
+// Descripción: Detects certain command line parameters often used during reconnaissance activity via web shells
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_webshell_recon_commands_and_processes.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

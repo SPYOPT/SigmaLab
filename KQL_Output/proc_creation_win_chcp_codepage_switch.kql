@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_chcp_codepage_switch.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_chcp_codepage_switch.yml
+// ID Sigma: c7942406-33dd-4377-a564-0f62db0593a3
+// Título: Suspicious CodePage Switch Via CHCP
+// Descripción: Detects a code page switch in command line or batch scripts to a rare language
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_chcp_codepage_switch.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

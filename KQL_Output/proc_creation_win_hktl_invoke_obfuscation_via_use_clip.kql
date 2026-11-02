@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_invoke_obfuscation_via_use_clip.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_use_clip.yml
+// ID Sigma: e1561947-b4e3-4a74-9bdd-83baed21bdb5
+// Título: Invoke-Obfuscation Via Use Clip
+// Descripción: Detects Obfuscated Powershell via use Clip.exe in Scripts
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_invoke_obfuscation_via_use_clip.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

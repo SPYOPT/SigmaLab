@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_persistence_via_plistbuddy.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_persistence_via_plistbuddy.yml
+// ID Sigma: 65d506d3-fcfe-4071-b4b2-bcefe721bbbb
+// Título: Potential Persistence Via PlistBuddy
+// Descripción: Detects potential persistence activity using LaunchAgents or LaunchDaemons via the PlistBuddy utility
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_persistence_via_plistbuddy.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

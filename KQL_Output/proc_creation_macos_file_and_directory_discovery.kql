@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_file_and_directory_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_file_and_directory_discovery.yml
+// ID Sigma: 089dbdf6-b960-4bcc-90e3-ffc3480c20f6
+// Título: File and Directory Discovery - MacOS
+// Descripción: Detects usage of system utilities to discover files and directories
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_file_and_directory_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

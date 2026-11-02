@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_susp_execution_via_office_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_susp_execution_via_office_process.yml
+// ID Sigma: e1693bc8-7168-4eab-8718-cdcaa68a1738
+// Título: Suspicious WMIC Execution Via Office Process
+// Descripción: Office application called wmic to proxye execution through a LOLBIN process. This is often used to break suspicious parent-child chain (Office app spawns LOLBin).
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_susp_execution_via_office_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_susp_copy_system_dir_lolbin.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_copy_system_dir_lolbin.yml
+// ID Sigma: f5d19838-41b5-476c-98d8-ba8af4929ee2
+// Título: LOL-Binary Copied From System Directory
+// Descripción: Detects a suspicious copy operation that tries to copy a known LOLBIN from system (System32, SysWOW64, WinSxS) directories to another on disk in order to bypass detections based on locations.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_copy_system_dir_lolbin.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

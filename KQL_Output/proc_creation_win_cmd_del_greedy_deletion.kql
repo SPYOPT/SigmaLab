@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_del_greedy_deletion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_del_greedy_deletion.yml
+// ID Sigma: 204b17ae-4007-471b-917b-b917b315c5db
+// Título: Greedy File Deletion Using Del
+// Descripción: Detects execution of the "del" builtin command to remove files using greedy/wildcard expression. This is often used by malware to delete content of folders that perhaps contains the initial malware infection or to delete evidence.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_del_greedy_deletion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_quickassist_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_quickassist_execution.yml
+// ID Sigma: e20b5b14-ce93-4230-88af-981983ef6e74
+// Título: QuickAssist Execution
+// Descripción: Detects the execution of Microsoft Quick Assist tool "QuickAssist.exe". This utility can be used by attackers to gain remote access.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_quickassist_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

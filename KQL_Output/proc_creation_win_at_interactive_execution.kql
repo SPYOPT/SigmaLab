@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_at_interactive_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_at_interactive_execution.yml
+// ID Sigma: 60fc936d-2eb0-4543-8a13-911c750a1dfc
+// Título: Interactive AT Job
+// Descripción: Detects an interactive AT job, which may be used as a form of privilege escalation.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_at_interactive_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

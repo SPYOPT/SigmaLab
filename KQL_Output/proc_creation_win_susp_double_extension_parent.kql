@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_double_extension_parent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_double_extension_parent.yml
+// ID Sigma: 5e6a80c8-2d45-4633-9ef4-fa2671a39c5c
+// Título: Suspicious Parent Double Extension File Execution
+// Descripción: Detect execution of suspicious double extension files in ParentCommandLine
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_double_extension_parent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

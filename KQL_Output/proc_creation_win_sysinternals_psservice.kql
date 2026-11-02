@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_psservice.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psservice.yml
+// ID Sigma: 3371f518-5fe3-4cf6-a14b-2a0ae3fd8a4f
+// Título: Sysinternals PsService Execution
+// Descripción: Detects usage of Sysinternals PsService which can be abused for service reconnaissance and tampering
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_psservice.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

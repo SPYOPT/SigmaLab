@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_malicious_cmdlets.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_malicious_cmdlets.yml
+// ID Sigma: 02030f2f-6199-49ec-b258-ea71b07e03dc
+// Título: Malicious PowerShell Commandlets - ProcessCreation
+// Descripción: Detects Commandlet names from well-known PowerShell exploitation frameworks
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_malicious_cmdlets.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

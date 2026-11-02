@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_susp_right_to_left_override.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_right_to_left_override.yml
+// ID Sigma: ad691d92-15f2-4181-9aa4-723c74f9ddc3
+// Título: Potential Defense Evasion Via Right-to-Left Override
+// Descripción: Detects the presence of the "u202+E" character, which causes a terminal, browser, or operating system to render text in a right-to-left sequence.
+This character is used as an obfuscation and masquerading techniques by adversaries to trick users into opening malicious files.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_right_to_left_override.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

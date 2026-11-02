@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sqlite_chromium_profile_data.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlite_chromium_profile_data.yml
+// ID Sigma: 24c77512-782b-448a-8950-eddb0785fc71
+// Título: SQLite Chromium Profile Data DB Access
+// Descripción: Detect usage of the "sqlite" binary to query databases in Chromium-based browsers for potential data stealing.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlite_chromium_profile_data.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

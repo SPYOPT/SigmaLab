@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_crassus.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_crassus.yml
+// ID Sigma: 2c32b543-1058-4808-91c6-5b31b8bed6c5
+// Título: PUA - Crassus Execution
+// Descripción: Detects Crassus, a Windows privilege escalation discovery tool, based on PE metadata characteristics.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_crassus.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

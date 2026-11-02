@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_pua_kdu_driver_tool.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_kdu_driver_tool.yml
+// ID Sigma: e76ca062-4de0-4d79-8d90-160a0d335eca
+// Título: PUA - Kernel Driver Utility (KDU) Execution
+// Descripción: Detects execution of the Kernel Driver Utility (KDU) tool.
+KDU can be used to bypass driver signature enforcement and load unsigned or malicious drivers into the Windows kernel.
+Potentially allowing for privilege escalation, persistence, or evasion of security controls.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_kdu_driver_tool.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

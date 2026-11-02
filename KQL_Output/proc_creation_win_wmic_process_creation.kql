@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_wmic_process_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_process_creation.yml
+// ID Sigma: 526be59f-a573-4eea-b5f7-f0973207634d
+// Título: Process Creation Attempt via Wmic.EXE
+// Descripción: Detects the attempt to create a process via "wmic" with the "process call create" flag, which might
+indicate an attempt to execute a malicious process on the compromised host. Adversaries may use
+wmic to execute a process on the compromised host as part of their attack. This event is triggered on
+on attempt and process creation can be either successful or unsuccessful.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_process_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

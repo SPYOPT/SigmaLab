@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hh_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_susp_execution.yml
+// ID Sigma: e8a95b5e-c891-46e2-b33a-93937d3abc31
+// Título: Suspicious HH.EXE Execution
+// Descripción: Detects a suspicious execution of a Microsoft HTML Help (HH.exe)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hh_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

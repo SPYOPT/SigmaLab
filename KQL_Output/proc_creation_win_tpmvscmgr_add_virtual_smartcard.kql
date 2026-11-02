@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_tpmvscmgr_add_virtual_smartcard.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tpmvscmgr_add_virtual_smartcard.yml
+// ID Sigma: c633622e-cab9-4eaa-bb13-66a1d68b3e47
+// Título: New Virtual Smart Card Created Via TpmVscMgr.EXE
+// Descripción: Detects execution of "Tpmvscmgr.exe" to create a new virtual smart card.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tpmvscmgr_add_virtual_smartcard.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

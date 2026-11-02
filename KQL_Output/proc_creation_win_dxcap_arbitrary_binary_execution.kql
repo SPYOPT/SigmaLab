@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_dxcap_arbitrary_binary_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dxcap_arbitrary_binary_execution.yml
+// ID Sigma: 60f16a96-db70-42eb-8f76-16763e333590
+// Título: New Capture Session Launched Via DXCap.EXE
+// Descripción: Detects the execution of "DXCap.EXE" with the "-c" flag, which allows a user to launch any arbitrary binary or windows package through DXCap itself. This can be abused to potentially bypass application whitelisting.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dxcap_arbitrary_binary_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

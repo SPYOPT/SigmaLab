@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_keyscrambler_susp_child_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_keyscrambler_susp_child_process.yml
+// ID Sigma: ca5583e9-8f80-46ac-ab91-7f314d13b984
+// Título: Potentially Suspicious Child Process of KeyScrambler.exe
+// Descripción: Detects potentially suspicious child processes of KeyScrambler.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_keyscrambler_susp_child_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

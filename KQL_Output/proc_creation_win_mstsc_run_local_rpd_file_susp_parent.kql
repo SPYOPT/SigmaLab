@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mstsc_run_local_rpd_file_susp_parent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mstsc_run_local_rpd_file_susp_parent.yml
+// ID Sigma: ff3b6b39-e765-42f9-bb2c-ea6761e0e0f6
+// Título: Mstsc.EXE Execution From Uncommon Parent
+// Descripción: Detects potential RDP connection via Mstsc using a local ".rdp" file located in suspicious locations.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mstsc_run_local_rpd_file_susp_parent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

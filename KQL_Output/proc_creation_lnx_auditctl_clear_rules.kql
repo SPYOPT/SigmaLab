@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_lnx_auditctl_clear_rules.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_auditctl_clear_rules.yml
+// ID Sigma: bed26dea-4525-47f4-b24a-76e30e44ffb0
+// Título: Audit Rules Deleted Via Auditctl
+// Descripción: Detects the execution of 'auditctl' with the '-D' command line parameter, which deletes all configured audit rules and watches on Linux systems.
+This technique is commonly used by attackers to disable audit logging and cover their tracks by removing monitoring capabilities.
+Removal of audit rules can significantly impair detection of malicious activities on the affected system.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_auditctl_clear_rules.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

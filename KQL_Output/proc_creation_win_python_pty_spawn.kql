@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_python_pty_spawn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_python_pty_spawn.yml
+// ID Sigma: 480e7e51-e797-47e3-8d72-ebfce65b6d8d
+// Título: Python Spawning Pretty TTY on Windows
+// Descripción: Detects python spawning a pretty tty
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_python_pty_spawn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

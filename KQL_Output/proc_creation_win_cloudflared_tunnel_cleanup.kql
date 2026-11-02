@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cloudflared_tunnel_cleanup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cloudflared_tunnel_cleanup.yml
+// ID Sigma: 7050bba1-1aed-454e-8f73-3f46f09ce56a
+// Título: Cloudflared Tunnel Connections Cleanup
+// Descripción: Detects execution of the "cloudflared" tool with the tunnel "cleanup" flag in order to cleanup tunnel connections.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cloudflared_tunnel_cleanup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

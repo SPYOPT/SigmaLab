@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_no_image_name.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_no_image_name.yml
+// ID Sigma: f208d6d8-d83a-4c2c-960d-877c37da84e5
+// Título: Process Launched Without Image Name
+// Descripción: Detect the use of processes with no name (".exe"), which can be used to evade Image-based detections.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_no_image_name.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_office_excel_dcom_lateral_movement.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_excel_dcom_lateral_movement.yml
+// ID Sigma: 551d9c1f-816c-445b-a7a6-7a3864720d60
+// Título: Potential Excel.EXE DCOM Lateral Movement Via ActivateMicrosoftApp
+// Descripción: Detects suspicious child processes of Excel which could be an indicator of lateral movement leveraging the "ActivateMicrosoftApp" Excel DCOM object.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_excel_dcom_lateral_movement.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

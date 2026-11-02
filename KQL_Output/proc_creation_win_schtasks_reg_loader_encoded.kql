@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_schtasks_reg_loader_encoded.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_reg_loader_encoded.yml
+// ID Sigma: c4eeeeae-89f4-43a7-8b48-8d1bdfa66c78
+// Título: Scheduled Task Executing Encoded Payload from Registry
+// Descripción: Detects the creation of a schtask that potentially executes a base64 encoded payload stored in the Windows Registry using PowerShell.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_reg_loader_encoded.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

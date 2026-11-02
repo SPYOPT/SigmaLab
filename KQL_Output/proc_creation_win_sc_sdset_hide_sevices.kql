@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sc_sdset_hide_sevices.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_sdset_hide_sevices.yml
+// ID Sigma: a537cfc3-4297-4789-92b5-345bfd845ad0
+// Título: Service DACL Abuse To Hide Services Via Sc.EXE
+// Descripción: Detects usage of the "sc.exe" utility adding a new service with special permission seen used by threat actors which makes the service hidden and unremovable.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_sdset_hide_sevices.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

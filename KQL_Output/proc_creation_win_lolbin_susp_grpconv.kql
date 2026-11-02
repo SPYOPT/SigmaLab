@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_susp_grpconv.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_grpconv.yml
+// ID Sigma: f14e169e-9978-4c69-acb3-1cff8200bc36
+// Título: Suspicious GrpConv Execution
+// Descripción: Detects the suspicious execution of a utility to convert Windows 3.x .grp files or for persistence purposes by malicious software or actors
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_susp_grpconv.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

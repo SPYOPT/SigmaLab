@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_pchunter.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_pchunter.yml
+// ID Sigma: fca949cc-79ca-446e-8064-01aa7e52ece5
+// Título: HackTool - PCHunter Execution
+// Descripción: Detects suspicious use of PCHunter, a tool like Process Hacker to view and manipulate processes, kernel options and other low level stuff
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_pchunter.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

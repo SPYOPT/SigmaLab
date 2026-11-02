@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_inline_base64_mz_header.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_inline_base64_mz_header.yml
+// ID Sigma: 22e58743-4ac8-4a9f-bf19-00a0428d8c5f
+// Título: Base64 MZ Header In CommandLine
+// Descripción: Detects encoded base64 MZ header in the commandline
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_inline_base64_mz_header.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

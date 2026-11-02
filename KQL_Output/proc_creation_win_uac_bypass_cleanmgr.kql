@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_cleanmgr.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cleanmgr.yml
+// ID Sigma: b697e69c-746f-4a86-9f59-7bfff8eab881
+// Título: UAC Bypass Using Disk Cleanup
+// Descripción: Detects the pattern of UAC Bypass using scheduled tasks and variable expansion of cleanmgr.exe (UACMe 34)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cleanmgr.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

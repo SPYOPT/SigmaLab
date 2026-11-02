@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_triple_cross_rootkit_execve_hijack.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_triple_cross_rootkit_execve_hijack.yml
+// ID Sigma: 0326c3c8-7803-4a0f-8c5c-368f747f7c3e
+// Título: Triple Cross eBPF Rootkit Execve Hijack
+// Descripción: Detects execution of a the file "execve_hijack" which is used by the Triple Cross rootkit as a way to elevate privileges
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_triple_cross_rootkit_execve_hijack.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_ssm_agent_abuse.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_ssm_agent_abuse.yml
+// ID Sigma: f9b3edc5-3322-4fc7-8aa3-245d646cc4b7
+// Título: Potential Linux Amazon SSM Agent Hijacking
+// Descripción: Detects potential Amazon SSM agent hijack attempts as outlined in the Mitiga research report.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_ssm_agent_abuse.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

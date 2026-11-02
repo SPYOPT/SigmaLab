@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dism_enable_powershell_web_access_feature.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dism_enable_powershell_web_access_feature.yml
+// ID Sigma: 7e8f2d3b-9c1a-4f67-b9e8-8d9006e0e51f
+// Título: PowerShell Web Access Feature Enabled Via DISM
+// Descripción: Detects the use of DISM to enable the PowerShell Web Access feature, which could be used for remote access and potential abuse
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dism_enable_powershell_web_access_feature.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

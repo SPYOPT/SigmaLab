@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_set_acl.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_set_acl.yml
+// ID Sigma: bdeb2cff-af74-4094-8426-724dc937f20a
+// Título: PowerShell Script Change Permission Via Set-Acl
+// Descripción: Detects PowerShell execution to set the ACL of a file or a folder
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_set_acl.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

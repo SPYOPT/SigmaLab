@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_base64_mppreference.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_mppreference.yml
+// ID Sigma: c6fb44c6-71f5-49e6-9462-1425d328aee3
+// Título: Powershell Base64 Encoded MpPreference Cmdlet
+// Descripción: Detects base64 encoded "MpPreference" PowerShell cmdlet code that tries to modifies or tamper with Windows Defender AV
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_base64_mppreference.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

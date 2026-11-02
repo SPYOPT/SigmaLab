@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_office_outlook_susp_child_processes_remote.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_susp_child_processes_remote.yml
+// ID Sigma: e212d415-0e93-435f-9e1a-f29005bb4723
+// Título: Suspicious Remote Child Process From Outlook
+// Descripción: Detects a suspicious child process spawning from Outlook where the image is located in a remote location (SMB/WebDav shares).
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_susp_child_processes_remote.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

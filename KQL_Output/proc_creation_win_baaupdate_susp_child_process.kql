@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_baaupdate_susp_child_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_baaupdate_susp_child_process.yml
+// ID Sigma: 9f38c1db-e2ae-40bf-81d0-5b68f73fb512
+// Título: Suspicious BitLocker Access Agent Update Utility Execution
+// Descripción: Detects the execution of the BitLocker Access Agent Update Utility (baaupdate.exe) which is not a common parent process for other processes.
+Suspicious child processes spawned by baaupdate.exe could indicate an attempt at lateral movement via BitLocker DCOM & COM Hijacking.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_baaupdate_susp_child_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

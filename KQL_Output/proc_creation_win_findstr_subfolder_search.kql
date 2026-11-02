@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_findstr_subfolder_search.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_subfolder_search.yml
+// ID Sigma: 04936b66-3915-43ad-a8e5-809eadfd1141
+// Título: Insensitive Subfolder Search Via Findstr.EXE
+// Descripción: Detects execution of findstr with the "s" and "i" flags for a "subfolder" and "insensitive" search respectively. Attackers sometimes leverage this built-in utility to search the system for interesting files or filter through results of commands.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_findstr_subfolder_search.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

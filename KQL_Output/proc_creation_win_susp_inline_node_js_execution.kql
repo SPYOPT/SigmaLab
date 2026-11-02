@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_inline_node_js_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_inline_node_js_execution.yml
+// ID Sigma: 8537c866-072e-460d-bfff-aaf39cbd73d3
+// Título: Potentially Suspicious Inline JavaScript Execution via NodeJS Binary
+// Descripción: Detects potentially suspicious inline JavaScript execution using Node.js with specific keywords in the command line.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_inline_node_js_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_schtasks_powershell_persistence.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_powershell_persistence.yml
+// ID Sigma: b66474aa-bd92-4333-a16c-298155b120df
+// Título: Potential Persistence Via Powershell Search Order Hijacking - Task
+// Descripción: Detects suspicious powershell execution via a schedule task where the command ends with an suspicious flags to hide the powershell instance instead of executeing scripts or commands. This could be a sign of persistence via PowerShell "Get-Variable" technique as seen being used in Colibri Loader
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_powershell_persistence.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

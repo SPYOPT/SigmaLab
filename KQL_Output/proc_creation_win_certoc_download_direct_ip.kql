@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certoc_download_direct_ip.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_download_direct_ip.yml
+// ID Sigma: b86f6dea-0b2f-41f5-bdcc-a057bd19cd6a
+// Título: File Download From IP Based URL Via CertOC.EXE
+// Descripción: Detects when a user downloads a file from an IP based URL using CertOC.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certoc_download_direct_ip.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

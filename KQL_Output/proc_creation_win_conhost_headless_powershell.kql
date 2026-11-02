@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_conhost_headless_powershell.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_headless_powershell.yml
+// ID Sigma: 056c7317-9a09-4bd4-9067-d051312752ea
+// Título: Powershell Executed From Headless ConHost Process
+// Descripción: Detects the use of powershell commands from headless ConHost window.
+The "--headless" flag hides the windows from the user upon execution.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_headless_powershell.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

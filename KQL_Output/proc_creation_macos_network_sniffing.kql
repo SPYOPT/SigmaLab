@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_macos_network_sniffing.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_network_sniffing.yml
+// ID Sigma: adc9bcc4-c39c-4f6b-a711-1884017bf043
+// Título: Network Sniffing - MacOs
+// Descripción: Detects the usage of tooling to sniff network traffic.
+An adversary may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_network_sniffing.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

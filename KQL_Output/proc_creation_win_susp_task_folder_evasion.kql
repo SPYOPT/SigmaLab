@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_susp_task_folder_evasion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_task_folder_evasion.yml
+// ID Sigma: cc4e02ba-9c06-48e2-b09e-2500cace9ae0
+// Título: Tasks Folder Evasion
+// Descripción: The Tasks folder in system32 and syswow64 are globally writable paths.
+Adversaries can take advantage of this and load or influence any script hosts or ANY .NET Application
+in Tasks to load and execute a custom assembly into cscript, wscript, regsvr32, mshta, eventvwr
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_task_folder_evasion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_wmic_stdregprov_reg_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_stdregprov_reg_modification.yml
+// ID Sigma: c453ab7a-1f5c-4716-a3b4-dea8135fb43a
+// Título: Registry Manipulation via WMI Stdregprov
+// Descripción: Detects the usage of wmic.exe to modify Windows registry via the WMI StdRegProv class write methods (CreateKey, DeleteKey, SetStringValue, etc.).
+This behaviour could be potentially suspicious because it uses an alternative method to modify registry keys instead of legitimate registry tools like reg.exe or regedit.exe.
+Attackers specifically choose this technique to evade detection and bypass security monitoring focused on traditional registry modification commands.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_stdregprov_reg_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

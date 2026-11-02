@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_file_and_directory_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_file_and_directory_discovery.yml
+// ID Sigma: d3feb4ee-ff1d-4d3d-bd10-5b28a238cc72
+// Título: File and Directory Discovery - Linux
+// Descripción: Detects usage of system utilities such as "find", "tree", "findmnt", etc, to discover files, directories and network shares.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_file_and_directory_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

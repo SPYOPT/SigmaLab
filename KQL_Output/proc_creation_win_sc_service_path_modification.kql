@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sc_service_path_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_service_path_modification.yml
+// ID Sigma: 138d3531-8793-4f50-a2cd-f291b2863d78
+// Título: Suspicious Service Path Modification
+// Descripción: Detects service path modification via the "sc" binary to a suspicious command or path
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_service_path_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

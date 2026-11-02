@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sharp_chisel.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharp_chisel.yml
+// ID Sigma: cf93e05e-d798-4d9e-b522-b0248dc61eaf
+// Título: HackTool - SharpChisel Execution
+// Descripción: Detects usage of the Sharp Chisel via the commandline arguments
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharp_chisel.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

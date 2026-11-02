@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmstp_execution_by_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmstp_execution_by_creation.yml
+// ID Sigma: 7d4cdc5a-0076-40ca-aac8-f7e714570e47
+// Título: CMSTP Execution Process Creation
+// Descripción: Detects various indicators of Microsoft Connection Manager Profile Installer execution
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmstp_execution_by_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

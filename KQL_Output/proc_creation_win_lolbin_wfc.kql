@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_wfc.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_wfc.yml
+// ID Sigma: 49be8799-7b4d-4fda-ad23-cafbefdebbc5
+// Título: Use of Wfc.exe
+// Descripción: The Workflow Command-line Compiler can be used for AWL bypass and is listed in Microsoft's recommended block rules.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_wfc.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_accesschk_check_permissions.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_accesschk_check_permissions.yml
+// ID Sigma: c625d754-6a3d-4f65-9c9a-536aea960d37
+// Título: Permission Check Via Accesschk.EXE
+// Descripción: Detects the usage of the "Accesschk" utility, an access and privilege audit tool developed by SysInternal and often being abused by attacker to verify process privileges
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_accesschk_check_permissions.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

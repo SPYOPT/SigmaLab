@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_xordump.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_xordump.yml
+// ID Sigma: 66e563f9-1cbd-4a22-a957-d8b7c0f44372
+// Título: HackTool - XORDump Execution
+// Descripción: Detects suspicious use of XORDump process memory dumping utility
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_xordump.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

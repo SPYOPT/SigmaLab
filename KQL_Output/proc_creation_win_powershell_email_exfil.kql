@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_email_exfil.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_email_exfil.yml
+// ID Sigma: 312d0384-401c-4b8b-abdf-685ffba9a332
+// Título: Email Exifiltration Via Powershell
+// Descripción: Detects email exfiltration via powershell cmdlets
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_email_exfil.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

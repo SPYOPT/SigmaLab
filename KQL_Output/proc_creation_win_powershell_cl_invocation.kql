@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_cl_invocation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_invocation.yml
+// ID Sigma: a0459f02-ac51-4c09-b511-b8c9203fc429
+// Título: Potential Process Execution Proxy Via CL_Invocation.ps1
+// Descripción: Detects calls to "SyncInvoke" that is part of the "CL_Invocation.ps1" script to proxy execution using "System.Diagnostics.Process"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_cl_invocation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

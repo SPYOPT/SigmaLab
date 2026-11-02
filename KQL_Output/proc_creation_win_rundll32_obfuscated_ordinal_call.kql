@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_obfuscated_ordinal_call.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_obfuscated_ordinal_call.yml
+// ID Sigma: 43fa5350-db63-4b8f-9a01-789a427074e1
+// Título: Potential Obfuscated Ordinal Call Via Rundll32
+// Descripción: Detects execution of "rundll32" with potential obfuscated ordinal calls
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_obfuscated_ordinal_call.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_registry_special_accounts_hide_user.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_special_accounts_hide_user.yml
+// ID Sigma: 9ec9fb1b-e059-4489-9642-f270c207923d
+// Título: Hiding User Account Via SpecialAccounts Registry Key - CommandLine
+// Descripción: Detects changes to the registry key "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\Userlist" where the value is set to "0" in order to hide user account from being listed on the logon screen.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_special_accounts_hide_user.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

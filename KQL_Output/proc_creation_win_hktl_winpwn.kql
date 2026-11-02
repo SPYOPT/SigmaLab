@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_hktl_winpwn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_winpwn.yml
+// ID Sigma: d557dc06-62e8-4468-a8e8-7984124908ce
+// Título: HackTool - WinPwn Execution
+// Descripción: Detects commandline keywords indicative of potential usge of the tool WinPwn. A tool for Windows and Active Directory reconnaissance and exploitation.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_winpwn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

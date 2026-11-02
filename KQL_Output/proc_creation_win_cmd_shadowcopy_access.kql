@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_shadowcopy_access.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_shadowcopy_access.yml
+// ID Sigma: c73124a7-3e89-44a3-bdc1-25fe4df754b1
+// Título: Copy From VolumeShadowCopy Via Cmd.EXE
+// Descripción: Detects the execution of the builtin "copy" command that targets a shadow copy (sometimes used to copy registry hives that are in use)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_shadowcopy_access.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

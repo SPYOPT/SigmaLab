@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_splwow64_cli_anomaly.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_splwow64_cli_anomaly.yml
+// ID Sigma: 1f1a8509-2cbb-44f5-8751-8e1571518ce2
+// Título: Suspicious Splwow64 Without Params
+// Descripción: Detects suspicious Splwow64.exe process without any command line parameters
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_splwow64_cli_anomaly.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

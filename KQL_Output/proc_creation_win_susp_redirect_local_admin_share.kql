@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_redirect_local_admin_share.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_redirect_local_admin_share.yml
+// ID Sigma: ab9e3b40-0c85-4ba1-aede-455d226fd124
+// Título: Suspicious Redirection to Local Admin Share
+// Descripción: Detects a suspicious output redirection to the local admins share, this technique is often found in malicious scripts or hacktool stagers
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_redirect_local_admin_share.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

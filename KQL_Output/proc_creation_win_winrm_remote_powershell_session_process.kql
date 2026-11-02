@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_winrm_remote_powershell_session_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winrm_remote_powershell_session_process.yml
+// ID Sigma: 734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8
+// Título: Remote PowerShell Session Host Process (WinRM)
+// Descripción: Detects remote PowerShell sections by monitoring for wsmprovhost (WinRM host process) as a parent or child process (sign of an active PowerShell remote session).
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winrm_remote_powershell_session_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

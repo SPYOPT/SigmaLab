@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_download_dll.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_dll.yml
+// ID Sigma: 0f0450f3-8b47-441e-a31b-15a91dc243e2
+// Título: Potential DLL File Download Via PowerShell Invoke-WebRequest
+// Descripción: Detects potential DLL files being downloaded using the PowerShell Invoke-WebRequest or Invoke-RestMethod cmdlets.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_dll.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

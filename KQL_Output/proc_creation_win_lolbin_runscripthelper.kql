@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_runscripthelper.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_runscripthelper.yml
+// ID Sigma: eca49c87-8a75-4f13-9c73-a5a29e845f03
+// Título: Suspicious Runscripthelper.exe
+// Descripción: Detects execution of powershell scripts via Runscripthelper.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_runscripthelper.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

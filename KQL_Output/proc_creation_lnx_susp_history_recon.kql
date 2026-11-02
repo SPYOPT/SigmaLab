@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_history_recon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_history_recon.yml
+// ID Sigma: d7821ff1-4527-4e33-9f84-d0d57fa2fb66
+// Título: Print History File Contents
+// Descripción: Detects events in which someone prints the contents of history files to the commandline or redirects it to a file for reconnaissance
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_history_recon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

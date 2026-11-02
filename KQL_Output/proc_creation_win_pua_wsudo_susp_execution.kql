@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_wsudo_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_wsudo_susp_execution.yml
+// ID Sigma: bdeeabc9-ff2a-4a51-be59-bb253aac7891
+// Título: PUA - Wsudo Suspicious Execution
+// Descripción: Detects usage of wsudo (Windows Sudo Utility). Which is a tool that let the user execute programs with different permissions (System, Trusted Installer, Administrator...etc)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_wsudo_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

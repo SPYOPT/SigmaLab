@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_recon_computersystem.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_computersystem.yml
+// ID Sigma: 9d7ca793-f6bd-471c-8d0f-11e68b2f0d2f
+// Título: Computer System Reconnaissance Via Wmic.EXE
+// Descripción: Detects execution of wmic utility with the "computersystem" flag in order to obtain information about the machine such as the domain, username, model, etc.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_computersystem.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

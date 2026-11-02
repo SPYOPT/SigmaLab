@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_fsutil_symlinkevaluation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsutil_symlinkevaluation.yml
+// ID Sigma: c0b2768a-dd06-4671-8339-b16ca8d1f27f
+// Título: Potentially Suspicious NTFS Symlink Behavior Modification
+// Descripción: Detects the modification of NTFS symbolic link behavior using fsutil, which could be used to enable remote to local or remote to remote symlinks for potential attacks.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_fsutil_symlinkevaluation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

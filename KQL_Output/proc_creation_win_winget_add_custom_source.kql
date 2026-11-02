@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_winget_add_custom_source.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_add_custom_source.yml
+// ID Sigma: 05ebafc8-7aa2-4bcd-a269-2aec93f9e842
+// Título: Add New Download Source To Winget
+// Descripción: Detects usage of winget to add new additional download sources
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_add_custom_source.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

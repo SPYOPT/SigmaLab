@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_defender_exclusion.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_defender_exclusion.yml
+// ID Sigma: 48917adc-a28e-4f5d-b729-11e75da8941f
+// Título: Suspicious Windows Defender Folder Exclusion Added Via Reg.EXE
+// Descripción: Detects the usage of "reg.exe" to add Defender folder exclusions. Qbot has been seen using this technique to add exclusions for folders within AppData and ProgramData.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_defender_exclusion.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_hdiutil_mount.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_hdiutil_mount.yml
+// ID Sigma: bf241472-f014-4f01-a869-96f99330ca8c
+// Título: Disk Image Mounting Via Hdiutil - MacOS
+// Descripción: Detects the execution of the hdiutil utility in order to mount disk images.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_hdiutil_mount.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

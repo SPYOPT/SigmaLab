@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_remote.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_remote.yml
+// ID Sigma: 4eddc365-79b4-43ff-a9d7-99422dc34b93
+// Título: Use of Remote.exe
+// Descripción: Remote.exe is part of WinDbg in the Windows SDK and can be used for AWL bypass and running remote files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_remote.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

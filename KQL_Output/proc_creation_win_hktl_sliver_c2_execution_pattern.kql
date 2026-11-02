@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sliver_c2_execution_pattern.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sliver_c2_execution_pattern.yml
+// ID Sigma: 42333b2c-b425-441c-b70e-99404a17170f
+// Título: HackTool - Sliver C2 Implant Activity Pattern
+// Descripción: Detects process activity patterns as seen being used by Sliver C2 framework implants
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sliver_c2_execution_pattern.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

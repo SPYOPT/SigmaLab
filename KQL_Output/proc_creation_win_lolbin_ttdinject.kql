@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_ttdinject.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_ttdinject.yml
+// ID Sigma: b27077d6-23e6-45d2-81a0-e2b356eea5fd
+// Título: Use of TTDInject.exe
+// Descripción: Detects the executiob of TTDInject.exe, which is used by Windows 10 v1809 and newer to debug time travel (underlying call of tttracer.exe)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_ttdinject.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

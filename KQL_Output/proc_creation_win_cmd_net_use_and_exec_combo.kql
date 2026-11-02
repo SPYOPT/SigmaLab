@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_net_use_and_exec_combo.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_net_use_and_exec_combo.yml
+// ID Sigma: f0507c0f-a3a2-40f5-acc6-7f543c334993
+// Título: Suspicious File Execution From Internet Hosted WebDav Share
+// Descripción: Detects the execution of the "net use" command to mount a WebDAV server and then immediately execute some content in it. As seen being used in malicious LNK files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_net_use_and_exec_combo.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

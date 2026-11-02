@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_esentutl_webcache.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_esentutl_webcache.yml
+// ID Sigma: 6a69f62d-ce75-4b57-8dce-6351eb55b362
+// Título: Esentutl Steals Browser Information
+// Descripción: One way Qbot steals sensitive information is by extracting browser data from Internet Explorer and Microsoft Edge by using the built-in utility esentutl.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_esentutl_webcache.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

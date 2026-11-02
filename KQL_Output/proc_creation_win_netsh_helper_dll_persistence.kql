@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_netsh_helper_dll_persistence.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_helper_dll_persistence.yml
+// ID Sigma: 56321594-9087-49d9-bf10-524fe8479452
+// Título: Potential Persistence Via Netsh Helper DLL
+// Descripción: Detects the execution of netsh with "add helper" flag in order to add a custom helper DLL. This technique can be abused to add a malicious helper DLL that can be used as a persistence proxy that gets called when netsh.exe is executed.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_helper_dll_persistence.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

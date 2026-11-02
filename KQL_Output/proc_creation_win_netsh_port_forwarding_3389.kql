@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_netsh_port_forwarding_3389.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_port_forwarding_3389.yml
+// ID Sigma: 782d6f3e-4c5d-4b8c-92a3-1d05fed72e63
+// Título: RDP Port Forwarding Rule Added Via Netsh.EXE
+// Descripción: Detects the execution of netsh to configure a port forwarding of port 3389 (RDP) rule
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_netsh_port_forwarding_3389.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

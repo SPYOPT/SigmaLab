@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mshta_inline_vbscript.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_inline_vbscript.yml
+// ID Sigma: 2c28c248-7f50-417a-9186-a85b223010ee
+// Título: Wscript Shell Run In CommandLine
+// Descripción: Detects the presence of the keywords "Wscript", "Shell" and "Run" in the command, which could indicate a suspicious activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mshta_inline_vbscript.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

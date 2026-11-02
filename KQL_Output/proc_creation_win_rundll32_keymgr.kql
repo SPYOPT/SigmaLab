@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_keymgr.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_keymgr.yml
+// ID Sigma: a4694263-59a8-4608-a3a0-6f8d3a51664c
+// Título: Suspicious Key Manager Access
+// Descripción: Detects the invocation of the Stored User Names and Passwords dialogue (Key Manager)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_keymgr.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

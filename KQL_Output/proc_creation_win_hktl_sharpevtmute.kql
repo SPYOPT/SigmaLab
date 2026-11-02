@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sharpevtmute.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpevtmute.yml
+// ID Sigma: bedfc8ad-d1c7-4e37-a20e-e2b0dbee759c
+// Título: HackTool - SharpEvtMute Execution
+// Descripción: Detects the use of SharpEvtHook, a tool that tampers with the Windows event logs
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpevtmute.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

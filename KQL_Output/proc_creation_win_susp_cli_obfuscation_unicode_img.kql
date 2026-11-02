@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_susp_cli_obfuscation_unicode_img.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_cli_obfuscation_unicode_img.yml
+// ID Sigma: 584bca0f-3608-4402-80fd-4075ff6072e3
+// Título: Potential CommandLine Obfuscation Using Unicode Characters From Suspicious Image
+// Descripción: Detects potential commandline obfuscation using unicode characters.
+Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_cli_obfuscation_unicode_img.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

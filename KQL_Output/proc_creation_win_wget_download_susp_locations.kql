@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wget_download_susp_locations.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wget_download_susp_locations.yml
+// ID Sigma: 40aa399c-7b02-4715-8e5f-73572b493f33
+// Título: Suspicious File Download From IP Via Wget.EXE - Paths
+// Descripción: Detects potentially suspicious file downloads directly from IP addresses and stored in suspicious locations using Wget.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wget_download_susp_locations.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

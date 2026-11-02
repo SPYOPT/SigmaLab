@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_macos_remote_access_tools_meshagent_arguments.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_remote_access_tools_meshagent_arguments.yml
+// ID Sigma: 22c45af6-f590-4d44-bab3-b5b2d2a2b6d9
+// Título: Remote Access Tool - Potential MeshAgent Execution - MacOS
+// Descripción: Detects potential execution of MeshAgent which is a tool used for remote access.
+Historical data shows that threat actors rename MeshAgent binary to evade detection.
+Matching command lines with the '--meshServiceName' argument can indicate that the MeshAgent is being used for remote access.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_remote_access_tools_meshagent_arguments.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

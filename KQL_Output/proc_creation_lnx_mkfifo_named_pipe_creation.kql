@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_mkfifo_named_pipe_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_mkfifo_named_pipe_creation.yml
+// ID Sigma: 9d779ce8-5256-4b13-8b6f-b91c602b43f4
+// Título: Named Pipe Created Via Mkfifo
+// Descripción: Detects the creation of a new named pipe using the "mkfifo" utility
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_mkfifo_named_pipe_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

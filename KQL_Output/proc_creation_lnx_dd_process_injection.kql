@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_dd_process_injection.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_dd_process_injection.yml
+// ID Sigma: 4cad6c64-d6df-42d6-8dae-eb78defdc415
+// Título: Potential Linux Process Code Injection Via DD Utility
+// Descripción: Detects the injection of code by overwriting the memory map of a Linux process using the "dd" Linux command.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_dd_process_injection.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

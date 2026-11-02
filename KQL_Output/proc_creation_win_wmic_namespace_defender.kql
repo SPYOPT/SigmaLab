@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_namespace_defender.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_namespace_defender.yml
+// ID Sigma: 51cbac1e-eee3-4a90-b1b7-358efb81fa0a
+// Título: Potential Windows Defender Tampering Via Wmic.EXE
+// Descripción: Detects potential tampering with Windows Defender settings such as adding exclusion using wmic
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_namespace_defender.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

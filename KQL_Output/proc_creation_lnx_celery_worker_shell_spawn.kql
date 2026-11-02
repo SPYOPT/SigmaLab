@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_lnx_celery_worker_shell_spawn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_celery_worker_shell_spawn.yml
+// ID Sigma: 904f6442-3b57-4b3f-987c-1559f58ce8d8
+// Título: Shell Spawned by Celery Worker Process
+// Descripción: Detects a system shell interpreter being spawned directly by a Celery worker process.
+This behavior indicates a Python background task execution framework is evaluating raw string input through a shell execution context,
+which is highly indicative of successful command or prompt injection exploitation against an LLM agent task.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_celery_worker_shell_spawn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

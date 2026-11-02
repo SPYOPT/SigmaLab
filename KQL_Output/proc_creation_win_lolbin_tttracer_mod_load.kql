@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_tttracer_mod_load.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_tttracer_mod_load.yml
+// ID Sigma: 0b4ae027-2a2d-4b93-8c7e-962caaba5b2a
+// Título: Time Travel Debugging Utility Usage
+// Descripción: Detects usage of Time Travel Debugging Utility. Adversaries can execute malicious processes and dump processes, such as lsass.exe, via tttracer.exe.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_tttracer_mod_load.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_automated_collection.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_automated_collection.yml
+// ID Sigma: f576a613-2392-4067-9d1a-9345fb58d8d1
+// Título: Automated Collection Command Prompt
+// Descripción: Once established within a system or network, an adversary may use automated techniques for collecting internal data.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_automated_collection.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_network_command.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_network_command.yml
+// ID Sigma: a29c1813-ab1f-4dde-b489-330b952e91ae
+// Título: Suspicious Network Command
+// Descripción: Adversaries may look for details about the network configuration and settings of systems they access or through information discovery of remote systems
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_network_command.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

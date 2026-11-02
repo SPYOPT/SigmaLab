@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_schedule_task_job_cron.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_schedule_task_job_cron.yml
+// ID Sigma: 6b14bac8-3e3a-4324-8109-42f0546a347f
+// Título: Scheduled Cron Task/Job - Linux
+// Descripción: Detects abuse of the cron utility to perform task scheduling for initial or recurring execution of malicious code. Detection will focus on crontab jobs uploaded from the tmp folder.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_schedule_task_job_cron.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

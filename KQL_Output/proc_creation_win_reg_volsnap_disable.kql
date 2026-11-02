@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_volsnap_disable.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_volsnap_disable.yml
+// ID Sigma: dee4af55-1f22-4e1d-a9d2-4bdc7ecb472a
+// Título: Disabled Volume Snapshots
+// Descripción: Detects commands that temporarily turn off Volume Snapshots
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_volsnap_disable.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

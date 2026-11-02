@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_browsers_inline_file_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_inline_file_download.yml
+// ID Sigma: 94771a71-ba41-4b6e-a757-b531372eaab6
+// Título: File Download From Browser Process Via Inline URL
+// Descripción: Detects execution of a browser process with a URL argument pointing to a file with a potentially interesting extension. This can be abused to download arbitrary files or to hide from the user for example by launching the browser in a minimized state.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_inline_file_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

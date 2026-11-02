@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_empire_powershell_uac_bypass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_empire_powershell_uac_bypass.yml
+// ID Sigma: 3268b746-88d8-4cd3-bffc-30077d02c787
+// Título: HackTool - Empire PowerShell UAC Bypass
+// Descripción: Detects some Empire PowerShell UAC bypass methods
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_empire_powershell_uac_bypass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

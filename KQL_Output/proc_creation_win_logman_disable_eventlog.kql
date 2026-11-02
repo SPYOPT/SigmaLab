@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_logman_disable_eventlog.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_logman_disable_eventlog.yml
+// ID Sigma: cd1f961e-0b96-436b-b7c6-38da4583ec00
+// Título: Suspicious Windows Trace ETW Session Tamper Via Logman.EXE
+// Descripción: Detects the execution of "logman" utility in order to disable or delete Windows trace sessions
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_logman_disable_eventlog.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_winget_add_susp_custom_source.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_add_susp_custom_source.yml
+// ID Sigma: c15a46a0-07d4-4c87-b4b6-89207835a83b
+// Título: Add Potential Suspicious New Download Source To Winget
+// Descripción: Detects usage of winget to add new potentially suspicious download sources
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_winget_add_susp_custom_source.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

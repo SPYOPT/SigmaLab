@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_odbcconf_response_file.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_odbcconf_response_file.yml
+// ID Sigma: 5f03babb-12db-4eec-8c82-7b4cb5580868
+// Título: Response File Execution Via Odbcconf.EXE
+// Descripción: Detects execution of "odbcconf" with the "-f" flag in order to load a response file which might contain a malicious action.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_odbcconf_response_file.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

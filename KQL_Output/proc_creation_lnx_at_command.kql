@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_lnx_at_command.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_at_command.yml
+// ID Sigma: d2d642d7-b393-43fe-bae4-e81ed5915c4b
+// Título: Scheduled Task/Job At
+// Descripción: Detects the use of at/atd which are utilities that are used to schedule tasks.
+They are often abused by adversaries to maintain persistence or to perform task scheduling for initial or recurring execution of malicious code
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_at_command.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

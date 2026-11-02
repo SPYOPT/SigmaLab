@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_computer_discovery_get_adcomputer.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_computer_discovery_get_adcomputer.yml
+// ID Sigma: 435e10e4-992a-4281-96f3-38b11106adde
+// Título: Computer Discovery And Export Via Get-ADComputer Cmdlet
+// Descripción: Detects usage of the Get-ADComputer cmdlet to collect computer information and output it to a file
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_computer_discovery_get_adcomputer.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

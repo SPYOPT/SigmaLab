@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml
+// ID Sigma: d937b75f-a665-4480-88a5-2f20e9f9b22a
+// Título: Possible Privilege Escalation via Weak Service Permissions
+// Descripción: Detection of sc.exe utility spawning by user with Medium integrity level to change service ImagePath or FailureCommand
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

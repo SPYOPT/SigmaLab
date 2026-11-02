@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_certify.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_certify.yml
+// ID Sigma: 762f2482-ff21-4970-8939-0aa317a886bb
+// Título: HackTool - Certify Execution
+// Descripción: Detects Certify a tool for Active Directory certificate abuse based on PE metadata characteristics and common command line arguments.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_certify.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

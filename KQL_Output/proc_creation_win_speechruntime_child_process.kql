@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_speechruntime_child_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_speechruntime_child_process.yml
+// ID Sigma: 78f10490-f2f4-4d19-a75b-4e0683bf3b8d
+// Título: Suspicious Speech Runtime Binary Child Process
+// Descripción: Detects suspicious Speech Runtime Binary Execution by monitoring its child processes.
+Child processes spawned by SpeechRuntime.exe could indicate an attempt for lateral movement via COM & DCOM hijacking.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_speechruntime_child_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

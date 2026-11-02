@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_hktl_soaphound_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_soaphound_execution.yml
+// ID Sigma: e92a4287-e072-4a40-9739-370c106bb750
+// Título: HackTool - SOAPHound Execution
+// Descripción: Detects the execution of SOAPHound, a .NET tool for collecting Active Directory data, using specific command-line arguments that may indicate an attempt to extract sensitive AD information.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_soaphound_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

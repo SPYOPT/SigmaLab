@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_hktl_edrsilencer.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_edrsilencer.yml
+// ID Sigma: eb2d07d4-49cb-4523-801a-da002df36602
+// Título: HackTool - EDRSilencer Execution
+// Descripción: Detects the execution of EDRSilencer, a tool that leverages Windows Filtering Platform (WFP) to block Endpoint Detection and Response (EDR) agents from reporting security events to the server based on PE metadata information.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_edrsilencer.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

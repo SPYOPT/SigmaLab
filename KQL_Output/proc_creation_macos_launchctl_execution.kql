@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_launchctl_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_launchctl_execution.yml
+// ID Sigma: ae9d710f-dcd1-4f75-a0a5-93a73b5dda0e
+// Título: Launch Agent/Daemon Execution Via Launchctl
+// Descripción: Detects the execution of programs as Launch Agents or Launch Daemons using launchctl on macOS.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_launchctl_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

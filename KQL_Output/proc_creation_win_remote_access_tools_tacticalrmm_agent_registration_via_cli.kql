@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_remote_access_tools_tacticalrmm_agent_registration_via_cli.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_tacticalrmm_agent_registration_via_cli.yml
+// ID Sigma: 2db93a3f-3249-4f73-9e68-0e77a0f8ae7e
+// Título: Remote Access Tool - TacticalRMM Agent Registration to Potentially Attacker-Controlled Server
+// Descripción: Detects TacticalRMM agent installations where the --api, --auth, and related flags are used on the command line.
+These parameters configure the agent to connect to a specific RMM server with authentication, client ID, and site ID.
+This technique could indicate a threat actor attempting to register the agent with an attacker-controlled RMM infrastructure silently.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_tacticalrmm_agent_registration_via_cli.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

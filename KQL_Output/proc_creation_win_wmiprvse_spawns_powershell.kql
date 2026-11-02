@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmiprvse_spawns_powershell.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmiprvse_spawns_powershell.yml
+// ID Sigma: 692f0bec-83ba-4d04-af7e-e884a96059b6
+// Título: Potential WMI Lateral Movement WmiPrvSE Spawned PowerShell
+// Descripción: Detects Powershell as a child of the WmiPrvSE process. Which could be a sign of lateral movement via WMI.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmiprvse_spawns_powershell.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

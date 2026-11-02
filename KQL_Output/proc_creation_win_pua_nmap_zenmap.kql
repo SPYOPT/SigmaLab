@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_nmap_zenmap.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nmap_zenmap.yml
+// ID Sigma: f6ecd1cf-19b8-4488-97f6-00f0924991a3
+// Título: PUA - Nmap/Zenmap Execution
+// Descripción: Detects usage of namp/zenmap. Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nmap_zenmap.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_vscode_tunnel_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vscode_tunnel_execution.yml
+// ID Sigma: 90d6bd71-dffb-4989-8d86-a827fedd6624
+// Título: Visual Studio Code Tunnel Execution
+// Descripción: Detects Visual Studio Code tunnel execution. Attackers can abuse this functionality to establish a C2 channel
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vscode_tunnel_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

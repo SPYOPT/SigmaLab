@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powercfg_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powercfg_execution.yml
+// ID Sigma: f8d6a15e-4bc8-4c27-8e5d-2b10f0b73e5b
+// Título: Suspicious Powercfg Execution To Change Lock Screen Timeout
+// Descripción: Detects suspicious execution of 'Powercfg.exe' to change lock screen timeout
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powercfg_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

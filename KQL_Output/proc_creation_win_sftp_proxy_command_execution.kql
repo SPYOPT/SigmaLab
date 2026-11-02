@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_sftp_proxy_command_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sftp_proxy_command_execution.yml
+// ID Sigma: 762bb580-79b4-40f4-8b9e-9349ce1710f4
+// Título: Indirect Command Execution via SFTP ProxyCommand
+// Descripción: Detects the use of SFTP.exe to execute commands indirectly via ProxyCommand parameter.
+Threat actors were seen leveraging this legitimate Windows binary to bypass security controls and execute arbitrary commands while evading detection.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sftp_proxy_command_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

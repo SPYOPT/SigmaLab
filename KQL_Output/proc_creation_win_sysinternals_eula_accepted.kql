@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_eula_accepted.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_eula_accepted.yml
+// ID Sigma: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b
+// Título: Potential Execution of Sysinternals Tools
+// Descripción: Detects command lines that contain the 'accepteula' flag which could be a sign of execution of one of the Sysinternals tools
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_eula_accepted.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

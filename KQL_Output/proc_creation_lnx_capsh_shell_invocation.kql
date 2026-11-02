@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_lnx_capsh_shell_invocation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_capsh_shell_invocation.yml
+// ID Sigma: db1ac3be-f606-4e3a-89e0-9607cbe6b98a
+// Título: Capsh Shell Invocation - Linux
+// Descripción: Detects the use of the "capsh" utility to invoke a shell.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_capsh_shell_invocation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

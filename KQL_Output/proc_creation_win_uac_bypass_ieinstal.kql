@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_ieinstal.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_ieinstal.yml
+// ID Sigma: 80fc36aa-945e-4181-89f2-2f907ab6775d
+// Título: UAC Bypass Using IEInstal - Process
+// Descripción: Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_ieinstal.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

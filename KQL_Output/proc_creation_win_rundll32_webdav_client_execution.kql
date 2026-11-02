@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_rundll32_webdav_client_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_webdav_client_execution.yml
+// ID Sigma: 2dbd9d3d-9e27-42a8-b8df-f13825c6c3d5
+// Título: WebDav Client Execution Via Rundll32.EXE
+// Descripción: Detects "svchost.exe" spawning "rundll32.exe" with command arguments like "C:\windows\system32\davclnt.dll,DavSetCookie".
+This could be an indicator of exfiltration or use of WebDav to launch code (hosted on a WebDav server).
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_webdav_client_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

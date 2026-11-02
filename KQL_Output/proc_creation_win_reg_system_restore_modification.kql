@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_reg_system_restore_modification.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_system_restore_modification.yml
+// ID Sigma: 7c06ab9b-b1d2-4ba9-b06e-09491ded20d9
+// Título: System Restore Registry Modification via CommandLine
+// Descripción: Detects system restore registry modification via command line, which can be used by adversaries to disable system restore on the computer.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_system_restore_modification.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

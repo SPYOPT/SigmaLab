@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_xwizard_runwizard_com_object_exec.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_xwizard_runwizard_com_object_exec.yml
+// ID Sigma: 53d4bb30-3f36-4e8a-b078-69d36c4a79ff
+// Título: COM Object Execution via Xwizard.EXE
+// Descripción: Detects the execution of Xwizard tool with the "RunWizard" flag and a GUID like argument.
+This utility can be abused in order to run custom COM object created in the registry.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_xwizard_runwizard_com_object_exec.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

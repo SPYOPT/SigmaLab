@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wmic_susp_process_creation.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_susp_process_creation.yml
+// ID Sigma: 3c89a1e8-0fba-449e-8f1b-8409d6267ec8
+// Título: Suspicious Process Created Via Wmic.EXE
+// Descripción: Detects WMIC executing "process call create" with suspicious calls to processes such as "rundll32", "regsrv32", etc.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_susp_process_creation.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

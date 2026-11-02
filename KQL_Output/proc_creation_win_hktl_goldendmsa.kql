@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_hktl_goldendmsa.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_goldendmsa.yml
+// ID Sigma: c41ec561-872d-469b-847c-1653ad19b45d
+// Título: HackTool - GoldenDMSA Execution
+// Descripción: Detects execution of GoldenDMSA hacktool used for Directory Service Account manipulation.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_goldendmsa.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

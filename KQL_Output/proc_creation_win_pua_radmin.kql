@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_radmin.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_radmin.yml
+// ID Sigma: 5817e76f-4804-41e6-8f1d-5fa0b3ecae2d
+// Título: PUA - Radmin Viewer Utility Execution
+// Descripción: Detects the execution of Radmin which can be abused by an adversary to remotely control Windows machines
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_radmin.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

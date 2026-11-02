@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_csi_use_of_csharp_console.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_csi_use_of_csharp_console.yml
+// ID Sigma: a9e416a8-e613-4f8b-88b8-a7d1d1af2f61
+// Título: Suspicious Use of CSharp Interactive Console
+// Descripción: Detects the execution of CSharp interactive console by PowerShell
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_csi_use_of_csharp_console.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

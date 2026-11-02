@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_macos_chflags_hidden_flag.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_chflags_hidden_flag.yml
+// ID Sigma: 3b2c1059-ae5f-40b6-b5d4-6106d3ac20fe
+// Título: Hidden Flag Set On File/Directory Via Chflags - MacOS
+// Descripción: Detects the execution of the "chflags" utility with the "hidden" flag, in order to hide files on MacOS.
+When a file or directory has this hidden flag set, it becomes invisible to the default file listing commands and in graphical file browsers.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_chflags_hidden_flag.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

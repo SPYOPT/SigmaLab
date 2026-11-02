@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_mouselock_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_mouselock_execution.yml
+// ID Sigma: c9192ad9-75e5-43eb-8647-82a0a5b493e3
+// Título: PUA - Mouse Lock Execution
+// Descripción: In Kaspersky's 2020 Incident Response Analyst Report they listed legitimate tool "Mouse Lock" as being used for both credential access and collection in security incidents.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_mouselock_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

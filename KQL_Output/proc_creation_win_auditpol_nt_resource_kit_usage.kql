@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_auditpol_nt_resource_kit_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_auditpol_nt_resource_kit_usage.yml
+// ID Sigma: c6c56ada-612b-42d1-9a29-adad3c5c2c1e
+// Título: Audit Policy Tampering Via NT Resource Kit Auditpol
+// Descripción: Threat actors can use an older version of the auditpol binary available inside the NT resource kit to change audit policy configuration to impair detection capability.
+This can be carried out by selectively disabling/removing certain audit policies as well as restoring a custom policy owned by the threat actor.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_auditpol_nt_resource_kit_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

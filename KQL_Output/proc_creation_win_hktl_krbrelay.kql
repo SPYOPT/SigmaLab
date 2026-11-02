@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_krbrelay.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelay.yml
+// ID Sigma: e96253b8-6b3b-4f90-9e59-3b24b99cf9b4
+// Título: HackTool - KrbRelay Execution
+// Descripción: Detects the use of KrbRelay, a Kerberos relaying tool
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_krbrelay.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

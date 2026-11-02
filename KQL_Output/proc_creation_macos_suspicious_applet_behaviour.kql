@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_suspicious_applet_behaviour.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_suspicious_applet_behaviour.yml
+// ID Sigma: a753a6af-3126-426d-8bd0-26ebbcb92254
+// Título: Osacompile Execution By Potentially Suspicious Applet/Osascript
+// Descripción: Detects potential suspicious applet or osascript executing "osacompile".
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_suspicious_applet_behaviour.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_container_residence_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_container_residence_discovery.yml
+// ID Sigma: 746c86fb-ccda-4816-8997-01386263acc4
+// Título: Container Residence Discovery Via Proc Virtual FS
+// Descripción: Detects potential container discovery via listing of certain kernel features in the "/proc" virtual filesystem
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_container_residence_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

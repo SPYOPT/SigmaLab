@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_ieexec_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ieexec_download.yml
+// ID Sigma: 9801abb8-e297-4dbf-9fbd-57dde0e830ad
+// Título: File Download And Execution Via IEExec.EXE
+// Descripción: Detects execution of the IEExec utility to download and execute files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ieexec_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

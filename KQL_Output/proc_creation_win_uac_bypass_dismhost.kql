@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_dismhost.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_dismhost.yml
+// ID Sigma: 853e74f9-9392-4935-ad3b-2e8c040dae86
+// Título: UAC Bypass Using DismHost
+// Descripción: Detects the pattern of UAC Bypass using DismHost DLL hijacking (UACMe 63)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_dismhost.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

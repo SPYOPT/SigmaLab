@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_bitlocker.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_bitlocker.yml
+// ID Sigma: 0e0255bf-2548-47b8-9582-c0955c9283f5
+// Título: Suspicious Reg Add BitLocker
+// Descripción: Detects suspicious addition to BitLocker related registry keys via the reg.exe utility
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_bitlocker.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

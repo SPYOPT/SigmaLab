@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_msxsl_remote_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msxsl_remote_execution.yml
+// ID Sigma: 75d0a94e-6252-448d-a7be-d953dff527bb
+// Título: Remote XSL Execution Via Msxsl.EXE
+// Descripción: Detects the execution of the "msxsl" binary with an "http" keyword in the command line. This might indicate a potential remote execution of XSL files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_msxsl_remote_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_dockerenv_recon.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_dockerenv_recon.yml
+// ID Sigma: 11701de9-d5a5-44aa-8238-84252f131895
+// Título: Docker Container Discovery Via Dockerenv Listing
+// Descripción: Detects listing or file reading of ".dockerenv" which can be a sing of potential container discovery
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_dockerenv_recon.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

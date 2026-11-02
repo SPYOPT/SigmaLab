@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_lnx_pua_trufflehog.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_pua_trufflehog.yml
+// ID Sigma: d7a650c4-226c-451e-948f-cc490db506aa
+// Título: PUA - TruffleHog Execution - Linux
+// Descripción: Detects execution of TruffleHog, a tool used to search for secrets in different platforms like Git, Jira, Slack, SharePoint, etc. that could be used maliciously.
+While it is a legitimate tool, intended for use in CI pipelines and security assessments,
+It was observed in the Shai-Hulud malware campaign targeting npm packages to steal sensitive information.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_pua_trufflehog.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

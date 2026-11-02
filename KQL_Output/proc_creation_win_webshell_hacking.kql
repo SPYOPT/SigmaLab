@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_webshell_hacking.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_webshell_hacking.yml
+// ID Sigma: 4ebc877f-4612-45cb-b3a5-8e3834db36c9
+// Título: Webshell Hacking Activity Patterns
+// Descripción: Detects certain parent child patterns found in cases in which a web shell is used to perform certain credential dumping or exfiltration activities on a compromised system
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_webshell_hacking.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

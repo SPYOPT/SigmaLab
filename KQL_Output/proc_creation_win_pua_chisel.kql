@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_chisel.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_chisel.yml
+// ID Sigma: 8b0e12da-d3c3-49db-bb4f-256703f380e5
+// Título: PUA - Chisel Tunneling Tool Execution
+// Descripción: Detects usage of the Chisel tunneling tool via the commandline arguments
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_chisel.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

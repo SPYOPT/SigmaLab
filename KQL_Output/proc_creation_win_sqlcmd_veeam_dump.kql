@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sqlcmd_veeam_dump.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlcmd_veeam_dump.yml
+// ID Sigma: b57ba453-b384-4ab9-9f40-1038086b4e53
+// Título: VeeamBackup Database Credentials Dump Via Sqlcmd.EXE
+// Descripción: Detects dump of credentials in VeeamBackup dbo
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sqlcmd_veeam_dump.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mpcmdrun_remove_windows_defender_definition.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mpcmdrun_remove_windows_defender_definition.yml
+// ID Sigma: 9719a8aa-401c-41af-8108-ced7ec9cd75c
+// Título: Windows Defender Definition Files Removed
+// Descripción: Adversaries may disable security tools to avoid possible detection of their tools and activities by removing Windows Defender Definition Files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mpcmdrun_remove_windows_defender_definition.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

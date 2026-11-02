@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_decode.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_decode.yml
+// ID Sigma: cc9cbe82-7bc0-4ef5-bc23-bbfb83947be7
+// Título: File Decoded From Base64/Hex Via Certutil.EXE
+// Descripción: Detects the execution of certutil with either the "decode" or "decodehex" flags to decode base64 or hex encoded files. This can be abused by attackers to decode an encoded payload before execution
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_decode.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

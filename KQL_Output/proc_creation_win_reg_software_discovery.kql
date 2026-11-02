@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_software_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_software_discovery.yml
+// ID Sigma: e13f668e-7f95-443d-98d2-1816a7648a7b
+// Título: Detected Windows Software Discovery
+// Descripción: Adversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_software_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

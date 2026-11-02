@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_icacls_deny.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_icacls_deny.yml
+// ID Sigma: 4ae81040-fc1c-4249-bfa3-938d260214d9
+// Título: Use Icacls to Hide File to Everyone
+// Descripción: Detect use of icacls to deny access for everyone in Users folder sometimes used to hide malicious files
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_icacls_deny.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

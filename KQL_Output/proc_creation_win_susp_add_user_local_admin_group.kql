@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_add_user_local_admin_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_local_admin_group.yml
+// ID Sigma: ad720b90-25ad-43ff-9b5e-5c841facc8e5
+// Título: User Added to Local Administrators Group
+// Descripción: Detects addition of users to the local administrator group via "Net" or "Add-LocalGroupMember".
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_add_user_local_admin_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

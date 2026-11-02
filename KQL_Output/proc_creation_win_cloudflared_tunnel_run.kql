@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cloudflared_tunnel_run.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cloudflared_tunnel_run.yml
+// ID Sigma: 9a019ffc-3580-4c9d-8d87-079f7e8d3fd4
+// Título: Cloudflared Tunnel Execution
+// Descripción: Detects execution of the "cloudflared" tool to connect back to a tunnel. This was seen used by threat actors to maintain persistence and remote access to compromised networks.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cloudflared_tunnel_run.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

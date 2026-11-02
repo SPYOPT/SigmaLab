@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_cmd_http_appdata.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_http_appdata.yml
+// ID Sigma: 1ac8666b-046f-4201-8aba-1951aaec03a3
+// Título: Command Line Execution with Suspicious URL and AppData Strings
+// Descripción: Detects a suspicious command line execution that includes an URL and AppData string in the command line parameters as used by several droppers (js/vbs > powershell)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_http_appdata.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

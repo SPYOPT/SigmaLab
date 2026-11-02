@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_pua_restic.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_restic.yml
+// ID Sigma: 6ddff2e8-ea1a-45d0-8938-93dfc1d67ae7
+// Título: PUA - Restic Backup Tool Execution
+// Descripción: Detects the execution of the Restic backup tool, which can be used for data exfiltration.
+Threat actors may leverage Restic to back up and exfiltrate sensitive data to remote storage locations, including cloud services.
+If not legitimately used in the enterprise environment, its presence may indicate malicious activity.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_restic.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

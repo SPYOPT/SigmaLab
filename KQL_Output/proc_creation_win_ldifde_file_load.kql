@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_ldifde_file_load.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ldifde_file_load.yml
+// ID Sigma: 6f535e01-ca1f-40be-ab8d-45b19c0c8b7f
+// Título: Import LDAP Data Interchange Format File Via Ldifde.EXE
+// Descripción: Detects the execution of "Ldifde.exe" with the import flag "-i". The can be abused to include HTTP-based arguments which will allow the arbitrary download of files from a remote server.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_ldifde_file_load.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

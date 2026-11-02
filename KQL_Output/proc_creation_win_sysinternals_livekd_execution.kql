@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_livekd_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_livekd_execution.yml
+// ID Sigma: a85f7765-698a-4088-afa0-ecfbf8d01fa4
+// Título: Potential Memory Dumping Activity Via LiveKD
+// Descripción: Detects execution of LiveKD based on PE metadata or image name
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_livekd_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

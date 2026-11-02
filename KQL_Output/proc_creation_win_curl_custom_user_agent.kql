@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_curl_custom_user_agent.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_custom_user_agent.yml
+// ID Sigma: 85de1f22-d189-44e4-8239-dc276b45379b
+// Título: Curl Web Request With Potential Custom User-Agent
+// Descripción: Detects execution of "curl.exe" with a potential custom "User-Agent". Attackers can leverage this to download or exfiltrate data via "curl" to a domain that only accept specific "User-Agent" strings
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_custom_user_agent.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

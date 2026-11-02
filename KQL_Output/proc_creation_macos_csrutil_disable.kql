@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_macos_csrutil_disable.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_csrutil_disable.yml
+// ID Sigma: 3603f18a-ec15-43a1-9af2-d196c8a7fec6
+// Título: System Integrity Protection (SIP) Disabled
+// Descripción: Detects the use of csrutil to disable the Configure System Integrity Protection (SIP). This technique is used in post-exploit scenarios.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_csrutil_disable.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

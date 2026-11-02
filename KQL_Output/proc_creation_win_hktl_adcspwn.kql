@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_adcspwn.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_adcspwn.yml
+// ID Sigma: cd8c163e-a19b-402e-bdd5-419ff5859f12
+// Título: HackTool - ADCSPwn Execution
+// Descripción: Detects command line parameters used by ADCSPwn, a tool to escalate privileges in an active directory network by coercing authenticate from machine accounts and relaying to the certificate service
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_adcspwn.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

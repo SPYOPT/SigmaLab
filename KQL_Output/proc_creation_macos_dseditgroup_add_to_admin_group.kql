@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_dseditgroup_add_to_admin_group.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_dseditgroup_add_to_admin_group.yml
+// ID Sigma: 5d0fdb62-f225-42fb-8402-3dfe64da468a
+// Título: User Added To Admin Group Via DseditGroup
+// Descripción: Detects attempts to create and/or add an account to the admin group, thus granting admin privileges.
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_dseditgroup_add_to_admin_group.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

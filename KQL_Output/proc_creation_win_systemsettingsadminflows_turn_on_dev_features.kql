@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_systemsettingsadminflows_turn_on_dev_features.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_systemsettingsadminflows_turn_on_dev_features.yml
+// ID Sigma: a383dec4-deec-4e6e-913b-ed9249670848
+// Título: Potential Signing Bypass Via Windows Developer Features
+// Descripción: Detects when a user enable developer features such as "Developer Mode" or "Application Sideloading". Which allows the user to install untrusted packages.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_systemsettingsadminflows_turn_on_dev_features.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

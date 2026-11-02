@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_download_iex.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_iex.yml
+// ID Sigma: 85b0b087-eddf-4a2b-b033-d771fa2b9775
+// Título: PowerShell Download and Execution Cradles
+// Descripción: Detects PowerShell download and execution cradles.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_download_iex.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

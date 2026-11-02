@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_macos_tail_base64_decode_from_image.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tail_base64_decode_from_image.yml
+// ID Sigma: 09a910bf-f71f-4737-9c40-88880ba5913d
+// Título: Potential Base64 Decoded From Images
+// Descripción: Detects the use of tail to extract bytes at an offset from an image and then decode the base64 value to create a new file with the decoded content. The detected execution is a bash one-liner.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tail_base64_decode_from_image.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

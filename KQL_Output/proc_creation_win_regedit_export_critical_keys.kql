@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regedit_export_critical_keys.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regedit_export_critical_keys.yml
+// ID Sigma: 82880171-b475-4201-b811-e9c826cd5eaa
+// Título: Exports Critical Registry Keys To a File
+// Descripción: Detects the export of a crital Registry key to a file.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regedit_export_critical_keys.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

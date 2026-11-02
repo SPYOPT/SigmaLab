@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_lnx_disable_ufw.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_disable_ufw.yml
+// ID Sigma: 84c9e83c-599a-458a-a0cb-0ecce44e807a
+// Título: UFW Disable Attempt
+// Descripción: Detects attempts to disable the Uncomplicated Firewall (UFW) on Linux systems.
+UFW is a popular firewall management tool that provides an easy-to-use interface for configuring firewall rules.
+Disabling UFW can leave a system vulnerable to attacks, as it may allow unauthorized access to network services and resources.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_disable_ufw.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

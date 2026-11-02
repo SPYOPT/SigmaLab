@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_cmd_sticky_keys_replace.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_sticky_keys_replace.yml
+// ID Sigma: 1070db9a-3e5d-412e-8e7b-7183b616e1b3
+// Título: Persistence Via Sticky Key Backdoor
+// Descripción: By replacing the sticky keys executable with the local admins CMD executable, an attacker is able to access a privileged windows console session without authenticating to the system.
+When the sticky keys are "activated" the privilleged shell is launched.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_sticky_keys_replace.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wpbbin_potential_persistence.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wpbbin_potential_persistence.yml
+// ID Sigma: 4abc0ec4-db5a-412f-9632-26659cddf145
+// Título: UEFI Persistence Via Wpbbin - ProcessCreation
+// Descripción: Detects execution of the binary "wpbbin" which is used as part of the UEFI based persistence method described in the reference section
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wpbbin_potential_persistence.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

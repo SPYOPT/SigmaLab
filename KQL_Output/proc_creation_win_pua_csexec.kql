@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_csexec.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_csexec.yml
+// ID Sigma: d08a2711-ee8b-4323-bdec-b7d85e892b31
+// Título: PUA - CsExec Execution
+// Descripción: Detects the use of the lesser known remote execution tool named CsExec a PsExec alternative
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_csexec.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

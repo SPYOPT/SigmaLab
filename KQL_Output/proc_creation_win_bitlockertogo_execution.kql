@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_win_bitlockertogo_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bitlockertogo_execution.yml
+// ID Sigma: 7f2376f9-42ee-4dfc-9360-fecff9a88fc8
+// Título: BitLockerTogo.EXE Execution
+// Descripción: Detects the execution of "BitLockerToGo.EXE".
+BitLocker To Go is BitLocker Drive Encryption on removable data drives. This feature includes the encryption of, USB flash drives, SD cards, External hard disk drives, Other drives that are formatted by using the NTFS, FAT16, FAT32, or exFAT file system.
+This is a rarely used application and usage of it at all is worth investigating.
+Malware such as Lumma stealer has been seen using this process as a target for process hollowing.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bitlockertogo_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_macos_jamf_usage.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_jamf_usage.yml
+// ID Sigma: be2e3a5c-9cc7-4d02-842a-68e9cb26ec49
+// Título: JAMF MDM Execution
+// Descripción: Detects execution of the "jamf" binary to create user accounts and run commands. For example, the binary can be abused by attackers on the system in order to bypass security controls or remove application control polices.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_jamf_usage.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

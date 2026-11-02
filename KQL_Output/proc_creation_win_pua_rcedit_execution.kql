@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_rcedit_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_rcedit_execution.yml
+// ID Sigma: 0c92f2e6-f08f-4b73-9216-ecb0ca634689
+// Título: PUA - Potential PE Metadata Tamper Using Rcedit
+// Descripción: Detects the use of rcedit to potentially alter executable PE metadata properties, which could conceal efforts to rename system utilities for defense evasion.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_rcedit_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rar_compress_data.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rar_compress_data.yml
+// ID Sigma: 6f3e2987-db24-4c78-a860-b4f4095a7095
+// Título: Files Added To An Archive Using Rar.EXE
+// Descripción: Detects usage of "rar" to add files to an archive for potential compression. An adversary may compress data (e.g. sensitive documents) that is collected prior to exfiltration in order to make it portable and minimize the amount of data sent over the network.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rar_compress_data.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

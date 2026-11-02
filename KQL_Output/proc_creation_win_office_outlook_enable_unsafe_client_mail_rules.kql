@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_office_outlook_enable_unsafe_client_mail_rules.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_enable_unsafe_client_mail_rules.yml
+// ID Sigma: 55f0a3a1-846e-40eb-8273-677371b8d912
+// Título: Outlook EnableUnsafeClientMailRules Setting Enabled
+// Descripción: Detects an attacker trying to enable the outlook security setting "EnableUnsafeClientMailRules" which allows outlook to run applications or execute macros
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_office_outlook_enable_unsafe_client_mail_rules.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

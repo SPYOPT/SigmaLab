@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_bloodhound_sharphound.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_bloodhound_sharphound.yml
+// ID Sigma: f376c8a7-a2d0-4ddc-aa0c-16c17236d962
+// Título: HackTool - Bloodhound/Sharphound Execution
+// Descripción: Detects command line parameters used by Bloodhound and Sharphound hack tools
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_bloodhound_sharphound.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

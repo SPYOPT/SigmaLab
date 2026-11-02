@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_bcdedit_susp_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bcdedit_susp_execution.yml
+// ID Sigma: c9fbe8e9-119d-40a6-9b59-dd58a5d84429
+// Título: Potential Ransomware or Unauthorized MBR Tampering Via Bcdedit.EXE
+// Descripción: Detects potential malicious and unauthorized usage of bcdedit.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_bcdedit_susp_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

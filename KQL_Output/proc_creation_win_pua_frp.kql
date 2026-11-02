@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_frp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_frp.yml
+// ID Sigma: 32410e29-5f94-4568-b6a3-d91a8adad863
+// Título: PUA - Fast Reverse Proxy (FRP) Execution
+// Descripción: Detects the use of Fast Reverse Proxy. frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall to the Internet.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_frp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

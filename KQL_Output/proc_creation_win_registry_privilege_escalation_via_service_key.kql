@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_registry_privilege_escalation_via_service_key.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_privilege_escalation_via_service_key.yml
+// ID Sigma: 0f9c21f1-6a73-4b0e-9809-cb562cb8d981
+// Título: Potential Privilege Escalation via Service Permissions Weakness
+// Descripción: Detect modification of services configuration (ImagePath, FailureCommand and ServiceDLL) in registry by processes with Medium integrity level
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_registry_privilege_escalation_via_service_key.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

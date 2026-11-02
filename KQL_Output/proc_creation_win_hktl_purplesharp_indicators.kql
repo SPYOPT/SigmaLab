@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_purplesharp_indicators.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_purplesharp_indicators.yml
+// ID Sigma: ff23ffbc-3378-435e-992f-0624dcf93ab4
+// Título: HackTool - PurpleSharp Execution
+// Descripción: Detects the execution of the PurpleSharp adversary simulation tool
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: critical
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_purplesharp_indicators.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

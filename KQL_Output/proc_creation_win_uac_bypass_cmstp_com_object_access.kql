@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_cmstp_com_object_access.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cmstp_com_object_access.yml
+// ID Sigma: 4b60e6f2-bf39-47b4-b4ea-398e33cfe253
+// Título: CMSTP UAC Bypass via COM Object Access
+// Descripción: Detects UAC Bypass Attempt Using Microsoft Connection Manager Profile Installer Autoelevate-capable COM Objects (e.g. UACMe ID of 41, 43, 58 or 65)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_cmstp_com_object_access.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

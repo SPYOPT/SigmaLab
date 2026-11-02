@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_pcwrun.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pcwrun.yml
+// ID Sigma: b97cd4b1-30b8-4a9d-bd72-6293928d52bc
+// Título: Indirect Command Execution By Program Compatibility Wizard
+// Descripción: Detect indirect command execution via Program Compatibility Assistant pcwrun.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_pcwrun.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

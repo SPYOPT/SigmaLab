@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_installer_susp_child_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_installer_susp_child_process.yml
+// ID Sigma: e0cfaecd-602d-41af-988d-f6ccebb2af26
+// Título: Suspicious Installer Package Child Process
+// Descripción: Detects the execution of suspicious child processes from macOS installer package parent process. This includes osascript, JXA, curl and wget amongst other interpreters
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_installer_susp_child_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

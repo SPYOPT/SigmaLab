@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_xattr_gatekeeper_bypass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_xattr_gatekeeper_bypass.yml
+// ID Sigma: f5141b6d-9f42-41c6-a7bf-2a780678b29b
+// Título: Gatekeeper Bypass via Xattr
+// Descripción: Detects macOS Gatekeeper bypass via xattr utility
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_xattr_gatekeeper_bypass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

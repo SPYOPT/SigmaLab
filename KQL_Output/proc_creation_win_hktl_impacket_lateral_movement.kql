@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_impacket_lateral_movement.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impacket_lateral_movement.yml
+// ID Sigma: 10c14723-61c7-4c75-92ca-9af245723ad2
+// Título: HackTool - Potential Impacket Lateral Movement Activity
+// Descripción: Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_impacket_lateral_movement.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

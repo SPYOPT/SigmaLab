@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_remote_desktop_tunneling.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_remote_desktop_tunneling.yml
+// ID Sigma: 8a3038e8-9c9d-46f8-b184-66234a160f6f
+// Título: Potential Remote Desktop Tunneling
+// Descripción: Detects potential use of an SSH utility to establish RDP over a reverse SSH Tunnel. This can be used by attackers to enable routing of network packets that would otherwise not reach their intended destination.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_remote_desktop_tunneling.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_plink_port_forwarding.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_plink_port_forwarding.yml
+// ID Sigma: 48a61b29-389f-4032-b317-b30de6b95314
+// Título: Suspicious Plink Port Forwarding
+// Descripción: Detects suspicious Plink tunnel port forwarding to a local port
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_plink_port_forwarding.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_user_discovery_get_aduser.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_user_discovery_get_aduser.yml
+// ID Sigma: 1114e048-b69c-4f41-bc20-657245ae6e3f
+// Título: User Discovery And Export Via Get-ADUser Cmdlet
+// Descripción: Detects usage of the Get-ADUser cmdlet to collect user information and output it to a file
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_user_discovery_get_aduser.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

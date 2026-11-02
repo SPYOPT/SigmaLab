@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_tasklist_module_enumeration.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tasklist_module_enumeration.yml
+// ID Sigma: 34275eb8-fa19-436b-b959-3d9ecd53fa1f
+// Título: Loaded Module Enumeration Via Tasklist.EXE
+// Descripción: Detects the enumeration of a specific DLL or EXE being used by a binary via "tasklist.exe".
+This is often used by attackers in order to find the specific process identifier (PID) that is using the DLL in question.
+In order to dump the process memory or perform other nefarious actions.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_tasklist_module_enumeration.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

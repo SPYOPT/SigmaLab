@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_pypykatz.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_pypykatz.yml
+// ID Sigma: a29808fd-ef50-49ff-9c7a-59a9b040b404
+// Título: HackTool - Pypykatz Credentials Dumping Activity
+// Descripción: Detects the usage of "pypykatz" to obtain stored credentials. Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database through Windows registry where the SAM database is stored
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_pypykatz.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_reg_write_protect_for_storage_disabled.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_write_protect_for_storage_disabled.yml
+// ID Sigma: 75f7a0e2-7154-4c4d-9eae-5cdb4e0a5c13
+// Título: Write Protect For Storage Disabled
+// Descripción: Detects applications trying to modify the registry in order to disable any write-protect property for storage devices.
+This could be a precursor to a ransomware attack and has been an observed technique used by cypherpunk group.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_write_protect_for_storage_disabled.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

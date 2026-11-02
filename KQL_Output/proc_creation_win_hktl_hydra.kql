@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_hydra.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_hydra.yml
+// ID Sigma: aaafa146-074c-11eb-adc1-0242ac120002
+// Título: HackTool - Hydra Password Bruteforce Execution
+// Descripción: Detects command line parameters used by Hydra password guessing hack tool
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_hydra.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_schtasks_persistence_windows_telemetry.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_persistence_windows_telemetry.yml
+// ID Sigma: f548a603-c9f2-4c89-b511-b089f7e94549
+// Título: Potential Persistence Via Microsoft Compatibility Appraiser
+// Descripción: Detects manual execution of the "Microsoft Compatibility Appraiser" task via schtasks.
+In order to trigger persistence stored in the "\AppCompatFlags\TelemetryController" registry key.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_persistence_windows_telemetry.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

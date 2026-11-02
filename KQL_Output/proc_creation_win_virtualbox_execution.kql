@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_virtualbox_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_virtualbox_execution.yml
+// ID Sigma: bab049ca-7471-4828-9024-38279a4c04da
+// Título: Virtualbox Driver Installation or Starting of VMs
+// Descripción: Adversaries can carry out malicious operations using a virtual instance to avoid detection. This rule is built to detect the registration of the Virtualbox driver or start of a Virtualbox VM.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_virtualbox_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

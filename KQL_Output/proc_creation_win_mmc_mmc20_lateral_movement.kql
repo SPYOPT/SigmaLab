@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_mmc_mmc20_lateral_movement.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mmc_mmc20_lateral_movement.yml
+// ID Sigma: f1f3bf22-deb2-418d-8cce-e1a45e46a5bd
+// Título: MMC20 Lateral Movement
+// Descripción: Detects MMC20.Application Lateral Movement; specifically looks for the spawning of the parent MMC.exe with a command line of "-Embedding" as a child of svchost.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mmc_mmc20_lateral_movement.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

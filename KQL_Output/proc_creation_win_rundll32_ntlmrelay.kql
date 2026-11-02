@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_rundll32_ntlmrelay.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_ntlmrelay.yml
+// ID Sigma: bb76d96b-821c-47cf-944b-7ce377864492
+// Título: Suspicious NTLM Authentication on the Printer Spooler Service
+// Descripción: Detects a privilege elevation attempt by coercing NTLM authentication on the Printer Spooler service
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_ntlmrelay.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

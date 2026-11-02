@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_susp_hktl_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_hktl_execution.yml
+// ID Sigma: a015e032-146d-4717-8944-7a1884122111
+// Título: Linux HackTool Execution
+// Descripción: Detects known hacktool execution based on image name.
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_susp_hktl_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

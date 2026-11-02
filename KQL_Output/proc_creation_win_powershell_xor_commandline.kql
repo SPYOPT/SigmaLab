@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_xor_commandline.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_xor_commandline.yml
+// ID Sigma: bb780e0c-16cf-4383-8383-1e5471db6cf9
+// Título: Suspicious XOR Encoded PowerShell Command
+// Descripción: Detects presence of a potentially xor encoded powershell command
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_xor_commandline.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_remove_mppreference.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_remove_mppreference.yml
+// ID Sigma: 07e3cb2c-0608-410d-be4b-1511cb1a0448
+// Título: Tamper Windows Defender Remove-MpPreference
+// Descripción: Detects attempts to remove Windows Defender configurations using the 'MpPreference' cmdlet
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_remove_mppreference.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_cmd_launched_with_hidden_start_flag.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_launched_with_hidden_start_flag.yml
+// ID Sigma: 5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d
+// Título: Cmd Launched with Hidden Start Flags to Suspicious Targets
+// Descripción: Detects cmd.exe executing commands with the "start" utility using "/b" (no window) or "/min" (minimized) flags.
+To reduce false positives from standard background tasks, detection is restricted to scenarios where the target is a known script extension or located in suspicious temporary/public directories.
+This technique was observed in Chaos, DarkSide, and Emotet malware campaigns.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_cmd_launched_with_hidden_start_flag.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_macos_csrutil_status.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_csrutil_status.yml
+// ID Sigma: 53821412-17b0-4147-ade0-14faae67d54b
+// Título: System Integrity Protection (SIP) Enumeration
+// Descripción: Detects the use of csrutil to view the Configure System Integrity Protection (SIP) status. This technique is used in post-exploit scenarios.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_csrutil_status.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

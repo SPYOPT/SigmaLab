@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_mode_codepage_russian.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mode_codepage_russian.yml
+// ID Sigma: 12fbff88-16b5-4b42-9754-cd001a789fb3
+// Título: CodePage Modification Via MODE.COM To Russian Language
+// Descripción: Detects a CodePage modification using the "mode.com" utility to Russian language.
+This behavior has been used by threat actors behind Dharma ransomware.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_mode_codepage_russian.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

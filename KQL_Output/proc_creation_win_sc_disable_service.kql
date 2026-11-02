@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sc_disable_service.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_disable_service.yml
+// ID Sigma: 85c312b7-f44d-4a51-a024-d671c40b49fc
+// Título: Service StartupType Change Via Sc.EXE
+// Descripción: Detect the use of "sc.exe" to change the startup type of a service to "disabled" or "demand"
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sc_disable_service.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

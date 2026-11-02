@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_sharpldapwhoami.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpldapwhoami.yml
+// ID Sigma: d9367cbb-c2e0-47ce-bdc0-128cb6da898d
+// Título: HackTool - SharpLdapWhoami Execution
+// Descripción: Detects SharpLdapWhoami, a whoami alternative that queries the LDAP service on a domain controller
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_sharpldapwhoami.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

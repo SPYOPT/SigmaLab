@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_macos_system_profiler_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_system_profiler_discovery.yml
+// ID Sigma: 4809c683-059b-4935-879d-36835986f8cf
+// Título: System Information Discovery Using System_Profiler
+// Descripción: Detects the execution of "system_profiler" with specific "Data Types" that have been seen being used by threat actors and malware. It provides system hardware and software configuration information.
+This process is primarily used for system information discovery. However, "system_profiler" can also be used to determine if virtualization software is being run for defense evasion purposes.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_system_profiler_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

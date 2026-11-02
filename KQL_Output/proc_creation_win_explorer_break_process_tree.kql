@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_explorer_break_process_tree.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_explorer_break_process_tree.yml
+// ID Sigma: 949f1ffb-6e85-4f00-ae1e-c3c5b190d605
+// Título: Explorer Process Tree Break
+// Descripción: Detects a command line process that uses explorer.exe to launch arbitrary commands or binaries,
+which is similar to cmd.exe /c, only it breaks the process tree and makes its parent a new instance of explorer spawning from "svchost"
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_explorer_break_process_tree.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

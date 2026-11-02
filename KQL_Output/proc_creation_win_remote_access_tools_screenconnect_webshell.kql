@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_remote_access_tools_screenconnect_webshell.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_screenconnect_webshell.yml
+// ID Sigma: b19146a3-25d4-41b4-928b-1e2a92641b1b
+// Título: Remote Access Tool - ScreenConnect Server Web Shell Execution
+// Descripción: Detects potential web shell execution from the ScreenConnect server process.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_remote_access_tools_screenconnect_webshell.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

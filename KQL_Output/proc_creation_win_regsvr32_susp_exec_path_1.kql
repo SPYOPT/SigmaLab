@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regsvr32_susp_exec_path_1.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_susp_exec_path_1.yml
+// ID Sigma: 9525dc73-0327-438c-8c04-13c0e037e9da
+// Título: Regsvr32 Execution From Potential Suspicious Location
+// Descripción: Detects execution of regsvr32 where the DLL is located in a potentially suspicious location.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regsvr32_susp_exec_path_1.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_nimgrab.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nimgrab.yml
+// ID Sigma: 74a12f18-505c-4114-8d0b-8448dd5485c6
+// Título: PUA - Nimgrab Execution
+// Descripción: Detects the usage of nimgrab, a tool bundled with the Nim programming framework and used for downloading files.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nimgrab.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

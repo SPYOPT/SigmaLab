@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_browsers_tor_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_tor_execution.yml
+// ID Sigma: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
+// Título: Tor Client/Browser Execution
+// Descripción: Detects the use of Tor or Tor-Browser to connect to onion routing networks
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_browsers_tor_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

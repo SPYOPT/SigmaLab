@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_instalutil_no_log_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_instalutil_no_log_execution.yml
+// ID Sigma: d042284c-a296-4988-9be5-f424fadcc28c
+// Título: Suspicious Execution of InstallUtil Without Log
+// Descripción: Uses the .NET InstallUtil.exe application in order to execute image without log
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_instalutil_no_log_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

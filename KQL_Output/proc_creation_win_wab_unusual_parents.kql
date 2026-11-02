@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_wab_unusual_parents.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wab_unusual_parents.yml
+// ID Sigma: 63d1ccc0-2a43-4f4b-9289-361b308991ff
+// Título: Wab/Wabmig Unusual Parent Or Child Processes
+// Descripción: Detects unusual parent or children of the wab.exe (Windows Contacts) and Wabmig.exe (Microsoft Address Book Import Tool) processes as seen being used with bumblebee activity
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wab_unusual_parents.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

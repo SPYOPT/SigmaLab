@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_dnscmd_install_new_server_level_plugin_dll.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnscmd_install_new_server_level_plugin_dll.yml
+// ID Sigma: f63b56ee-3f79-4b8a-97fb-5c48007e8573
+// Título: New DNS ServerLevelPluginDll Installed Via Dnscmd.EXE
+// Descripción: Detects the installation of a DNS plugin DLL via ServerLevelPluginDll parameter in registry, which can be used to execute code in context of the DNS server (restart required)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_dnscmd_install_new_server_level_plugin_dll.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

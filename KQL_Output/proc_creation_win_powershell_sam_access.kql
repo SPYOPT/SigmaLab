@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_sam_access.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_sam_access.yml
+// ID Sigma: 1af57a4b-460a-4738-9034-db68b880c665
+// Título: PowerShell SAM Copy
+// Descripción: Detects suspicious PowerShell scripts accessing SAM hives
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_sam_access.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

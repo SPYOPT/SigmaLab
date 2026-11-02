@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_vmware_toolbox_cmd_persistence.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vmware_toolbox_cmd_persistence.yml
+// ID Sigma: 7aa4e81a-a65c-4e10-9f81-b200eb229d7d
+// Título: Potential Persistence Via VMwareToolBoxCmd.EXE VM State Change Script
+// Descripción: Detects execution of the "VMwareToolBoxCmd.exe" with the "script" and "set" flag to setup a specific script to run for a specific VM state
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_vmware_toolbox_cmd_persistence.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

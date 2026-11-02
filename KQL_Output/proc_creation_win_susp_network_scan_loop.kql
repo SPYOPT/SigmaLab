@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_network_scan_loop.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_network_scan_loop.yml
+// ID Sigma: f8ad2e2c-40b6-4117-84d7-20b89896ab23
+// Título: Suspicious Scan Loop Network
+// Descripción: Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_network_scan_loop.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

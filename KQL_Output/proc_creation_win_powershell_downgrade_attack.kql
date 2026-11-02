@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_downgrade_attack.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_downgrade_attack.yml
+// ID Sigma: b3512211-c67e-4707-bedc-66efc7848863
+// Título: Potential PowerShell Downgrade Attack
+// Descripción: Detects PowerShell downgrade attack by comparing the host versions with the actually used engine version 2.0
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_downgrade_attack.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

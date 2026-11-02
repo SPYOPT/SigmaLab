@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_trufflesnout.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_trufflesnout.yml
+// ID Sigma: 69ca006d-b9a9-47f5-80ff-ecd4d25d481a
+// Título: HackTool - TruffleSnout Execution
+// Descripción: Detects the use of TruffleSnout.exe an iterative AD discovery toolkit for offensive operators, situational awareness and targeted low noise enumeration.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_trufflesnout.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

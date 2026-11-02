@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_aspnet_compiler_susp_paths.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_aspnet_compiler_susp_paths.yml
+// ID Sigma: 9f50fe98-fe5c-4a2d-86c7-fad7f63ed622
+// Título: Potentially Suspicious ASP.NET Compilation Via AspNetCompiler
+// Descripción: Detects execution of "aspnet_compiler.exe" with potentially suspicious paths for compilation.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_aspnet_compiler_susp_paths.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

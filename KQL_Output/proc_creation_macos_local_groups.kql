@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_local_groups.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_local_groups.yml
+// ID Sigma: 89bb1f97-c7b9-40e8-b52b-7d6afbd67276
+// Título: Local Groups Discovery - MacOs
+// Descripción: Detects enumeration of local system groups
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_local_groups.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

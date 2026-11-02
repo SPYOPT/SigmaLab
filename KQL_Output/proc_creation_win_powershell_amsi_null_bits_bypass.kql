@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_amsi_null_bits_bypass.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_amsi_null_bits_bypass.yml
+// ID Sigma: 92a974db-ab84-457f-9ec0-55db83d7a825
+// Título: Potential AMSI Bypass Using NULL Bits
+// Descripción: Detects usage of special strings/null bits in order to potentially bypass AMSI functionalities
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_amsi_null_bits_bypass.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

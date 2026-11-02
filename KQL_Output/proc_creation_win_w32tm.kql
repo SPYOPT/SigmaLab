@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_w32tm.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_w32tm.yml
+// ID Sigma: 6da2c9f5-7c53-401b-aacb-92c040ce1215
+// Título: Use of W32tm as Timer
+// Descripción: When configured with suitable command line arguments, w32tm can act as a delay mechanism
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_w32tm.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

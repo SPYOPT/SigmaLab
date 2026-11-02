@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_wmic_recon_product_class.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_product_class.yml
+// ID Sigma: e568650b-5dcd-4658-8f34-ded0b1e13992
+// Título: Potential Product Class Reconnaissance Via Wmic.EXE
+// Descripción: Detects the execution of WMIC in order to get a list of firewall, antivirus and antispywware products.
+Adversaries often enumerate security products installed on a system to identify security controls and potential ways to evade detection or disable protection mechanisms.
+This information helps them plan their next attack steps and choose appropriate techniques to bypass security measures.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_recon_product_class.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

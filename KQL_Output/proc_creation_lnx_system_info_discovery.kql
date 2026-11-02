@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_lnx_system_info_discovery.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_system_info_discovery.yml
+// ID Sigma: 42df45e7-e6e9-43b5-8f26-bec5b39cc239
+// Título: System Information Discovery
+// Descripción: Detects system information discovery commands
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: informational
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_system_info_discovery.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,15 @@
 // Regla Sigma: proc_creation_win_protocolhandler_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_protocolhandler_download.yml
+// ID Sigma: 104cdb48-a7a8-4ca7-a453-32942c6e5dcb
+// Título: File Download Using ProtocolHandler.exe
+// Descripción: Detects usage of "ProtocolHandler" to download files. Downloaded files will be located in the cache folder (for example - %LOCALAPPDATA%\Microsoft\Windows\INetCache\IE)
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_protocolhandler_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

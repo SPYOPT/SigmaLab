@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_curl_download_direct_ip_susp_extensions.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_download_direct_ip_susp_extensions.yml
+// ID Sigma: 5cb299fc-5fb1-4d07-b989-0644c68b6043
+// Título: Suspicious File Download From IP Via Curl.EXE
+// Descripción: Detects potentially suspicious file downloads directly from IP addresses using curl.exe
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_curl_download_direct_ip_susp_extensions.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

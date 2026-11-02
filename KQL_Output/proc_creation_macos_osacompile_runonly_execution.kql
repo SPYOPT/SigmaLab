@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_osacompile_runonly_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_osacompile_runonly_execution.yml
+// ID Sigma: b9d9b652-d8ed-4697-89a2-a1186ee680ac
+// Título: OSACompile Run-Only Execution
+// Descripción: Detects potential suspicious run-only executions compiled using OSACompile
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_osacompile_runonly_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

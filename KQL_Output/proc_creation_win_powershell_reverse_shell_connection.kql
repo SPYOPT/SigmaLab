@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_reverse_shell_connection.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_reverse_shell_connection.yml
+// ID Sigma: edc2f8ae-2412-4dfd-b9d5-0c57727e70be
+// Título: Potential Powershell ReverseShell Connection
+// Descripción: Detects usage of the "TcpClient" class. Which can be abused to establish remote connections and reverse-shells. As seen used by the Nishang "Invoke-PowerShellTcpOneLine" reverse shell and other.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_reverse_shell_connection.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

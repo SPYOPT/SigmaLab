@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_conhost_susp_winshell_child_process.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_susp_winshell_child_process.yml
+// ID Sigma: dfa03a09-8b92-4d83-8e74-f72839b1c407
+// Título: Potentially Suspicious Child Processes Spawned by ConHost
+// Descripción: Detects suspicious child processes related to Windows Shell utilities spawned by `conhost.exe`, which could indicate malicious activity using trusted system components.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_conhost_susp_winshell_child_process.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

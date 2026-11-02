@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_gui_input_capture.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_gui_input_capture.yml
+// ID Sigma: 60f1ce20-484e-41bd-85f4-ac4afec2c541
+// Título: GUI Input Capture - macOS
+// Descripción: Detects attempts to use system dialog prompts to capture user credentials
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: low
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_gui_input_capture.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

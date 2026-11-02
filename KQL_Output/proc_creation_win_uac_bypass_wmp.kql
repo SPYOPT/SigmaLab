@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_uac_bypass_wmp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_wmp.yml
+// ID Sigma: 0058b9e5-bcd7-40d4-9205-95ca5a16d7b2
+// Título: UAC Bypass Using Windows Media Player - Process
+// Descripción: Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_uac_bypass_wmp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

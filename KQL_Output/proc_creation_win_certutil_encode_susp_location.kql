@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_certutil_encode_susp_location.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_encode_susp_location.yml
+// ID Sigma: 82a6714f-4899-4f16-9c1e-9a333544d4c3
+// Título: File In Suspicious Location Encoded To Base64 Via Certutil.EXE
+// Descripción: Detects the execution of certutil with the "encode" flag to encode a file to base64 where the files are located in potentially suspicious locations
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_certutil_encode_susp_location.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

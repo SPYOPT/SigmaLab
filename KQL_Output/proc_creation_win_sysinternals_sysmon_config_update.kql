@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_sysinternals_sysmon_config_update.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_sysmon_config_update.yml
+// ID Sigma: 87911521-7098-470b-a459-9a57fc80bdfd
+// Título: Sysmon Configuration Update
+// Descripción: Detects updates to Sysmon's configuration. Attackers might update or replace the Sysmon configuration with a bare bone one to avoid monitoring without shutting down the service completely
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_sysinternals_sysmon_config_update.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

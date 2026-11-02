@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_win_wmic_terminate_application.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_terminate_application.yml
+// ID Sigma: 49d9671b-0a0a-4c09-8280-d215bfd30662
+// Título: Application Termination Attempt via Wmic.EXE
+// Descripción: Detects an attempt to terminate a process via "wmic" with the "call terminate" flag. Adversaries may
+use wmic to terminate security products or other applications on the compromised host. This event is
+triggered on on attempt and process creation can be either successful or unsuccessful.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_wmic_terminate_application.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

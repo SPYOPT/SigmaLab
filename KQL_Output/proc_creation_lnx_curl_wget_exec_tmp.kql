@@ -1,6 +1,18 @@
 // Regla Sigma: proc_creation_lnx_curl_wget_exec_tmp.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_curl_wget_exec_tmp.yml
+// ID Sigma: a2d9e2f3-0f43-4c7a-bcd9-9acfc0d723aa
+// Título: Suspicious Download and Execute Pattern via Curl/Wget
+// Descripción: Detects suspicious use of command-line tools such as curl or wget to download remote
+content - particularly scripts - into temporary directories (e.g., /dev/shm, /tmp), followed by
+immediate execution, indicating potential malicious activity. This pattern is commonly used
+by malicious scripts, stagers, or downloaders in fileless or multi-stage Linux attacks.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_curl_wget_exec_tmp.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

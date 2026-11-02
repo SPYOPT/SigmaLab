@@ -1,6 +1,20 @@
 // Regla Sigma: proc_creation_win_werfaultsecure_abuse.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_werfaultsecure_abuse.yml
+// ID Sigma: 1f0b4cac-9c81-41f4-95d0-8475ff46b3e2
+// Título: PPL Tampering Via WerFaultSecure
+// Descripción: Detects potential abuse of WerFaultSecure.exe to dump Protected Process Light (PPL) processes like LSASS or to freeze security solutions (EDR/antivirus).
+This technique is used by tools such as EDR-Freeze and WSASS to bypass PPL protections and access sensitive information or disable security software.
+Distinct command line patterns help identify the specific tool:
+- WSASS usage typically shows: "WSASS.exe WerFaultSecure.exe [PID]" in ParentCommandLine
+- EDR-Freeze usage typically shows: "EDR-Freeze_[version].exe [PID] [timeout]" in ParentCommandLine
+Legitimate debugging operations using WerFaultSecure are rare in production environments and should be investigated.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_werfaultsecure_abuse.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

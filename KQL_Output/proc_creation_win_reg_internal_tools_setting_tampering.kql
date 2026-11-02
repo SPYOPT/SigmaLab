@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_reg_internal_tools_setting_tampering.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_internal_tools_setting_tampering.yml
+// ID Sigma: ccc946a3-f65a-432a-bb6f-efc6acc1fd27
+// Título: Registry Tampering Of Internal Tools Settings
+// Descripción: Detects registry modifications that tamper with internal Windows tools settings, commonly used by malware to disable security features or system tools
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_reg_internal_tools_setting_tampering.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

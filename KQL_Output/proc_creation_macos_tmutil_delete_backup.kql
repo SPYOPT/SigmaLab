@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_macos_tmutil_delete_backup.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tmutil_delete_backup.yml
+// ID Sigma: 452df256-da78-427a-866f-49fa04417d74
+// Título: Time Machine Backup Deletion Attempt Via Tmutil - MacOS
+// Descripción: Detects deletion attempts of MacOS Time Machine backups via the native backup utility "tmutil".
+An adversary may perform this action before launching a ransonware attack to prevent the victim from restoring their files.
+
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_tmutil_delete_backup.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_powershell_invoke_webrequest_download.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_invoke_webrequest_download.yml
+// ID Sigma: 5e3cc4d8-3e68-43db-8656-eaaeefdec9cc
+// Título: Suspicious Invoke-WebRequest Execution
+// Descripción: Detects a suspicious call to Invoke-WebRequest cmdlet where the and output is located in a suspicious location
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_powershell_invoke_webrequest_download.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

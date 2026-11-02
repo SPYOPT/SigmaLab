@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_susp_emoji_usage_in_cli_1.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_emoji_usage_in_cli_1.yml
+// ID Sigma: 4a30ac0c-b9d6-4e01-b71a-5f851bbf4259
+// Título: Potential Defense Evasion Activity Via Emoji Usage In CommandLine - 1
+// Descripción: Detects the usage of emojis in the command line, this could be a sign of potential defense evasion activity.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_susp_emoji_usage_in_cli_1.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

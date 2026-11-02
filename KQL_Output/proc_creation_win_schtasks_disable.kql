@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_schtasks_disable.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_disable.yml
+// ID Sigma: 9ac94dc8-9042-493c-ba45-3b5e7c86b980
+// Título: Disable Important Scheduled Task
+// Descripción: Detects when adversaries stop services or processes by disabling their respective scheduled tasks in order to conduct data destructive activities
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_schtasks_disable.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

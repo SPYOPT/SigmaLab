@@ -1,6 +1,16 @@
 // Regla Sigma: proc_creation_win_rundll32_udl_exec.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_udl_exec.yml
+// ID Sigma: 0ea52357-cd59-4340-9981-c46c7e900428
+// Título: Potentially Suspicious Rundll32.EXE Execution of UDL File
+// Descripción: Detects the execution of rundll32.exe with the oledb32.dll library to open a UDL file.
+Threat actors can abuse this technique as a phishing vector to capture authentication credentials or other sensitive data.
+
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_rundll32_udl_exec.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

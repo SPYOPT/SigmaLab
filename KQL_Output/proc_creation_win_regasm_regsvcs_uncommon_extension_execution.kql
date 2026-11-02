@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_regasm_regsvcs_uncommon_extension_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_regsvcs_uncommon_extension_execution.yml
+// ID Sigma: e9f8f8cc-07cc-4e81-b724-f387db9175e4
+// Título: Potentially Suspicious Execution Of Regasm/Regsvcs With Uncommon Extension
+// Descripción: Detects potentially suspicious execution of the Regasm/Regsvcs utilities with an uncommon extension.
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_regasm_regsvcs_uncommon_extension_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

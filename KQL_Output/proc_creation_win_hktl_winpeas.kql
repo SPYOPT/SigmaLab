@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_hktl_winpeas.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_winpeas.yml
+// ID Sigma: 98b53e78-ebaf-46f8-be06-421aafd176d9
+// Título: HackTool - winPEAS Execution
+// Descripción: WinPEAS is a script that search for possible paths to escalate privileges on Windows hosts. The checks are explained on book.hacktricks.xyz
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_hktl_winpeas.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

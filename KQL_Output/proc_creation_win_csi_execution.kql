@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_csi_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_csi_execution.yml
+// ID Sigma: 40b95d31-1afc-469e-8d34-9a3a667d058e
+// Título: Suspicious Csi.exe Usage
+// Descripción: Csi.exe is a signed binary from Microsoft that comes with Visual Studio and provides C# interactive capabilities. It can be used to run C# code from a file passed as a parameter in command line. Early version of this utility provided with Microsoft “Roslyn” Community Technology Preview was named 'rcsi.exe'
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_csi_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

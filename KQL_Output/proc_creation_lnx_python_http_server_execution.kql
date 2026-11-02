@@ -1,6 +1,17 @@
 // Regla Sigma: proc_creation_lnx_python_http_server_execution.yml
-// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_http_server_execution.yml
+// ID Sigma: 3f0f5957-04f8-4792-ad89-192b0303bde6
+// Título: Python WebServer Execution - Linux
+// Descripción: Detects the execution of Python web servers via command line interface (CLI).
+After gaining access to target systems, adversaries may use Python's built-in HTTP server modules to quickly establish a web server without requiring additional software.
+This technique is commonly used in post-exploitation scenarios as it provides a simple method for transferring files between the compromised host and attacker-controlled systems.
+
+// Aplica a: Producto: linux | Categoría: process_creation
+// Producto: linux
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\linux\process_creation\proc_creation_lnx_python_http_server_execution.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

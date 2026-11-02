@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_macos_change_file_time_attr.yml
-// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_change_file_time_attr.yml
+// ID Sigma: 88c0f9d8-30a8-4120-bb6b-ebb54abcf2a0
+// Título: File Time Attribute Change
+// Descripción: Detect file time attribute change to hide new or changes to existing files
+// Aplica a: Producto: macos | Categoría: process_creation
+// Producto: macos
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\macos\process_creation\proc_creation_macos_change_file_time_attr.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

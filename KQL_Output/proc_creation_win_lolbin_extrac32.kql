@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_lolbin_extrac32.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_extrac32.yml
+// ID Sigma: aa8e035d-7be4-48d3-a944-102aec04400d
+// Título: Suspicious Extrac32 Execution
+// Descripción: Download or Copy file with Extrac32
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: medium
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_lolbin_extrac32.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

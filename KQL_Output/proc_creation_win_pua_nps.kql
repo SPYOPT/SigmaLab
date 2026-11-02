@@ -1,6 +1,14 @@
 // Regla Sigma: proc_creation_win_pua_nps.yml
-// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nps.yml
+// ID Sigma: 68d37776-61db-42f5-bf54-27e87072d17e
+// Título: PUA - NPS Tunneling Tool Execution
+// Descripción: Detects the use of NPS, a port forwarding and intranet penetration proxy server
+// Aplica a: Producto: windows | Categoría: process_creation
+// Producto: windows
+// Categoría: process_creation
+// Servicio: 
+// Nivel: high
 // Pipeline: microsoft_xdr
+// Ruta original: C:\SigmaLab\sigma\rules\windows\process_creation\proc_creation_win_pua_nps.yml
 // Requiere validación en el entorno de destino.
 
 DeviceProcessEvents

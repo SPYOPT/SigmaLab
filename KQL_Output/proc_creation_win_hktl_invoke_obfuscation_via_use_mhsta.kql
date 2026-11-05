@@ -2,6 +2,8 @@
 // ID Sigma: ac20ae82-8758-4f38-958e-b44a3140ca88
 // Título: Invoke-Obfuscation Via Use MSHTA
 // Descripción: Detects Obfuscated Powershell via use MSHTA in Scripts
+// Fecha de creación: 2020-10-08
+// Fecha de modificación: 2022-03-08
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

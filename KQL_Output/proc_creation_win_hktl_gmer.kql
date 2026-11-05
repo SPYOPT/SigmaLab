@@ -2,6 +2,8 @@
 // ID Sigma: 9082ff1f-88ab-4678-a3cc-5bcff99fc74d
 // Título: HackTool - GMER Rootkit Detector and Remover Execution
 // Descripción: Detects the execution GMER tool based on image and hash fields.
+// Fecha de creación: 2022-10-05
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

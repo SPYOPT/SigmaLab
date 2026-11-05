@@ -2,6 +2,8 @@
 // ID Sigma: 90dcf730-1b71-4ae7-9ffc-6fcf62bd0132
 // Título: Suspicious ZipExec Execution
 // Descripción: ZipExec is a Proof-of-Concept (POC) tool to wrap binary-based tools into a password-protected zip file.
+// Fecha de creación: 2021-11-07
+// Fecha de modificación: 2022-12-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

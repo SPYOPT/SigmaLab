@@ -3,6 +3,8 @@
 // Título: Potentially Suspicious Execution From Parent Process In Public Folder
 // Descripción: Detects a potentially suspicious execution of a parent process located in the "\Users\Public" folder executing a child process containing references to shell or scripting binaries and commandlines.
 
+// Fecha de creación: 2022-02-25
+// Fecha de modificación: 2024-07-12
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

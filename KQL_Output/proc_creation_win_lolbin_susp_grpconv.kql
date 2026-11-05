@@ -2,6 +2,8 @@
 // ID Sigma: f14e169e-9978-4c69-acb3-1cff8200bc36
 // Título: Suspicious GrpConv Execution
 // Descripción: Detects the suspicious execution of a utility to convert Windows 3.x .grp files or for persistence purposes by malicious software or actors
+// Fecha de creación: 2022-05-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

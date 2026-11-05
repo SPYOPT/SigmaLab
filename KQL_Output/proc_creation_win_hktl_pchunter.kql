@@ -2,6 +2,8 @@
 // ID Sigma: fca949cc-79ca-446e-8064-01aa7e52ece5
 // Título: HackTool - PCHunter Execution
 // Descripción: Detects suspicious use of PCHunter, a tool like Process Hacker to view and manipulate processes, kernel options and other low level stuff
+// Fecha de creación: 2022-10-10
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

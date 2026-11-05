@@ -2,6 +2,8 @@
 // ID Sigma: 24357373-078f-44ed-9ac4-6d334a668a11
 // Título: Direct Autorun Keys Modification
 // Descripción: Detects direct modification of autostart extensibility point (ASEP) in registry using reg.exe.
+// Fecha de creación: 2019-10-25
+// Fecha de modificación: 2026-01-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

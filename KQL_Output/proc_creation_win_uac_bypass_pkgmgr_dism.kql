@@ -2,6 +2,8 @@
 // ID Sigma: a743ceba-c771-4d75-97eb-8a90f7f4844c
 // Título: UAC Bypass Using PkgMgr and DISM
 // Descripción: Detects the pattern of UAC Bypass using pkgmgr.exe and dism.exe (UACMe 23)
+// Fecha de creación: 2021-08-23
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

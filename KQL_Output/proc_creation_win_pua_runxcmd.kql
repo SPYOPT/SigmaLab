@@ -2,6 +2,8 @@
 // ID Sigma: 93199800-b52a-4dec-b762-75212c196542
 // Título: PUA - RunXCmd Execution
 // Descripción: Detects the use of the RunXCmd tool to execute commands with System or TrustedInstaller accounts
+// Fecha de creación: 2022-01-24
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

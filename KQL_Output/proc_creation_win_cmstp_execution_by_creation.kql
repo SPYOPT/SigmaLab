@@ -2,6 +2,8 @@
 // ID Sigma: 7d4cdc5a-0076-40ca-aac8-f7e714570e47
 // Título: CMSTP Execution Process Creation
 // Descripción: Detects various indicators of Microsoft Connection Manager Profile Installer execution
+// Fecha de creación: 2018-07-16
+// Fecha de modificación: 2020-12-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

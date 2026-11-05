@@ -2,6 +2,8 @@
 // ID Sigma: 9a132afa-654e-11eb-ae93-0242ac130002
 // Título: PUA - AdFind Suspicious Execution
 // Descripción: Detects AdFind execution with common flags seen used during attacks
+// Fecha de creación: 2021-02-02
+// Fecha de modificación: 2025-10-24
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

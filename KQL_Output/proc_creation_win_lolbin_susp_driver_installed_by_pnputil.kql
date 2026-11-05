@@ -2,6 +2,8 @@
 // ID Sigma: a2ea3ae7-d3d0-40a0-a55c-25a45c87cac1
 // Título: Suspicious Driver Install by pnputil.exe
 // Descripción: Detects when a possible suspicious driver is being installed via pnputil.exe lolbin
+// Fecha de creación: 2021-09-30
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

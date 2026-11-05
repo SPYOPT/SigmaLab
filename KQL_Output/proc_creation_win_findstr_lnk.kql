@@ -2,6 +2,8 @@
 // ID Sigma: 33339be3-148b-4e16-af56-ad16ec6c7e7b
 // Título: Findstr Launching .lnk File
 // Descripción: Detects usage of findstr to identify and execute a lnk file as seen within the HHS redirect attack
+// Fecha de creación: 2020-05-01
+// Fecha de modificación: 2024-01-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

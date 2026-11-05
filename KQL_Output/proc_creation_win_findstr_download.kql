@@ -3,6 +3,8 @@
 // Título: Remote File Download Via Findstr.EXE
 // Descripción: Detects execution of "findstr" with specific flags and a remote share path. This specific set of CLI flags would allow "findstr" to download the content of the file located on the remote share as described in the LOLBAS entry.
 
+// Fecha de creación: 2020-10-05
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: b9d9b652-d8ed-4697-89a2-a1186ee680ac
 // Título: OSACompile Run-Only Execution
 // Descripción: Detects potential suspicious run-only executions compiled using OSACompile
+// Fecha de creación: 2023-01-31
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: e0cfaecd-602d-41af-988d-f6ccebb2af26
 // Título: Suspicious Installer Package Child Process
 // Descripción: Detects the execution of suspicious child processes from macOS installer package parent process. This includes osascript, JXA, curl and wget amongst other interpreters
+// Fecha de creación: 2023-02-18
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

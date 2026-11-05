@@ -2,6 +2,8 @@
 // ID Sigma: 3abd6094-7027-475f-9630-8ab9be7b9725
 // Título: Windows Admin Share Mount Via Net.EXE
 // Descripción: Detects when an admin share is mounted using net.exe
+// Fecha de creación: 2020-10-05
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

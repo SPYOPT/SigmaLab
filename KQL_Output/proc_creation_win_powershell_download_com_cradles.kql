@@ -2,6 +2,8 @@
 // ID Sigma: 02b64f1b-3f33-4e67-aede-ef3b0a5a8fcf
 // Título: Potential COM Objects Download Cradles Usage - Process Creation
 // Descripción: Detects usage of COM objects that can be abused to download files in PowerShell by CLSID
+// Fecha de creación: 2022-12-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

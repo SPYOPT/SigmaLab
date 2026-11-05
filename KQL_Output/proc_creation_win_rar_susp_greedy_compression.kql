@@ -2,6 +2,8 @@
 // ID Sigma: afe52666-401e-4a02-b4ff-5d128990b8cb
 // Título: Suspicious Greedy Compression Using Rar.EXE
 // Descripción: Detects RAR usage that creates an archive from a suspicious folder, either a system folder or one of the folders often used by attackers for staging purposes
+// Fecha de creación: 2022-12-15
+// Fecha de modificación: 2024-01-02
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

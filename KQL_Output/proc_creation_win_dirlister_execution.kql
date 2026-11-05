@@ -2,6 +2,8 @@
 // ID Sigma: b4dc61f5-6cce-468e-a608-b48b469feaa2
 // Título: DirLister Execution
 // Descripción: Detect the usage of "DirLister.exe" a utility for quickly listing folder or drive contents. It was seen used by BlackCat ransomware to create a list of accessible directories and files.
+// Fecha de creación: 2022-08-20
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

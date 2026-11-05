@@ -4,6 +4,8 @@
 // Descripción: This tool enables enumeration and exporting of all DNS records in the zone for recon purposes of internal networks Python 3 and python.exe must be installed,
 Usee to Query/modify DNS records for Active Directory integrated DNS via LDAP
 
+// Fecha de creación: 2022-01-01
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

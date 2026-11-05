@@ -2,6 +2,8 @@
 // ID Sigma: ec52985a-d024-41e3-8ff6-14169039a0b3
 // Título: Mount Execution With Hidepid Parameter
 // Descripción: Detects execution of the "mount" command with "hidepid" parameter to make invisible processes to other users from the system
+// Fecha de creación: 2023-01-12
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

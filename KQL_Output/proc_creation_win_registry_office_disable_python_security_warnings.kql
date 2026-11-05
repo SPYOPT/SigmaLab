@@ -4,6 +4,8 @@
 // Descripción: Detects changes to the registry value "PythonFunctionWarnings" that would prevent any warnings or alerts from showing when Python functions are about to be executed.
 Threat actors could run malicious code through the new Microsoft Excel feature that allows Python to run within the spreadsheet.
 
+// Fecha de creación: 2023-08-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

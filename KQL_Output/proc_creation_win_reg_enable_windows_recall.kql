@@ -6,6 +6,8 @@ Windows Recall can be enabled by deleting the existing "DisableAIDataAnalysis" v
 Adversaries may enable Windows Recall as part of post-exploitation discovery and collection activities.
 This rule assumes that Recall is already explicitly disabled on the host, and subsequently enabled by the adversary.
 
+// Fecha de creación: 2024-06-02
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

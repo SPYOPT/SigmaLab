@@ -2,6 +2,8 @@
 // ID Sigma: d78b5d61-187d-44b6-bf02-93486a80de5a
 // Título: HackTool - DInjector PowerShell Cradle Execution
 // Descripción: Detects the use of the Dinject PowerShell cradle based on the specific flags
+// Fecha de creación: 2021-12-07
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

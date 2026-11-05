@@ -5,6 +5,8 @@
 This allows to create values in the registry and install drivers.
 For example one could use this technique to obtain persistence via modifying one of Run or RunOnce registry keys
 
+// Fecha de creación: 2020-10-06
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

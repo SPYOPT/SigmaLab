@@ -2,6 +2,8 @@
 // ID Sigma: 6da2c9f5-7c53-401b-aacb-92c040ce1215
 // Título: Use of W32tm as Timer
 // Descripción: When configured with suitable command line arguments, w32tm can act as a delay mechanism
+// Fecha de creación: 2022-09-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

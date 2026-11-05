@@ -2,6 +2,8 @@
 // ID Sigma: 734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8
 // Título: Remote PowerShell Session Host Process (WinRM)
 // Descripción: Detects remote PowerShell sections by monitoring for wsmprovhost (WinRM host process) as a parent or child process (sign of an active PowerShell remote session).
+// Fecha de creación: 2019-09-12
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

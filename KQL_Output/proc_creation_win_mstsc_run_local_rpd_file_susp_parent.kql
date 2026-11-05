@@ -2,6 +2,8 @@
 // ID Sigma: ff3b6b39-e765-42f9-bb2c-ea6761e0e0f6
 // Título: Mstsc.EXE Execution From Uncommon Parent
 // Descripción: Detects potential RDP connection via Mstsc using a local ".rdp" file located in suspicious locations.
+// Fecha de creación: 2023-04-18
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

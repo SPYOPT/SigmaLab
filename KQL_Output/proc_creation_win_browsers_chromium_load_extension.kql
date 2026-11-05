@@ -2,6 +2,8 @@
 // ID Sigma: 88d6e60c-759d-4ac1-a447-c0f1466c2d21
 // Título: Chromium Browser Instance Executed With Custom Extension
 // Descripción: Detects a Chromium based browser process with the 'load-extension' flag to start a instance with a custom extension
+// Fecha de creación: 2022-06-19
+// Fecha de modificación: 2023-11-28
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: e312efd0-35a1-407f-8439-b8d434b438a6
 // Título: Potential PowerShell Obfuscation Via WCHAR/CHAR
 // Descripción: Detects suspicious encoded character syntax often used for defense evasion
+// Fecha de creación: 2020-07-09
+// Fecha de modificación: 2025-03-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

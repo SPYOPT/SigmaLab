@@ -2,6 +2,8 @@
 // ID Sigma: 4b991083-3d0e-44ce-8fc4-b254025d8d4b
 // Título: Unusual Parent Process For Cmd.EXE
 // Descripción: Detects suspicious parent process for cmd.exe
+// Fecha de creación: 2022-09-21
+// Fecha de modificación: 2023-12-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

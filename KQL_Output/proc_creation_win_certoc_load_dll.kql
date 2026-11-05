@@ -2,6 +2,8 @@
 // ID Sigma: 242301bc-f92f-4476-8718-78004a6efd9f
 // Título: DLL Loaded via CertOC.EXE
 // Descripción: Detects when a user installs certificates by using CertOC.exe to loads the target DLL file.
+// Fecha de creación: 2021-10-23
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

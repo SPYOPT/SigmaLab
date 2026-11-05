@@ -2,6 +2,8 @@
 // ID Sigma: 43fa5350-db63-4b8f-9a01-789a427074e1
 // Título: Potential Obfuscated Ordinal Call Via Rundll32
 // Descripción: Detects execution of "rundll32" with potential obfuscated ordinal calls
+// Fecha de creación: 2023-05-17
+// Fecha de modificación: 2025-02-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

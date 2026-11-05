@@ -4,6 +4,8 @@
 // Descripción: Detects usage of winget to add a new insecure (http) download source.
 Winget will not allow the addition of insecure sources, hence this could indicate potential suspicious activity (or typos)
 
+// Fecha de creación: 2023-04-17
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

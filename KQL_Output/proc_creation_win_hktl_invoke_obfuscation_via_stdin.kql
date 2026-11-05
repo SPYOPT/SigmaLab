@@ -2,6 +2,8 @@
 // ID Sigma: 9c14c9fa-1a63-4a64-8e57-d19280559490
 // Título: Invoke-Obfuscation Via Stdin
 // Descripción: Detects Obfuscated Powershell via Stdin in Scripts
+// Fecha de creación: 2020-10-12
+// Fecha de modificación: 2026-03-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

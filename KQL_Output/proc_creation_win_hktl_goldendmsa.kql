@@ -3,6 +3,8 @@
 // Título: HackTool - GoldenDMSA Execution
 // Descripción: Detects execution of GoldenDMSA hacktool used for Directory Service Account manipulation.
 
+// Fecha de creación: 2026-10-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

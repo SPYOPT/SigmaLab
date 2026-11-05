@@ -2,6 +2,8 @@
 // ID Sigma: d81871ef-5738-47ab-9797-7a9c90cd4bfb
 // Título: Php Inline Command Execution
 // Descripción: Detects execution of php using the "-r" flag. This is could be used as a way to launch a reverse shell or execute live php code.
+// Fecha de creación: 2023-01-02
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

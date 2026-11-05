@@ -2,6 +2,8 @@
 // ID Sigma: fdfcbd78-48f1-4a4b-90ac-d82241e368c5
 // Título: PsExec Service Execution
 // Descripción: Detects launch of the PSEXESVC service, which means that this system was the target of a psexec remote execution
+// Fecha de creación: 2017-06-12
+// Fecha de modificación: 2023-02-28
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -5,6 +5,8 @@
 This key is used to disable the Windows Event Log service, which collects and stores event logs from the operating system and applications.
 Adversaries may want to disable this service to prevent logging of security events that could be used to detect their activities.
 
+// Fecha de creación: 2025-04-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

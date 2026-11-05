@@ -2,6 +2,8 @@
 // ID Sigma: 12b8e9f5-96b2-41e1-9a42-8c6779a5c184
 // Título: Potentially Suspicious Execution Of PDQDeployRunner
 // Descripción: Detects suspicious execution of "PDQDeployRunner" which is part of the PDQDeploy service stack that is responsible for executing commands and packages on a remote machines
+// Fecha de creación: 2022-07-22
+// Fecha de modificación: 2024-05-02
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

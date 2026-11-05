@@ -2,6 +2,8 @@
 // ID Sigma: ad92e3f9-7eb6-460e-96b1-582b0ccbb980
 // Título: UAC Bypass Using MSConfig Token Modification - Process
 // Descripción: Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)
+// Fecha de creación: 2021-08-30
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

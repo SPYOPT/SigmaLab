@@ -2,6 +2,8 @@
 // ID Sigma: 17a1be64-8d88-40bf-b5ff-a4f7a50ebcc8
 // Título: Suspicious New Service Creation
 // Descripción: Detects creation of a new service via "sc" command or the powershell "new-service" cmdlet with suspicious binary paths
+// Fecha de creación: 2022-07-14
+// Fecha de modificación: 2022-11-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

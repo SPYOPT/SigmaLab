@@ -2,6 +2,8 @@
 // ID Sigma: 27ee9438-90dc-4bef-904b-d3ef927f5e7e
 // Título: Windows Kernel Debugger Execution
 // Descripción: Detects execution of the Windows Kernel Debugger "kd.exe".
+// Fecha de creación: 2023-05-15
+// Fecha de modificación: 2024-04-24
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

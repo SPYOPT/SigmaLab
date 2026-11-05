@@ -2,6 +2,8 @@
 // ID Sigma: 403ed92c-b7ec-4edd-9947-5b535ee12d46
 // Título: Crontab Enumeration
 // Descripción: Detects usage of crontab to list the tasks of the user
+// Fecha de creación: 2023-06-02
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

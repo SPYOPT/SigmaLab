@@ -2,6 +2,8 @@
 // ID Sigma: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
 // Título: Usage Of Web Request Commands And Cmdlets
 // Descripción: Detects the use of various web request commands with commandline tools and Windows PowerShell cmdlets (including aliases) via CommandLine
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2025-10-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

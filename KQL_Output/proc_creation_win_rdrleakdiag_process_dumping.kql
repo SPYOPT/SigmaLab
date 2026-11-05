@@ -2,6 +2,8 @@
 // ID Sigma: edadb1e5-5919-4e4c-8462-a9e643b02c4b
 // Título: Process Memory Dump via RdrLeakDiag.EXE
 // Descripción: Detects the use of the Microsoft Windows Resource Leak Diagnostic tool "rdrleakdiag.exe" to dump process memory
+// Fecha de creación: 2021-09-24
+// Fecha de modificación: 2024-08-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

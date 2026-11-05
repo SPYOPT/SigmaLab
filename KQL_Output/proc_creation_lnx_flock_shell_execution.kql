@@ -3,6 +3,8 @@
 // Título: Shell Execution via Flock - Linux
 // Descripción: Detects the use of the "flock" command to execute a shell. Such behavior may be associated with privilege escalation, unauthorized command execution, or to break out from restricted environments.
 
+// Fecha de creación: 2024-09-02
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

@@ -6,6 +6,8 @@ The AutoLogger event tracing session records events that occur early in the oper
 Applications and device drivers can use the AutoLogger session to capture traces before the user logs in.
 Adversaries may disable these sessions to evade detection and prevent security monitoring of early boot activities and system events.
 
+// Fecha de creación: 2025-12-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

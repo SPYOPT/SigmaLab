@@ -2,6 +2,8 @@
 // ID Sigma: 23ceaf5c-b6f1-4a32-8559-f2ff734be516
 // Título: Dumping Process via Sqldumper.exe
 // Descripción: Detects process dump via legitimate sqldumper.exe binary
+// Fecha de creación: 2020-10-08
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

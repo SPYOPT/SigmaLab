@@ -2,6 +2,8 @@
 // ID Sigma: e13f668e-7f95-443d-98d2-1816a7648a7b
 // Título: Detected Windows Software Discovery
 // Descripción: Adversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable.
+// Fecha de creación: 2020-10-16
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 8e3c7994-131e-4ba5-b6ea-804d49113a26
 // Título: Uncommon Child Process Spawned By Odbcconf.EXE
 // Descripción: Detects an uncommon child process of "odbcconf.exe" binary which normally shouldn't have any child processes.
+// Fecha de creación: 2023-05-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

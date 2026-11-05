@@ -2,6 +2,8 @@
 // ID Sigma: cc368ed0-2411-45dc-a222-510ace303cb2
 // Título: Potentially Suspicious Execution Of Regasm/Regsvcs From Uncommon Location
 // Descripción: Detects potentially suspicious execution of the Regasm/Regsvcs utilities from a potentially suspicious location
+// Fecha de creación: 2022-08-25
+// Fecha de modificación: 2023-02-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

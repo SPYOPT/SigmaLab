@@ -2,6 +2,8 @@
 // ID Sigma: c30fb093-1109-4dc8-88a8-b30d11c95a5d
 // Título: Whoami.EXE Execution With Output Option
 // Descripción: Detects the execution of "whoami.exe" with the "/FO" flag to choose CSV as output format or with redirection options to export the results to a file for later use.
+// Fecha de creación: 2023-02-28
+// Fecha de modificación: 2023-12-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

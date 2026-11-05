@@ -2,6 +2,8 @@
 // ID Sigma: eca49c87-8a75-4f13-9c73-a5a29e845f03
 // Título: Suspicious Runscripthelper.exe
 // Descripción: Detects execution of powershell scripts via Runscripthelper.exe
+// Fecha de creación: 2020-10-09
+// Fecha de modificación: 2022-07-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

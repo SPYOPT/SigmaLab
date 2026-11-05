@@ -2,6 +2,8 @@
 // ID Sigma: ccc946a3-f65a-432a-bb6f-efc6acc1fd27
 // Título: Registry Tampering Of Internal Tools Settings
 // Descripción: Detects registry modifications that tamper with internal Windows tools settings, commonly used by malware to disable security features or system tools
+// Fecha de creación: 2026-10-18
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

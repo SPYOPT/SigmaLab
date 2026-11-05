@@ -2,6 +2,8 @@
 // ID Sigma: 0c92f2e6-f08f-4b73-9216-ecb0ca634689
 // Título: PUA - Potential PE Metadata Tamper Using Rcedit
 // Descripción: Detects the use of rcedit to potentially alter executable PE metadata properties, which could conceal efforts to rename system utilities for defense evasion.
+// Fecha de creación: 2022-12-11
+// Fecha de modificación: 2023-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

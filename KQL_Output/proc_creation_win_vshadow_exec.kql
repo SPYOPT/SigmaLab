@@ -5,6 +5,8 @@
 VShadow is a command-line tool that you can use to create and manage volume shadow copies. While legitimate backup or administrative scripts may use this flag,
 attackers can leverage this parameter to proxy the execution of malware.
 
+// Fecha de creación: 2025-05-26
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

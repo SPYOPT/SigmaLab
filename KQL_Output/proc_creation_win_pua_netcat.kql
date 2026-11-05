@@ -2,6 +2,8 @@
 // ID Sigma: e31033fc-33f0-4020-9a16-faf9b31cbf08
 // Título: PUA - Netcat Suspicious Execution
 // Descripción: Detects execution of Netcat. Adversaries may use a non-application layer protocol for communication between host and C2 server or among infected hosts within a network
+// Fecha de creación: 2021-07-21
+// Fecha de modificación: 2023-02-08
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

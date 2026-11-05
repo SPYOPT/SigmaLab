@@ -2,6 +2,8 @@
 // ID Sigma: cd1f961e-0b96-436b-b7c6-38da4583ec00
 // Título: Suspicious Windows Trace ETW Session Tamper Via Logman.EXE
 // Descripción: Detects the execution of "logman" utility in order to disable or delete Windows trace sessions
+// Fecha de creación: 2021-02-11
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

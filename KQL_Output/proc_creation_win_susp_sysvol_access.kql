@@ -2,6 +2,8 @@
 // ID Sigma: 05f3c945-dcc8-4393-9f3d-af65077a8f86
 // Título: Suspicious SYSVOL Domain Group Policy Access
 // Descripción: Detects Access to Domain Group Policies stored in SYSVOL
+// Fecha de creación: 2018-04-09
+// Fecha de modificación: 2022-01-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

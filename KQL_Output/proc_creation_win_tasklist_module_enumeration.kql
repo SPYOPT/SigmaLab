@@ -5,6 +5,8 @@
 This is often used by attackers in order to find the specific process identifier (PID) that is using the DLL in question.
 In order to dump the process memory or perform other nefarious actions.
 
+// Fecha de creación: 2024-02-12
+// Fecha de modificación: 2024-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

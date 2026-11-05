@@ -2,6 +2,8 @@
 // ID Sigma: 4ae3e30b-b03f-43aa-87e3-b622f4048eed
 // Título: Potential Arbitrary File Download Using Office Application
 // Descripción: Detects potential arbitrary file download using a Microsoft Office application
+// Fecha de creación: 2022-05-17
+// Fecha de modificación: 2026-09-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

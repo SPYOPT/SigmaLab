@@ -2,6 +2,8 @@
 // ID Sigma: 7050bba1-1aed-454e-8f73-3f46f09ce56a
 // Título: Cloudflared Tunnel Connections Cleanup
 // Descripción: Detects execution of the "cloudflared" tool with the tunnel "cleanup" flag in order to cleanup tunnel connections.
+// Fecha de creación: 2023-05-17
+// Fecha de modificación: 2023-12-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

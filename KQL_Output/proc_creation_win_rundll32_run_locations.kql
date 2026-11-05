@@ -2,6 +2,8 @@
 // ID Sigma: 15b75071-74cc-47e0-b4c6-b43744a62a2b
 // Título: Suspicious Process Start Locations
 // Descripción: Detects suspicious process run from unusual locations
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2022-01-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

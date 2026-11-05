@@ -2,6 +2,8 @@
 // ID Sigma: e96253b8-6b3b-4f90-9e59-3b24b99cf9b4
 // Título: HackTool - KrbRelay Execution
 // Descripción: Detects the use of KrbRelay, a Kerberos relaying tool
+// Fecha de creación: 2022-04-27
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

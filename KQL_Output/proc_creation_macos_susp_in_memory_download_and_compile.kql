@@ -2,6 +2,8 @@
 // ID Sigma: 13db8d2e-7723-4c2c-93c1-a4d36994f7ef
 // Título: Potential In-Memory Download And Compile Of Payloads
 // Descripción: Detects potential in-memory downloading and compiling of applets using curl and osacompile as seen used by XCSSET malware
+// Fecha de creación: 2023-08-22
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

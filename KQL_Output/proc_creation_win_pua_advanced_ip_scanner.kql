@@ -2,6 +2,8 @@
 // ID Sigma: bef37fa2-f205-4a7b-b484-0759bfd5f86f
 // Título: PUA - Advanced IP Scanner Execution
 // Descripción: Detects the use of Advanced IP Scanner. Seems to be a popular tool for ransomware groups.
+// Fecha de creación: 2020-05-12
+// Fecha de modificación: 2023-02-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: f26c6093-6f14-4b12-800f-0fcb46f5ffd0
 // Título: Malicious Base64 Encoded PowerShell Keywords in Command Lines
 // Descripción: Detects base64 encoded strings used in hidden malicious PowerShell command lines
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2023-01-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

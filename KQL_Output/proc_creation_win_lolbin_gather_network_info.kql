@@ -2,6 +2,8 @@
 // ID Sigma: 575dce0c-8139-4e30-9295-1ee75969f7fe
 // Título: Potential Reconnaissance Activity Via GatherNetworkInfo.VBS
 // Descripción: Detects execution of the built-in script located in "C:\Windows\System32\gatherNetworkInfo.vbs". Which can be used to gather information about the target machine
+// Fecha de creación: 2022-01-03
+// Fecha de modificación: 2023-02-08
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

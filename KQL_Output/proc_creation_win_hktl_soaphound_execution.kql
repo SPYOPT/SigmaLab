@@ -3,6 +3,8 @@
 // Título: HackTool - SOAPHound Execution
 // Descripción: Detects the execution of SOAPHound, a .NET tool for collecting Active Directory data, using specific command-line arguments that may indicate an attempt to extract sensitive AD information.
 
+// Fecha de creación: 2024-01-26
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

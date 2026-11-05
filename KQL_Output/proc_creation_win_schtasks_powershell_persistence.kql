@@ -2,6 +2,8 @@
 // ID Sigma: b66474aa-bd92-4333-a16c-298155b120df
 // Título: Potential Persistence Via Powershell Search Order Hijacking - Task
 // Descripción: Detects suspicious powershell execution via a schedule task where the command ends with an suspicious flags to hide the powershell instance instead of executeing scripts or commands. This could be a sign of persistence via PowerShell "Get-Variable" technique as seen being used in Colibri Loader
+// Fecha de creación: 2022-04-08
+// Fecha de modificación: 2023-02-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

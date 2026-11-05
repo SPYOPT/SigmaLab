@@ -2,6 +2,8 @@
 // ID Sigma: 3b5b0213-0460-4e3f-8937-3abf98ff7dcc
 // Título: Suspicious Workstation Locking via Rundll32
 // Descripción: Detects a suspicious call to the user32.dll function that locks the user workstation
+// Fecha de creación: 2022-06-04
+// Fecha de modificación: 2023-02-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

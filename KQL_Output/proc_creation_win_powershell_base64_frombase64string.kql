@@ -2,6 +2,8 @@
 // ID Sigma: fdb62a13-9a81-4e5c-a38f-ea93a16f6d7c
 // Título: PowerShell Base64 Encoded FromBase64String Cmdlet
 // Descripción: Detects usage of a base64 encoded "FromBase64String" cmdlet in a process command line
+// Fecha de creación: 2019-08-24
+// Fecha de modificación: 2023-04-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

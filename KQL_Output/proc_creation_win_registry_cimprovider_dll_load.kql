@@ -2,6 +2,8 @@
 // ID Sigma: a2910908-e86f-4687-aeba-76a5f996e652
 // Título: DLL Execution Via Register-cimprovider.exe
 // Descripción: Detects using register-cimprovider.exe to execute arbitrary dll file.
+// Fecha de creación: 2020-10-07
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

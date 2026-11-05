@@ -2,6 +2,8 @@
 // ID Sigma: 3f5491e2-8db8-496b-9e95-1029fce852d4
 // Título: Driver/DLL Installation Via Odbcconf.EXE
 // Descripción: Detects execution of "odbcconf" with "INSTALLDRIVER" which installs a new ODBC driver. Attackers abuse this to install and run malicious DLLs.
+// Fecha de creación: 2023-05-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

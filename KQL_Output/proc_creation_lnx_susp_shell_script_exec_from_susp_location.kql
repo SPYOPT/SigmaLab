@@ -2,6 +2,8 @@
 // ID Sigma: 30bcce26-51c5-49f2-99c8-7b59e3af36c7
 // Título: Execution Of Script Located In Potentially Suspicious Directory
 // Descripción: Detects executions of scripts located in potentially suspicious locations such as "/tmp" via a shell such as "bash", "sh", etc.
+// Fecha de creación: 2023-06-02
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

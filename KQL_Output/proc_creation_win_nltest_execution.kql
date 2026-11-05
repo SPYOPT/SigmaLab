@@ -2,6 +2,8 @@
 // ID Sigma: 903076ff-f442-475a-b667-4f246bcc203b
 // Título: Nltest.EXE Execution
 // Descripción: Detects nltest commands that can be used for information discovery
+// Fecha de creación: 2023-02-03
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

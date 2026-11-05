@@ -2,6 +2,8 @@
 // ID Sigma: 63de06b9-a385-40b5-8b32-73f2b9ef84b6
 // Título: Fsutil Drive Enumeration
 // Descripción: Attackers may leverage fsutil to enumerated connected drives.
+// Fecha de creación: 2022-03-29
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

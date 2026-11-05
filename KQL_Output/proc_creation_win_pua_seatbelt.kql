@@ -2,6 +2,8 @@
 // ID Sigma: 38646daa-e78f-4ace-9de0-55547b2d30da
 // Título: PUA - Seatbelt Execution
 // Descripción: Detects the execution of the PUA/Recon tool Seatbelt via PE information of command line parameters
+// Fecha de creación: 2022-10-18
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -6,6 +6,8 @@ An ActiveScriptEventConsumer is a built-in Windows Management Instrumentation (W
 automatically executes a predefined script (in VBScript or JScript) whenever a specific system event occurs.
 Adversaries often abuse ActiveScriptEventConsumer to maintain persistence on a compromised host by executing a malicious script whenever a specific event occurs.
 
+// Fecha de creación: 2021-06-25
+// Fecha de modificación: 2026-06-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

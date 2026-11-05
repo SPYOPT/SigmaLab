@@ -2,6 +2,8 @@
 // ID Sigma: b86d356d-6093-443d-971c-9b07db583c68
 // Título: Suspicious Curl Change User Agents - Linux
 // Descripción: Detects a suspicious curl process start on linux with set useragent options
+// Fecha de creación: 2022-09-15
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

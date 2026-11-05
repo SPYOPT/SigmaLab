@@ -2,6 +2,8 @@
 // ID Sigma: b697e69c-746f-4a86-9f59-7bfff8eab881
 // Título: UAC Bypass Using Disk Cleanup
 // Descripción: Detects the pattern of UAC Bypass using scheduled tasks and variable expansion of cleanmgr.exe (UACMe 34)
+// Fecha de creación: 2021-08-30
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

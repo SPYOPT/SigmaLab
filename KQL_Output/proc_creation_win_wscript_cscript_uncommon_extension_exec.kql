@@ -2,6 +2,8 @@
 // ID Sigma: 99b7460d-c9f1-40d7-a316-1f36f61d52ee
 // Título: Cscript/Wscript Uncommon Script Extension Execution
 // Descripción: Detects Wscript/Cscript executing a file with an uncommon (i.e. non-script) extension
+// Fecha de creación: 2023-05-15
+// Fecha de modificación: 2023-06-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

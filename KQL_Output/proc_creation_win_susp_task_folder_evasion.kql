@@ -5,6 +5,8 @@
 Adversaries can take advantage of this and load or influence any script hosts or ANY .NET Application
 in Tasks to load and execute a custom assembly into cscript, wscript, regsvr32, mshta, eventvwr
 
+// Fecha de creación: 2020-01-13
+// Fecha de modificación: 2022-12-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

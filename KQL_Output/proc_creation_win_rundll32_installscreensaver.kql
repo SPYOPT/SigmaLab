@@ -2,6 +2,8 @@
 // ID Sigma: 15bd98ea-55f4-4d37-b09a-e7caa0fa2221
 // Título: Rundll32 InstallScreenSaver Execution
 // Descripción: An attacker may execute an application as a SCR File using rundll32.exe desk.cpl,InstallScreenSaver
+// Fecha de creación: 2022-04-28
+// Fecha de modificación: 2023-02-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

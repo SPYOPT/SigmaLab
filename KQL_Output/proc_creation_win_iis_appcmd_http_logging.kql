@@ -2,6 +2,8 @@
 // ID Sigma: e4ed6030-ffe5-4e6a-8a8a-ab3c1ab9d94e
 // Título: Disable Windows IIS HTTP Logging
 // Descripción: Disables HTTP logging on a Windows IIS web server as seen by Threat Group 3390 (Bronze Union)
+// Fecha de creación: 2022-01-09
+// Fecha de modificación: 2023-01-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

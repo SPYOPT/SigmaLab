@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of "RegAsm.exe" without a commandline flag or file, which might indicate potential process injection activity.
 Usually "RegAsm.exe" should point to a dedicated DLL file or call the help with the "/?" flag.
 
+// Fecha de creación: 2025-06-04
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

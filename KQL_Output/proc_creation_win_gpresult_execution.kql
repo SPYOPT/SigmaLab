@@ -2,6 +2,8 @@
 // ID Sigma: e56d3073-83ff-4021-90fe-c658e0709e72
 // Título: Gpresult Display Group Policy Information
 // Descripción: Detects cases in which a user uses the built-in Windows utility gpresult to display the Resultant Set of Policy (RSoP) information
+// Fecha de creación: 2022-05-01
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

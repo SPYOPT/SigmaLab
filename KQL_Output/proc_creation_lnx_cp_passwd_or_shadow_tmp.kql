@@ -2,6 +2,8 @@
 // ID Sigma: fa4aaed5-4fe0-498d-bbc0-08e3346387ba
 // Título: Copy Passwd Or Shadow From TMP Path
 // Descripción: Detects when the file "passwd" or "shadow" is copied from tmp path
+// Fecha de creación: 2023-01-31
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

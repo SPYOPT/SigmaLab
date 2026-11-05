@@ -2,6 +2,8 @@
 // ID Sigma: bdeb2cff-af74-4094-8426-724dc937f20a
 // Título: PowerShell Script Change Permission Via Set-Acl
 // Descripción: Detects PowerShell execution to set the ACL of a file or a folder
+// Fecha de creación: 2022-10-18
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

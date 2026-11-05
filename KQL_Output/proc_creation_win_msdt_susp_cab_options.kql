@@ -2,6 +2,8 @@
 // ID Sigma: dc4576d4-7467-424f-9eee-fd2b02855fe0
 // Título: Suspicious Cabinet File Execution Via Msdt.EXE
 // Descripción: Detects execution of msdt.exe using the "cab" flag which could indicates suspicious diagcab files with embedded answer files leveraging CVE-2022-30190
+// Fecha de creación: 2022-06-21
+// Fecha de modificación: 2024-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

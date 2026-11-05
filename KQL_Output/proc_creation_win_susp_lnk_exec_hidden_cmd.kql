@@ -6,6 +6,8 @@ Adversaries insert non-printable whitespace characters (e.g., Line Feed \x0A, Ca
 The hidden payload, executed at runtime but invisible in Windows Explorer properties, enables stealthy execution and evasion—commonly used for social engineering attacks.
 This rule flags suspicious use of such padding observed in real-world attacks.
 
+// Fecha de creación: 2025-03-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

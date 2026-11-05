@@ -2,6 +2,8 @@
 // ID Sigma: cea72823-df4d-4567-950c-0b579eaf0846
 // Título: Potential Dropper Script Execution Via WScript/CScript/MSHTA
 // Descripción: Detects wscript/cscript/mshta executions of scripts located in user directories
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2026-02-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

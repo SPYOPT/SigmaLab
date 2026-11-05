@@ -2,6 +2,8 @@
 // ID Sigma: b53317a0-8acf-4fd1-8de8-a5401e776b96
 // Título: Application Removed Via Wmic.EXE
 // Descripción: Detects the removal or uninstallation of an application via "Wmic.EXE".
+// Fecha de creación: 2022-01-28
+// Fecha de modificación: 2024-07-02
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

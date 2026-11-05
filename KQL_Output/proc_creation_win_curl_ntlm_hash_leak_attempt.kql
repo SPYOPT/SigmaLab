@@ -7,6 +7,8 @@ When no credentials are provided, the Microsoft-shipped curl passes a NULL ident
 stored in LSASS — without requiring a plaintext password.
 This behavior is exclusive to the curl binary shipped by Microsoft (available since Windows 10 / Windows Server 2019), which is built with SSPI support.
 
+// Fecha de creación: 2026-06-04
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

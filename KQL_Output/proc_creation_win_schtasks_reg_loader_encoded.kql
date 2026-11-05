@@ -2,6 +2,8 @@
 // ID Sigma: c4eeeeae-89f4-43a7-8b48-8d1bdfa66c78
 // Título: Scheduled Task Executing Encoded Payload from Registry
 // Descripción: Detects the creation of a schtask that potentially executes a base64 encoded payload stored in the Windows Registry using PowerShell.
+// Fecha de creación: 2022-02-12
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

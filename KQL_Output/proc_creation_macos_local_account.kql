@@ -4,6 +4,8 @@
 // Descripción: Detects enumeration of local system accounts on MacOS systems.
 This can be used by attackers to identify accounts for lateral movement or privilege escalation.
 
+// Fecha de creación: 2020-10-08
+// Fecha de modificación: 2026-07-07
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

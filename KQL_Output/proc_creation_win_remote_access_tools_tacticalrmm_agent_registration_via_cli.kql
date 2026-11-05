@@ -5,6 +5,8 @@
 These parameters configure the agent to connect to a specific RMM server with authentication, client ID, and site ID.
 This technique could indicate a threat actor attempting to register the agent with an attacker-controlled RMM infrastructure silently.
 
+// Fecha de creación: 2025-05-29
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

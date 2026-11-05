@@ -2,6 +2,8 @@
 // ID Sigma: d75d6b6b-adb9-48f7-824b-ac2e786efe1f
 // Título: Suspicious FromBase64String Usage On Gzip Archive - Process Creation
 // Descripción: Detects attempts of decoding a base64 Gzip archive via PowerShell. This technique is often used as a method to load malicious content into memory afterward.
+// Fecha de creación: 2022-12-23
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

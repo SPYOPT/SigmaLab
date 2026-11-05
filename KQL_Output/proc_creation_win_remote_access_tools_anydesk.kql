@@ -5,6 +5,8 @@
 These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment.
 Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)
 
+// Fecha de creación: 2022-02-11
+// Fecha de modificación: 2025-02-24
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 6a5f68d1-c4b5-46b9-94ee-5324892ea939
 // Título: Uninstall Sysinternals Sysmon
 // Descripción: Detects the removal of Sysmon, which could be a potential attempt at defense evasion
+// Fecha de creación: 2022-01-12
+// Fecha de modificación: 2026-06-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

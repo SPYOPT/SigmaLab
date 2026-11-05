@@ -2,6 +2,8 @@
 // ID Sigma: 79ce34ca-af29-4d0e-b832-fc1b377020db
 // Título: Whoami.EXE Execution From Privileged Process
 // Descripción: Detects the execution of "whoami.exe" by privileged accounts that are often abused by threat actors
+// Fecha de creación: 2022-01-28
+// Fecha de modificación: 2023-12-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

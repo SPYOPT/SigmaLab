@@ -2,6 +2,8 @@
 // ID Sigma: cb7c4a03-2871-43c0-9bbb-18bbdb079896
 // Título: Unmount Share Via Net.EXE
 // Descripción: Detects when when a mounted share is removed. Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation
+// Fecha de creación: 2020-10-08
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

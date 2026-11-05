@@ -2,6 +2,8 @@
 // ID Sigma: 7e8f2d3b-9c1a-4f67-b9e8-8d9006e0e51f
 // Título: PowerShell Web Access Feature Enabled Via DISM
 // Descripción: Detects the use of DISM to enable the PowerShell Web Access feature, which could be used for remote access and potential abuse
+// Fecha de creación: 2024-09-03
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

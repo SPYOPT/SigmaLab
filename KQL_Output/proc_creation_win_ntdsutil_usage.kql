@@ -2,6 +2,8 @@
 // ID Sigma: 2afafd61-6aae-4df4-baed-139fa1f4c345
 // Título: Invocation of Active Directory Diagnostic Tool (ntdsutil.exe)
 // Descripción: Detects execution of ntdsutil.exe, which can be used for various attacks against the NTDS database (NTDS.DIT)
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2022-03-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

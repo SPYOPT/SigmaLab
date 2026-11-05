@@ -2,6 +2,8 @@
 // ID Sigma: 9069ea3c-b213-4c52-be13-86506a227ab1
 // Título: Linux Crypto Mining Indicators
 // Descripción: Detects command line parameters or strings often used by crypto miners
+// Fecha de creación: 2021-10-26
+// Fecha de modificación: 2022-12-25
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

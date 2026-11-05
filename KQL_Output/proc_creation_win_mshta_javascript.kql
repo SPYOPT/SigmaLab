@@ -2,6 +2,8 @@
 // ID Sigma: 67f113fa-e23d-4271-befa-30113b3e08b1
 // Título: Suspicious JavaScript Execution Via Mshta.EXE
 // Descripción: Detects execution of javascript code using "mshta.exe".
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2023-02-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

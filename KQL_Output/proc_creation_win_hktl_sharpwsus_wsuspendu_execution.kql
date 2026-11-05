@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of SharpWSUS or WSUSpendu, utilities that allow for lateral movement through WSUS.
 Windows Server Update Services (WSUS) is a critical component of Windows systems and is frequently configured in a way that allows an attacker to circumvent internal networking limitations.
 
+// Fecha de creación: 2022-10-07
+// Fecha de modificación: 2024-08-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

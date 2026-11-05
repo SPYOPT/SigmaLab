@@ -2,6 +2,8 @@
 // ID Sigma: 9f8573c9-22b4-40e3-89c1-72bc2b8d49ab
 // Título: Scheduled Task Creation Masquerading as System Processes
 // Descripción: Detects the creation of scheduled tasks that involve system processes, which may indicate malicious actors masquerading as or abusing these processes to execute payloads or maintain persistence.
+// Fecha de creación: 2025-02-05
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

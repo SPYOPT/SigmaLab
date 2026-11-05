@@ -2,6 +2,8 @@
 // ID Sigma: b3512211-c67e-4707-bedc-66efc7848863
 // Título: Potential PowerShell Downgrade Attack
 // Descripción: Detects PowerShell downgrade attack by comparing the host versions with the actually used engine version 2.0
+// Fecha de creación: 2020-03-20
+// Fecha de modificación: 2023-01-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

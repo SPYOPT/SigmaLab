@@ -2,6 +2,8 @@
 // ID Sigma: 83865853-59aa-449e-9600-74b9d89a6d6e
 // Título: Audio Capture via SoundRecorder
 // Descripción: Detect attacker collecting audio via SoundRecorder application.
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: aef9d1f1-7396-4e92-a927-4567c7a495c1
 // Título: Suspicious Git Clone
 // Descripción: Detects execution of "git" in order to clone a remote repository that contain suspicious keywords which might be suspicious
+// Fecha de creación: 2023-01-03
+// Fecha de modificación: 2023-01-10
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

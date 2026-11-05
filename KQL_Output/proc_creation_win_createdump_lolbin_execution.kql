@@ -2,6 +2,8 @@
 // ID Sigma: 515c8be5-e5df-4c5e-8f6d-a4a2f05e4b48
 // Título: CreateDump Process Dump
 // Descripción: Detects uses of the createdump.exe LOLOBIN utility to dump process memory
+// Fecha de creación: 2022-01-04
+// Fecha de modificación: 2022-08-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

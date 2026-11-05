@@ -5,6 +5,8 @@
 Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection.
 An adversary may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.
 
+// Fecha de creación: 2019-10-21
+// Fecha de modificación: 2023-02-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

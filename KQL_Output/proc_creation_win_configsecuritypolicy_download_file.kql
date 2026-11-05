@@ -5,6 +5,8 @@
 Users can configure different pilot collections for each of the co-management workloads.
 It can be abused by attackers in order to upload or download files.
 
+// Fecha de creación: 2021-11-26
+// Fecha de modificación: 2022-05-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

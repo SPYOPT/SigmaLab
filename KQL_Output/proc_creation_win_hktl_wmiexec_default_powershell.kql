@@ -2,6 +2,8 @@
 // ID Sigma: 022eaba8-f0bf-4dd9-9217-4604b0bb3bb0
 // Título: HackTool - Wmiexec Default Powershell Command
 // Descripción: Detects the execution of PowerShell with a specific flag sequence that is used by the Wmiexec script
+// Fecha de creación: 2023-03-08
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

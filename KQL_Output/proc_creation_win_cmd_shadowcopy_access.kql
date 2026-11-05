@@ -2,6 +2,8 @@
 // ID Sigma: c73124a7-3e89-44a3-bdc1-25fe4df754b1
 // Título: Copy From VolumeShadowCopy Via Cmd.EXE
 // Descripción: Detects the execution of the builtin "copy" command that targets a shadow copy (sometimes used to copy registry hives that are in use)
+// Fecha de creación: 2021-08-09
+// Fecha de modificación: 2023-03-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

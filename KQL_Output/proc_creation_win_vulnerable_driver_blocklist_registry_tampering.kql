@@ -6,6 +6,8 @@ The Vulnerable Driver Blocklist is a security feature that helps prevent the loa
 Disabling this feature may indicate an attempt to bypass security controls, often targeted by threat actors
 to facilitate the installation of malicious or vulnerable drivers, particularly in scenarios involving Endpoint Detection and Response
 
+// Fecha de creación: 2026-01-26
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

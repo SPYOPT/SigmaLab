@@ -2,6 +2,8 @@
 // ID Sigma: f72aa3e8-49f9-4c7d-bd74-f8ab84ff9bbb
 // Título: Suspicious RDP Redirect Using TSCON
 // Descripción: Detects a suspicious RDP session redirect using tscon.exe
+// Fecha de creación: 2018-03-17
+// Fecha de modificación: 2023-05-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

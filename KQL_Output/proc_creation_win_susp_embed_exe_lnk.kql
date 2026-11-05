@@ -2,6 +2,8 @@
 // ID Sigma: 30e92f50-bb5a-4884-98b5-d20aa80f3d7a
 // Título: Hidden Powershell in Link File Pattern
 // Descripción: Detects events that appear when a user click on a link file with a powershell command in it
+// Fecha de creación: 2022-02-06
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

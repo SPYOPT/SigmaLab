@@ -2,6 +2,8 @@
 // ID Sigma: d5b9ae7a-e6fc-405e-80ff-2ff9dcc64e7e
 // Título: Sysprep on AppData Folder
 // Descripción: Detects suspicious sysprep process start with AppData folder as target (as used by Trojan Syndicasec in Thrip report by Symantec)
+// Fecha de creación: 2018-06-22
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

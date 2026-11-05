@@ -2,6 +2,8 @@
 // ID Sigma: 719c22d7-c11a-4f2c-93a6-2cfdd5412f68
 // Título: Decode Base64 Encoded Text -MacOs
 // Descripción: Detects usage of base64 utility to decode arbitrary base64-encoded text
+// Fecha de creación: 2020-10-19
+// Fecha de modificación: 2022-11-26
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

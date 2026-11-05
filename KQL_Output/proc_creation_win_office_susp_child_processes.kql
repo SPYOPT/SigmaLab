@@ -2,6 +2,8 @@
 // ID Sigma: 438025f9-5856-4663-83f7-52f878a70a50
 // Título: Suspicious Microsoft Office Child Process
 // Descripción: Detects a suspicious process spawning from one of the Microsoft Office suite products (Word, Excel, PowerPoint, Publisher, Visio, etc.)
+// Fecha de creación: 2018-04-06
+// Fecha de modificación: 2023-04-24
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

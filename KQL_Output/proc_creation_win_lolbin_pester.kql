@@ -2,6 +2,8 @@
 // ID Sigma: 18988e1b-9087-4f8a-82fe-0414dce49878
 // Título: Execute Code with Pester.bat as Parent
 // Descripción: Detects code execution via Pester.bat (Pester - Powershell Modulte for testing)
+// Fecha de creación: 2022-08-20
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

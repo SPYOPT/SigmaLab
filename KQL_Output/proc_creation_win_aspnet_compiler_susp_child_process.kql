@@ -2,6 +2,8 @@
 // ID Sigma: 9ccba514-7cb6-4c5c-b377-700758f2f120
 // Título: Suspicious Child Process of AspNetCompiler
 // Descripción: Detects potentially suspicious child processes of "aspnet_compiler.exe".
+// Fecha de creación: 2023-08-14
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

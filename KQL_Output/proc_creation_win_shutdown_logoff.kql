@@ -2,6 +2,8 @@
 // ID Sigma: ec290c06-9b6b-4338-8b6b-095c0f284f10
 // Título: Suspicious Execution of Shutdown to Log Out
 // Descripción: Detects the rare use of the command line tool shutdown to logoff a user
+// Fecha de creación: 2022-10-01
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: b2309017-4235-44fe-b5af-b15363011957
 // Título: Uncommon Child Process Of Defaultpack.EXE
 // Descripción: Detects uncommon child processes of "DefaultPack.EXE" binary as a proxy to launch other programs
+// Fecha de creación: 2022-12-31
+// Fecha de modificación: 2024-04-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: b3d34dc5-2efd-4ae3-845f-8ec14921f449
 // Título: Browser Started with Remote Debugging
 // Descripción: Detects browsers starting with the remote debugging flags. Which is a technique often used to perform browser injection attacks
+// Fecha de creación: 2022-07-27
+// Fecha de modificación: 2022-12-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

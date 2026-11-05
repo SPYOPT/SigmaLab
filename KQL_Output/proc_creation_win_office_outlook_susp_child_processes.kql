@@ -2,6 +2,8 @@
 // ID Sigma: 208748f7-881d-47ac-a29c-07ea84bf691d
 // Título: Suspicious Outlook Child Process
 // Descripción: Detects a suspicious process spawning from an Outlook process.
+// Fecha de creación: 2022-02-28
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

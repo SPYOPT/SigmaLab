@@ -2,6 +2,8 @@
 // ID Sigma: 48917adc-a28e-4f5d-b729-11e75da8941f
 // Título: Suspicious Windows Defender Folder Exclusion Added Via Reg.EXE
 // Descripción: Detects the usage of "reg.exe" to add Defender folder exclusions. Qbot has been seen using this technique to add exclusions for folders within AppData and ProgramData.
+// Fecha de creación: 2022-02-13
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

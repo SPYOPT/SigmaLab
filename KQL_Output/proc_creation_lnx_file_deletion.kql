@@ -2,6 +2,8 @@
 // ID Sigma: 30aed7b6-d2c1-4eaf-9382-b6bc43e50c57
 // Título: File Deletion
 // Descripción: Detects file deletion using "rm", "shred" or "unlink" commands which are used often by adversaries to delete files left behind by the actions of their intrusion activity
+// Fecha de creación: 2020-10-07
+// Fecha de modificación: 2022-09-15
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

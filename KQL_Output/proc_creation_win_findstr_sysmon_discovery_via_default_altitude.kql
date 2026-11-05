@@ -2,6 +2,8 @@
 // ID Sigma: 37db85d1-b089-490a-a59a-c7b6f984f480
 // Título: Sysmon Discovery Via Default Driver Altitude Using Findstr.EXE
 // Descripción: Detects usage of "findstr" with the argument "385201". Which could indicate potential discovery of an installed Sysinternals Sysmon service using the default driver altitude (even if the name is changed).
+// Fecha de creación: 2021-12-16
+// Fecha de modificación: 2023-11-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

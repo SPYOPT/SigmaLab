@@ -4,6 +4,8 @@
 // Descripción: Detects the use of SFTP.exe to execute commands indirectly via ProxyCommand parameter.
 Threat actors were seen leveraging this legitimate Windows binary to bypass security controls and execute arbitrary commands while evading detection.
 
+// Fecha de creación: 2026-04-27
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

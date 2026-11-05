@@ -3,6 +3,8 @@
 // Título: PowerShell AppLocker Policy Discovery Via Get-AppLockerPolicy
 // Descripción: Detects AppLocker policy enumeration attempts via PowerShell using the Get-AppLockerPolicy cmdlet and an policy scope of either Effective, LDAP, or Local.
 
+// Fecha de creación: 2026-08-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

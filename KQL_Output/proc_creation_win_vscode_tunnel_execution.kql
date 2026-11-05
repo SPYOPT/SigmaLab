@@ -2,6 +2,8 @@
 // ID Sigma: 90d6bd71-dffb-4989-8d86-a827fedd6624
 // Título: Visual Studio Code Tunnel Execution
 // Descripción: Detects Visual Studio Code tunnel execution. Attackers can abuse this functionality to establish a C2 channel
+// Fecha de creación: 2023-10-25
+// Fecha de modificación: 2025-10-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

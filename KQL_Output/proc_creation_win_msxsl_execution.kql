@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of the MSXSL utility. This can be used to execute Extensible Stylesheet Language (XSL) files. These files are commonly used to describe the processing and rendering of data within XML files.
 Adversaries can abuse this functionality to execute arbitrary files while potentially bypassing application whitelisting defenses.
 
+// Fecha de creación: 2019-10-21
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

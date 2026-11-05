@@ -2,6 +2,8 @@
 // ID Sigma: 70bc5215-526f-4477-963c-a47a5c9ebd12
 // Título: Potential Active Directory Enumeration Using AD Module - ProcCreation
 // Descripción: Detects usage of the "Import-Module" cmdlet to load the "Microsoft.ActiveDirectory.Management.dl" DLL. Which is often used by attackers to perform AD enumeration.
+// Fecha de creación: 2023-01-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

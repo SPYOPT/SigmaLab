@@ -2,6 +2,8 @@
 // ID Sigma: 1412aa78-a24c-4abd-83df-767dfb2c5bbe
 // Título: Potentially Suspicious WebDAV LNK Execution
 // Descripción: Detects possible execution via LNK file accessed on a WebDAV server.
+// Fecha de creación: 2023-08-21
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

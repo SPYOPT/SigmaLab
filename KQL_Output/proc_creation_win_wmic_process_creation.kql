@@ -6,6 +6,8 @@ indicate an attempt to execute a malicious process on the compromised host. Adve
 wmic to execute a process on the compromised host as part of their attack. This event is triggered on
 on attempt and process creation can be either successful or unsuccessful.
 
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

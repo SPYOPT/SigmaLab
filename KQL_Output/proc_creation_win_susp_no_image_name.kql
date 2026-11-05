@@ -2,6 +2,8 @@
 // ID Sigma: f208d6d8-d83a-4c2c-960d-877c37da84e5
 // Título: Process Launched Without Image Name
 // Descripción: Detect the use of processes with no name (".exe"), which can be used to evade Image-based detections.
+// Fecha de creación: 2024-07-23
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

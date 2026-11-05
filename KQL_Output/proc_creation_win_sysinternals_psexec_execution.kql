@@ -2,6 +2,8 @@
 // ID Sigma: 730fc21b-eaff-474b-ad23-90fd265d4988
 // Título: Psexec Execution
 // Descripción: Detects user accept agreement execution in psexec commandline
+// Fecha de creación: 2020-10-30
+// Fecha de modificación: 2023-02-28
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 21dd6d38-2b18-4453-9404-a0fe4a0cc288
 // Título: Curl Download And Execute Combination
 // Descripción: Adversaries can use curl to download payloads remotely and execute them. Curl is included by default in Windows 10 build 17063 and later.
+// Fecha de creación: 2020-01-13
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

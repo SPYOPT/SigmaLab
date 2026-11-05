@@ -4,6 +4,8 @@
 // Descripción: Detects changes to environment variables related to ETW logging via the CommandLine.
 This could indicate potential adversaries stopping ETW providers recording loaded .NET assemblies.
 
+// Fecha de creación: 2020-05-02
+// Fecha de modificación: 2022-12-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

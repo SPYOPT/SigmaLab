@@ -2,6 +2,8 @@
 // ID Sigma: 6f3e2987-db24-4c78-a860-b4f4095a7095
 // Título: Files Added To An Archive Using Rar.EXE
 // Descripción: Detects usage of "rar" to add files to an archive for potential compression. An adversary may compress data (e.g. sensitive documents) that is collected prior to exfiltration in order to make it portable and minimize the amount of data sent over the network.
+// Fecha de creación: 2019-10-21
+// Fecha de modificación: 2023-02-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

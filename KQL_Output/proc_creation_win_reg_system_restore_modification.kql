@@ -3,6 +3,8 @@
 // Título: System Restore Registry Modification via CommandLine
 // Descripción: Detects system restore registry modification via command line, which can be used by adversaries to disable system restore on the computer.
 
+// Fecha de creación: 2026-03-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

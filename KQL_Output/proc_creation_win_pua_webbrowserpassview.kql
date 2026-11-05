@@ -2,6 +2,8 @@
 // ID Sigma: d0dae994-26c6-4d2d-83b5-b3c8b79ae513
 // Título: PUA - WebBrowserPassView Execution
 // Descripción: Detects the execution of WebBrowserPassView.exe. A password recovery tool that reveals the passwords stored by the following Web browsers, Internet Explorer (Version 4.0 - 11.0), Mozilla Firefox (All Versions), Google Chrome, Safari, and Opera
+// Fecha de creación: 2022-08-20
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

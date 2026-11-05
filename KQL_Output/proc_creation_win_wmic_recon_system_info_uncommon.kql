@@ -6,6 +6,8 @@ including OS, CPU, GPU, and disk drive names; memory capacity; display resolutio
 and GPU driver products/versions.
 Some of these commands were used by Aurora Stealer in late 2022/early 2023.
 
+// Fecha de creación: 2023-01-26
+// Fecha de modificación: 2023-12-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

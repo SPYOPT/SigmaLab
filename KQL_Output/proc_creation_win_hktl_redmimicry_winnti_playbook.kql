@@ -2,6 +2,8 @@
 // ID Sigma: 95022b85-ff2a-49fa-939a-d7b8f56eeb9b
 // Título: HackTool - RedMimicry Winnti Playbook Execution
 // Descripción: Detects actions caused by the RedMimicry Winnti playbook a automated breach emulations utility
+// Fecha de creación: 2020-06-24
+// Fecha de modificación: 2023-03-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 0a99eb3e-1617-41bd-b095-13dc767f3def
 // Título: HackTool - Jlaive In-Memory Assembly Execution
 // Descripción: Detects the use of Jlaive to execute assemblies in a copied PowerShell
+// Fecha de creación: 2022-05-24
+// Fecha de modificación: 2023-02-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 3d48c9d3-1aa6-418d-98d3-8fd3c01a564e
 // Título: Potential Mftrace.EXE Abuse
 // Descripción: Detects child processes of the "Trace log generation tool for Media Foundation Tools" (Mftrace.exe) which can abused to execute arbitrary binaries.
+// Fecha de creación: 2022-06-09
+// Fecha de modificación: 2023-08-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

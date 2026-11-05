@@ -6,6 +6,8 @@ MemProcFS mounts physical memory as a virtual file system, allowing direct acces
 Threat actors were seen abusing this utility to mount memory dumps and then extract sensitive information from processes like LSASS or extract registry hives to obtain credentials, LSA secrets, SAM data, and cached domain credentials.
 MemProcFS usage that is not part of authorized forensic analysis should be treated as suspicious and warrants further investigation.
 
+// Fecha de creación: 2026-04-27
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

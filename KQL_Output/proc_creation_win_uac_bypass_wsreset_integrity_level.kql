@@ -2,6 +2,8 @@
 // ID Sigma: 89a9a0e0-f61a-42e5-8957-b1479565a658
 // Título: UAC Bypass WSReset
 // Descripción: Detects the pattern of UAC Bypass via WSReset usable by default sysmon-config
+// Fecha de creación: 2021-08-23
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

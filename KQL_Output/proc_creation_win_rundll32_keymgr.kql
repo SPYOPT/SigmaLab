@@ -2,6 +2,8 @@
 // ID Sigma: a4694263-59a8-4608-a3a0-6f8d3a51664c
 // Título: Suspicious Key Manager Access
 // Descripción: Detects the invocation of the Stored User Names and Passwords dialogue (Key Manager)
+// Fecha de creación: 2022-04-21
+// Fecha de modificación: 2023-02-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

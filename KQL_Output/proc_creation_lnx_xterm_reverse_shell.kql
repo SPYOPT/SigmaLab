@@ -2,6 +2,8 @@
 // ID Sigma: 4e25af4b-246d-44ea-8563-e42aacab006b
 // Título: Potential Xterm Reverse Shell
 // Descripción: Detects usage of "xterm" as a potential reverse shell tunnel
+// Fecha de creación: 2023-04-24
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

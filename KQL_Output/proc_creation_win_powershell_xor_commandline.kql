@@ -2,6 +2,8 @@
 // ID Sigma: bb780e0c-16cf-4383-8383-1e5471db6cf9
 // Título: Suspicious XOR Encoded PowerShell Command
 // Descripción: Detects presence of a potentially xor encoded powershell command
+// Fecha de creación: 2018-09-05
+// Fecha de modificación: 2023-01-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

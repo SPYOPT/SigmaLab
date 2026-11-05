@@ -2,6 +2,8 @@
 // ID Sigma: 5722dff1-4bdd-4949-86ab-fbaf707e767a
 // Título: PUA - System Informer Execution
 // Descripción: Detects the execution of System Informer, a task manager tool to view and manipulate processes, kernel options and other low level operations
+// Fecha de creación: 2023-05-08
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

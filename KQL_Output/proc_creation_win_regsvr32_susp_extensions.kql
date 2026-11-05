@@ -2,6 +2,8 @@
 // ID Sigma: 089fc3d2-71e8-4763-a8a5-c97fbb0a403e
 // Título: Regsvr32 DLL Execution With Suspicious File Extension
 // Descripción: Detects the execution of REGSVR32.exe with DLL files masquerading as other files
+// Fecha de creación: 2021-11-29
+// Fecha de modificación: 2025-08-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

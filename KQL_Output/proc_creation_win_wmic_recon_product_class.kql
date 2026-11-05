@@ -5,6 +5,8 @@
 Adversaries often enumerate security products installed on a system to identify security controls and potential ways to evade detection or disable protection mechanisms.
 This information helps them plan their next attack steps and choose appropriate techniques to bypass security measures.
 
+// Fecha de creación: 2023-02-14
+// Fecha de modificación: 2025-03-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

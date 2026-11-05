@@ -2,6 +2,8 @@
 // ID Sigma: d7662ff6-9e97-4596-a61d-9839e32dee8d
 // Título: Add SafeBoot Keys Via Reg Utility
 // Descripción: Detects execution of "reg.exe" commands with the "add" or "copy" flags on safe boot registry keys. Often used by attacker to allow the ransomware to work in safe mode as some security products do not
+// Fecha de creación: 2022-09-02
+// Fecha de modificación: 2024-03-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

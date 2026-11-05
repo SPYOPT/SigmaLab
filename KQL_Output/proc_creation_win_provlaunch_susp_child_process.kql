@@ -2,6 +2,8 @@
 // ID Sigma: f9999590-1f94-4a34-a91e-951e47bedefd
 // Título: Suspicious Provlaunch.EXE Child Process
 // Descripción: Detects suspicious child processes of "provlaunch.exe" which might indicate potential abuse to proxy execution.
+// Fecha de creación: 2023-08-08
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

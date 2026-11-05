@@ -4,6 +4,8 @@
 // Descripción: Detects a CodePage modification using the "mode.com" utility to Russian language.
 This behavior has been used by threat actors behind Dharma ransomware.
 
+// Fecha de creación: 2024-01-17
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

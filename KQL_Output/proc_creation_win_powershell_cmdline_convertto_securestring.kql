@@ -2,6 +2,8 @@
 // ID Sigma: 74403157-20f5-415d-89a7-c505779585cf
 // Título: ConvertTo-SecureString Cmdlet Usage Via CommandLine
 // Descripción: Detects usage of the "ConvertTo-SecureString" cmdlet via the commandline. Which is fairly uncommon and could indicate potential suspicious activity
+// Fecha de creación: 2020-10-11
+// Fecha de modificación: 2023-02-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

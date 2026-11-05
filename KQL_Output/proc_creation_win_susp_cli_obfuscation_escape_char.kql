@@ -2,6 +2,8 @@
 // ID Sigma: f0cdd048-82dc-4f7a-8a7a-b87a52b6d0fd
 // Título: Potential Commandline Obfuscation Using Escape Characters
 // Descripción: Detects potential commandline obfuscation using known escape characters
+// Fecha de creación: 2018-12-11
+// Fecha de modificación: 2023-03-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

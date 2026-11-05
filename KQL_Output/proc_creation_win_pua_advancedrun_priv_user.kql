@@ -2,6 +2,8 @@
 // ID Sigma: fa00b701-44c6-4679-994d-5a18afa8a707
 // Título: PUA - AdvancedRun Suspicious Execution
 // Descripción: Detects the execution of AdvancedRun utility in the context of the TrustedInstaller, SYSTEM, Local Service or Network Service accounts
+// Fecha de creación: 2022-01-20
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

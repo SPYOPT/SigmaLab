@@ -2,6 +2,8 @@
 // ID Sigma: 51719bf5-e4fd-4e44-8ba8-b830e7ac0731
 // Título: Creation Of A Local User Account
 // Descripción: Detects the creation of a new user account. Such accounts may be used for persistence that do not require persistent remote access tools to be deployed on the system.
+// Fecha de creación: 2020-10-06
+// Fecha de modificación: 2023-02-18
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

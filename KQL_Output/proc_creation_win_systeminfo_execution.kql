@@ -2,6 +2,8 @@
 // ID Sigma: 0ef56343-059e-4cb6-adc1-4c3c967c5e46
 // Título: Suspicious Execution of Systeminfo
 // Descripción: Detects usage of the "systeminfo" command to retrieve information
+// Fecha de creación: 2022-01-01
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 58f50261-c53b-4c88-bd12-1d71f12eda4c
 // Título: Windows Credential Manager Access via VaultCmd
 // Descripción: List credentials currently stored in Windows Credential Manager via the native Windows utility vaultcmd.exe
+// Fecha de creación: 2022-04-08
+// Fecha de modificación: 2022-05-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

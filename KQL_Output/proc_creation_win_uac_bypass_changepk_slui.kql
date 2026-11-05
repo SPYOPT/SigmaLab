@@ -2,6 +2,8 @@
 // ID Sigma: 503d581c-7df0-4bbe-b9be-5840c0ecc1fc
 // Título: UAC Bypass Using ChangePK and SLUI
 // Descripción: Detects an UAC bypass that uses changepk.exe and slui.exe (UACMe 61)
+// Fecha de creación: 2021-08-23
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

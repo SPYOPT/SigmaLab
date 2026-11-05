@@ -2,6 +2,8 @@
 // ID Sigma: 9f0a8bf3-a65b-440a-8c1e-5cb1547c8e70
 // Título: New DLL Registered Via Odbcconf.EXE
 // Descripción: Detects execution of "odbcconf" with "REGSVR" in order to register a new DLL (equivalent to running regsvr32). Attackers abuse this to install and run malicious DLLs.
+// Fecha de creación: 2023-05-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

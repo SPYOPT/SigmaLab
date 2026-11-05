@@ -2,6 +2,8 @@
 // ID Sigma: 42a993dd-bb3e-48c8-b372-4d6684c4106c
 // Título: HackTool - CrackMapExec Execution
 // Descripción: This rule detect common flag combinations used by CrackMapExec in order to detect its use even if the binary has been replaced.
+// Fecha de creación: 2022-02-25
+// Fecha de modificación: 2023-03-08
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

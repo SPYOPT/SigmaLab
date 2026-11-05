@@ -2,6 +2,8 @@
 // ID Sigma: f8d6a15e-4bc8-4c27-8e5d-2b10f0b73e5b
 // Título: Suspicious Powercfg Execution To Change Lock Screen Timeout
 // Descripción: Detects suspicious execution of 'Powercfg.exe' to change lock screen timeout
+// Fecha de creación: 2022-11-18
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

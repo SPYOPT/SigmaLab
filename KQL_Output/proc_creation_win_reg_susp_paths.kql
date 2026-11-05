@@ -2,6 +2,8 @@
 // ID Sigma: b7e2a8d4-74bb-4b78-adc9-3f92af2d4829
 // Título: Reg Add Suspicious Paths
 // Descripción: Detects when an adversary uses the reg.exe utility to add or modify new keys or subkeys
+// Fecha de creación: 2022-08-19
+// Fecha de modificación: 2022-10-10
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -3,6 +3,8 @@
 // Título: New Capture Session Launched Via DXCap.EXE
 // Descripción: Detects the execution of "DXCap.EXE" with the "-c" flag, which allows a user to launch any arbitrary binary or windows package through DXCap itself. This can be abused to potentially bypass application whitelisting.
 
+// Fecha de creación: 2019-10-26
+// Fecha de modificación: 2022-06-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -3,6 +3,8 @@
 // Título: Service Startup Type Change Via Wmic.EXE
 // Descripción: Detects changes to service startup type to 'disabled' or 'manual' using the WMIC command-line utility.
 
+// Fecha de creación: 2026-04-27
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

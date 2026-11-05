@@ -2,6 +2,8 @@
 // ID Sigma: 43e26eb5-cd58-48d1-8ce9-a273f5d298d8
 // Título: Potential Container Discovery Via Inodes Listing
 // Descripción: Detects listing of the inodes of the "/" directory to determine if the we are running inside of a container.
+// Fecha de creación: 2023-08-23
+// Fecha de modificación: 2025-11-24
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

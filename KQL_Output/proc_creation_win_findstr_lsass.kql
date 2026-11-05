@@ -2,6 +2,8 @@
 // ID Sigma: fe63010f-8823-4864-a96b-a7b4a0f7b929
 // Título: LSASS Process Reconnaissance Via Findstr.EXE
 // Descripción: Detects findstring commands that include the keyword lsass, which indicates recon actviity for the LSASS process PID
+// Fecha de creación: 2022-08-12
+// Fecha de modificación: 2024-06-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

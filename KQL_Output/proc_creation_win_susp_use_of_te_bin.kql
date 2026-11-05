@@ -4,6 +4,8 @@
 // Descripción: Windows Test Authoring and Execution Framework (TAEF) framework allows you to run automation by executing tests files written on different languages (C, C#, Microsoft COM Scripting interfaces
 Adversaries may execute malicious code (such as WSC file with VBScript, dll and so on) directly by running te.exe
 
+// Fecha de creación: 2020-10-13
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

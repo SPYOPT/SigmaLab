@@ -2,6 +2,8 @@
 // ID Sigma: 5f1573a7-363b-4114-9208-ad7a61de46eb
 // Título: ESXi VM List Discovery Via ESXCLI
 // Descripción: Detects execution of the "esxcli" command with the "vm" flag in order to retrieve information about the installed VMs.
+// Fecha de creación: 2023-09-04
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 259df6bc-003f-4306-9f54-4ff1a08fa38e
 // Título: Potential Perl Reverse Shell Execution
 // Descripción: Detects execution of the perl binary with the "-e" flag and common strings related to potential reverse shell activity
+// Fecha de creación: 2023-04-07
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

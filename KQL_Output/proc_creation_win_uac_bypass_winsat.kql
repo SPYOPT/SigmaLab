@@ -2,6 +2,8 @@
 // ID Sigma: 7a01183d-71a2-46ad-ad5c-acd989ac1793
 // Título: UAC Bypass Abusing Winsat Path Parsing - Process
 // Descripción: Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)
+// Fecha de creación: 2021-08-30
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

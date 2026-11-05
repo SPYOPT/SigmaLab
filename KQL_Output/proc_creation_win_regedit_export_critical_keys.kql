@@ -2,6 +2,8 @@
 // ID Sigma: 82880171-b475-4201-b811-e9c826cd5eaa
 // Título: Exports Critical Registry Keys To a File
 // Descripción: Detects the export of a crital Registry key to a file.
+// Fecha de creación: 2020-10-12
+// Fecha de modificación: 2024-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

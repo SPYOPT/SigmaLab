@@ -2,6 +2,8 @@
 // ID Sigma: 6e22722b-dfb1-4508-a911-49ac840b40f8
 // Título: Suspicious Mstsc.EXE Execution With Local RDP File
 // Descripción: Detects potential RDP connection via Mstsc using a local ".rdp" file located in suspicious locations.
+// Fecha de creación: 2023-04-18
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

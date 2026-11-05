@@ -3,6 +3,8 @@
 // Título: Import LDAP Data Interchange Format File Via Ldifde.EXE
 // Descripción: Detects the execution of "Ldifde.exe" with the import flag "-i". The can be abused to include HTTP-based arguments which will allow the arbitrary download of files from a remote server.
 
+// Fecha de creación: 2022-09-02
+// Fecha de modificación: 2023-03-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

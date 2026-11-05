@@ -2,6 +2,8 @@
 // ID Sigma: 42333b2c-b425-441c-b70e-99404a17170f
 // Título: HackTool - Sliver C2 Implant Activity Pattern
 // Descripción: Detects process activity patterns as seen being used by Sliver C2 framework implants
+// Fecha de creación: 2022-08-25
+// Fecha de modificación: 2023-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

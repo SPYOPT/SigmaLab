@@ -2,6 +2,8 @@
 // ID Sigma: 50d66fb0-03f8-4da0-8add-84e77d12a020
 // Título: Suspicious RunAs-Like Flag Combination
 // Descripción: Detects suspicious command line flags that let the user set a target user and command as e.g. seen in PsExec-like tools
+// Fecha de creación: 2022-11-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 434c08ba-8406-4d15-8b24-782cb071a691
 // Título: PowerShell Execution With Potential Decryption Capabilities
 // Descripción: Detects PowerShell commands that decrypt an ".LNK" "file to drop the next stage of the malware.
+// Fecha de creación: 2023-06-30
+// Fecha de modificación: 2023-12-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

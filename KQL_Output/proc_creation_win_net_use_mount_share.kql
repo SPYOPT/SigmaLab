@@ -2,6 +2,8 @@
 // ID Sigma: f117933c-980c-4f78-b384-e3d838111165
 // Título: Windows Share Mount Via Net.EXE
 // Descripción: Detects when a share is mounted using the "net.exe" utility
+// Fecha de creación: 2023-02-02
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

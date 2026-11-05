@@ -2,6 +2,8 @@
 // ID Sigma: bdeeabc9-ff2a-4a51-be59-bb253aac7891
 // Título: PUA - Wsudo Suspicious Execution
 // Descripción: Detects usage of wsudo (Windows Sudo Utility). Which is a tool that let the user execute programs with different permissions (System, Trusted Installer, Administrator...etc)
+// Fecha de creación: 2022-12-02
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

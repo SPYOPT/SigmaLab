@@ -4,6 +4,8 @@
 // Descripción: Detects execution of "tar.exe" in order to create a compressed file.
 Adversaries may abuse various utilities to compress or encrypt data before exfiltration.
 
+// Fecha de creación: 2023-12-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

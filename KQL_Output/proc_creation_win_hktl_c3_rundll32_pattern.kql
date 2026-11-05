@@ -2,6 +2,8 @@
 // ID Sigma: b18c9d4c-fac9-4708-bd06-dd5bfacf200f
 // Título: HackTool - F-Secure C3 Load by Rundll32
 // Descripción: F-Secure C3 produces DLLs with a default exported StartNodeRelay function.
+// Fecha de creación: 2021-06-02
+// Fecha de modificación: 2023-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: b222df08-0e07-11eb-adc1-0242ac120002
 // Título: Invoke-Obfuscation CLIP+ Launcher
 // Descripción: Detects Obfuscated use of Clip.exe to execute PowerShell
+// Fecha de creación: 2020-10-13
+// Fecha de modificación: 2022-11-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: ce7cf472-6fcc-490a-9481-3786840b5d9b
 // Título: InfDefaultInstall.exe .inf Execution
 // Descripción: Executes SCT script using scrobj.dll from a command in entered into a specially prepared INF file.
+// Fecha de creación: 2021-07-13
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

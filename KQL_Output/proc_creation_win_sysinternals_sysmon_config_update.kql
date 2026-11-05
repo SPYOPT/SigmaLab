@@ -2,6 +2,8 @@
 // ID Sigma: 87911521-7098-470b-a459-9a57fc80bdfd
 // Título: Sysmon Configuration Update
 // Descripción: Detects updates to Sysmon's configuration. Attackers might update or replace the Sysmon configuration with a bare bone one to avoid monitoring without shutting down the service completely
+// Fecha de creación: 2023-03-09
+// Fecha de modificación: 2026-06-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

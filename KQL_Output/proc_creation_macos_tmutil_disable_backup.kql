@@ -4,6 +4,8 @@
 // Descripción: Detects disabling of Time Machine (Apple's automated backup utility software) via the native macOS backup utility "tmutil".
 An attacker can use this to prevent backups from occurring.
 
+// Fecha de creación: 2024-05-29
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

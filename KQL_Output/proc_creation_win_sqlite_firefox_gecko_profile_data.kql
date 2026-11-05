@@ -2,6 +2,8 @@
 // ID Sigma: 4833155a-4053-4c9c-a997-777fcea0baa7
 // Título: SQLite Firefox Profile Data DB Access
 // Descripción: Detect usage of the "sqlite" binary to query databases in Firefox and other Gecko-based browsers for potential data stealing.
+// Fecha de creación: 2022-04-08
+// Fecha de modificación: 2023-01-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

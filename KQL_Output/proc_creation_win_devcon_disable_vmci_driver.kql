@@ -5,6 +5,8 @@
 This can be legitimate during VMware Tools troubleshooting or driver conflicts, but may also indicate malware attempting to hijack communication with the hardware via the VMCI device.
 This has been used to facilitate VMware ESXi vulnerability exploits to escape VMs and execute code on the ESXi host.
 
+// Fecha de creación: 2026-01-02
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 646bc99f-6682-4b47-a73a-17b1b64c9d34
 // Título: Execute Files with Msdeploy.exe
 // Descripción: Detects file execution using the msdeploy.exe lolbin
+// Fecha de creación: 2020-10-18
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

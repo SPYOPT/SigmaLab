@@ -2,6 +2,8 @@
 // ID Sigma: 4bc90587-e6ca-4b41-be0b-ed4d04e4ed0c
 // Título: Suspicious Velociraptor Child Process
 // Descripción: Detects the suspicious use of the Velociraptor DFIR tool to execute other tools or download additional payloads, as seen in a campaign where it was abused for remote access and to stage further attacks.
+// Fecha de creación: 2025-08-29
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

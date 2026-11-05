@@ -5,6 +5,8 @@
 This process is used for system information discovery.
 It has been observed in-the-wild by calling this process directly or using bash and grep to look for specific strings.
 
+// Fecha de creación: 2023-12-20
+// Fecha de modificación: 2024-01-02
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 90fb5e62-ca1f-4e22-b42e-cc521874c938
 // Título: Suspicious Shells Spawn by Java Utility Keytool
 // Descripción: Detects suspicious shell spawn from Java utility keytool process (e.g. adselfservice plus exploitation)
+// Fecha de creación: 2021-12-22
+// Fecha de modificación: 2023-01-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

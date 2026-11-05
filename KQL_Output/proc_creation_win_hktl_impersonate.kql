@@ -2,6 +2,8 @@
 // ID Sigma: cf0c254b-22f1-4b2b-8221-e137b3c0af94
 // Título: HackTool - Impersonate Execution
 // Descripción: Detects execution of the Impersonate tool. Which can be used to manipulate tokens on a Windows computers remotely (PsExec/WmiExec) or interactively
+// Fecha de creación: 2022-12-21
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

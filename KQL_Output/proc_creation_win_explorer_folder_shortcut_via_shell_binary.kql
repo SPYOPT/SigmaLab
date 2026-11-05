@@ -3,6 +3,8 @@
 // Título: File Explorer Folder Opened Using Explorer Folder Shortcut Via Shell
 // Descripción: Detects the initial execution of "cmd.exe" which spawns "explorer.exe" with the appropriate command line arguments for opening the "My Computer" folder.
 
+// Fecha de creación: 2022-12-22
+// Fecha de modificación: 2024-08-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

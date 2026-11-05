@@ -2,6 +2,8 @@
 // ID Sigma: d937b75f-a665-4480-88a5-2f20e9f9b22a
 // Título: Possible Privilege Escalation via Weak Service Permissions
 // Descripción: Detection of sc.exe utility spawning by user with Medium integrity level to change service ImagePath or FailureCommand
+// Fecha de creación: 2019-10-26
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

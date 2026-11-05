@@ -2,6 +2,8 @@
 // ID Sigma: 38eb1dbb-011f-40b1-a126-cf03a0210563
 // Título: ESXi Syslog Configuration Change Via ESXCLI
 // Descripción: Detects changes to the ESXi syslog configuration via "esxcli"
+// Fecha de creación: 2023-09-04
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

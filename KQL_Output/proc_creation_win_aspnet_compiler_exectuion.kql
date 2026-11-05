@@ -2,6 +2,8 @@
 // ID Sigma: a01b8329-5953-4f73-ae2d-aa01e1f35f00
 // Título: AspNetCompiler Execution
 // Descripción: Detects execution of "aspnet_compiler.exe" which can be abused to compile and execute C# code.
+// Fecha de creación: 2021-11-24
+// Fecha de modificación: 2025-02-24
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

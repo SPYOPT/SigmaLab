@@ -2,6 +2,8 @@
 // ID Sigma: 7c3b43d8-d794-47d2-800a-d277715aa460
 // Título: Scheduled Cron Task/Job - MacOs
 // Descripción: Detects abuse of the cron utility to perform task scheduling for initial or recurring execution of malicious code. Detection will focus on crontab jobs uploaded from the tmp folder.
+// Fecha de creación: 2020-10-06
+// Fecha de modificación: 2022-11-27
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

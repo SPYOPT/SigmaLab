@@ -2,6 +2,8 @@
 // ID Sigma: 457df417-8b9d-4912-85f3-9dbda39c3645
 // Título: Suspicious Nohup Execution
 // Descripción: Detects execution of binaries located in potentially suspicious locations via "nohup"
+// Fecha de creación: 2023-06-02
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

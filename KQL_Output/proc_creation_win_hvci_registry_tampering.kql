@@ -5,6 +5,8 @@
 HVCI uses virtualization-based security to protect code integrity by ensuring that only trusted code can run in kernel mode.
 Adversaries may tamper with HVCI to load malicious or unsigned drivers, which can be used to escalate privileges, maintain persistence, or evade security mechanisms.
 
+// Fecha de creación: 2026-01-26
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

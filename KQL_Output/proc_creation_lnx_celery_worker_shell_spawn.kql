@@ -5,6 +5,8 @@
 This behavior indicates a Python background task execution framework is evaluating raw string input through a shell execution context,
 which is highly indicative of successful command or prompt injection exploitation against an LLM agent task.
 
+// Fecha de creación: 2026-10-17
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

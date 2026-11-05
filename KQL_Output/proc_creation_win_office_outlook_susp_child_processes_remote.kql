@@ -2,6 +2,8 @@
 // ID Sigma: e212d415-0e93-435f-9e1a-f29005bb4723
 // Título: Suspicious Remote Child Process From Outlook
 // Descripción: Detects a suspicious child process spawning from Outlook where the image is located in a remote location (SMB/WebDav shares).
+// Fecha de creación: 2018-12-27
+// Fecha de modificación: 2023-02-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

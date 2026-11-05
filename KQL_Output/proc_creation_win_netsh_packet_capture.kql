@@ -2,6 +2,8 @@
 // ID Sigma: d3c3861d-c504-4c77-ba55-224ba82d0118
 // Título: New Network Trace Capture Started Via Netsh.EXE
 // Descripción: Detects the execution of netsh with the "trace" flag in order to start a network capture
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2023-02-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

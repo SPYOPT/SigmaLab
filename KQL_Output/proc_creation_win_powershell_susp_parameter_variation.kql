@@ -2,6 +2,8 @@
 // ID Sigma: 36210e0d-5b19-485d-a087-c096088885f0
 // Título: Suspicious PowerShell Parameter Substring
 // Descripción: Detects suspicious PowerShell invocation with a parameter substring
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

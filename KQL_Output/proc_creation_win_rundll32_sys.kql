@@ -2,6 +2,8 @@
 // ID Sigma: 731231b9-0b5d-4219-94dd-abb6959aa7ea
 // Título: Suspicious Rundll32 Activity Invoking Sys File
 // Descripción: Detects suspicious process related to rundll32 based on command line that includes a *.sys file as seen being used by UNC2452
+// Fecha de creación: 2021-03-05
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

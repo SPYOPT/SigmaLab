@@ -2,6 +2,8 @@
 // ID Sigma: 378a05d8-963c-46c9-bcce-13c7657eac99
 // Título: Potentially Suspicious Electron Application CommandLine
 // Descripción: Detects potentially suspicious CommandLine of electron apps (teams, discord, slack, etc.). This could be a sign of abuse to proxy execution through a signed binary.
+// Fecha de creación: 2023-09-05
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

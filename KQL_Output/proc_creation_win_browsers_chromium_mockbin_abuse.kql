@@ -2,6 +2,8 @@
 // ID Sigma: 1c526788-0abe-4713-862f-b520da5e5316
 // Título: Chromium Browser Headless Execution To Mockbin Like Site
 // Descripción: Detects the execution of a Chromium based browser process with the "headless" flag and a URL pointing to the mockbin.org service (which can be used to exfiltrate data).
+// Fecha de creación: 2023-09-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

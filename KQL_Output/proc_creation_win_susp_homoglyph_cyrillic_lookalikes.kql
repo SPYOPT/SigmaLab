@@ -5,6 +5,8 @@
 This is used as an obfuscation and masquerading techniques. Only "perfect" homoglyphs are included; these are characters that
 are indistinguishable from ASCII characters and thus may make excellent candidates for homoglyph attack characters.
 
+// Fecha de creación: 2023-05-07
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

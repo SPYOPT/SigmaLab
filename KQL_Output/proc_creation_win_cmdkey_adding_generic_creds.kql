@@ -4,6 +4,8 @@
 // Descripción: Detects usage of "cmdkey.exe" to add generic credentials.
 As an example, this can be used before connecting to an RDP session via command line interface.
 
+// Fecha de creación: 2023-02-03
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

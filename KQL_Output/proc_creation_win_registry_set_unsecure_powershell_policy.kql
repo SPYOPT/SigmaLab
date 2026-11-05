@@ -2,6 +2,8 @@
 // ID Sigma: cf2e938e-9a3e-4fe8-a347-411642b28a9f
 // Título: Potential PowerShell Execution Policy Tampering - ProcCreation
 // Descripción: Detects changes to the PowerShell execution policy registry key in order to bypass signing requirements for script execution from the CommandLine
+// Fecha de creación: 2023-01-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

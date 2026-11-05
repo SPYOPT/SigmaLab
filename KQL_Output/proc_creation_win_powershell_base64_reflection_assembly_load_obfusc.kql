@@ -2,6 +2,8 @@
 // ID Sigma: 9c0295ce-d60d-40bd-bd74-84673b7592b1
 // Título: Suspicious Encoded And Obfuscated Reflection Assembly Load Function Call
 // Descripción: Detects suspicious base64 encoded and obfuscated "LOAD" keyword used in .NET "reflection.assembly"
+// Fecha de creación: 2022-03-01
+// Fecha de modificación: 2023-04-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

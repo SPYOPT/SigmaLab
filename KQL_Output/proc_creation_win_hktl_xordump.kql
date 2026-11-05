@@ -2,6 +2,8 @@
 // ID Sigma: 66e563f9-1cbd-4a22-a957-d8b7c0f44372
 // Título: HackTool - XORDump Execution
 // Descripción: Detects suspicious use of XORDump process memory dumping utility
+// Fecha de creación: 2022-01-28
+// Fecha de modificación: 2023-02-08
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

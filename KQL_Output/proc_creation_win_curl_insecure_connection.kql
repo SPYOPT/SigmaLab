@@ -2,6 +2,8 @@
 // ID Sigma: cb9cc1d1-e84e-4bdc-b7ad-c31b1b7908ec
 // Título: Insecure Transfer Via Curl.EXE
 // Descripción: Detects execution of "curl.exe" with the "--insecure" flag.
+// Fecha de creación: 2023-06-30
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 883835a7-df45-43e4-bf1d-4268768afda4
 // Título: Regedit as Trusted Installer
 // Descripción: Detects a regedit started with TrustedInstaller privileges or by ProcessHacker.exe
+// Fecha de creación: 2021-05-27
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

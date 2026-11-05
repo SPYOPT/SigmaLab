@@ -2,6 +2,8 @@
 // ID Sigma: 10c14723-61c7-4c75-92ca-9af245723ad2
 // Título: HackTool - Potential Impacket Lateral Movement Activity
 // Descripción: Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework
+// Fecha de creación: 2019-09-03
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

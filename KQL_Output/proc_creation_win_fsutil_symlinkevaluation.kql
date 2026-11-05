@@ -3,6 +3,8 @@
 // Título: Potentially Suspicious NTFS Symlink Behavior Modification
 // Descripción: Detects the modification of NTFS symbolic link behavior using fsutil, which could be used to enable remote to local or remote to remote symlinks for potential attacks.
 
+// Fecha de creación: 2022-03-02
+// Fecha de modificación: 2025-11-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

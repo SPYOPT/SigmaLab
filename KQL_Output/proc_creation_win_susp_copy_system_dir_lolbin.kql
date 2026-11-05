@@ -3,6 +3,8 @@
 // Título: LOL-Binary Copied From System Directory
 // Descripción: Detects a suspicious copy operation that tries to copy a known LOLBIN from system (System32, SysWOW64, WinSxS) directories to another on disk in order to bypass detections based on locations.
 
+// Fecha de creación: 2023-08-29
+// Fecha de modificación: 2025-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

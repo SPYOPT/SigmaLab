@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of rundll32.exe with the oledb32.dll library to open a UDL file.
 Threat actors can abuse this technique as a phishing vector to capture authentication credentials or other sensitive data.
 
+// Fecha de creación: 2024-08-16
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

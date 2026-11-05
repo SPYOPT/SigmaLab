@@ -2,6 +2,8 @@
 // ID Sigma: 12f6b752-042d-483e-bf9c-915a6d06ad75
 // Título: Windows Firewall Disabled via PowerShell
 // Descripción: Detects attempts to disable the Windows Firewall using PowerShell
+// Fecha de creación: 2022-09-14
+// Fecha de modificación: 2023-02-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

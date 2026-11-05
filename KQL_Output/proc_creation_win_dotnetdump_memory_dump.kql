@@ -3,6 +3,8 @@
 // Título: Process Memory Dump Via Dotnet-Dump
 // Descripción: Detects the execution of "dotnet-dump" with the "collect" flag. The execution could indicate potential process dumping of critical processes such as LSASS.
 
+// Fecha de creación: 2023-03-14
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

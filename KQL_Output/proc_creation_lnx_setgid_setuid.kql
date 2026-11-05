@@ -2,6 +2,8 @@
 // ID Sigma: c21c4eaa-ba2e-419a-92b2-8371703cbe21
 // Título: Setuid and Setgid
 // Descripción: Detects suspicious change of file privileges with chown and chmod commands
+// Fecha de creación: 2020-06-16
+// Fecha de modificación: 2022-10-05
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

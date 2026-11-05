@@ -2,6 +2,8 @@
 // ID Sigma: 0326c3c8-7803-4a0f-8c5c-368f747f7c3e
 // Título: Triple Cross eBPF Rootkit Execve Hijack
 // Descripción: Detects execution of a the file "execve_hijack" which is used by the Triple Cross rootkit as a way to elevate privileges
+// Fecha de creación: 2022-07-05
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

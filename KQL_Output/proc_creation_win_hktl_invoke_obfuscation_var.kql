@@ -2,6 +2,8 @@
 // ID Sigma: 27aec9c9-dbb0-4939-8422-1742242471d0
 // Título: Invoke-Obfuscation VAR+ Launcher
 // Descripción: Detects Obfuscated use of Environment Variables to execute PowerShell
+// Fecha de creación: 2020-10-15
+// Fecha de modificación: 2024-04-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 7ed2c9f7-c59d-4c82-a7e2-f859aa676099
 // Título: Suspicious MacOS Firmware Activity
 // Descripción: Detects when a user manipulates with Firmward Password on MacOS. NOTE - this command has been disabled on silicon-based apple computers.
+// Fecha de creación: 2021-09-30
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

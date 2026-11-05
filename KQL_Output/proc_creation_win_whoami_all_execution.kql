@@ -2,6 +2,8 @@
 // ID Sigma: c248c896-e412-4279-8c15-1c558067b6fa
 // Título: Enumerate All Information With Whoami.EXE
 // Descripción: Detects the execution of "whoami.exe" with the "/all" flag
+// Fecha de creación: 2023-12-04
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

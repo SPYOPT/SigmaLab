@@ -2,6 +2,8 @@
 // ID Sigma: 2fdefcb3-dbda-401e-ae23-f0db027628bc
 // Título: Sticky Key Like Backdoor Execution
 // Descripción: Detects the usage and installation of a backdoor that uses an option to register a malicious debugger for built-in tools that are accessible in the login screen
+// Fecha de creación: 2018-03-15
+// Fecha de modificación: 2023-03-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

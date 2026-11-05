@@ -2,6 +2,8 @@
 // ID Sigma: 2e65275c-8288-4ab4-aeb7-6274f58b6b20
 // Título: Procdump Execution
 // Descripción: Detects usage of the SysInternals Procdump utility
+// Fecha de creación: 2021-08-16
+// Fecha de modificación: 2026-06-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

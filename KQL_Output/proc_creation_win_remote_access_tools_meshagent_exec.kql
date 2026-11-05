@@ -4,6 +4,8 @@
 // Descripción: Detects the use of MeshAgent to execute commands on the target host, particularly when threat actors might abuse it to execute commands directly.
 MeshAgent can execute commands on the target host by leveraging win-console to obscure their activities and win-dispatcher to run malicious code through IPC with child processes.
 
+// Fecha de creación: 2024-09-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

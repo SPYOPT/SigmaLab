@@ -3,6 +3,8 @@
 // Título: Arbitrary File Download Via Squirrel.EXE
 // Descripción: Detects the usage of the "Squirrel.exe" to download arbitrary files. This binary is part of multiple Electron based software installations (Slack, Teams, Discord, etc.)
 
+// Fecha de creación: 2022-06-09
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

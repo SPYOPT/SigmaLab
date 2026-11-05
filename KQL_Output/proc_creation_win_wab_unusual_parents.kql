@@ -2,6 +2,8 @@
 // ID Sigma: 63d1ccc0-2a43-4f4b-9289-361b308991ff
 // Título: Wab/Wabmig Unusual Parent Or Child Processes
 // Descripción: Detects unusual parent or children of the wab.exe (Windows Contacts) and Wabmig.exe (Microsoft Address Book Import Tool) processes as seen being used with bumblebee activity
+// Fecha de creación: 2022-08-12
+// Fecha de modificación: 2022-09-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

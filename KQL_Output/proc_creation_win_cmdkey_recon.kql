@@ -2,6 +2,8 @@
 // ID Sigma: 07f8bdc2-c9b3-472a-9817-5a670b872f53
 // Título: Potential Reconnaissance For Cached Credentials Via Cmdkey.EXE
 // Descripción: Detects usage of cmdkey to look for cached credentials on the system
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

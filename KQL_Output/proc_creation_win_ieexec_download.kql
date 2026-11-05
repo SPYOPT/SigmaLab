@@ -2,6 +2,8 @@
 // ID Sigma: 9801abb8-e297-4dbf-9fbd-57dde0e830ad
 // Título: File Download And Execution Via IEExec.EXE
 // Descripción: Detects execution of the IEExec utility to download and execute files
+// Fecha de creación: 2022-05-16
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

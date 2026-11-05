@@ -2,6 +2,8 @@
 // ID Sigma: f41dada5-3f56-4232-8503-3fb7f9cf2d60
 // Título: ESXi Storage Information Discovery Via ESXCLI
 // Descripción: Detects execution of the "esxcli" command with the "storage" flag in order to retrieve information about the storage status and other related information. Seen used by malware such as DarkSide and LockBit.
+// Fecha de creación: 2023-09-04
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

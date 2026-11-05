@@ -2,6 +2,8 @@
 // ID Sigma: 9257c05b-4a4a-48e5-a670-b7b073cf401b
 // Título: Binary Proxy Execution Via Dotnet-Trace.EXE
 // Descripción: Detects commandline arguments for executing a child process via dotnet-trace.exe
+// Fecha de creación: 2024-01-02
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

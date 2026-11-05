@@ -2,6 +2,8 @@
 // ID Sigma: 65d506d3-fcfe-4071-b4b2-bcefe721bbbb
 // Título: Potential Persistence Via PlistBuddy
 // Descripción: Detects potential persistence activity using LaunchAgents or LaunchDaemons via the PlistBuddy utility
+// Fecha de creación: 2023-02-18
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

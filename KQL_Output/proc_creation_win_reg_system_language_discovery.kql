@@ -5,6 +5,8 @@
 Attackers may discover the system language to determine the geographic location of victims, customize payloads for specific regions,
 or avoid targeting certain locales to evade detection.
 
+// Fecha de creación: 2026-01-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

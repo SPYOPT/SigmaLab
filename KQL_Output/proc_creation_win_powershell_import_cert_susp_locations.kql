@@ -2,6 +2,8 @@
 // ID Sigma: 5f6a601c-2ecb-498b-9c33-660362323afa
 // Título: Root Certificate Installed From Susp Locations
 // Descripción: Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers.
+// Fecha de creación: 2022-09-09
+// Fecha de modificación: 2023-01-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 9ac94dc8-9042-493c-ba45-3b5e7c86b980
 // Título: Disable Important Scheduled Task
 // Descripción: Detects when adversaries stop services or processes by disabling their respective scheduled tasks in order to conduct data destructive activities
+// Fecha de creación: 2021-12-26
+// Fecha de modificación: 2026-03-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

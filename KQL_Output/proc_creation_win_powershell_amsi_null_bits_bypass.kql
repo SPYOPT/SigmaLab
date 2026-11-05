@@ -2,6 +2,8 @@
 // ID Sigma: 92a974db-ab84-457f-9ec0-55db83d7a825
 // Título: Potential AMSI Bypass Using NULL Bits
 // Descripción: Detects usage of special strings/null bits in order to potentially bypass AMSI functionalities
+// Fecha de creación: 2023-01-04
+// Fecha de modificación: 2023-05-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

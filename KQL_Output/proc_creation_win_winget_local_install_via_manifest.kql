@@ -5,6 +5,8 @@
 The manifest option enables you to install an application by passing in a YAML file directly to the client.
 Winget can be used to download and install exe, msi or msix files later.
 
+// Fecha de creación: 2020-04-21
+// Fecha de modificación: 2023-04-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

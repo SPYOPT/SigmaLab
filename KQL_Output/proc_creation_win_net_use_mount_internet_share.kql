@@ -2,6 +2,8 @@
 // ID Sigma: 7e6237fe-3ddb-438f-9381-9bf9de5af8d0
 // Título: Windows Internet Hosted WebDav Share Mount Via Net.EXE
 // Descripción: Detects when an internet hosted webdav share is mounted using the "net.exe" utility
+// Fecha de creación: 2023-02-21
+// Fecha de modificación: 2023-07-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

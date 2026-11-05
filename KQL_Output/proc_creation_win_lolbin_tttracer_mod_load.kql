@@ -2,6 +2,8 @@
 // ID Sigma: 0b4ae027-2a2d-4b93-8c7e-962caaba5b2a
 // Título: Time Travel Debugging Utility Usage
 // Descripción: Detects usage of Time Travel Debugging Utility. Adversaries can execute malicious processes and dump processes, such as lsass.exe, via tttracer.exe.
+// Fecha de creación: 2020-10-06
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

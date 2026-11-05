@@ -2,6 +2,8 @@
 // ID Sigma: 6e4dcdd1-e48b-42f7-b2d8-3b413fc58cb4
 // Título: Suspicious Execution via macOS Script Editor
 // Descripción: Detects when the macOS Script Editor utility spawns an unusual child process.
+// Fecha de creación: 2022-10-21
+// Fecha de modificación: 2022-12-28
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

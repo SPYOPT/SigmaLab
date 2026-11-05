@@ -2,6 +2,8 @@
 // ID Sigma: 700fb7e8-2981-401c-8430-be58e189e741
 // Título: Suspicious Package Installed - Linux
 // Descripción: Detects installation of suspicious packages using system installation utilities
+// Fecha de creación: 2023-01-03
+// Fecha de modificación: 2026-01-01
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

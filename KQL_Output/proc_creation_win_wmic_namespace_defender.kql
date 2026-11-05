@@ -2,6 +2,8 @@
 // ID Sigma: 51cbac1e-eee3-4a90-b1b7-358efb81fa0a
 // Título: Potential Windows Defender Tampering Via Wmic.EXE
 // Descripción: Detects potential tampering with Windows Defender settings such as adding exclusion using wmic
+// Fecha de creación: 2022-12-11
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

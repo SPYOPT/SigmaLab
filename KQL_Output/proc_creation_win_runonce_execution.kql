@@ -2,6 +2,8 @@
 // ID Sigma: 198effb6-6c98-4d0c-9ea3-451fa143c45c
 // Título: Run Once Task Execution as Configured in Registry
 // Descripción: This rule detects the execution of Run Once task as configured in the registry
+// Fecha de creación: 2020-10-18
+// Fecha de modificación: 2022-12-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

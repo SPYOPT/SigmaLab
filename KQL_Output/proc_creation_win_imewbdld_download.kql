@@ -2,6 +2,8 @@
 // ID Sigma: 863218bd-c7d0-4c52-80cd-0a96c09f54af
 // Título: Arbitrary File Download Via IMEWDBLD.EXE
 // Descripción: Detects usage of "IMEWDBLD.exe" to download arbitrary files
+// Fecha de creación: 2023-11-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: b1876533-4ed5-4a83-90f3-b8645840a413
 // Título: HackTool - SafetyKatz Execution
 // Descripción: Detects the execution of the hacktool SafetyKatz via PE information and default Image name
+// Fecha de creación: 2022-10-20
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

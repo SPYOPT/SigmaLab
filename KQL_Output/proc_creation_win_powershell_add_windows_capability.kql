@@ -2,6 +2,8 @@
 // ID Sigma: b36d01a3-ddaf-4804-be18-18a6247adfcd
 // Título: Add Windows Capability Via PowerShell Cmdlet
 // Descripción: Detects usage of the "Add-WindowsCapability" cmdlet to add Windows capabilities. Notable capabilities could be "OpenSSH" and others.
+// Fecha de creación: 2023-01-22
+// Fecha de modificación: 2023-05-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

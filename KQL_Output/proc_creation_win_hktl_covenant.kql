@@ -2,6 +2,8 @@
 // ID Sigma: c260b6db-48ba-4b4a-a76f-2f67644e99d2
 // Título: HackTool - Covenant PowerShell Launcher
 // Descripción: Detects suspicious command lines used in Covenant luanchers
+// Fecha de creación: 2020-06-04
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

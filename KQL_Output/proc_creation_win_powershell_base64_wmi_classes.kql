@@ -2,6 +2,8 @@
 // ID Sigma: 1816994b-42e1-4fb1-afd2-134d88184f71
 // Título: PowerShell Base64 Encoded WMI Classes
 // Descripción: Detects calls to base64 encoded WMI class such as "Win32_ShadowCopy", "Win32_ScheduledJob", etc.
+// Fecha de creación: 2023-01-30
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

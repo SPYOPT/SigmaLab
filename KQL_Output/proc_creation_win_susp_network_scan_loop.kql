@@ -2,6 +2,8 @@
 // ID Sigma: f8ad2e2c-40b6-4117-84d7-20b89896ab23
 // Título: Suspicious Scan Loop Network
 // Descripción: Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system
+// Fecha de creación: 2022-03-12
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

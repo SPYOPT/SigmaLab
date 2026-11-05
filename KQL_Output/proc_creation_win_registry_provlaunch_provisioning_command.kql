@@ -2,6 +2,8 @@
 // ID Sigma: 2a4b3e61-9d22-4e4a-b60f-6e8f0cde6f25
 // Título: Potential Provisioning Registry Key Abuse For Binary Proxy Execution
 // Descripción: Detects potential abuse of the provisioning registry key for indirect command execution through "Provlaunch.exe".
+// Fecha de creación: 2023-08-08
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

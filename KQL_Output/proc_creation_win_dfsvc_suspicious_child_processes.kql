@@ -2,6 +2,8 @@
 // ID Sigma: 67bc0e75-c0a9-4cfc-8754-84a505b63c04
 // Título: Potentially Suspicious Child Process Of ClickOnce Application
 // Descripción: Detects potentially suspicious child processes of a ClickOnce deployment application
+// Fecha de creación: 2023-06-12
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

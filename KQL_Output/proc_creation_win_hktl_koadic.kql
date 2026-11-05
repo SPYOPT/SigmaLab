@@ -2,6 +2,8 @@
 // ID Sigma: 5cddf373-ef00-4112-ad72-960ac29bac34
 // Título: HackTool - Koadic Execution
 // Descripción: Detects command line parameters used by Koadic hack tool
+// Fecha de creación: 2020-01-12
+// Fecha de modificación: 2023-02-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

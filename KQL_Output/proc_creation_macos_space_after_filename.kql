@@ -2,6 +2,8 @@
 // ID Sigma: b6e2a2e3-2d30-43b1-a4ea-071e36595690
 // Título: Space After Filename - macOS
 // Descripción: Detects attempts to masquerade as legitimate files by adding a space to the end of the filename.
+// Fecha de creación: 2021-11-20
+// Fecha de modificación: 2023-01-04
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 867356ee-9352-41c9-a8f2-1be690d78216
 // Título: Potentially Suspicious Regsvr32 HTTP/FTP Pattern
 // Descripción: Detects regsvr32 execution to download/install/register new DLLs that are hosted on Web or FTP servers.
+// Fecha de creación: 2023-05-24
+// Fecha de modificación: 2023-05-26
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

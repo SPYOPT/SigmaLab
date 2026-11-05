@@ -2,6 +2,8 @@
 // ID Sigma: b243b280-65fe-48df-ba07-6ddea7646427
 // Título: Discovery of a System Time
 // Descripción: Identifies use of various commands to query a systems time. This technique may be used before executing a scheduled task or to discover the time zone of a target system.
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2022-06-28
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

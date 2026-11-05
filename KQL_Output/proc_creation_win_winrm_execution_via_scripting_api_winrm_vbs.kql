@@ -2,6 +2,8 @@
 // ID Sigma: 9df0dd3a-1a5c-47e3-a2bc-30ed177646a0
 // Título: Remote Code Execute via Winrm.vbs
 // Descripción: Detects an attempt to execute code or create service on remote host via winrm.vbs.
+// Fecha de creación: 2020-10-07
+// Fecha de modificación: 2023-03-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

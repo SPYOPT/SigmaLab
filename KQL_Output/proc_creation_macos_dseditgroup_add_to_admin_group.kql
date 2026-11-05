@@ -2,6 +2,8 @@
 // ID Sigma: 5d0fdb62-f225-42fb-8402-3dfe64da468a
 // Título: User Added To Admin Group Via DseditGroup
 // Descripción: Detects attempts to create and/or add an account to the admin group, thus granting admin privileges.
+// Fecha de creación: 2023-08-22
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

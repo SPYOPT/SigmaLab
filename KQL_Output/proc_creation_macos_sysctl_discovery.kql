@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of "sysctl" with specific arguments that have been used by threat actors and malware. It provides system hardware information.
 This process is primarily used to detect and avoid virtualization and analysis environments.
 
+// Fecha de creación: 2024-05-27
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

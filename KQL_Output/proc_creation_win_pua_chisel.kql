@@ -2,6 +2,8 @@
 // ID Sigma: 8b0e12da-d3c3-49db-bb4f-256703f380e5
 // Título: PUA - Chisel Tunneling Tool Execution
 // Descripción: Detects usage of the Chisel tunneling tool via the commandline arguments
+// Fecha de creación: 2022-09-13
+// Fecha de modificación: 2023-02-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

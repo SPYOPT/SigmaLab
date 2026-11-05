@@ -6,6 +6,8 @@ content - particularly scripts - into temporary directories (e.g., /dev/shm, /tm
 immediate execution, indicating potential malicious activity. This pattern is commonly used
 by malicious scripts, stagers, or downloaders in fileless or multi-stage Linux attacks.
 
+// Fecha de creación: 2025-06-17
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 8834e2f7-6b4b-4f09-8906-d2276470ee23
 // Título: PsExec/PAExec Escalation to LOCAL SYSTEM
 // Descripción: Detects suspicious commandline flags used by PsExec and PAExec to escalate a command line to LOCAL_SYSTEM rights
+// Fecha de creación: 2021-11-23
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

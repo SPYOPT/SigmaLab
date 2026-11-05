@@ -2,6 +2,8 @@
 // ID Sigma: e6c54d94-498c-4562-a37c-b469d8e9a275
 // Título: Suspicious PowerShell Download and Execute Pattern
 // Descripción: Detects suspicious PowerShell download patterns that are often used in malicious scripts, stagers or downloaders (make sure that your backend applies the strings case-insensitive)
+// Fecha de creación: 2022-02-28
+// Fecha de modificación: 2022-03-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

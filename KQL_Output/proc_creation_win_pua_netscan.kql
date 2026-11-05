@@ -4,6 +4,8 @@
 // Descripción: Detects usage of SoftPerfect's "netscan.exe". An application for scanning networks.
 It is actively used in-the-wild by threat actors to inspect and understand the network architecture of a victim.
 
+// Fecha de creación: 2024-04-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

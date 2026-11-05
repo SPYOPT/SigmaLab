@@ -6,6 +6,8 @@ such as .png, .jpg, .zip, .pdf, and others, which are often polyglots. MSHTA is 
 containing VBScript or JScript. Threat actors often abuse this lolbin utility to download and
 execute malicious scripts disguised as benign files or hosted under misleading extensions to evade detection.
 
+// Fecha de creación: 2019-02-22
+// Fecha de modificación: 2025-05-12
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

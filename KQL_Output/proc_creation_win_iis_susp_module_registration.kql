@@ -2,6 +2,8 @@
 // ID Sigma: 043c4b8b-3a54-4780-9682-081cb6b8185c
 // Título: Suspicious IIS Module Registration
 // Descripción: Detects a suspicious IIS module registration as described in Microsoft threat report on IIS backdoors
+// Fecha de creación: 2022-08-04
+// Fecha de modificación: 2023-01-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

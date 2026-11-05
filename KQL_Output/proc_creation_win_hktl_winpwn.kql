@@ -3,6 +3,8 @@
 // Título: HackTool - WinPwn Execution
 // Descripción: Detects commandline keywords indicative of potential usge of the tool WinPwn. A tool for Windows and Active Directory reconnaissance and exploitation.
 
+// Fecha de creación: 2023-12-04
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

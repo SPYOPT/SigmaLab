@@ -2,6 +2,8 @@
 // ID Sigma: fe2f9663-41cb-47e2-b954-8a228f3b9dff
 // Título: Linux Base64 Encoded Shebang In CLI
 // Descripción: Detects the presence of a base64 version of the shebang in the commandline, which could indicate a malicious payload about to be decoded
+// Fecha de creación: 2022-09-15
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

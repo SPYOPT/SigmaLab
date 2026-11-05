@@ -2,6 +2,8 @@
 // ID Sigma: 1cdd9a09-06c9-4769-99ff-626e2b3991b8
 // Título: Suspicious Double Extension File Execution
 // Descripción: Detects suspicious use of an .exe extension after a non-executable file extension like .pdf.exe, a set of spaces or underlines to cloak the executable file in spear phishing campaigns
+// Fecha de creación: 2019-06-26
+// Fecha de modificación: 2025-05-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

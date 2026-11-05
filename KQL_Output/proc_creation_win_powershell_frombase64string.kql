@@ -2,6 +2,8 @@
 // ID Sigma: e32d4572-9826-4738-b651-95fa63747e8a
 // Título: Base64 Encoded PowerShell Command Detected
 // Descripción: Detects usage of the "FromBase64String" function in the commandline which is used to decode a base64 encoded string
+// Fecha de creación: 2020-01-29
+// Fecha de modificación: 2023-01-26
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

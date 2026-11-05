@@ -4,6 +4,8 @@
 // Descripción: Detects when a user is potentially trying to bypass the Windows Defender AV by renaming a tool to dump64.exe and placing it in the Visual Studio folder.
 Currently the rule is covering only usage of procdump but other utilities can be added in order to increase coverage.
 
+// Fecha de creación: 2021-11-26
+// Fecha de modificación: 2024-06-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

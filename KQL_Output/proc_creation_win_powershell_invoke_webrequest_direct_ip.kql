@@ -2,6 +2,8 @@
 // ID Sigma: 1edff897-9146-48d2-9066-52e8d8f80a2f
 // Título: Suspicious Invoke-WebRequest Execution With DirectIP
 // Descripción: Detects calls to PowerShell with Invoke-WebRequest cmdlet using direct IP access
+// Fecha de creación: 2023-04-21
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

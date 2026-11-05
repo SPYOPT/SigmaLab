@@ -2,6 +2,8 @@
 // ID Sigma: ae215552-081e-44c7-805f-be16f975c8a2
 // Título: Suspicious Debugger Registration Cmdline
 // Descripción: Detects the registration of a debugger for a program that is available in the logon screen (sticky key backdoor).
+// Fecha de creación: 2019-09-06
+// Fecha de modificación: 2022-08-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

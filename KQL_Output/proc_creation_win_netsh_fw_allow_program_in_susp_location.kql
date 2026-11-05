@@ -2,6 +2,8 @@
 // ID Sigma: a35f5a72-f347-4e36-8895-9869b0d5fc6d
 // Título: Suspicious Program Location Whitelisted In Firewall Via Netsh.EXE
 // Descripción: Detects Netsh command execution that whitelists a program located in a suspicious location in the Windows Firewall
+// Fecha de creación: 2020-05-25
+// Fecha de modificación: 2023-12-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

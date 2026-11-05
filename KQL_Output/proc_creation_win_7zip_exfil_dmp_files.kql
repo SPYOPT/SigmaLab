@@ -2,6 +2,8 @@
 // ID Sigma: ec570e53-4c76-45a9-804d-dc3f355ff7a7
 // Título: 7Zip Compressing Dump Files
 // Descripción: Detects execution of 7z in order to compress a file with a ".dmp"/".dump" extension, which could be a step in a process of dump file exfiltration.
+// Fecha de creación: 2022-09-27
+// Fecha de modificación: 2026-06-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

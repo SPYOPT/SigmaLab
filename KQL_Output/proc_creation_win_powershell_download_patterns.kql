@@ -2,6 +2,8 @@
 // ID Sigma: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
 // Título: PowerShell Download Pattern
 // Descripción: Detects a Powershell process that contains download commands in its command line string
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2025-10-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

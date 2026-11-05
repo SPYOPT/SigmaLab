@@ -6,6 +6,8 @@ This rule identifies suspicious command-line patterns that combine memory dump f
 LSASS (Local Security Authority Subsystem Service) contains sensitive authentication data including plaintext passwords, NTLM hashes, and Kerberos tickets in memory.
 Attackers commonly dump LSASS memory to extract credentials for lateral movement and privilege escalation.
 
+// Fecha de creación: 2018-10-30
+// Fecha de modificación: 2025-10-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

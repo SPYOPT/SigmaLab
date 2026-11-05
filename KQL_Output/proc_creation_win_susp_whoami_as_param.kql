@@ -2,6 +2,8 @@
 // ID Sigma: e9142d84-fbe0-401d-ac50-3e519fb00c89
 // Título: WhoAmI as Parameter
 // Descripción: Detects a suspicious process command line that uses whoami as first parameter (as e.g. used by EfsPotato)
+// Fecha de creación: 2021-11-29
+// Fecha de modificación: 2022-12-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

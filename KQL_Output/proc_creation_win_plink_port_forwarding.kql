@@ -2,6 +2,8 @@
 // ID Sigma: 48a61b29-389f-4032-b317-b30de6b95314
 // Título: Suspicious Plink Port Forwarding
 // Descripción: Detects suspicious Plink tunnel port forwarding to a local port
+// Fecha de creación: 2021-01-19
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

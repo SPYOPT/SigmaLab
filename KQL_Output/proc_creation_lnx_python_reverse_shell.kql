@@ -3,6 +3,8 @@
 // Título: Python Reverse Shell Execution Via PTY And Socket Modules
 // Descripción: Detects the execution of python with calls to the socket and pty module in order to connect and spawn a potential reverse shell.
 
+// Fecha de creación: 2023-04-24
+// Fecha de modificación: 2024-11-04
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

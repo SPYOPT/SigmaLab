@@ -2,6 +2,8 @@
 // ID Sigma: b98d0db6-511d-45de-ad02-e82a98729620
 // Título: Remotely Hosted HTA File Executed Via Mshta.EXE
 // Descripción: Detects execution of the "mshta" utility with an argument containing the "http" keyword, which could indicate that an attacker is executing a remotely hosted malicious hta file
+// Fecha de creación: 2022-08-08
+// Fecha de modificación: 2023-02-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

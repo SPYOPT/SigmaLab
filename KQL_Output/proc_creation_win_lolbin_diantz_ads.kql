@@ -2,6 +2,8 @@
 // ID Sigma: 6b369ced-4b1d-48f1-b427-fdc0de0790bd
 // Título: Suspicious Diantz Alternate Data Stream Execution
 // Descripción: Compress target file into a cab file stored in the Alternate Data Stream (ADS) of the target file.
+// Fecha de creación: 2021-11-26
+// Fecha de modificación: 2022-12-31
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

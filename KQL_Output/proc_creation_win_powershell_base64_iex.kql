@@ -2,6 +2,8 @@
 // ID Sigma: 88f680b8-070e-402c-ae11-d2914f2257f1
 // Título: PowerShell Base64 Encoded IEX Cmdlet
 // Descripción: Detects usage of a base64 encoded "IEX" cmdlet in a process command line
+// Fecha de creación: 2019-08-23
+// Fecha de modificación: 2023-04-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

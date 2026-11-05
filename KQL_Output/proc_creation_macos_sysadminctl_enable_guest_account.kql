@@ -2,6 +2,8 @@
 // ID Sigma: d7329412-13bd-44ba-a072-3387f804a106
 // Título: Guest Account Enabled Via Sysadminctl
 // Descripción: Detects attempts to enable the guest account using the sysadminctl utility
+// Fecha de creación: 2023-02-18
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

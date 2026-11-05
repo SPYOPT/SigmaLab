@@ -5,6 +5,8 @@
 While it is a legitimate tool, intended for use in CI pipelines and security assessments,
 It was observed in the Shai-Hulud malware campaign targeting npm packages to steal sensitive information.
 
+// Fecha de creación: 2025-09-24
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

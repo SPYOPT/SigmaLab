@@ -2,6 +2,8 @@
 // ID Sigma: fa3c117a-bc0d-416e-a31b-0c0e80653efb
 // Título: Chopper Webshell Process Pattern
 // Descripción: Detects patterns found in process executions cause by China Chopper like tiny (ASPX) webshells
+// Fecha de creación: 2022-10-01
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

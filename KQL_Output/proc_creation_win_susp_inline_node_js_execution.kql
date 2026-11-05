@@ -2,6 +2,8 @@
 // ID Sigma: 8537c866-072e-460d-bfff-aaf39cbd73d3
 // Título: Potentially Suspicious Inline JavaScript Execution via NodeJS Binary
 // Descripción: Detects potentially suspicious inline JavaScript execution using Node.js with specific keywords in the command line.
+// Fecha de creación: 2025-04-21
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

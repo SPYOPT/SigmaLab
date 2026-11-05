@@ -6,6 +6,8 @@ Node.js is a popular open-source JavaScript runtime that runs code outside brows
 Adversaries have been observed abusing Node.js to disguise malware as legitimate processes, evade security defenses, and maintain persistence within target systems.
 Because Node.js is commonly used, this rule may generate false positives in some environments. However, if such activity is unusual in your environment, it is highly suspicious and warrants immediate investigation.
 
+// Fecha de creación: 2025-04-21
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

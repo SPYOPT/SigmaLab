@@ -5,6 +5,8 @@
 This action removes the "Scan with Microsoft Defender" option from the right-click menu for files, directories, and drives.
 Attackers may use this technique to hinder manual, on-demand scans and reduce the visibility of the security product.
 
+// Fecha de creación: 2025-07-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

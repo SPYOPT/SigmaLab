@@ -2,6 +2,8 @@
 // ID Sigma: 5a6e1e16-07de-48d8-8aae-faa766c05e88
 // Título: Potential Cookies Session Hijacking
 // Descripción: Detects execution of "curl.exe" with the "-c" flag in order to save cookie data.
+// Fecha de creación: 2023-07-27
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

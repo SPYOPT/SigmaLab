@@ -2,6 +2,8 @@
 // ID Sigma: 03552375-cc2c-4883-bbe4-7958d5a980be
 // Título: HackTool - SILENTTRINITY Stager Execution
 // Descripción: Detects SILENTTRINITY stager use via PE metadata
+// Fecha de creación: 2019-10-22
+// Fecha de modificación: 2023-02-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

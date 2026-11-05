@@ -2,6 +2,8 @@
 // ID Sigma: 0d34ed8b-1c12-4ff2-828c-16fc860b766d
 // Título: Suspicious Processes Spawned by Java.EXE
 // Descripción: Detects suspicious processes spawned from a Java host process which could indicate a sign of exploitation (e.g. log4j)
+// Fecha de creación: 2021-12-17
+// Fecha de modificación: 2024-01-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

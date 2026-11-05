@@ -2,6 +2,8 @@
 // ID Sigma: 98c5aeef-32d5-492f-b174-64a691896d25
 // Título: Service Security Descriptor Tampering Via Sc.EXE
 // Descripción: Detection of sc.exe utility adding a new service with special permission which hides that service.
+// Fecha de creación: 2023-02-28
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

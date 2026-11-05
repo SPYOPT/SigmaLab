@@ -2,6 +2,8 @@
 // ID Sigma: d87bd452-6da1-456e-8155-7dc988157b7d
 // Título: Suspicious Usage Of ShellExec_RunDLL
 // Descripción: Detects suspicious usage of the ShellExec_RunDLL function to launch other commands as seen in the the raspberry-robin attack
+// Fecha de creación: 2022-09-01
+// Fecha de modificación: 2022-12-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

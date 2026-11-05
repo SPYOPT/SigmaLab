@@ -2,6 +2,8 @@
 // ID Sigma: 2c28c248-7f50-417a-9186-a85b223010ee
 // Título: Wscript Shell Run In CommandLine
 // Descripción: Detects the presence of the keywords "Wscript", "Shell" and "Run" in the command, which could indicate a suspicious activity
+// Fecha de creación: 2022-08-31
+// Fecha de modificación: 2023-05-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

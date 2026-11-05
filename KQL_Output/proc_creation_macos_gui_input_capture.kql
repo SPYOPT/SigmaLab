@@ -2,6 +2,8 @@
 // ID Sigma: 60f1ce20-484e-41bd-85f4-ac4afec2c541
 // Título: GUI Input Capture - macOS
 // Descripción: Detects attempts to use system dialog prompts to capture user credentials
+// Fecha de creación: 2020-10-13
+// Fecha de modificación: 2025-12-05
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

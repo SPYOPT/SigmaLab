@@ -2,6 +2,8 @@
 // ID Sigma: 6ba5a05f-b095-4f0a-8654-b825f4f16334
 // Título: Potential MSTSC Shadowing Activity
 // Descripción: Detects RDP session hijacking by using MSTSC shadowing
+// Fecha de creación: 2020-01-24
+// Fecha de modificación: 2023-02-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

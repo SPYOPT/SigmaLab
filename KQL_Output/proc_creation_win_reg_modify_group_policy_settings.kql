@@ -2,6 +2,8 @@
 // ID Sigma: ada4b0c4-758b-46ac-9033-9004613a150d
 // Título: Modify Group Policy Settings
 // Descripción: Detect malicious GPO modifications can be used to implement many other malicious behaviors.
+// Fecha de creación: 2022-08-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

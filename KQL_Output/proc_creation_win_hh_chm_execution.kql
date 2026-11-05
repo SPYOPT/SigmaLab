@@ -2,6 +2,8 @@
 // ID Sigma: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84
 // Título: HH.EXE Execution
 // Descripción: Detects the execution of "hh.exe" to open ".chm" files.
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2023-12-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

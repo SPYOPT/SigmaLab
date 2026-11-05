@@ -6,6 +6,8 @@ This attack typically begins when users visit malicious websites impersonating l
 which may display fake CAPTCHA challenges or direct instructions to open file explorer and paste clipboard content.
 The clipboard content usually contains commands that download and execute malware, such as information stealing tools.
 
+// Fecha de creación: 2025-11-24
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

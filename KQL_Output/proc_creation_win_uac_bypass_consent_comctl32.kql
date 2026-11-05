@@ -2,6 +2,8 @@
 // ID Sigma: 1ca6bd18-0ba0-44ca-851c-92ed89a61085
 // Título: UAC Bypass Using Consent and Comctl32 - Process
 // Descripción: Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)
+// Fecha de creación: 2021-08-23
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

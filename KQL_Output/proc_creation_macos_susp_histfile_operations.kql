@@ -2,6 +2,8 @@
 // ID Sigma: 508a9374-ad52-4789-b568-fc358def2c65
 // Título: Suspicious History File Operations
 // Descripción: Detects commandline operations on shell history files
+// Fecha de creación: 2020-10-17
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

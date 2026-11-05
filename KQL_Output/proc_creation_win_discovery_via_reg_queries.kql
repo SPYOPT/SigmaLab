@@ -2,6 +2,8 @@
 // ID Sigma: 0022869c-49f7-4ff2-ba03-85ac42ddac58
 // Título: System Information Discovery via Registry Queries
 // Descripción: Detects attempts to query system information directly from the Windows Registry.
+// Fecha de creación: 2025-06-12
+// Fecha de modificación: 2025-10-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

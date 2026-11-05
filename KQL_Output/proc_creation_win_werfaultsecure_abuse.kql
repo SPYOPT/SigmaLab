@@ -8,6 +8,8 @@ Distinct command line patterns help identify the specific tool:
 - EDR-Freeze usage typically shows: "EDR-Freeze_[version].exe [PID] [timeout]" in ParentCommandLine
 Legitimate debugging operations using WerFaultSecure are rare in production environments and should be investigated.
 
+// Fecha de creación: 2025-09-23
+// Fecha de modificación: 2025-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

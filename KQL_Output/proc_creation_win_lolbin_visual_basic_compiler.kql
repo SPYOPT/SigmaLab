@@ -2,6 +2,8 @@
 // ID Sigma: 7b10f171-7f04-47c7-9fa2-5be43c76e535
 // Título: Visual Basic Command Line Compiler Usage
 // Descripción: Detects successful code compilation via Visual Basic Command Line Compiler that utilizes Windows Resource to Object Converter.
+// Fecha de creación: 2020-10-07
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

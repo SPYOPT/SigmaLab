@@ -5,6 +5,8 @@
 Adversaries may use flaws in the permissions for registry to redirect from the originally specified executable to one that they control, in order to launch their own code at Service start.
 Windows stores local service configuration information in the Registry under HKLM\SYSTEM\CurrentControlSet\Services
 
+// Fecha de creación: 2021-12-30
+// Fecha de modificación: 2024-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

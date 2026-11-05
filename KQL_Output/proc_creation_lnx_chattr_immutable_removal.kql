@@ -2,6 +2,8 @@
 // ID Sigma: 34979410-e4b5-4e5d-8cfb-389fdff05c12
 // Título: Remove Immutable File Attribute
 // Descripción: Detects usage of the 'chattr' utility to remove immutable file attribute.
+// Fecha de creación: 2022-09-15
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

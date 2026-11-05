@@ -2,6 +2,8 @@
 // ID Sigma: f35c5d71-b489-4e22-a115-f003df287317
 // Título: Potential CobaltStrike Process Patterns
 // Descripción: Detects potential process patterns related to Cobalt Strike beacon activity
+// Fecha de creación: 2021-07-27
+// Fecha de modificación: 2023-03-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

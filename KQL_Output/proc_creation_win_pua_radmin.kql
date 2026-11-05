@@ -2,6 +2,8 @@
 // ID Sigma: 5817e76f-4804-41e6-8f1d-5fa0b3ecae2d
 // Título: PUA - Radmin Viewer Utility Execution
 // Descripción: Detects the execution of Radmin which can be abused by an adversary to remotely control Windows machines
+// Fecha de creación: 2022-01-22
+// Fecha de modificación: 2023-12-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

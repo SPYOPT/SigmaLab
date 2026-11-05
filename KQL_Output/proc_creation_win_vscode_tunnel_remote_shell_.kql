@@ -2,6 +2,8 @@
 // ID Sigma: f4a623c2-4ef5-4c33-b811-0642f702c9f1
 // Título: Visual Studio Code Tunnel Shell Execution
 // Descripción: Detects the execution of a shell (powershell, bash, wsl...) via Visual Studio Code tunnel. Attackers can abuse this functionality to establish a C2 channel and execute arbitrary commands on the system.
+// Fecha de creación: 2023-10-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

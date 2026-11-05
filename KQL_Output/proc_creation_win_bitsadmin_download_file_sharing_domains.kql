@@ -2,6 +2,8 @@
 // ID Sigma: 8518ed3d-f7c9-4601-a26c-f361a4256a0c
 // Título: Suspicious Download From File-Sharing Website Via Bitsadmin
 // Descripción: Detects usage of bitsadmin downloading a file from a suspicious domain
+// Fecha de creación: 2022-06-28
+// Fecha de modificación: 2026-03-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

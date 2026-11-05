@@ -2,6 +2,8 @@
 // ID Sigma: f0ca6c24-3225-47d5-b1f5-352bf07ecfa7
 // Título: PUA - DefenderCheck Execution
 // Descripción: Detects the use of DefenderCheck, a tool to evaluate the signatures used in Microsoft Defender. It can be used to figure out the strings / byte chains used in Microsoft Defender to detect a tool and thus used for AV evasion.
+// Fecha de creación: 2022-08-30
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

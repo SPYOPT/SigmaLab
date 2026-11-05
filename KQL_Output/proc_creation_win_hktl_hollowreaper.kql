@@ -4,6 +4,8 @@
 // Descripción: Detects usage of HollowReaper, a process hollowing shellcode launcher used for stealth payload execution through process hollowing.
 It replaces the memory of a legitimate process with custom shellcode, allowing the attacker to execute payloads under the guise of trusted binaries.
 
+// Fecha de creación: 2025-07-01
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

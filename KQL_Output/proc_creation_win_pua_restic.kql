@@ -5,6 +5,8 @@
 Threat actors may leverage Restic to back up and exfiltrate sensitive data to remote storage locations, including cloud services.
 If not legitimately used in the enterprise environment, its presence may indicate malicious activity.
 
+// Fecha de creación: 2025-10-17
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

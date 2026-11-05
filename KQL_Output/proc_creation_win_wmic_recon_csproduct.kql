@@ -2,6 +2,8 @@
 // ID Sigma: 3e3ceccd-6c06-48b8-b5ff-ab1d25db8c1d
 // Título: Hardware Model Reconnaissance Via Wmic.EXE
 // Descripción: Detects the execution of WMIC with the "csproduct" which is used to obtain information such as hardware models and vendor information
+// Fecha de creación: 2023-02-14
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

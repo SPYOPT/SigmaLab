@@ -2,6 +2,8 @@
 // ID Sigma: c49c5062-0966-4170-9efd-9968c913a6cf
 // Título: Stop Windows Service Via PowerShell Stop-Service
 // Descripción: Detects the stopping of a Windows service via the PowerShell Cmdlet "Stop-Service"
+// Fecha de creación: 2023-03-05
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

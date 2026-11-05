@@ -2,6 +2,8 @@
 // ID Sigma: a85ffc3a-e8fd-4040-93bf-78aff284d801
 // Título: Use Of The SFTP.EXE Binary As A LOLBIN
 // Descripción: Detects the usage of the "sftp.exe" binary as a LOLBIN by abusing the "-D" flag
+// Fecha de creación: 2022-11-10
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: ac175779-025a-4f12-98b0-acdaeb77ea85
 // Título: PowerShell Script Run in AppData
 // Descripción: Detects a suspicious command line execution that invokes PowerShell with reference to an AppData folder
+// Fecha de creación: 2019-01-09
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

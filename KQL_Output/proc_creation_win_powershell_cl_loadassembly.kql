@@ -2,6 +2,8 @@
 // ID Sigma: c57872c7-614f-4d7f-a40d-b78c8df2d30d
 // Título: Assembly Loading Via CL_LoadAssembly.ps1
 // Descripción: Detects calls to "LoadAssemblyFromPath" or "LoadAssemblyFromNS" that are part of the "CL_LoadAssembly.ps1" script. This can be abused to load different assemblies and bypass App locker controls.
+// Fecha de creación: 2022-05-21
+// Fecha de modificación: 2023-08-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

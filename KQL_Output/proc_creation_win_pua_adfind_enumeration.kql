@@ -2,6 +2,8 @@
 // ID Sigma: 455b9d50-15a1-4b99-853f-8d37655a4c1b
 // Título: PUA - Suspicious ActiveDirectory Enumeration Via AdFind.EXE
 // Descripción: Detects active directory enumeration activity using known AdFind CLI flags
+// Fecha de creación: 2021-12-13
+// Fecha de modificación: 2023-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

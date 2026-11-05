@@ -6,6 +6,8 @@ trying to create a new user account via the WinNT or LDAP provider. This is an u
 user accounts and may indicate an attempt to evade detection by avoiding more commonly monitored commands
 such as "net user", "New-LocalUser" or "New-ADUser".
 
+// Fecha de creación: 2026-08-13
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

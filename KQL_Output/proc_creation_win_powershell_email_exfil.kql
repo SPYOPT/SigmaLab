@@ -2,6 +2,8 @@
 // ID Sigma: 312d0384-401c-4b8b-abdf-685ffba9a332
 // Título: Email Exifiltration Via Powershell
 // Descripción: Detects email exfiltration via powershell cmdlets
+// Fecha de creación: 2022-09-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

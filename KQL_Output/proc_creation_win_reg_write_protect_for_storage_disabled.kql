@@ -4,6 +4,8 @@
 // Descripción: Detects applications trying to modify the registry in order to disable any write-protect property for storage devices.
 This could be a precursor to a ransomware attack and has been an observed technique used by cypherpunk group.
 
+// Fecha de creación: 2021-06-11
+// Fecha de modificación: 2024-01-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: b86f6dea-0b2f-41f5-bdcc-a057bd19cd6a
 // Título: File Download From IP Based URL Via CertOC.EXE
 // Descripción: Detects when a user downloads a file from an IP based URL using CertOC.exe
+// Fecha de creación: 2023-10-18
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

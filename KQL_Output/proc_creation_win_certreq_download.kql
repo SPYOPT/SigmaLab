@@ -5,6 +5,8 @@
 This behavior is often used by attackers to download additional payloads or configuration files.
 Certreq is a built-in Windows utility used to request and retrieve certificates from a certification authority (CA). However, it can be abused by threat actors for malicious purposes.
 
+// Fecha de creación: 2021-11-24
+// Fecha de modificación: 2025-10-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -5,6 +5,8 @@
 This pattern may indicate an attempt to discover and execute system binaries dynamically, for example powershell, a technique sometimes used by attackers to evade detection.
 This behavior has been observed in various malicious lnk files.
 
+// Fecha de creación: 2025-11-12
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

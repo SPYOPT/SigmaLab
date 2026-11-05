@@ -2,6 +2,8 @@
 // ID Sigma: 21d856f9-9281-4ded-9377-51a1a6e2a432
 // Título: Potential Persistence Via Logon Scripts - CommandLine
 // Descripción: Detects the addition of a new LogonScript to the registry value "UserInitMprLogonScript" for potential persistence
+// Fecha de creación: 2019-01-12
+// Fecha de modificación: 2023-06-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

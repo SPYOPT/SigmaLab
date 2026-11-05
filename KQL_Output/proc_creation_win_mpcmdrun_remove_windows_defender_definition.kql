@@ -2,6 +2,8 @@
 // ID Sigma: 9719a8aa-401c-41af-8108-ced7ec9cd75c
 // Título: Windows Defender Definition Files Removed
 // Descripción: Adversaries may disable security tools to avoid possible detection of their tools and activities by removing Windows Defender Definition Files
+// Fecha de creación: 2021-07-07
+// Fecha de modificación: 2023-07-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

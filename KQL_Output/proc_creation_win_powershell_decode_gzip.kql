@@ -2,6 +2,8 @@
 // ID Sigma: 98767d61-b2e8-4d71-b661-e36783ee24c1
 // Título: Gzip Archive Decode Via PowerShell
 // Descripción: Detects attempts of decoding encoded Gzip archives via PowerShell.
+// Fecha de creación: 2023-03-13
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

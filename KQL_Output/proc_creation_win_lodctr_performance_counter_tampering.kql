@@ -2,6 +2,8 @@
 // ID Sigma: cc9d3712-6310-4320-b2df-7cb408274d53
 // Título: Rebuild Performance Counter Values Via Lodctr.EXE
 // Descripción: Detects the execution of "lodctr.exe" to rebuild the performance counter registry values. This can be abused by attackers by providing a malicious config file to overwrite performance counter configuration to confuse and evade monitoring and security solutions.
+// Fecha de creación: 2023-06-15
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

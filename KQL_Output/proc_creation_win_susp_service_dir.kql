@@ -2,6 +2,8 @@
 // ID Sigma: 883faa95-175a-4e22-8181-e5761aeb373c
 // Título: Suspicious Service Binary Directory
 // Descripción: Detects a service binary running in a suspicious directory
+// Fecha de creación: 2021-03-09
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

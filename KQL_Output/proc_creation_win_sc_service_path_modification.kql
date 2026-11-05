@@ -2,6 +2,8 @@
 // ID Sigma: 138d3531-8793-4f50-a2cd-f291b2863d78
 // Título: Suspicious Service Path Modification
 // Descripción: Detects service path modification via the "sc" binary to a suspicious command or path
+// Fecha de creación: 2019-10-21
+// Fecha de modificación: 2022-11-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

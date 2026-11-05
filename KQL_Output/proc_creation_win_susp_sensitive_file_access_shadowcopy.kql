@@ -3,6 +3,8 @@
 // Título: Sensitive File Access Via Volume Shadow Copy Backup
 // Descripción: Detects a command that accesses the VolumeShadowCopy in order to extract sensitive files such as the Security or SAM registry hives or the AD database (ntds.dit)
 
+// Fecha de creación: 2021-08-09
+// Fecha de modificación: 2024-01-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

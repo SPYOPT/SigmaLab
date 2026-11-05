@@ -4,6 +4,8 @@
 // Descripción: Detects suspicious powershell download cradle using nslookup.
 This cradle uses nslookup to extract payloads from DNS records
 
+// Fecha de creación: 2022-09-05
+// Fecha de modificación: 2026-10-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

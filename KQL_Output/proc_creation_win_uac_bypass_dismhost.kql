@@ -2,6 +2,8 @@
 // ID Sigma: 853e74f9-9392-4935-ad3b-2e8c040dae86
 // Título: UAC Bypass Using DismHost
 // Descripción: Detects the pattern of UAC Bypass using DismHost DLL hijacking (UACMe 63)
+// Fecha de creación: 2021-08-30
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

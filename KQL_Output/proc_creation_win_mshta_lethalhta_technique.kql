@@ -2,6 +2,8 @@
 // ID Sigma: ed5d72a6-f8f4-479d-ba79-02f6a80d7471
 // Título: Potential LethalHTA Technique Execution
 // Descripción: Detects potential LethalHTA technique where the "mshta.exe" is spawned by an "svchost.exe" process
+// Fecha de creación: 2018-06-07
+// Fecha de modificación: 2023-02-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

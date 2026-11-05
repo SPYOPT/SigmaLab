@@ -2,6 +2,8 @@
 // ID Sigma: d7654f02-e04b-4934-9838-65c46f187ebc
 // Título: PUA- IOX Tunneling Tool Execution
 // Descripción: Detects the use of IOX - a tool for port forwarding and intranet proxy purposes
+// Fecha de creación: 2022-10-08
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

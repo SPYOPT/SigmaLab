@@ -2,6 +2,8 @@
 // ID Sigma: bbc865e4-7fcd-45a6-8ff1-95ced28ec5b2
 // Título: NtdllPipe Like Activity Execution
 // Descripción: Detects command that type the content of ntdll.dll to a different file or a pipe in order to evade AV / EDR detection. As seen being used in the POC NtdllPipe
+// Fecha de creación: 2022-03-05
+// Fecha de modificación: 2023-03-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

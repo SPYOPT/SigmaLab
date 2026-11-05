@@ -2,6 +2,8 @@
 // ID Sigma: c7942406-33dd-4377-a564-0f62db0593a3
 // Título: Suspicious CodePage Switch Via CHCP
 // Descripción: Detects a code page switch in command line or batch scripts to a rare language
+// Fecha de creación: 2019-10-14
+// Fecha de modificación: 2023-03-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

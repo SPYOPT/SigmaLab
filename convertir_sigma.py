@@ -67,7 +67,7 @@ def obtener_metadata(regla):
         "estado_sigma": "",
         "nivel": "",
         "autor": "",
-        "fecha": "",
+        "fecha_creacion": "",
         "fecha_modificacion": "",
         "tags": "",
         "referencias": "",
@@ -167,7 +167,7 @@ def obtener_metadata(regla):
             "autor": convertir_a_texto(
                 contenido.get("author")
             ),
-            "fecha": convertir_a_texto(
+            "fecha_creacion": convertir_a_texto(
                 contenido.get("date")
             ),
             "fecha_modificacion": convertir_a_texto(
@@ -434,6 +434,8 @@ def main():
                 f"// ID Sigma: {metadata['id_sigma']}\n"
                 f"// Título: {metadata['titulo']}\n"
                 f"// Descripción: {metadata['descripcion']}\n"
+                f"// Fecha de creación: {metadata['fecha_creacion']}\n"
+                f"// Fecha de modificación: {metadata['fecha_modificacion']}\n"
                 f"// Aplica a: {metadata['aplica_a']}\n"
                 f"// Producto: {metadata['producto']}\n"
                 f"// Categoría: {metadata['categoria']}\n"
@@ -485,7 +487,7 @@ def main():
                 "estado_sigma": metadata["estado_sigma"],
                 "nivel": metadata["nivel"],
                 "autor": metadata["autor"],
-                "fecha": metadata["fecha"],
+                "fecha_creacion": metadata["fecha_creacion"],
                 "fecha_modificacion": (
                     metadata["fecha_modificacion"]
                 ),
@@ -528,32 +530,43 @@ def main():
     reporte_fallidas_csv = SALIDA / "reglas_fallidas.csv"
 
     columnas = [
-        "regla",
-        "ruta_sigma",
-        "id_sigma",
-        "titulo",
-        "descripcion",
-        "aplica_a",
-        "producto",
-        "categoria",
-        "servicio",
-        "definicion_logsource",
-        "estado_sigma",
-        "nivel",
-        "autor",
-        "fecha",
-        "fecha_modificacion",
-        "tags",
-        "referencias",
-        "falsos_positivos",
-        "metadata_completa",
-        "pipeline",
-        "estado_conversion",
-        "archivo_kql",
-        "resultado_kql",
-        "detalle_error",
-        "error_metadata",
-    ]
+    # Identificación de la regla
+    "regla",
+    "id_sigma",
+    "titulo",
+    "descripcion",
+
+    # Fechas de la regla
+    "fecha_creacion",
+    "fecha_modificacion",
+
+    # Alcance de la regla
+    "aplica_a",
+    "producto",
+    "categoria",
+    "servicio",
+    "definicion_logsource",
+
+    # Clasificación Sigma
+    "estado_sigma",
+    "nivel",
+    "autor",
+    "tags",
+    "referencias",
+    "falsos_positivos",
+
+    # Resultado de conversión
+    "pipeline",
+    "estado_conversion",
+    "archivo_kql",
+    "resultado_kql",
+    "detalle_error",
+
+    # Información técnica y trazabilidad
+    "ruta_sigma",
+    "metadata_completa",
+    "error_metadata",
+]
 
     # Separar las filas exitosas y fallidas.
     registros_exitosos = [

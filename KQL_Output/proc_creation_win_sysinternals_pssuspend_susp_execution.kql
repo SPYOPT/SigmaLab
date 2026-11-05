@@ -2,6 +2,8 @@
 // ID Sigma: 4beb6ae0-f85b-41e2-8f18-8668abc8af78
 // Título: Sysinternals PsSuspend Suspicious Execution
 // Descripción: Detects suspicious execution of Sysinternals PsSuspend, where the utility is used to suspend critical processes such as AV or EDR to bypass defenses
+// Fecha de creación: 2023-03-23
+// Fecha de modificación: 2026-06-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

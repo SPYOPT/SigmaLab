@@ -2,6 +2,8 @@
 // ID Sigma: 1114e048-b69c-4f41-bc20-657245ae6e3f
 // Título: User Discovery And Export Via Get-ADUser Cmdlet
 // Descripción: Detects usage of the Get-ADUser cmdlet to collect user information and output it to a file
+// Fecha de creación: 2022-09-09
+// Fecha de modificación: 2022-11-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

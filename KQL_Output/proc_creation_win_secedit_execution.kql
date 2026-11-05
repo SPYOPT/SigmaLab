@@ -2,6 +2,8 @@
 // ID Sigma: c2c76b77-32be-4d1f-82c9-7e544bdfe0eb
 // Título: Potential Suspicious Activity Using SeCEdit
 // Descripción: Detects potential suspicious behaviour using secedit.exe. Such as exporting or modifying the security policy
+// Fecha de creación: 2022-11-18
+// Fecha de modificación: 2022-12-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

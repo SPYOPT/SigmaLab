@@ -2,6 +2,8 @@
 // ID Sigma: 3b4e950b-a3ea-44d3-877e-432071990709
 // Título: Notepad Password Files Discovery
 // Descripción: Detects the execution of Notepad to open a file that has the string "password" which may indicate unauthorized access to credentials or suspicious activity.
+// Fecha de creación: 2025-02-21
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

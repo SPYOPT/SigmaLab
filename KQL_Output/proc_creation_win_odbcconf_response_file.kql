@@ -2,6 +2,8 @@
 // ID Sigma: 5f03babb-12db-4eec-8c82-7b4cb5580868
 // Título: Response File Execution Via Odbcconf.EXE
 // Descripción: Detects execution of "odbcconf" with the "-f" flag in order to load a response file which might contain a malicious action.
+// Fecha de creación: 2023-05-22
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

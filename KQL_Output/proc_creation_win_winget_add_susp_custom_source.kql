@@ -2,6 +2,8 @@
 // ID Sigma: c15a46a0-07d4-4c87-b4b6-89207835a83b
 // Título: Add Potential Suspicious New Download Source To Winget
 // Descripción: Detects usage of winget to add new potentially suspicious download sources
+// Fecha de creación: 2023-04-17
+// Fecha de modificación: 2023-12-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

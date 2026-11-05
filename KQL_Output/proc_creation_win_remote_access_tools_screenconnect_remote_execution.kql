@@ -2,6 +2,8 @@
 // ID Sigma: b1f73849-6329-4069-bc8f-78a604bb8b23
 // Título: Remote Access Tool - ScreenConnect Remote Command Execution
 // Descripción: Detects the execution of a system command via the ScreenConnect RMM service.
+// Fecha de creación: 2023-10-10
+// Fecha de modificación: 2024-02-26
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

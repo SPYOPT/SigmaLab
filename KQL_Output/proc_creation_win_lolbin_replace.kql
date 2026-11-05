@@ -2,6 +2,8 @@
 // ID Sigma: 9292293b-8496-4715-9db6-37028dcda4b3
 // Título: Replace.exe Usage
 // Descripción: Detects the use of Replace.exe which can be used to replace file with another file
+// Fecha de creación: 2022-03-06
+// Fecha de modificación: 2024-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

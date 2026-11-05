@@ -2,6 +2,8 @@
 // ID Sigma: 05a2ab7e-ce11-4b63-86db-ab32e763e11d
 // Título: MMC Spawning Windows Shell
 // Descripción: Detects a Windows command line executable started from MMC
+// Fecha de creación: 2019-08-05
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

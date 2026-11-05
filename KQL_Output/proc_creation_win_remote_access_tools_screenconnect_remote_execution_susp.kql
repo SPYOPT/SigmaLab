@@ -3,6 +3,8 @@
 // Título: Remote Access Tool - ScreenConnect Potential Suspicious Remote Command Execution
 // Descripción: Detects potentially suspicious child processes launched via the ScreenConnect client service.
 
+// Fecha de creación: 2022-02-25
+// Fecha de modificación: 2024-02-28
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

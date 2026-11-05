@@ -2,6 +2,8 @@
 // ID Sigma: 6004abd0-afa4-4557-ba90-49d172e0a299
 // Título: Execute Pcwrun.EXE To Leverage Follina
 // Descripción: Detects indirect command execution via Program Compatibility Assistant "pcwrun.exe" leveraging the follina (CVE-2022-30190) vulnerability
+// Fecha de creación: 2022-06-13
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

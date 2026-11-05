@@ -3,6 +3,8 @@
 // Título: Capsh Shell Invocation - Linux
 // Descripción: Detects the use of the "capsh" utility to invoke a shell.
 
+// Fecha de creación: 2024-09-02
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: fa1a7e52-3d02-435b-81b8-00da14dd66c1
 // Título: Diskshadow Script Mode - Execution From Potential Suspicious Location
 // Descripción: Detects execution of "Diskshadow.exe" in script mode using the "/s" flag where the script is located in a potentially suspicious location.
+// Fecha de creación: 2023-09-15
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

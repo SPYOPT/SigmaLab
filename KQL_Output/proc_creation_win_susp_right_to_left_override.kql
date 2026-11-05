@@ -4,6 +4,8 @@
 // Descripción: Detects the presence of the "u202+E" character, which causes a terminal, browser, or operating system to render text in a right-to-left sequence.
 This character is used as an obfuscation and masquerading techniques by adversaries to trick users into opening malicious files.
 
+// Fecha de creación: 2023-02-15
+// Fecha de modificación: 2026-03-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

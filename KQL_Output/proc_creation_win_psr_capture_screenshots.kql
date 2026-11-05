@@ -2,6 +2,8 @@
 // ID Sigma: 2158f96f-43c2-43cb-952a-ab4580f32382
 // Título: Screen Capture Activity Via Psr.EXE
 // Descripción: Detects execution of Windows Problem Steps Recorder (psr.exe), a utility used to record the user screen and clicks.
+// Fecha de creación: 2019-10-12
+// Fecha de modificación: 2024-01-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

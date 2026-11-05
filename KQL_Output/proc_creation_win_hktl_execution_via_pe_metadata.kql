@@ -2,6 +2,8 @@
 // ID Sigma: 37c1333a-a0db-48be-b64b-7393b2386e3b
 // Título: Hacktool Execution - PE Metadata
 // Descripción: Detects the execution of different Windows based hacktools via PE metadata (company, product, etc.) even if the files have been renamed
+// Fecha de creación: 2022-04-27
+// Fecha de modificación: 2024-01-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 0ed75b9c-c73b-424d-9e7d-496cd565fbe0
 // Título: Security Software Discovery - MacOs
 // Descripción: Detects usage of system utilities (only grep for now) to discover security software discovery
+// Fecha de creación: 2020-10-19
+// Fecha de modificación: 2022-11-27
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

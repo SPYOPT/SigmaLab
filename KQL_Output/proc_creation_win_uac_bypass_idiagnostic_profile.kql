@@ -2,6 +2,8 @@
 // ID Sigma: 4cbef972-f347-4170-b62a-8253f6168e6d
 // Título: UAC Bypass Using IDiagnostic Profile
 // Descripción: Detects the "IDiagnosticProfileUAC" UAC bypass technique
+// Fecha de creación: 2022-07-03
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

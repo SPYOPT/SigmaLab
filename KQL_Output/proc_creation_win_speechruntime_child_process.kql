@@ -4,6 +4,8 @@
 // Descripción: Detects suspicious Speech Runtime Binary Execution by monitoring its child processes.
 Child processes spawned by SpeechRuntime.exe could indicate an attempt for lateral movement via COM & DCOM hijacking.
 
+// Fecha de creación: 2025-10-23
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

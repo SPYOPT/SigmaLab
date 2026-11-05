@@ -3,6 +3,8 @@
 // Título: Sensitive File Dump Via Print.EXE
 // Descripción: Detects the abuse of the Print.exe utility for credential harvesting which involves using Print.Exe to copy sensitive files such as ntds.dit, SAM, SECURITY, or SYSTEM from the Windows directory in order to extract credentials, locally or remotely.
 
+// Fecha de creación: 2026-04-28
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

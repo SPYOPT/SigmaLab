@@ -4,6 +4,8 @@
 // Descripción: Detects modification of LSA PPL protection settings via CommandLine.
 It may indicate an attempt to disable protection and enable credential dumping tools to access LSASS process memory.
 
+// Fecha de creación: 2022-03-22
+// Fecha de modificación: 2026-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

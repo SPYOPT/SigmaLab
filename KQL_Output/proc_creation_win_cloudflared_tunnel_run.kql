@@ -2,6 +2,8 @@
 // ID Sigma: 9a019ffc-3580-4c9d-8d87-079f7e8d3fd4
 // Título: Cloudflared Tunnel Execution
 // Descripción: Detects execution of the "cloudflared" tool to connect back to a tunnel. This was seen used by threat actors to maintain persistence and remote access to compromised networks.
+// Fecha de creación: 2023-05-17
+// Fecha de modificación: 2023-12-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: fb50eb7a-5ab1-43ae-bcc9-091818cb8424
 // Título: Disabled IE Security Features
 // Descripción: Detects command lines that indicate unwanted modifications to registry keys that disable important Internet Explorer security features
+// Fecha de creación: 2020-06-19
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

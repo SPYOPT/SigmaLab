@@ -2,6 +2,8 @@
 // ID Sigma: e4ffe466-6ff8-48d4-94bd-e32d1a6061e2
 // Título: Nohup Execution
 // Descripción: Detects usage of nohup which could be leveraged by an attacker to keep a process running or break out from restricted environments
+// Fecha de creación: 2022-06-06
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

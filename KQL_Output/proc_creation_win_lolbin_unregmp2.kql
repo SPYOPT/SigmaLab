@@ -2,6 +2,8 @@
 // ID Sigma: 727454c0-d851-48b0-8b89-385611ab0704
 // Título: Lolbin Unregmp2.exe Use As Proxy
 // Descripción: Detect usage of the "unregmp2.exe" binary as a proxy to launch a custom version of "wmpnscfg.exe"
+// Fecha de creación: 2022-12-29
+// Fecha de modificación: 2024-06-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

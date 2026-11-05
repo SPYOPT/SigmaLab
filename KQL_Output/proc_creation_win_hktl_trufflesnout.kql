@@ -2,6 +2,8 @@
 // ID Sigma: 69ca006d-b9a9-47f5-80ff-ecd4d25d481a
 // Título: HackTool - TruffleSnout Execution
 // Descripción: Detects the use of TruffleSnout.exe an iterative AD discovery toolkit for offensive operators, situational awareness and targeted low noise enumeration.
+// Fecha de creación: 2022-08-20
+// Fecha de modificación: 2023-02-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

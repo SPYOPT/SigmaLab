@@ -2,6 +2,8 @@
 // ID Sigma: f0507c0f-a3a2-40f5-acc6-7f543c334993
 // Título: Suspicious File Execution From Internet Hosted WebDav Share
 // Descripción: Detects the execution of the "net use" command to mount a WebDAV server and then immediately execute some content in it. As seen being used in malicious LNK files
+// Fecha de creación: 2022-09-01
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

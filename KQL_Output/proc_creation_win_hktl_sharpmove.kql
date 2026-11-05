@@ -3,6 +3,8 @@
 // Título: HackTool - SharpMove Tool Execution
 // Descripción: Detects the execution of SharpMove, a .NET utility performing multiple tasks such as "Task Creation", "SCM" query, VBScript execution using WMI via its PE metadata and command line options.
 
+// Fecha de creación: 2024-01-29
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

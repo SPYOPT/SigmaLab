@@ -2,6 +2,8 @@
 // ID Sigma: cc9cbe82-7bc0-4ef5-bc23-bbfb83947be7
 // Título: File Decoded From Base64/Hex Via Certutil.EXE
 // Descripción: Detects the execution of certutil with either the "decode" or "decodehex" flags to decode base64 or hex encoded files. This can be abused by attackers to decode an encoded payload before execution
+// Fecha de creación: 2023-02-15
+// Fecha de modificación: 2025-06-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

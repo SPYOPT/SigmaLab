@@ -2,6 +2,8 @@
 // ID Sigma: c02e96b7-c63a-4c47-bd83-4a9f74afcfb2
 // Título: New Service Creation Using PowerShell
 // Descripción: Detects the creation of a new service using powershell.
+// Fecha de creación: 2023-02-20
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

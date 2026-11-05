@@ -2,6 +2,8 @@
 // ID Sigma: 45d3a03d-f441-458c-8883-df101a3bb146
 // Título: Launch-VsDevShell.PS1 Proxy Execution
 // Descripción: Detects the use of the 'Launch-VsDevShell.ps1' Microsoft signed script to execute commands.
+// Fecha de creación: 2022-08-19
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

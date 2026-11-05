@@ -2,6 +2,8 @@
 // ID Sigma: c9192ad9-75e5-43eb-8647-82a0a5b493e3
 // Título: PUA - Mouse Lock Execution
 // Descripción: In Kaspersky's 2020 Incident Response Analyst Report they listed legitimate tool "Mouse Lock" as being used for both credential access and collection in security incidents.
+// Fecha de creación: 2020-08-13
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

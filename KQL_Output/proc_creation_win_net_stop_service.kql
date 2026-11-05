@@ -2,6 +2,8 @@
 // ID Sigma: 88872991-7445-4a22-90b2-a3adadb0e827
 // Título: Stop Windows Service Via Net.EXE
 // Descripción: Detects the stopping of a Windows service via the "net" utility.
+// Fecha de creación: 2023-03-05
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

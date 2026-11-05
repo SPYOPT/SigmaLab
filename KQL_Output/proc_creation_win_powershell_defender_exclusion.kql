@@ -2,6 +2,8 @@
 // ID Sigma: 17769c90-230e-488b-a463-e05c08e9d48f
 // Título: Powershell Defender Exclusion
 // Descripción: Detects requests to exclude files, folders or processes from Antivirus scanning using PowerShell cmdlets
+// Fecha de creación: 2021-04-29
+// Fecha de modificación: 2022-05-12
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

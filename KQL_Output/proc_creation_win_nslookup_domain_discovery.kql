@@ -2,6 +2,8 @@
 // ID Sigma: e6313acd-208c-44fc-a0ff-db85d572e90e
 // Título: Network Reconnaissance Activity
 // Descripción: Detects a set of suspicious network related commands often used in recon stages
+// Fecha de creación: 2022-02-07
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

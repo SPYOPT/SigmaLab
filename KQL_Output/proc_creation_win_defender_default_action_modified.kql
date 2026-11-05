@@ -5,6 +5,8 @@
 This is a highly suspicious configuration change that effectively disables Defender's ability to automatically mitigate threats of a certain severity level.
 An attacker might use this technique via the command line to bypass defenses before executing payloads.
 
+// Fecha de creación: 2025-07-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

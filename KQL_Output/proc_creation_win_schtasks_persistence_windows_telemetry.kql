@@ -4,6 +4,8 @@
 // Descripción: Detects manual execution of the "Microsoft Compatibility Appraiser" task via schtasks.
 In order to trigger persistence stored in the "\AppCompatFlags\TelemetryController" registry key.
 
+// Fecha de creación: 2020-09-29
+// Fecha de modificación: 2023-02-10
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

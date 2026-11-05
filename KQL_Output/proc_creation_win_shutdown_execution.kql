@@ -2,6 +2,8 @@
 // ID Sigma: 34ebb878-1b15-4895-b352-ca2eeb99b274
 // Título: Suspicious Execution of Shutdown
 // Descripción: Use of the commandline to shutdown or reboot windows
+// Fecha de creación: 2022-01-01
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

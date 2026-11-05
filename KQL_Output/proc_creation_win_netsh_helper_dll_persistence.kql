@@ -3,6 +3,8 @@
 // Título: Potential Persistence Via Netsh Helper DLL
 // Descripción: Detects the execution of netsh with "add helper" flag in order to add a custom helper DLL. This technique can be abused to add a malicious helper DLL that can be used as a persistence proxy that gets called when netsh.exe is executed.
 
+// Fecha de creación: 2019-10-25
+// Fecha de modificación: 2023-11-28
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

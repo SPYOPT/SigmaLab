@@ -2,6 +2,8 @@
 // ID Sigma: 30bf1789-379d-4fdc-900f-55cd0a90a801
 // Título: Visual Studio Code Tunnel Service Installation
 // Descripción: Detects the installation of VsCode tunnel (code-tunnel) as a service.
+// Fecha de creación: 2023-10-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

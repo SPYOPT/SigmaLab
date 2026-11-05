@@ -2,6 +2,8 @@
 // ID Sigma: 1ec65a5f-9473-4f12-97da-622044d6df21
 // Título: Powershell Defender Disable Scan Feature
 // Descripción: Detects requests to disable Microsoft Defender features using PowerShell commands
+// Fecha de creación: 2022-03-03
+// Fecha de modificación: 2024-01-02
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

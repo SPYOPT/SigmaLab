@@ -2,6 +2,8 @@
 // ID Sigma: e9f8f8cc-07cc-4e81-b724-f387db9175e4
 // Título: Potentially Suspicious Execution Of Regasm/Regsvcs With Uncommon Extension
 // Descripción: Detects potentially suspicious execution of the Regasm/Regsvcs utilities with an uncommon extension.
+// Fecha de creación: 2023-02-13
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

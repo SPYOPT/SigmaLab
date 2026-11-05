@@ -2,6 +2,8 @@
 // ID Sigma: f1408a58-0e94-4165-b80a-da9f96cf6fc3
 // Título: JXA In-memory Execution Via OSAScript
 // Descripción: Detects possible malicious execution of JXA in-memory via OSAScript
+// Fecha de creación: 2023-01-31
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

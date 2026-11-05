@@ -2,6 +2,8 @@
 // ID Sigma: ea0cdc3e-2239-4f26-a947-4e8f8224e464
 // Título: Suspicious File Encoded To Base64 Via Certutil.EXE
 // Descripción: Detects the execution of certutil with the "encode" flag to encode a file to base64 where the extensions of the file is suspicious
+// Fecha de creación: 2023-05-15
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

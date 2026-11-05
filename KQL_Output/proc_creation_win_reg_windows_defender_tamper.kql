@@ -3,6 +3,8 @@
 // Título: Suspicious Windows Defender Registry Key Tampering Via Reg.EXE
 // Descripción: Detects the usage of "reg.exe" to tamper with different Windows Defender registry keys in order to disable some important features related to protection and detection
 
+// Fecha de creación: 2022-03-22
+// Fecha de modificación: 2025-06-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

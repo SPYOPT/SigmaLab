@@ -4,6 +4,8 @@
 // Descripción: Detects the creation of a scheduled task using schtasks.exe, potentially in combination with curl for downloading payloads and PowerShell for executing them.
 This facilitates executing malicious payloads or connecting with C&C server persistently without dropping the malware sample on the host.
 
+// Fecha de creación: 2025-02-05
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

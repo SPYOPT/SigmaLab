@@ -2,6 +2,8 @@
 // ID Sigma: 07e3cb2c-0608-410d-be4b-1511cb1a0448
 // Título: Tamper Windows Defender Remove-MpPreference
 // Descripción: Detects attempts to remove Windows Defender configurations using the 'MpPreference' cmdlet
+// Fecha de creación: 2022-08-05
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

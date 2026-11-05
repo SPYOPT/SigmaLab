@@ -4,6 +4,8 @@
 // Descripción: Detects execution of the Kaspersky init.d stop script on Linux systems either directly or via systemctl.
 This activity may indicate a manual interruption of the antivirus service by an administrator, or it could be a sign of potential tampering or evasion attempts by malicious actors.
 
+// Fecha de creación: 2025-10-18
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

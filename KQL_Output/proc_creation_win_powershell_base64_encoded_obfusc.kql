@@ -2,6 +2,8 @@
 // ID Sigma: 8d01b53f-456f-48ee-90f6-bc28e67d4e35
 // Título: Suspicious Obfuscated PowerShell Code
 // Descripción: Detects suspicious UTF16 and base64 encoded and often obfuscated PowerShell code often used in command lines
+// Fecha de creación: 2022-07-11
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

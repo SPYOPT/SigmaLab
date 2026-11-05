@@ -2,6 +2,8 @@
 // ID Sigma: 6c96fc76-0eb1-11eb-adc1-0242ac120002
 // Título: Invoke-Obfuscation STDIN+ Launcher
 // Descripción: Detects Obfuscated use of stdin to execute PowerShell
+// Fecha de creación: 2020-10-15
+// Fecha de modificación: 2024-04-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

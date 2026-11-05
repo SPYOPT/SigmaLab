@@ -3,6 +3,8 @@
 // Título: Suspicious Windows Update Agent Empty Cmdline
 // Descripción: Detects suspicious Windows Update Agent activity in which a wuauclt.exe process command line doesn't contain any command line flags
 
+// Fecha de creación: 2022-02-26
+// Fecha de modificación: 2023-11-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

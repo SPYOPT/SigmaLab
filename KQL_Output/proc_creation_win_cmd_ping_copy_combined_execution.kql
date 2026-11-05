@@ -3,6 +3,8 @@
 // Título: Potentially Suspicious Ping/Copy Command Combination
 // Descripción: Detects uncommon and potentially suspicious one-liner command containing both "ping" and "copy" at the same time, which is usually used by malware.
 
+// Fecha de creación: 2023-07-18
+// Fecha de modificación: 2024-03-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

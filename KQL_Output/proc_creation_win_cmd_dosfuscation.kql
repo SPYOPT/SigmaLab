@@ -2,6 +2,8 @@
 // ID Sigma: a77c1610-fc73-4019-8e29-0f51efc04a51
 // Título: Potential Dosfuscation Activity
 // Descripción: Detects possible payload obfuscation via the commandline
+// Fecha de creación: 2022-02-15
+// Fecha de modificación: 2023-03-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

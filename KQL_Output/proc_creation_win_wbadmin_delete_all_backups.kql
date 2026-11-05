@@ -5,6 +5,8 @@
 This technique is used by numerous ransomware families and actors.
 This may only be successful on server platforms that have Windows Backup enabled.
 
+// Fecha de creación: 2021-12-13
+// Fecha de modificación: 2024-05-10
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

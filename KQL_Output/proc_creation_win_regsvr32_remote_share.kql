@@ -2,6 +2,8 @@
 // ID Sigma: 88a87a10-384b-4ad7-8871-2f9bf9259ce5
 // Título: Suspicious Regsvr32 Execution From Remote Share
 // Descripción: Detects REGSVR32.exe to execute DLL hosted on remote shares
+// Fecha de creación: 2022-10-31
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

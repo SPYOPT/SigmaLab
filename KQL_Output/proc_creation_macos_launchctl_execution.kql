@@ -2,6 +2,8 @@
 // ID Sigma: ae9d710f-dcd1-4f75-a0a5-93a73b5dda0e
 // Título: Launch Agent/Daemon Execution Via Launchctl
 // Descripción: Detects the execution of programs as Launch Agents or Launch Daemons using launchctl on macOS.
+// Fecha de creación: 2024-05-13
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

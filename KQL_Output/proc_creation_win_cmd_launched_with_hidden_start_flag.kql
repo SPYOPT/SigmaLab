@@ -5,6 +5,8 @@
 To reduce false positives from standard background tasks, detection is restricted to scenarios where the target is a known script extension or located in suspicious temporary/public directories.
 This technique was observed in Chaos, DarkSide, and Emotet malware campaigns.
 
+// Fecha de creación: 2026-01-24
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

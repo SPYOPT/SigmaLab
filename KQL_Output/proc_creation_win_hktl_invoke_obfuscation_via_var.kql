@@ -2,6 +2,8 @@
 // ID Sigma: e9f55347-2928-4c06-88e5-1a7f8169942e
 // Título: Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION
 // Descripción: Detects Obfuscated Powershell via VAR++ LAUNCHER
+// Fecha de creación: 2020-10-13
+// Fecha de modificación: 2022-11-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

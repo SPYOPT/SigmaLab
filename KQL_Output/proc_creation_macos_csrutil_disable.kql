@@ -3,6 +3,8 @@
 // Título: System Integrity Protection (SIP) Disabled
 // Descripción: Detects the use of csrutil to disable the Configure System Integrity Protection (SIP). This technique is used in post-exploit scenarios.
 
+// Fecha de creación: 2024-01-02
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

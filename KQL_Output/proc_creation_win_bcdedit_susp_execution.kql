@@ -2,6 +2,8 @@
 // ID Sigma: c9fbe8e9-119d-40a6-9b59-dd58a5d84429
 // Título: Potential Ransomware or Unauthorized MBR Tampering Via Bcdedit.EXE
 // Descripción: Detects potential malicious and unauthorized usage of bcdedit.exe
+// Fecha de creación: 2019-02-07
+// Fecha de modificación: 2023-02-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

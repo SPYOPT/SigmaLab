@@ -2,6 +2,8 @@
 // ID Sigma: 95361ce5-c891-4b0a-87ca-e24607884a96
 // Título: Binary Padding - MacOS
 // Descripción: Adversaries may use binary padding to add junk data and change the on-disk representation of malware. This rule detect using dd and truncate to add a junk data to file.
+// Fecha de creación: 2020-10-19
+// Fecha de modificación: 2023-02-17
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

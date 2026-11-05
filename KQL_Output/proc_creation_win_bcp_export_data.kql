@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of the BCP utility in order to export data from the database.
 Attackers were seen saving their malware to a database column or table and then later extracting it via "bcp.exe" into a file.
 
+// Fecha de creación: 2024-08-20
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

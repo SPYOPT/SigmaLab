@@ -2,6 +2,8 @@
 // ID Sigma: 5e3cc4d8-3e68-43db-8656-eaaeefdec9cc
 // Título: Suspicious Invoke-WebRequest Execution
 // Descripción: Detects a suspicious call to Invoke-WebRequest cmdlet where the and output is located in a suspicious location
+// Fecha de creación: 2022-08-02
+// Fecha de modificación: 2025-07-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

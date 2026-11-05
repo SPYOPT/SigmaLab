@@ -2,6 +2,8 @@
 // ID Sigma: 54786ddc-5b8a-11ed-9b6a-0242ac120002
 // Título: Suspicious Ping/Del Command Combination
 // Descripción: Detects a method often used by ransomware. Which combines the "ping" to wait a couple of seconds and then "del" to delete the file in question. Its used to hide the file responsible for the initial infection for example
+// Fecha de creación: 2022-11-03
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

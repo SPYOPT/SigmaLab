@@ -5,6 +5,8 @@
 Process Hacker is a tool to view and manipulate processes, kernel options and other low level options.
 Threat actors abused older vulnerable versions to manipulate system processes.
 
+// Fecha de creación: 2022-10-10
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 80fc36aa-945e-4181-89f2-2f907ab6775d
 // Título: UAC Bypass Using IEInstal - Process
 // Descripción: Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)
+// Fecha de creación: 2021-08-30
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

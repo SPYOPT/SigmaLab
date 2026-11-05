@@ -2,6 +2,8 @@
 // ID Sigma: 6bba49bf-7f8c-47d6-a1bb-6b4dece4640e
 // Título: Suspicious RASdial Activity
 // Descripción: Detects suspicious process related to rasdial.exe
+// Fecha de creación: 2019-01-16
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

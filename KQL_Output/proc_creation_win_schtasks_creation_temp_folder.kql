@@ -2,6 +2,8 @@
 // ID Sigma: 39019a4e-317f-4ce3-ae63-309a8c6b53c5
 // Título: Suspicious Scheduled Task Creation Involving Temp Folder
 // Descripción: Detects the creation of scheduled tasks that involves a temporary folder and runs only once
+// Fecha de creación: 2021-03-11
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

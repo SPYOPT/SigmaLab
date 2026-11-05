@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of FSharp Interpreters "FsiAnyCpu.exe" and "FSi.exe"
 Both can be used for AWL bypass and to execute F# code via scripts or inline.
 
+// Fecha de creación: 2022-06-02
+// Fecha de modificación: 2024-04-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

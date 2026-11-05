@@ -2,6 +2,8 @@
 // ID Sigma: 0f79c4d2-4e1f-4683-9c36-b5469a665e06
 // Título: Access of Sudoers File Content
 // Descripción: Detects the execution of a text-based file access or inspection utilities to read the content of /etc/sudoers in order to potentially list all users that have sudo rights.
+// Fecha de creación: 2022-06-20
+// Fecha de modificación: 2025-06-04
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

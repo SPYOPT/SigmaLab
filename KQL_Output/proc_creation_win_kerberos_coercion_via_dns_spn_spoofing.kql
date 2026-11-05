@@ -9,6 +9,8 @@ to spoof Service Principal Names (SPNs) and redirect authentication requests lik
 If you see this pattern in the command line, it is likely an attempt to add spoofed Service Principal Names (SPNs) to DNS records,
 or checking for the presence of such records through the `nslookup` command.
 
+// Fecha de creación: 2025-06-20
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of the "jsc.exe" (JScript Compiler).
 Attacker might abuse this in order to compile JScript files on the fly and bypassing application whitelisting.
 
+// Fecha de creación: 2022-05-02
+// Fecha de modificación: 2024-04-24
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

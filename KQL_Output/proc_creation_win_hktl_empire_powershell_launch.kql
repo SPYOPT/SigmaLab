@@ -2,6 +2,8 @@
 // ID Sigma: 79f4ede3-402e-41c8-bc3e-ebbf5f162581
 // Título: HackTool - Empire PowerShell Launch Parameters
 // Descripción: Detects suspicious powershell command line parameters used in Empire
+// Fecha de creación: 2019-04-20
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

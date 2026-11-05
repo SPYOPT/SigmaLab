@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of Xwizard tool with the "RunWizard" flag and a GUID like argument.
 This utility can be abused in order to run custom COM object created in the registry.
 
+// Fecha de creación: 2020-10-07
+// Fecha de modificación: 2024-08-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

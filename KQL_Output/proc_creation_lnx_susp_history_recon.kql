@@ -2,6 +2,8 @@
 // ID Sigma: d7821ff1-4527-4e33-9f84-d0d57fa2fb66
 // Título: Print History File Contents
 // Descripción: Detects events in which someone prints the contents of history files to the commandline or redirects it to a file for reconnaissance
+// Fecha de creación: 2022-06-20
+// Fecha de modificación: 2022-09-15
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

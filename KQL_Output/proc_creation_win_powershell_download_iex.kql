@@ -2,6 +2,8 @@
 // ID Sigma: 85b0b087-eddf-4a2b-b033-d771fa2b9775
 // Título: PowerShell Download and Execution Cradles
 // Descripción: Detects PowerShell download and execution cradles.
+// Fecha de creación: 2022-03-24
+// Fecha de modificación: 2025-07-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

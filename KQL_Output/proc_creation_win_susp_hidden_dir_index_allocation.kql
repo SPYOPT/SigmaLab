@@ -3,6 +3,8 @@
 // Título: Potential Hidden Directory Creation Via NTFS INDEX_ALLOCATION Stream - CLI
 // Descripción: Detects command line containing reference to the "::$index_allocation" stream, which can be used as a technique to prevent access to folders or files from tooling such as "explorer.exe" or "powershell.exe"
 
+// Fecha de creación: 2023-10-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

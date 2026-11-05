@@ -2,6 +2,8 @@
 // ID Sigma: f38ce0b9-5e97-4b47-a211-7dc8d8b871da
 // Título: Potential RDP Tunneling Via Plink
 // Descripción: Execution of plink to perform data exfiltration and tunneling
+// Fecha de creación: 2022-08-04
+// Fecha de modificación: 2023-01-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -5,6 +5,8 @@
 One of the tests that this checker can run are called "verification routine", which tests for things like Consistency, Navigation, etc.
 The tool allows a user to provide a DLL that can contain a custom "verification routine". An attacker can build such DLLs and pass it via the CLI, which would then be loaded in the context of the "AccCheckConsole" utility.
 
+// Fecha de creación: 2022-01-06
+// Fecha de modificación: 2024-08-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

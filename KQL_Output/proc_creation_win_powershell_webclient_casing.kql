@@ -2,6 +2,8 @@
 // ID Sigma: c86133ad-4725-4bd0-8170-210788e0a7ba
 // Título: Net WebClient Casing Anomalies
 // Descripción: Detects PowerShell command line contents that include a suspicious abnormal casing in the Net.Webclient (e.g. nEt.WEbCliEnT) string as used in obfuscation techniques
+// Fecha de creación: 2022-05-24
+// Fecha de modificación: 2023-01-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

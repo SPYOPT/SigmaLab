@@ -7,6 +7,8 @@ perform offline password cracking attacks commonly known as Kerberoasting or oth
 techniques like silver ticket attacks. Encoded commands will not surface the class name, so the ps_script
 rule covers that instead.
 
+// Fecha de creación: 2025-11-18
+// Fecha de modificación: 2026-09-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

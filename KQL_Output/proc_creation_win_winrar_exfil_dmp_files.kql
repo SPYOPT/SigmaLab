@@ -2,6 +2,8 @@
 // ID Sigma: 1ac14d38-3dfc-4635-92c7-e3fd1c5f5bfc
 // Título: Winrar Compressing Dump Files
 // Descripción: Detects execution of WinRAR in order to compress a file with a ".dmp"/".dump" extension, which could be a step in a process of dump file exfiltration.
+// Fecha de creación: 2022-01-04
+// Fecha de modificación: 2023-09-12
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

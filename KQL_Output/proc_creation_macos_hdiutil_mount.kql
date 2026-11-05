@@ -2,6 +2,8 @@
 // ID Sigma: bf241472-f014-4f01-a869-96f99330ca8c
 // Título: Disk Image Mounting Via Hdiutil - MacOS
 // Descripción: Detects the execution of the hdiutil utility in order to mount disk images.
+// Fecha de creación: 2024-08-10
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

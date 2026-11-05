@@ -2,6 +2,8 @@
 // ID Sigma: f956c7c1-0f60-4bc5-b7d7-b39ab3c08908
 // Título: PktMon.EXE Execution
 // Descripción: Detects execution of PktMon, a tool that captures network packets.
+// Fecha de creación: 2022-03-17
+// Fecha de modificación: 2023-06-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 22e58743-4ac8-4a9f-bf19-00a0428d8c5f
 // Título: Base64 MZ Header In CommandLine
 // Descripción: Detects encoded base64 MZ header in the commandline
+// Fecha de creación: 2022-07-12
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

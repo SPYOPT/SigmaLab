@@ -2,6 +2,8 @@
 // ID Sigma: f5e3b62f-e577-4e59-931e-0a15b2b94e1e
 // Título: HackTool - Htran/NATBypass Execution
 // Descripción: Detects executable names or flags used by Htran or Htran-like tools (e.g. NATBypass)
+// Fecha de creación: 2022-12-27
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

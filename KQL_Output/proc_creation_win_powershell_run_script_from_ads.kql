@@ -2,6 +2,8 @@
 // ID Sigma: 45a594aa-1fbd-4972-a809-ff5a99dd81b8
 // Título: Run PowerShell Script from ADS
 // Descripción: Detects PowerShell script execution from Alternate Data Stream (ADS)
+// Fecha de creación: 2019-10-30
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

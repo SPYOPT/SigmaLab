@@ -4,6 +4,8 @@
 // Descripción: Detects a command line process that uses explorer.exe to launch arbitrary commands or binaries,
 which is similar to cmd.exe /c, only it breaks the process tree and makes its parent a new instance of explorer spawning from "svchost"
 
+// Fecha de creación: 2019-06-29
+// Fecha de modificación: 2025-10-31
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: c625d754-6a3d-4f65-9c9a-536aea960d37
 // Título: Permission Check Via Accesschk.EXE
 // Descripción: Detects the usage of the "Accesschk" utility, an access and privilege audit tool developed by SysInternal and often being abused by attacker to verify process privileges
+// Fecha de creación: 2020-10-13
+// Fecha de modificación: 2026-06-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

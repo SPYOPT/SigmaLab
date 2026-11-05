@@ -2,6 +2,8 @@
 // ID Sigma: 9847f263-4a81-424f-970c-875dab15b79b
 // Título: Suspicious TSCON Start as SYSTEM
 // Descripción: Detects a tscon.exe start as LOCAL SYSTEM
+// Fecha de creación: 2018-03-17
+// Fecha de modificación: 2022-05-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

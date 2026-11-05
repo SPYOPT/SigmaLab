@@ -2,6 +2,8 @@
 // ID Sigma: 058f4380-962d-40a5-afce-50207d36d7e2
 // Título: HackTool - CrackMapExec Execution Patterns
 // Descripción: Detects various execution patterns of the CrackMapExec pentesting framework
+// Fecha de creación: 2020-05-22
+// Fecha de modificación: 2023-11-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

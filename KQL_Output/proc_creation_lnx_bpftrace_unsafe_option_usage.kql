@@ -2,6 +2,8 @@
 // ID Sigma: f8341cb2-ee25-43fa-a975-d8a5a9714b39
 // Título: BPFtrace Unsafe Option Usage
 // Descripción: Detects the usage of the unsafe bpftrace option
+// Fecha de creación: 2022-02-11
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

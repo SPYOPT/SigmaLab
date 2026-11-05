@@ -2,6 +2,8 @@
 // ID Sigma: 24c77512-782b-448a-8950-eddb0785fc71
 // Título: SQLite Chromium Profile Data DB Access
 // Descripción: Detect usage of the "sqlite" binary to query databases in Chromium-based browsers for potential data stealing.
+// Fecha de creación: 2022-12-19
+// Fecha de modificación: 2023-01-19
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

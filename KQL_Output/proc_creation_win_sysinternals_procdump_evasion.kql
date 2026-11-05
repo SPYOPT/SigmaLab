@@ -2,6 +2,8 @@
 // ID Sigma: 79b06761-465f-4f88-9ef2-150e24d3d737
 // Título: Potential SysInternals ProcDump Evasion
 // Descripción: Detects uses of the SysInternals ProcDump utility in which ProcDump or its output get renamed, or a dump file is moved or copied to a different name
+// Fecha de creación: 2022-01-11
+// Fecha de modificación: 2023-05-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

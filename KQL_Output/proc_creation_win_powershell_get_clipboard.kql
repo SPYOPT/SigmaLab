@@ -2,6 +2,8 @@
 // ID Sigma: b9aeac14-2ffd-4ad3-b967-1354a4e628c3
 // Título: PowerShell Get-Clipboard Cmdlet Via CLI
 // Descripción: Detects usage of the 'Get-Clipboard' cmdlet via CLI
+// Fecha de creación: 2020-05-02
+// Fecha de modificación: 2022-12-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

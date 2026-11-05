@@ -4,6 +4,8 @@
 // Descripción: Detects execution of "findstr" to search for common names of security tools. Attackers often pipe the results of recon commands such as "tasklist" or "whoami" to "findstr" in order to filter out the results.
 This detection focuses on the keywords that the attacker might use as a filter.
 
+// Fecha de creación: 2023-10-20
+// Fecha de modificación: 2023-11-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

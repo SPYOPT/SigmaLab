@@ -2,6 +2,8 @@
 // ID Sigma: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
 // Título: Suspicious Program Names
 // Descripción: Detects suspicious patterns in program names or folders that are often found in malicious samples or hacktools
+// Fecha de creación: 2022-02-11
+// Fecha de modificación: 2023-03-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 811f459f-9231-45d4-959a-0266c6311987
 // Título: Suspicious Child Process Of BgInfo.EXE
 // Descripción: Detects suspicious child processes of "BgInfo.exe" which could be a sign of potential abuse of the binary to proxy execution via external VBScript
+// Fecha de creación: 2023-08-16
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

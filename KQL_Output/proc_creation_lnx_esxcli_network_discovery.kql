@@ -2,6 +2,8 @@
 // ID Sigma: 33e814e0-1f00-4e43-9c34-31fb7ae2b174
 // Título: ESXi Network Configuration Discovery Via ESXCLI
 // Descripción: Detects execution of the "esxcli" command with the "network" flag in order to retrieve information about the network configuration.
+// Fecha de creación: 2023-09-04
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

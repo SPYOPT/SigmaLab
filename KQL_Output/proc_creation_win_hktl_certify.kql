@@ -2,6 +2,8 @@
 // ID Sigma: 762f2482-ff21-4970-8939-0aa317a886bb
 // Título: HackTool - Certify Execution
 // Descripción: Detects Certify a tool for Active Directory certificate abuse based on PE metadata characteristics and common command line arguments.
+// Fecha de creación: 2023-04-17
+// Fecha de modificación: 2023-04-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

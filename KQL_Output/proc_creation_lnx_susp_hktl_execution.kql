@@ -2,6 +2,8 @@
 // ID Sigma: a015e032-146d-4717-8944-7a1884122111
 // Título: Linux HackTool Execution
 // Descripción: Detects known hacktool execution based on image name.
+// Fecha de creación: 2023-01-03
+// Fecha de modificación: 2024-09-19
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

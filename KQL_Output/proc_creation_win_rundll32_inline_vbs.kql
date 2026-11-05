@@ -2,6 +2,8 @@
 // ID Sigma: 1cc50f3f-1fc8-4acf-b2e9-6f172e1fdebd
 // Título: Suspicious Rundll32 Invoking Inline VBScript
 // Descripción: Detects suspicious process related to rundll32 based on command line that invokes inline VBScript as seen being used by UNC2452
+// Fecha de creación: 2021-03-05
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

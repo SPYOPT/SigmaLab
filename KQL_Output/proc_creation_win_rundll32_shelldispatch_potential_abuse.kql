@@ -2,6 +2,8 @@
 // ID Sigma: 82343930-652f-43f5-ab70-2ee9fdd6d5e9
 // Título: Potential ShellDispatch.DLL Functionality Abuse
 // Descripción: Detects potential "ShellDispatch.dll" functionality abuse to execute arbitrary binaries via "ShellExecute"
+// Fecha de creación: 2023-06-20
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

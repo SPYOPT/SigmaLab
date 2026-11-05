@@ -2,6 +2,8 @@
 // ID Sigma: 3037d961-21e9-4732-b27a-637bcc7bf539
 // Título: Suspicious High IntegrityLevel Conhost Legacy Option
 // Descripción: ForceV1 asks for information directly from the kernel space. Conhost connects to the console application. High IntegrityLevel means the process is running with elevated privileges, such as an Administrator context.
+// Fecha de creación: 2022-12-09
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

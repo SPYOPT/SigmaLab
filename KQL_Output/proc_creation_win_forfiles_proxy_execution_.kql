@@ -5,6 +5,8 @@
 While this is an expected behavior of the tool, it can be abused in order to proxy execution through it with any binary.
 Can be used to bypass application whitelisting.
 
+// Fecha de creación: 2022-06-14
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

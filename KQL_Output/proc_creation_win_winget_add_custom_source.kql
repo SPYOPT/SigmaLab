@@ -2,6 +2,8 @@
 // ID Sigma: 05ebafc8-7aa2-4bcd-a269-2aec93f9e842
 // Título: Add New Download Source To Winget
 // Descripción: Detects usage of winget to add new additional download sources
+// Fecha de creación: 2023-04-17
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

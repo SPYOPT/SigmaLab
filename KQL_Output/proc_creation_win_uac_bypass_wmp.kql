@@ -2,6 +2,8 @@
 // ID Sigma: 0058b9e5-bcd7-40d4-9205-95ca5a16d7b2
 // Título: UAC Bypass Using Windows Media Player - Process
 // Descripción: Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)
+// Fecha de creación: 2021-08-23
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

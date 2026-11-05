@@ -2,6 +2,8 @@
 // ID Sigma: c83bf4b5-cdf0-437c-90fa-43d734f7c476
 // Título: Run PowerShell Script from Redirected Input Stream
 // Descripción: Detects PowerShell script execution via input stream redirect
+// Fecha de creación: 2020-10-17
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 4ac47ed3-44c2-4b1f-9d51-bf46e8914126
 // Título: TrustedPath UAC Bypass Pattern
 // Descripción: Detects indicators of a UAC bypass method by mocking directories
+// Fecha de creación: 2021-08-27
+// Fecha de modificación: 2025-06-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

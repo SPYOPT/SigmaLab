@@ -2,6 +2,8 @@
 // ID Sigma: 8bc64091-6875-4881-aaf9-7bd25b5dda08
 // Título: Suspicious Process Patterns NTDS.DIT Exfil
 // Descripción: Detects suspicious process patterns used in NTDS.DIT exfiltration
+// Fecha de creación: 2022-03-11
+// Fecha de modificación: 2022-11-10
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

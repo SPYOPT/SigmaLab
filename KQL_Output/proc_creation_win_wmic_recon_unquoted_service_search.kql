@@ -2,6 +2,8 @@
 // ID Sigma: 68bcd73b-37ef-49cb-95fc-edc809730be6
 // Título: Potential Unquoted Service Path Reconnaissance Via Wmic.EXE
 // Descripción: Detects known WMI recon method to look for unquoted service paths using wmic. Often used by pentester and attacker enumeration scripts
+// Fecha de creación: 2022-06-20
+// Fecha de modificación: 2023-09-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

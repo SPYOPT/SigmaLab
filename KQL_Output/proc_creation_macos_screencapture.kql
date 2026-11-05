@@ -2,6 +2,8 @@
 // ID Sigma: 0877ed01-da46-4c49-8476-d49cdd80dfa7
 // Título: Screen Capture - macOS
 // Descripción: Detects attempts to use screencapture to collect macOS screenshots
+// Fecha de creación: 2020-10-13
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

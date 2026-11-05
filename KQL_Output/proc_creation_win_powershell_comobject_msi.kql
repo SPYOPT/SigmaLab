@@ -7,6 +7,8 @@ malformed URLs (e.g., converting 'htps://' to 'https://') at runtime. This behav
 by hiding intent in runtime-generated strings and using legitimate tools for code execution. The use of `InstallProduct` and COM object creation, particularly combined with
 hidden window execution and suppressed UI, indicates an attempt to install software (likely malicious) without user interaction.
 
+// Fecha de creación: 2025-05-27
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

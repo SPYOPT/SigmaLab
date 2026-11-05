@@ -2,6 +2,8 @@
 // ID Sigma: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
 // Título: Tor Client/Browser Execution
 // Descripción: Detects the use of Tor or Tor-Browser to connect to onion routing networks
+// Fecha de creación: 2022-02-20
+// Fecha de modificación: 2025-10-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

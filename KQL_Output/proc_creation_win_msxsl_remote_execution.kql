@@ -2,6 +2,8 @@
 // ID Sigma: 75d0a94e-6252-448d-a7be-d953dff527bb
 // Título: Remote XSL Execution Via Msxsl.EXE
 // Descripción: Detects the execution of the "msxsl" binary with an "http" keyword in the command line. This might indicate a potential remote execution of XSL files.
+// Fecha de creación: 2023-11-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 4b13db67-0c45-40f1-aba8-66a1a7198a1e
 // Título: Suspicious Extrac32 Alternate Data Stream Execution
 // Descripción: Extract data from cab file and hide it in an alternate data stream
+// Fecha de creación: 2021-11-26
+// Fecha de modificación: 2022-12-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

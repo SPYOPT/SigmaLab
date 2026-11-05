@@ -2,6 +2,8 @@
 // ID Sigma: b1cb4ab6-ac31-43f4-adf1-d9d08957419c
 // Título: PUA - PingCastle Execution
 // Descripción: Detects the execution of PingCastle, a tool designed to quickly assess the Active Directory security level.
+// Fecha de creación: 2024-01-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

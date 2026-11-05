@@ -2,6 +2,8 @@
 // ID Sigma: b2815d0d-7481-4bf0-9b6c-a4c48a94b349
 // Título: PowerShell Get-Process LSASS
 // Descripción: Detects a "Get-Process" cmdlet and it's aliases on lsass process, which is in almost all cases a sign of malicious activity
+// Fecha de creación: 2021-04-23
+// Fecha de modificación: 2023-01-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

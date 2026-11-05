@@ -6,6 +6,8 @@ BitLocker To Go is BitLocker Drive Encryption on removable data drives. This fea
 This is a rarely used application and usage of it at all is worth investigating.
 Malware such as Lumma stealer has been seen using this process as a target for process hollowing.
 
+// Fecha de creación: 2024-07-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

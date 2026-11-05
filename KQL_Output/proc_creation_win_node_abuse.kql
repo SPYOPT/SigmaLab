@@ -2,6 +2,8 @@
 // ID Sigma: 6640f31c-01ad-49b5-beb5-83498a5cd8bd
 // Título: Potential Arbitrary Code Execution Via Node.EXE
 // Descripción: Detects the execution node.exe which is shipped with multiple software such as VMware, Adobe...etc. In order to execute arbitrary code. For example to establish reverse shell as seen in Log4j attacks...etc
+// Fecha de creación: 2022-09-09
+// Fecha de modificación: 2023-02-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

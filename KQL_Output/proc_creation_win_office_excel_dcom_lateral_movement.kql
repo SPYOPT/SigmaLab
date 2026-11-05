@@ -3,6 +3,8 @@
 // Título: Potential Excel.EXE DCOM Lateral Movement Via ActivateMicrosoftApp
 // Descripción: Detects suspicious child processes of Excel which could be an indicator of lateral movement leveraging the "ActivateMicrosoftApp" Excel DCOM object.
 
+// Fecha de creación: 2023-11-13
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

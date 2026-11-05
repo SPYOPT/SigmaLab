@@ -2,6 +2,8 @@
 // ID Sigma: e84d89c4-f544-41ca-a6af-4b92fd38b023
 // Título: Arbitrary File Download Via MSEDGE_PROXY.EXE
 // Descripción: Detects usage of "msedge_proxy.exe" to download arbitrary files
+// Fecha de creación: 2023-11-09
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

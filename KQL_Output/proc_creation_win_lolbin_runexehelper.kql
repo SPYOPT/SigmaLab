@@ -2,6 +2,8 @@
 // ID Sigma: cd71385d-fd9b-4691-9b98-2b1f7e508714
 // Título: Lolbin Runexehelper Use As Proxy
 // Descripción: Detect usage of the "runexehelper.exe" binary as a proxy to launch other programs
+// Fecha de creación: 2022-12-29
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 94771a71-ba41-4b6e-a757-b531372eaab6
 // Título: File Download From Browser Process Via Inline URL
 // Descripción: Detects execution of a browser process with a URL argument pointing to a file with a potentially interesting extension. This can be abused to download arbitrary files or to hide from the user for example by launching the browser in a minimized state.
+// Fecha de creación: 2022-01-11
+// Fecha de modificación: 2025-10-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: f7b5f842-a6af-4da5-9e95-e32478f3cd2f
 // Título: MsiExec Web Install
 // Descripción: Detects suspicious msiexec process starts with web addresses as parameter
+// Fecha de creación: 2018-02-09
+// Fecha de modificación: 2022-01-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

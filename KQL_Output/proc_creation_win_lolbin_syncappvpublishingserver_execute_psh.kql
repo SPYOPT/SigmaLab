@@ -2,6 +2,8 @@
 // ID Sigma: fbd7c32d-db2a-4418-b92c-566eb8911133
 // Título: SyncAppvPublishingServer Execute Arbitrary PowerShell Code
 // Descripción: Executes arbitrary PowerShell code using SyncAppvPublishingServer.exe.
+// Fecha de creación: 2021-07-12
+// Fecha de modificación: 2022-10-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

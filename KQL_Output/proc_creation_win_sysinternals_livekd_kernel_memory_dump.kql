@@ -2,6 +2,8 @@
 // ID Sigma: c7746f1c-47d3-43d6-8c45-cd1e54b6b0a2
 // Título: Kernel Memory Dump Via LiveKD
 // Descripción: Detects execution of LiveKD with the "-m" flag to potentially dump the kernel memory
+// Fecha de creación: 2023-05-16
+// Fecha de modificación: 2024-03-13
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

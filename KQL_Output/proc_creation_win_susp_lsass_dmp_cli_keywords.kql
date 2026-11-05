@@ -3,6 +3,8 @@
 // Título: LSASS Dump Keyword In CommandLine
 // Descripción: Detects the presence of the keywords "lsass" and ".dmp" in the commandline, which could indicate a potential attempt to dump or create a dump of the lsass process.
 
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2023-08-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -5,6 +5,8 @@
 UFW is a popular firewall management tool that provides an easy-to-use interface for configuring firewall rules.
 Disabling UFW can leave a system vulnerable to attacks, as it may allow unauthorized access to network services and resources.
 
+// Fecha de creación: 2023-01-18
+// Fecha de modificación: 2026-05-04
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

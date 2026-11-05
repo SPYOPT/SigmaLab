@@ -2,6 +2,8 @@
 // ID Sigma: 224f140f-3553-4cd1-af78-13d81bf9f7cc
 // Título: Potential RDP Session Hijacking Activity
 // Descripción: Detects potential RDP Session Hijacking activity on Windows systems
+// Fecha de creación: 2022-12-27
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

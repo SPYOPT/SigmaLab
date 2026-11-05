@@ -2,6 +2,8 @@
 // ID Sigma: 58f4ea09-0fc2-4520-ba18-b85c540b0eaf
 // Título: Suspicious Serv-U Process Pattern
 // Descripción: Detects a suspicious process pattern which could be a sign of an exploited Serv-U service
+// Fecha de creación: 2021-07-14
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

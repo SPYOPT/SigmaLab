@@ -4,6 +4,8 @@
 // Descripción: Detects suspicious child process creation by the Notepad++ updater process (gup.exe).
 This could indicate potential exploitation of the updater component to deliver unwanted malware.
 
+// Fecha de creación: 2026-02-03
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

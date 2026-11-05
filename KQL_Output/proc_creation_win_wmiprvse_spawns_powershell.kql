@@ -2,6 +2,8 @@
 // ID Sigma: 692f0bec-83ba-4d04-af7e-e884a96059b6
 // Título: Potential WMI Lateral Movement WmiPrvSE Spawned PowerShell
 // Descripción: Detects Powershell as a child of the WmiPrvSE process. Which could be a sign of lateral movement via WMI.
+// Fecha de creación: 2019-04-03
+// Fecha de modificación: 2023-03-29
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

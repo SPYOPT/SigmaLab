@@ -2,6 +2,8 @@
 // ID Sigma: b5c7395f-e501-4a08-94d4-57fe7a9da9d2
 // Título: Potential Binary Proxy Execution Via Cdb.EXE
 // Descripción: Detects usage of "cdb.exe" to launch arbitrary processes or commands from a debugger script file
+// Fecha de creación: 2019-10-26
+// Fecha de modificación: 2024-04-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

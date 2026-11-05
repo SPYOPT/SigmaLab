@@ -8,6 +8,8 @@ automatically executes a predefined script (in VBScript or JScript) whenever a s
 Adversaries often abuse script event consumers to maintain persistence on a compromised host
 by executing a malicious script whenever a specific event occurs.
 
+// Fecha de creación: 2018-03-07
+// Fecha de modificación: 2022-10-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

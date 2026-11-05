@@ -5,6 +5,8 @@
 Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.
 Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives
 
+// Fecha de creación: 2021-12-26
+// Fecha de modificación: 2023-02-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

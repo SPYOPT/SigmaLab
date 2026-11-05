@@ -2,6 +2,8 @@
 // ID Sigma: 9fff585c-c33e-4a86-b3cd-39312079a65f
 // Título: Taskmgr as LOCAL_SYSTEM
 // Descripción: Detects the creation of taskmgr.exe process in context of LOCAL_SYSTEM
+// Fecha de creación: 2018-03-18
+// Fecha de modificación: 2022-05-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

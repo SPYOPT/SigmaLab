@@ -2,6 +2,8 @@
 // ID Sigma: 0955e4e1-c281-4fb9-9ee1-5ee7b4b754d2
 // Título: Use of Pcalua For Execution
 // Descripción: Detects execition of commands and binaries from the context of The program compatibility assistant (Pcalua.exe). This can be used as a LOLBIN in order to bypass application whitelisting.
+// Fecha de creación: 2022-06-14
+// Fecha de modificación: 2023-01-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

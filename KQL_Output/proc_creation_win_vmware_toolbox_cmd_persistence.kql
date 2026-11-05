@@ -2,6 +2,8 @@
 // ID Sigma: 7aa4e81a-a65c-4e10-9f81-b200eb229d7d
 // Título: Potential Persistence Via VMwareToolBoxCmd.EXE VM State Change Script
 // Descripción: Detects execution of the "VMwareToolBoxCmd.exe" with the "script" and "set" flag to setup a specific script to run for a specific VM state
+// Fecha de creación: 2023-06-14
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

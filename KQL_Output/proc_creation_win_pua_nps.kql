@@ -2,6 +2,8 @@
 // ID Sigma: 68d37776-61db-42f5-bf54-27e87072d17e
 // Título: PUA - NPS Tunneling Tool Execution
 // Descripción: Detects the use of NPS, a port forwarding and intranet penetration proxy server
+// Fecha de creación: 2022-10-08
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

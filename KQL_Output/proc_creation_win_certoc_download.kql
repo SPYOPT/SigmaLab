@@ -2,6 +2,8 @@
 // ID Sigma: 70ad0861-d1fe-491c-a45f-fa48148a300d
 // Título: File Download via CertOC.EXE
 // Descripción: Detects when a user downloads a file by using CertOC.exe
+// Fecha de creación: 2022-05-16
+// Fecha de modificación: 2023-10-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

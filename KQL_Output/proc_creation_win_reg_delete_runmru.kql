@@ -5,6 +5,8 @@
 In the clickfix techniques, the phishing lures instruct users to open a run dialog through (Win + R) and execute malicious commands.
 Adversaries may delete this key to cover their tracks after executing commands.
 
+// Fecha de creación: 2025-09-25
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

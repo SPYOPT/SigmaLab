@@ -4,6 +4,8 @@
 // Descripción: Detects deletion attempts of MacOS Time Machine backups via the native backup utility "tmutil".
 An adversary may perform this action before launching a ransonware attack to prevent the victim from restoring their files.
 
+// Fecha de creación: 2024-05-29
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

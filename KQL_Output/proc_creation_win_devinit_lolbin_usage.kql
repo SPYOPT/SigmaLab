@@ -2,6 +2,8 @@
 // ID Sigma: 90d50722-0483-4065-8e35-57efaadd354d
 // Título: Arbitrary MSI Download Via Devinit.EXE
 // Descripción: Detects a certain command line flag combination used by "devinit.exe", which can be abused as a LOLBIN to download arbitrary MSI packages on a Windows system
+// Fecha de creación: 2022-01-11
+// Fecha de modificación: 2023-04-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: f44800ac-38ec-471f-936e-3fa7d9c53100
 // Título: PUA - CleanWipe Execution
 // Descripción: Detects the use of CleanWipe a tool usually used to delete Symantec antivirus.
+// Fecha de creación: 2021-12-18
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

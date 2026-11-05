@@ -2,6 +2,8 @@
 // ID Sigma: a383dec4-deec-4e6e-913b-ed9249670848
 // Título: Potential Signing Bypass Via Windows Developer Features
 // Descripción: Detects when a user enable developer features such as "Developer Mode" or "Application Sideloading". Which allows the user to install untrusted packages.
+// Fecha de creación: 2023-01-11
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

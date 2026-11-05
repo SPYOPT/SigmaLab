@@ -2,6 +2,8 @@
 // ID Sigma: 60bfeac3-0d35-4302-8efb-1dd16f715bc6
 // Título: Suspicious SysAidServer Child
 // Descripción: Detects suspicious child processes of SysAidServer (as seen in MERCURY threat actor intrusions)
+// Fecha de creación: 2022-08-26
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

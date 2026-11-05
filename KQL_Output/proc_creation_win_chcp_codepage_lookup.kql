@@ -2,6 +2,8 @@
 // ID Sigma: 7090adee-82e2-4269-bd59-80691e7c6338
 // Título: Console CodePage Lookup Via CHCP
 // Descripción: Detects use of chcp to look up the system locale value as part of host discovery
+// Fecha de creación: 2022-02-21
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

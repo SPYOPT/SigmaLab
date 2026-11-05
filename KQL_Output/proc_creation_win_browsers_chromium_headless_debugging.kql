@@ -2,6 +2,8 @@
 // ID Sigma: 3e8207c5-fcd2-4ea6-9418-15d45b4890e4
 // Título: Potential Data Stealing Via Chromium Headless Debugging
 // Descripción: Detects chromium based browsers starting in headless and debugging mode and pointing to a user profile. This could be a sign of data stealing or remote control
+// Fecha de creación: 2022-12-23
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

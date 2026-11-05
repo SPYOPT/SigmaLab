@@ -2,6 +2,8 @@
 // ID Sigma: 146aace8-9bd6-42ba-be7a-0070d8027b76
 // Título: Potentially Suspicious Child Process Of WinRAR.EXE
 // Descripción: Detects potentially suspicious child processes of WinRAR.exe.
+// Fecha de creación: 2023-08-31
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

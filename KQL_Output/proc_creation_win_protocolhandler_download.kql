@@ -3,6 +3,8 @@
 // Título: File Download Using ProtocolHandler.exe
 // Descripción: Detects usage of "ProtocolHandler" to download files. Downloaded files will be located in the cache folder (for example - %LOCALAPPDATA%\Microsoft\Windows\INetCache\IE)
 
+// Fecha de creación: 2021-07-13
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 10227522-8429-47e6-a301-f2b2d014e7ad
 // Título: Macos Remote System Discovery
 // Descripción: Detects the enumeration of other remote systems.
+// Fecha de creación: 2020-10-22
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

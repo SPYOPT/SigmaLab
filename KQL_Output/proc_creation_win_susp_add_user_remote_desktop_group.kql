@@ -2,6 +2,8 @@
 // ID Sigma: ffa28e60-bdb1-46e0-9f82-05f7a61cc06e
 // Título: User Added to Remote Desktop Users Group
 // Descripción: Detects addition of users to the local Remote Desktop Users group via "Net" or "Add-LocalGroupMember".
+// Fecha de creación: 2021-12-06
+// Fecha de modificación: 2022-09-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

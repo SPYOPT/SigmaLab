@@ -4,6 +4,8 @@
 // Descripción: Detects usage of findstr with the "EVERYONE" or "BUILTIN" keywords.
 This was seen being used in combination with "icacls" and other utilities to spot misconfigured files or folders permissions.
 
+// Fecha de creación: 2022-08-12
+// Fecha de modificación: 2023-11-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: dee4af55-1f22-4e1d-a9d2-4bdc7ecb472a
 // Título: Disabled Volume Snapshots
 // Descripción: Detects commands that temporarily turn off Volume Snapshots
+// Fecha de creación: 2021-01-28
+// Fecha de modificación: 2023-12-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

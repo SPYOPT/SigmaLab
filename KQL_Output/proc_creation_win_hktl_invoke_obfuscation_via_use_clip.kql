@@ -2,6 +2,8 @@
 // ID Sigma: e1561947-b4e3-4a74-9bdd-83baed21bdb5
 // Título: Invoke-Obfuscation Via Use Clip
 // Descripción: Detects Obfuscated Powershell via use Clip.exe in Scripts
+// Fecha de creación: 2020-10-09
+// Fecha de modificación: 2026-03-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -4,6 +4,8 @@
 // Descripción: By replacing the sticky keys executable with the local admins CMD executable, an attacker is able to access a privileged windows console session without authenticating to the system.
 When the sticky keys are "activated" the privilleged shell is launched.
 
+// Fecha de creación: 2020-02-18
+// Fecha de modificación: 2023-03-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

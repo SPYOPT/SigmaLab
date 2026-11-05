@@ -9,6 +9,8 @@ Note: Tune this rule based on whether AI agent tooling is allowed in your enviro
 In environments where such tooling is authorized, this detection may reflect normal activity and the alert level should be adjusted accordingly.
 In environments where AI agent tooling is not permitted, this activity is likely suspicious and may require immediate investigation.
 
+// Fecha de creación: 2026-02-03
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

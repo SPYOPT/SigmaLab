@@ -2,6 +2,8 @@
 // ID Sigma: a29808fd-ef50-49ff-9c7a-59a9b040b404
 // Título: HackTool - Pypykatz Credentials Dumping Activity
 // Descripción: Detects the usage of "pypykatz" to obtain stored credentials. Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database through Windows registry where the SAM database is stored
+// Fecha de creación: 2022-01-05
+// Fecha de modificación: 2023-02-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 1f1a8509-2cbb-44f5-8751-8e1571518ce2
 // Título: Suspicious Splwow64 Without Params
 // Descripción: Detects suspicious Splwow64.exe process without any command line parameters
+// Fecha de creación: 2021-08-23
+// Fecha de modificación: 2022-12-25
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -4,6 +4,8 @@
 // Descripción: Detects the use of powershell commands from headless ConHost window.
 The "--headless" flag hides the windows from the user upon execution.
 
+// Fecha de creación: 2024-07-23
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 4f154fb6-27d1-4813-a759-78b93e0b9c48
 // Título: Operator Bloopers Cobalt Strike Modules
 // Descripción: Detects Cobalt Strike module/commands accidentally entered in CMD shell
+// Fecha de creación: 2022-05-06
+// Fecha de modificación: 2023-01-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

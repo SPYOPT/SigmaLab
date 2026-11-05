@@ -4,6 +4,8 @@
 // Descripción: Detects the execution of "awk" or it's sibling commands, to invoke a shell using the system() function.
 This behavior is commonly associated with attempts to execute arbitrary commands or escalate privileges, potentially leading to unauthorized access or further exploitation.
 
+// Fecha de creación: 2024-09-02
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: ca5583e9-8f80-46ac-ab91-7f314d13b984
 // Título: Potentially Suspicious Child Process of KeyScrambler.exe
 // Descripción: Detects potentially suspicious child processes of KeyScrambler.exe
+// Fecha de creación: 2024-05-13
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

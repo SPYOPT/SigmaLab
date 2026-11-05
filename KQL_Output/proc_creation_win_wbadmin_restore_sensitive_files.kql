@@ -4,6 +4,8 @@
 // Descripción: Detects the dump of highly sensitive files such as "NTDS.DIT" and "SECURITY" hive.
 Attackers can leverage the "wbadmin" utility in order to dump sensitive files that might contain credential or sensitive information.
 
+// Fecha de creación: 2024-05-10
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

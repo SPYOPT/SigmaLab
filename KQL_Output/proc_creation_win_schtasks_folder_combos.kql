@@ -2,6 +2,8 @@
 // ID Sigma: 8a8379b8-780b-4dbf-b1e9-31c8d112fefb
 // Título: Schtasks From Suspicious Folders
 // Descripción: Detects scheduled task creations that have suspicious action command and folder combinations
+// Fecha de creación: 2022-04-15
+// Fecha de modificación: 2022-11-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -3,6 +3,8 @@
 // Título: Webshell Tool Reconnaissance Activity
 // Descripción: Detects processes spawned from web servers (PHP, Tomcat, IIS, etc.) that perform reconnaissance looking for the existence of popular scripting tools (perl, python, wget) on the system via the help commands
 
+// Fecha de creación: 2020-07-22
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 9525dc73-0327-438c-8c04-13c0e037e9da
 // Título: Regsvr32 Execution From Potential Suspicious Location
 // Descripción: Detects execution of regsvr32 where the DLL is located in a potentially suspicious location.
+// Fecha de creación: 2023-05-26
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

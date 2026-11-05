@@ -2,6 +2,8 @@
 // ID Sigma: 871b9555-69ca-4993-99d3-35a59f9f3599
 // Título: Suspicious UltraVNC Execution
 // Descripción: Detects suspicious UltraVNC command line flag combination that indicate a auto reconnect upon execution, e.g. startup (as seen being used by Gamaredon threat group)
+// Fecha de creación: 2022-03-04
+// Fecha de modificación: 2022-03-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

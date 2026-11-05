@@ -2,6 +2,8 @@
 // ID Sigma: b124ddf4-778d-418e-907f-6dd3fc0d31cd
 // Título: Arbitrary File Download Via PresentationHost.EXE
 // Descripción: Detects usage of "PresentationHost" which is a utility that runs ".xbap" (Browser Applications) files to download arbitrary files
+// Fecha de creación: 2022-08-19
+// Fecha de modificación: 2023-11-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

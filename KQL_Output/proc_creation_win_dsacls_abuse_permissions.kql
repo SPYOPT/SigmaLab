@@ -2,6 +2,8 @@
 // ID Sigma: 01c42d3c-242d-4655-85b2-34f1739632f7
 // Título: Potentially Over Permissive Permissions Granted Using Dsacls.EXE
 // Descripción: Detects usage of Dsacls to grant over permissive permissions
+// Fecha de creación: 2022-06-20
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

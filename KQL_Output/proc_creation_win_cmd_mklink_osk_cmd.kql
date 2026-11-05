@@ -2,6 +2,8 @@
 // ID Sigma: e9b61244-893f-427c-b287-3e708f321c6b
 // Título: Potential Privilege Escalation Using Symlink Between Osk and Cmd
 // Descripción: Detects the creation of a symbolic link between "cmd.exe" and the accessibility on-screen keyboard binary (osk.exe) using "mklink". This technique provides an elevated command prompt to the user from the login screen without the need to log in.
+// Fecha de creación: 2022-12-11
+// Fecha de modificación: 2022-12-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -4,6 +4,8 @@
 // Descripción: Detects potential PowerShell execution from a DLL instead of the usual PowerShell process as seen used in PowerShdll.
 This detection assumes that PowerShell commands are passed via the CommandLine.
 
+// Fecha de creación: 2018-08-25
+// Fecha de modificación: 2024-03-07
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

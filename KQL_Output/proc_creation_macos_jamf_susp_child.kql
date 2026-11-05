@@ -2,6 +2,8 @@
 // ID Sigma: 2316929c-01aa-438c-970f-099145ab1ee6
 // Título: JAMF MDM Potential Suspicious Child Process
 // Descripción: Detects potential suspicious child processes of "jamf". Could be a sign of potential abuse of Jamf as a C2 server as seen by Typhon MythicAgent.
+// Fecha de creación: 2023-08-22
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

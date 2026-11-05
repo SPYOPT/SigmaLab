@@ -2,6 +2,8 @@
 // ID Sigma: 1a0d4aba-7668-4365-9ce4-6d79ab088dfd
 // Título: Ping Hex IP
 // Descripción: Detects a ping command that uses a hex encoded IP address
+// Fecha de creación: 2018-03-23
+// Fecha de modificación: 2025-10-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

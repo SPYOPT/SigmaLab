@@ -2,6 +2,8 @@
 // ID Sigma: 5de06a6f-673a-4fc0-8d48-bcfe3837b033
 // Título: System Information Discovery Using sw_vers
 // Descripción: Detects the use of "sw_vers" for system information discovery
+// Fecha de creación: 2023-12-20
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

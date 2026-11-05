@@ -2,6 +2,8 @@
 // ID Sigma: 1eeed653-dbc8-4187-ad0c-eeebb20e6599
 // Título: Potential SPN Enumeration Via Setspn.EXE
 // Descripción: Detects service principal name (SPN) enumeration used for Kerberoasting
+// Fecha de creación: 2018-11-14
+// Fecha de modificación: 2023-10-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

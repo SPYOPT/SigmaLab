@@ -2,6 +2,8 @@
 // ID Sigma: 932fb0d8-692b-4b0f-a26e-5643a50fe7d6
 // Título: Audio Capture via PowerShell
 // Descripción: Detects audio capture via PowerShell Cmdlet.
+// Fecha de creación: 2019-10-24
+// Fecha de modificación: 2023-04-06
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

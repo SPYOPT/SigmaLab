@@ -4,6 +4,8 @@
 // Descripción: Detects installation of Kali Linux distribution through Windows Subsystem for Linux (WSL).
 Attackers may use Kali Linux WSL to leverage its penetration testing tools and capabilities for malicious purposes.
 
+// Fecha de creación: 2025-10-10
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

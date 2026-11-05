@@ -2,6 +2,8 @@
 // ID Sigma: a58353df-af43-4753-bad0-cd83ef35eef5
 // Título: Suspicious Usage Of Active Directory Diagnostic Tool (ntdsutil.exe)
 // Descripción: Detects execution of ntdsutil.exe to perform different actions such as restoring snapshots...etc.
+// Fecha de creación: 2022-09-14
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

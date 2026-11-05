@@ -2,6 +2,8 @@
 // ID Sigma: acf61bd8-d814-4272-81f0-a7a269aa69aa
 // Título: Indicator Removal on Host - Clear Mac System Logs
 // Descripción: Detects deletion of local audit logs
+// Fecha de creación: 2020-10-11
+// Fecha de modificación: 2022-09-16
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

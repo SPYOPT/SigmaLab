@@ -2,6 +2,8 @@
 // ID Sigma: bedfc8ad-d1c7-4e37-a20e-e2b0dbee759c
 // Título: HackTool - SharpEvtMute Execution
 // Descripción: Detects the use of SharpEvtHook, a tool that tampers with the Windows event logs
+// Fecha de creación: 2022-09-07
+// Fecha de modificación: 2023-02-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

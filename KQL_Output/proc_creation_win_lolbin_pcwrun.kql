@@ -2,6 +2,8 @@
 // ID Sigma: b97cd4b1-30b8-4a9d-bd72-6293928d52bc
 // Título: Indirect Command Execution By Program Compatibility Wizard
 // Descripción: Detect indirect command execution via Program Compatibility Assistant pcwrun.exe
+// Fecha de creación: 2020-10-12
+// Fecha de modificación: 2021-11-27
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

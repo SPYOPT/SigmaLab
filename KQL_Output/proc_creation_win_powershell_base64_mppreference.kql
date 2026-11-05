@@ -2,6 +2,8 @@
 // ID Sigma: c6fb44c6-71f5-49e6-9462-1425d328aee3
 // Título: Powershell Base64 Encoded MpPreference Cmdlet
 // Descripción: Detects base64 encoded "MpPreference" PowerShell cmdlet code that tries to modifies or tamper with Windows Defender AV
+// Fecha de creación: 2022-03-04
+// Fecha de modificación: 2023-01-30
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

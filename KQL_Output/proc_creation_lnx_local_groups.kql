@@ -2,6 +2,8 @@
 // ID Sigma: 676381a6-15ca-4d73-a9c8-6a22e970b90d
 // Título: Local Groups Discovery - Linux
 // Descripción: Detects enumeration of local system groups. Adversaries may attempt to find local system groups and permission settings
+// Fecha de creación: 2020-10-11
+// Fecha de modificación: 2025-06-04
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

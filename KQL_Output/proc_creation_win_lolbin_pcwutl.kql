@@ -2,6 +2,8 @@
 // ID Sigma: 9386d78a-7207-4048-9c9f-a93a7c2d1c05
 // Título: Code Execution via Pcwutl.dll
 // Descripción: Detects launch of executable by calling the LaunchApplication function from pcwutl.dll library.
+// Fecha de creación: 2020-10-05
+// Fecha de modificación: 2023-02-09
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

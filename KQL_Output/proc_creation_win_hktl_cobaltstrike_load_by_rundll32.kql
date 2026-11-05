@@ -2,6 +2,8 @@
 // ID Sigma: ae9c6a7c-9521-42a6-915e-5aaa8689d529
 // Título: CobaltStrike Load by Rundll32
 // Descripción: Rundll32 can be use by Cobalt Strike with StartW function to load DLLs from the command line.
+// Fecha de creación: 2021-06-01
+// Fecha de modificación: 2022-09-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

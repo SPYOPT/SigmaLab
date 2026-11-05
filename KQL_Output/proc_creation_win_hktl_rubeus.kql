@@ -2,6 +2,8 @@
 // ID Sigma: 7ec2c172-dceb-4c10-92c9-87c1881b7e18
 // Título: HackTool - Rubeus Execution
 // Descripción: Detects the execution of the hacktool Rubeus via PE information of command line parameters
+// Fecha de creación: 2018-12-19
+// Fecha de modificación: 2023-04-20
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

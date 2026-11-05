@@ -3,6 +3,8 @@
 // Título: Suspicious Windows Service Tampering
 // Descripción: Detects the usage of binaries such as 'net', 'sc' or 'powershell' in order to stop, pause, disable or delete critical or important Windows services such as AV, Backup, etc. As seen being used in some ransomware scripts
 
+// Fecha de creación: 2022-09-01
+// Fecha de modificación: 2026-10-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

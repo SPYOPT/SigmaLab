@@ -2,6 +2,8 @@
 // ID Sigma: 9a7a0393-2144-4626-9bf1-7c2f5a7321db
 // Título: System Network Connections Discovery - MacOs
 // Descripción: Detects usage of system utilities to discover system network connections
+// Fecha de creación: 2020-10-19
+// Fecha de modificación: 2022-12-28
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

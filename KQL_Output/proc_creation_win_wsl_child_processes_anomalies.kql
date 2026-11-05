@@ -2,6 +2,8 @@
 // ID Sigma: 2267fe65-0681-42ad-9a6d-46553d3f3480
 // Título: WSL Child Process Anomaly
 // Descripción: Detects uncommon or suspicious child processes spawning from a WSL process. This could indicate an attempt to evade parent/child relationship detections or persistence attempts via cron using WSL
+// Fecha de creación: 2023-01-23
+// Fecha de modificación: 2023-08-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

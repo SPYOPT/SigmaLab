@@ -2,6 +2,8 @@
 // ID Sigma: c633622e-cab9-4eaa-bb13-66a1d68b3e47
 // Título: New Virtual Smart Card Created Via TpmVscMgr.EXE
 // Descripción: Detects execution of "Tpmvscmgr.exe" to create a new virtual smart card.
+// Fecha de creación: 2023-06-15
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: e290b10b-1023-4452-a4a9-eb31a9013b3a
 // Título: LOLBAS Data Exfiltration by DataSvcUtil.exe
 // Descripción: Detects when a user performs data exfiltration by using DataSvcUtil.exe
+// Fecha de creación: 2021-09-30
+// Fecha de modificación: 2022-05-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

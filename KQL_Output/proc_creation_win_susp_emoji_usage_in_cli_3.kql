@@ -2,6 +2,8 @@
 // ID Sigma: f9578658-9e71-4711-b634-3f9b50cd3c06
 // Título: Potential Defense Evasion Activity Via Emoji Usage In CommandLine - 3
 // Descripción: Detects the usage of emojis in the command line, this could be a sign of potential defense evasion activity.
+// Fecha de creación: 2022-12-05
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

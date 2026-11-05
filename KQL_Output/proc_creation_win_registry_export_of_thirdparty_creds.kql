@@ -4,6 +4,8 @@
 // Descripción: Detects the use of reg.exe to export registry paths associated with third-party credentials.
 Credential stealers have been known to use this technique to extract sensitive information from the registry.
 
+// Fecha de creación: 2025-05-22
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

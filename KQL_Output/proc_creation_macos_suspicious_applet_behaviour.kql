@@ -2,6 +2,8 @@
 // ID Sigma: a753a6af-3126-426d-8bd0-26ebbcb92254
 // Título: Osacompile Execution By Potentially Suspicious Applet/Osascript
 // Descripción: Detects potential suspicious applet or osascript executing "osacompile".
+// Fecha de creación: 2023-04-03
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

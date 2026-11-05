@@ -2,6 +2,8 @@
 // ID Sigma: f426547a-e0f7-441a-b63e-854ac5bdf54d
 // Título: Perl Inline Command Execution
 // Descripción: Detects execution of perl using the "-e"/"-E" flags. This is could be used as a way to launch a reverse shell or execute live perl code.
+// Fecha de creación: 2023-01-02
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

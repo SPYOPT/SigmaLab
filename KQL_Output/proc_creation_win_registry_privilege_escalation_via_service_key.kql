@@ -2,6 +2,8 @@
 // ID Sigma: 0f9c21f1-6a73-4b0e-9809-cb562cb8d981
 // Título: Potential Privilege Escalation via Service Permissions Weakness
 // Descripción: Detect modification of services configuration (ImagePath, FailureCommand and ServiceDLL) in registry by processes with Medium integrity level
+// Fecha de creación: 2019-10-26
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

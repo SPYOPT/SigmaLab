@@ -2,6 +2,8 @@
 // ID Sigma: 114de787-4eb2-48cc-abdb-c0b449f93ea4
 // Título: Suspicious X509Enrollment - Process Creation
 // Descripción: Detect use of X509Enrollment
+// Fecha de creación: 2022-12-23
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

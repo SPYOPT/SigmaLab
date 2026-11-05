@@ -2,6 +2,8 @@
 // ID Sigma: c8da0dfd-4ed0-4b68-962d-13c9c884384e
 // Título: Potential Credential Dumping Via LSASS Process Clone
 // Descripción: Detects a suspicious LSASS process process clone that could be a sign of credential dumping activity
+// Fecha de creación: 2021-11-27
+// Fecha de modificación: 2023-03-02
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

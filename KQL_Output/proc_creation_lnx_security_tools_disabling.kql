@@ -2,6 +2,8 @@
 // ID Sigma: e3a8a052-111f-4606-9aee-f28ebeb76776
 // Título: Disabling Security Tools
 // Descripción: Detects disabling security tools
+// Fecha de creación: 2020-06-17
+// Fecha de modificación: 2022-10-09
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

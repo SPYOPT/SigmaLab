@@ -5,6 +5,8 @@
 JWT tokens are often used for access-tokens across various applications and services like Microsoft 365, Azure, AWS, Google Cloud, and others.
 Threat actors may search for these tokens to steal them for lateral movement or privilege escalation.
 
+// Fecha de creación: 2022-10-25
+// Fecha de modificación: 2025-10-21
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

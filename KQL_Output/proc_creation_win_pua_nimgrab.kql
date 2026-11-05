@@ -2,6 +2,8 @@
 // ID Sigma: 74a12f18-505c-4114-8d0b-8448dd5485c6
 // Título: PUA - Nimgrab Execution
 // Descripción: Detects the usage of nimgrab, a tool bundled with the Nim programming framework and used for downloading files.
+// Fecha de creación: 2022-08-28
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 0cf7a157-8879-41a2-8f55-388dd23746b7
 // Título: Linux Recon Indicators
 // Descripción: Detects events with patterns found in commands used for reconnaissance on linux systems
+// Fecha de creación: 2022-06-20
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

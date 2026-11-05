@@ -4,6 +4,8 @@
 // Descripción: Detects changes to the "NoLMHash" registry value in order to allow Windows to store LM Hashes.
 By setting this registry value to "0" (DWORD), Windows will be allowed to store a LAN manager hash of your password in Active Directory and local SAM databases.
 
+// Fecha de creación: 2023-12-15
+// Fecha de modificación: 2023-12-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

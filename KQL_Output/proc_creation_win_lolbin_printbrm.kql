@@ -2,6 +2,8 @@
 // ID Sigma: cafeeba3-01da-4ab4-b6c4-a31b1d9730c7
 // Título: PrintBrm ZIP Creation of Extraction
 // Descripción: Detects the execution of the LOLBIN PrintBrm.exe, which can be used to create or extract ZIP files. PrintBrm.exe should not be run on a normal workstation.
+// Fecha de creación: 2022-05-02
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

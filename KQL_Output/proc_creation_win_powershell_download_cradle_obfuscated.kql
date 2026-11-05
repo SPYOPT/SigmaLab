@@ -2,6 +2,8 @@
 // ID Sigma: 44e24481-6202-4c62-9127-5a0ae8e3fe3d
 // Título: Obfuscated PowerShell OneLiner Execution
 // Descripción: Detects the execution of a specific OneLiner to download and execute powershell modules in memory.
+// Fecha de creación: 2022-05-09
+// Fecha de modificación: 2025-04-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

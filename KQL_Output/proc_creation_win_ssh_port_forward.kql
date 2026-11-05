@@ -2,6 +2,8 @@
 // ID Sigma: 327f48c1-a6db-4eb8-875a-f6981f1b0183
 // Título: Port Forwarding Activity Via SSH.EXE
 // Descripción: Detects port forwarding activity via SSH.exe
+// Fecha de creación: 2022-10-12
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

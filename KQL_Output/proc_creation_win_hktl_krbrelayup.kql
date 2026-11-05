@@ -2,6 +2,8 @@
 // ID Sigma: 12827a56-61a4-476a-a9cb-f3068f191073
 // Título: HackTool - KrbRelayUp Execution
 // Descripción: Detects KrbRelayUp used to perform a universal no-fix local privilege escalation in Windows domain environments where LDAP signing is not enforced
+// Fecha de creación: 2022-04-26
+// Fecha de modificación: 2023-02-04
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

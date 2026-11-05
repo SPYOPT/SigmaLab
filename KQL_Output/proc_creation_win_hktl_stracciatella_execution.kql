@@ -2,6 +2,8 @@
 // ID Sigma: 7a4d9232-92fc-404d-8ce1-4c92e7caf539
 // Título: HackTool - Stracciatella Execution
 // Descripción: Detects Stracciatella which executes a Powershell runspace from within C# (aka SharpPick technique) with AMSI, ETW and Script Block Logging disabled based on PE metadata characteristics.
+// Fecha de creación: 2023-04-17
+// Fecha de modificación: 2024-11-23
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

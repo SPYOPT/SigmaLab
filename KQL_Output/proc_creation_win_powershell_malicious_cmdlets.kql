@@ -2,6 +2,8 @@
 // ID Sigma: 02030f2f-6199-49ec-b258-ea71b07e03dc
 // Título: Malicious PowerShell Commandlets - ProcessCreation
 // Descripción: Detects Commandlet names from well-known PowerShell exploitation frameworks
+// Fecha de creación: 2023-01-02
+// Fecha de modificación: 2025-12-10
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -5,6 +5,8 @@
 Attackers can abuse this utility in order to download arbitrary files via a configuration file.
 Inspect the location and the content of the file passed as an argument in order to determine if it is suspicious.
 
+// Fecha de creación: 2021-11-03
+// Fecha de modificación: 2024-04-22
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

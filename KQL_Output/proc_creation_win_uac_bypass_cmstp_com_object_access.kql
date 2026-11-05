@@ -2,6 +2,8 @@
 // ID Sigma: 4b60e6f2-bf39-47b4-b4ea-398e33cfe253
 // Título: CMSTP UAC Bypass via COM Object Access
 // Descripción: Detects UAC Bypass Attempt Using Microsoft Connection Manager Profile Installer Autoelevate-capable COM Objects (e.g. UACMe ID of 41, 43, 58 or 65)
+// Fecha de creación: 2019-07-31
+// Fecha de modificación: 2024-12-01
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: 5cc2cda8-f261-4d88-a2de-e9e193c86716
 // Título: Suspicious Processes Spawned by WinRM
 // Descripción: Detects suspicious processes including shells spawnd from WinRM host process
+// Fecha de creación: 2021-05-20
+// Fecha de modificación: 2022-07-14
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

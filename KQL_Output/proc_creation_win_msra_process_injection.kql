@@ -2,6 +2,8 @@
 // ID Sigma: 744a188b-0415-4792-896f-11ddb0588dbc
 // Título: Potential Process Injection Via Msra.EXE
 // Descripción: Detects potential process injection via Microsoft Remote Asssistance (Msra.exe) by looking at suspicious child processes spawned from the aforementioned process. It has been a target used by many threat actors and used for discovery and persistence tactics
+// Fecha de creación: 2022-06-24
+// Fecha de modificación: 2023-02-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

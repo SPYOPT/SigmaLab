@@ -2,6 +2,8 @@
 // ID Sigma: 5cc90652-4cbd-4241-aa3b-4b462fa5a248
 // Título: Potential Recon Activity Via Nltest.EXE
 // Descripción: Detects nltest commands that can be used for information discovery
+// Fecha de creación: 2021-07-24
+// Fecha de modificación: 2023-12-15
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

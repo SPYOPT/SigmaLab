@@ -2,6 +2,8 @@
 // ID Sigma: 850d55f9-6eeb-4492-ad69-a72338f65ba4
 // Título: C# IL Code Compilation Via Ilasm.EXE
 // Descripción: Detects the use of "Ilasm.EXE" in order to compile C# intermediate (IL) code to EXE or DLL.
+// Fecha de creación: 2022-05-07
+// Fecha de modificación: 2022-05-16
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

@@ -2,6 +2,8 @@
 // ID Sigma: de587dce-915e-4218-aac4-835ca6af6f70
 // Título: Potential Persistence Attempt Via Run Keys Using Reg.EXE
 // Descripción: Detects suspicious command line reg.exe tool adding key to RUN key in Registry
+// Fecha de creación: 2021-06-28
+// Fecha de modificación: 2025-02-17
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

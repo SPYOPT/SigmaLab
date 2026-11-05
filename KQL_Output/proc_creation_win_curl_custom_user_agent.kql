@@ -2,6 +2,8 @@
 // ID Sigma: 85de1f22-d189-44e4-8239-dc276b45379b
 // Título: Curl Web Request With Potential Custom User-Agent
 // Descripción: Detects execution of "curl.exe" with a potential custom "User-Agent". Attackers can leverage this to download or exfiltrate data via "curl" to a domain that only accept specific "User-Agent" strings
+// Fecha de creación: 2023-07-27
+// Fecha de modificación: 2025-12-11
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

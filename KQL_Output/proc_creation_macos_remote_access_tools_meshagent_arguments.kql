@@ -5,6 +5,8 @@
 Historical data shows that threat actors rename MeshAgent binary to evade detection.
 Matching command lines with the '--meshServiceName' argument can indicate that the MeshAgent is being used for remote access.
 
+// Fecha de creación: 2025-05-19
+// Fecha de modificación: 
 // Aplica a: Producto: macos | Categoría: process_creation
 // Producto: macos
 // Categoría: process_creation

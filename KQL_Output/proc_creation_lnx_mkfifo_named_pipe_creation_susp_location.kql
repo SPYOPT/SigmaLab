@@ -2,6 +2,8 @@
 // ID Sigma: 999c3b12-0a8c-40b6-8e13-dd7d62b75c7a
 // Título: Potentially Suspicious Named Pipe Created Via Mkfifo
 // Descripción: Detects the creation of a new named pipe using the "mkfifo" utility in a potentially suspicious location
+// Fecha de creación: 2023-06-16
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

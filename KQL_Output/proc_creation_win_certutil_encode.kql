@@ -2,6 +2,8 @@
 // ID Sigma: e62a9f0c-ca1e-46b2-85d5-a6da77f86d1a
 // Título: File Encoded To Base64 Via Certutil.EXE
 // Descripción: Detects the execution of certutil with the "encode" flag to encode a file to base64. This can be abused by threat actors and attackers for data exfiltration
+// Fecha de creación: 2019-02-24
+// Fecha de modificación: 2024-03-05
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

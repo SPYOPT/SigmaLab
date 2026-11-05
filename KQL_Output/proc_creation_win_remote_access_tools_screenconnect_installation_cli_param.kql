@@ -2,6 +2,8 @@
 // ID Sigma: 75bfe6e6-cd8e-429e-91d3-03921e1d7962
 // Título: Remote Access Tool - ScreenConnect Installation Execution
 // Descripción: Detects ScreenConnect program starts that establish a remote access to a system.
+// Fecha de creación: 2021-02-11
+// Fecha de modificación: 2024-02-26
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

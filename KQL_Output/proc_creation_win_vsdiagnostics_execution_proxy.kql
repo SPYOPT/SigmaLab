@@ -2,6 +2,8 @@
 // ID Sigma: ac1c92b4-ac81-405a-9978-4604d78cc47e
 // Título: Potential Binary Proxy Execution Via VSDiagnostics.EXE
 // Descripción: Detects execution of "VSDiagnostics.exe" with the "start" command in order to launch and proxy arbitrary binaries.
+// Fecha de creación: 2023-08-03
+// Fecha de modificación: 
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

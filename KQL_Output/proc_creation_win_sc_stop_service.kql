@@ -2,6 +2,8 @@
 // ID Sigma: 81bcb81b-5b1f-474b-b373-52c871aaa7b1
 // Título: Stop Windows Service Via Sc.EXE
 // Descripción: Detects the stopping of a Windows service via the "sc.exe" utility
+// Fecha de creación: 2023-03-05
+// Fecha de modificación: 2024-01-18
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

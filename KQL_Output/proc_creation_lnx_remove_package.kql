@@ -2,6 +2,8 @@
 // ID Sigma: 95d61234-7f56-465c-6f2d-b562c6fedbc4
 // Título: Linux Package Uninstall
 // Descripción: Detects linux package removal using builtin tools such as "yum", "apt", "apt-get" or "dpkg".
+// Fecha de creación: 2023-03-09
+// Fecha de modificación: 
 // Aplica a: Producto: linux | Categoría: process_creation
 // Producto: linux
 // Categoría: process_creation

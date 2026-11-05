@@ -2,6 +2,8 @@
 // ID Sigma: 56c217c3-2de2-479b-990f-5c109ba8458f
 // Título: HackTool - Default PowerSploit/Empire Scheduled Task Creation
 // Descripción: Detects the creation of a schtask via PowerSploit or Empire Default Configuration.
+// Fecha de creación: 2018-03-06
+// Fecha de modificación: 2023-03-03
 // Aplica a: Producto: windows | Categoría: process_creation
 // Producto: windows
 // Categoría: process_creation

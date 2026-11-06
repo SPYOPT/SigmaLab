@@ -2,6 +2,7 @@ from contextlib import redirect_stdout, redirect_stderr
 import importlib.metadata as importlib_metadata
 from io import BytesIO, TextIOBase
 from pathlib import Path
+import traceback
 import csv
 import json
 import sys
@@ -20,7 +21,7 @@ LANZADOR = BASE / "sigma_launcher.py"
 PYTHON_VENV = Path(sys.executable)
 
 PIPELINE = "microsoft_xdr"
-LIMITE = 1383
+LIMITE = 2000
 
 
 # ============================================================
@@ -191,8 +192,12 @@ def obtener_metadata(regla):
         }
 
     except Exception as error:
-        metadata_vacia["error_metadata"] = str(error)
+        metadata_vacia["error_metadata"] = (
+            f"{type(error).__name__}: {error}"
+        )
         return metadata_vacia
+
+        
 
 
 def buscar_reglas():
@@ -341,14 +346,16 @@ def convertir(regla):
     except Exception as error:
         salida = salida_estandar.getvalue().strip()
         diagnostico = salida_error.getvalue().strip()
+        traceback_completo = traceback.format_exc()
 
         mensaje_excepcion = (
-            f"{type(error).__name__}: {error}"
+            f"{type(error).__name__}: {error}\n"
+            f"{traceback_completo}"
         )
 
         if diagnostico:
             detalle = (
-                f"{diagnostico} | "
+                f"{diagnostico}\n"
                 f"{mensaje_excepcion}"
             )
         else:
@@ -361,7 +368,7 @@ def convertir(regla):
         }
 
     finally:
-        sys.argv = argumentos_originales    
+        sys.argv = argumentos_originales   
 
 # ============================================================
 # PROCESO PRINCIPAL

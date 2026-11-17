@@ -1,0 +1,17 @@
+// Regla YARA: Prueba_IP
+// Archivo: 03_ip.yar
+// Descripción: 
+// Estado: EXITOSA
+// Cobertura: 100.0%
+// Elementos no convertidos: 
+// Consulta generada para hunting en Microsoft Defender XDR.
+// Requiere validación antes de producción.
+
+(
+    DeviceNetworkEvents
+    | where RemoteIP in ("8.8.4.4")
+    | project Timestamp, DeviceName, RemoteIP, RemotePort,
+        InitiatingProcessFileName,
+        IndicatorType = "IPAddress",
+        Evidence = RemoteIP
+)

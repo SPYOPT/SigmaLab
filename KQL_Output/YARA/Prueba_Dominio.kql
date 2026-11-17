@@ -1,0 +1,17 @@
+// Regla YARA: Prueba_Dominio
+// Archivo: 02_dominio.yar
+// Descripción: 
+// Estado: EXITOSA
+// Cobertura: 100.0%
+// Elementos no convertidos: 
+// Consulta generada para hunting en Microsoft Defender XDR.
+// Requiere validación antes de producción.
+
+(
+    DeviceNetworkEvents
+    | where RemoteUrl has_any ("malicious-example.com")
+    | project Timestamp, DeviceName, RemoteUrl, RemoteIP,
+        InitiatingProcessFileName,
+        IndicatorType = "Domain",
+        Evidence = RemoteUrl
+)

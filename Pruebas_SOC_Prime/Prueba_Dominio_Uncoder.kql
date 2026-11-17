@@ -1,0 +1,1 @@
+union * | where (RemoteUrl =~ "malicious-example.com")

@@ -15,13 +15,14 @@ import yaml
 
 BASE = Path(r"C:\SigmaLab")
 REGLAS = BASE / "sigma" / "rules"
-SALIDA = BASE / "KQL_Output"
+
+SALIDA_KQL = BASE / "KQL_Output" / "Sigma"
+SALIDA_REPORTES = BASE / "Reportes" / "Sigma"
+
 LANZADOR = BASE / "sigma_launcher.py"
 
-PYTHON_VENV = Path(sys.executable)
-
 PIPELINE = "microsoft_xdr"
-LIMITE = 2000
+LIMITE = 1383
 
 
 # ============================================================
@@ -377,7 +378,8 @@ def convertir(regla):
 def main():
     # Crear la carpeta KQL_Output si todavía no existe.
     # Esta debe ser la primera instrucción dentro de main().
-    SALIDA.mkdir(parents=True, exist_ok=True)
+    SALIDA_KQL.mkdir(parents=True, exist_ok=True)
+    SALIDA_REPORTES.mkdir(parents=True, exist_ok=True)
 
     # Verificar que el programa se esté ejecutando dentro del entorno virtual.
     if sys.prefix == sys.base_prefix:
@@ -390,7 +392,8 @@ def main():
     print(f"Python actual: {sys.executable}")
     print(f"Entorno virtual: {sys.prefix}")
     print(f"Lanzador Sigma: {LANZADOR}")
-    print(f"Carpeta de salida: {SALIDA}")
+    print(f"Salida de KQL: {SALIDA_KQL}")
+    print(f"Salida de reportes: {SALIDA_REPORTES}")
     print()
 
     # Verificar que exista sigma_launcher.py.
@@ -434,7 +437,7 @@ def main():
         error_conversion = resultado["stderr"].strip()
 
         if resultado["returncode"] == 0 and kql:
-            archivo_kql = SALIDA / f"{regla.stem}.kql"
+            archivo_kql = SALIDA_KQL / f"{regla.stem}.kql"
 
             encabezado = (
                 f"// Regla Sigma: {regla.name}\n"
@@ -530,11 +533,18 @@ def main():
     # ========================================================
 
     # Reporte general: contiene exitosas y fallidas.
-    reporte_csv = SALIDA / "reporte_conversion.csv"
+    reporte_csv = (
+        SALIDA_REPORTES / "reporte_conversion.csv"
+    )
 
     # Reportes separados.
-    reporte_exitosas_csv = SALIDA / "reglas_exitosas.csv"
-    reporte_fallidas_csv = SALIDA / "reglas_fallidas.csv"
+    reporte_exitosas_csv = (
+        SALIDA_REPORTES / "reglas_exitosas.csv"
+    )
+
+    reporte_fallidas_csv = (
+        SALIDA_REPORTES / "reglas_fallidas.csv"
+    )
 
     columnas = [
     # Identificación de la regla

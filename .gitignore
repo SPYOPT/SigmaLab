@@ -107,3 +107,34 @@ Thumbs.db
 
 # Archivos comprimidos
 *.zip
+
+# Entorno Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Repositorios externos
+sigma/
+pySigma/
+Sigma2KQL/
+Uncoder_IO/
+
+# Credenciales
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# Docker y temporales
+*.log
+*.tmp
+*.zip
+
+# VS Code
+.vscode/
+
+# Copias locales
+*deprecated*
+*copia*

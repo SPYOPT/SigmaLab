@@ -1,0 +1,25 @@
+// Regla YARA: Prueba_Archivo_Comando
+// Archivo: 04_archivo_comando.yar
+// Descripción: 
+// Estado: EXITOSA
+// Cobertura: 100.0%
+// Elementos no convertidos: 
+// Consulta generada para hunting en Microsoft Defender XDR.
+// Requiere validación antes de producción.
+
+union isfuzzy=true
+(
+    DeviceFileEvents
+    | where FileName in~ ("payload.exe", "powershell.exe")
+    | project Timestamp, DeviceName, FileName, FolderPath, SHA1, SHA256,
+        IndicatorType = "FileName",
+        Evidence = FolderPath
+),
+(
+    DeviceProcessEvents
+    | where ProcessCommandLine has_any ("powershell.exe -EncodedCommand")
+    | project Timestamp, DeviceName, FileName, FolderPath,
+        ProcessCommandLine,
+        IndicatorType = "ObservableString",
+        Evidence = ProcessCommandLine
+)

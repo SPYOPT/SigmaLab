@@ -9,6 +9,7 @@ Jinja2==3.1.6
 jq==1.13.0
 MarkupSafe==3.0.4
 packaging==26.3
+plyara==2.2.8
 prettytable==3.18.0
 pyparsing==3.3.3
 pySigma==1.4.0
@@ -20,3 +21,4 @@ types-PyYAML==6.0.12.20260906
 typing_extensions==4.16.0
 urllib3==2.8.0
 wcwidth==0.9.4
+yara-python==4.5.4

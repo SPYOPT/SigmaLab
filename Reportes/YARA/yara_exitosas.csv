@@ -1,0 +1,40 @@
+﻿"archivo_yara";"nombre_regla";"descripcion";"autor";"fecha_creacion";"fecha_modificacion";"referencia";"tags";"condicion_yara";"cantidad_strings_texto";"cantidad_regex";"cantidad_hexadecimal";"md5";"sha1";"sha256";"dominios";"urls";"ips";"archivos";"registro";"tablas_kql";"estado_conversion";"porcentaje_cobertura";"archivo_kql";"resultado_kql";"elementos_no_convertidos";"detalle_error";"metadata_completa"
+"01_hash.yar";"Prueba_SHA256";"";"";"";"";"";"";"[""$hash""]";"1";"0";"0";"";"";"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";"";"";"";"";"";"DeviceFileEvents";"EXITOSA";"100.0";"C:\SigmaLab\KQL_Output\YARA\Prueba_SHA256.kql";"(
+    DeviceFileEvents
+    | where SHA256 =~ ""aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa""
+    | project Timestamp, DeviceName, FileName, FolderPath, SHA1, SHA256, MD5,
+        IndicatorType = ""FileHash"",
+        Evidence = FileName
+)";"";"";"{}"
+"02_dominio.yar";"Prueba_Dominio";"";"";"";"";"";"";"[""$domain""]";"1";"0";"0";"";"";"";"malicious-example.com";"";"";"";"";"DeviceNetworkEvents";"EXITOSA";"100.0";"C:\SigmaLab\KQL_Output\YARA\Prueba_Dominio.kql";"(
+    DeviceNetworkEvents
+    | where RemoteUrl has_any (""malicious-example.com"")
+    | project Timestamp, DeviceName, RemoteUrl, RemoteIP,
+        InitiatingProcessFileName,
+        IndicatorType = ""Domain"",
+        Evidence = RemoteUrl
+)";"";"";"{}"
+"03_ip.yar";"Prueba_IP";"";"";"";"";"";"";"[""$ip""]";"1";"0";"0";"";"";"";"";"";"8.8.4.4";"";"";"DeviceNetworkEvents";"EXITOSA";"100.0";"C:\SigmaLab\KQL_Output\YARA\Prueba_IP.kql";"(
+    DeviceNetworkEvents
+    | where RemoteIP in (""8.8.4.4"")
+    | project Timestamp, DeviceName, RemoteIP, RemotePort,
+        InitiatingProcessFileName,
+        IndicatorType = ""IPAddress"",
+        Evidence = RemoteIP
+)";"";"";"{}"
+"04_archivo_comando.yar";"Prueba_Archivo_Comando";"";"";"";"";"";"";"[""all"", ""of"", ""them""]";"2";"0";"0";"";"";"";"";"";"";"payload.exe | powershell.exe";"";"DeviceFileEvents | DeviceProcessEvents";"EXITOSA";"100.0";"C:\SigmaLab\KQL_Output\YARA\Prueba_Archivo_Comando.kql";"union isfuzzy=true
+(
+    DeviceFileEvents
+    | where FileName in~ (""payload.exe"", ""powershell.exe"")
+    | project Timestamp, DeviceName, FileName, FolderPath, SHA1, SHA256,
+        IndicatorType = ""FileName"",
+        Evidence = FolderPath
+),
+(
+    DeviceProcessEvents
+    | where ProcessCommandLine has_any (""powershell.exe -EncodedCommand"")
+    | project Timestamp, DeviceName, FileName, FolderPath,
+        ProcessCommandLine,
+        IndicatorType = ""ObservableString"",
+        Evidence = ProcessCommandLine
+)";"";"";"{}"

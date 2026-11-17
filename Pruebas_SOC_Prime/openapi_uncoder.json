@@ -1,0 +1,536 @@
+﻿{
+    "openapi":  "3.1.0",
+    "info":  {
+                 "title":  "Siem Converter API",
+                 "version":  "0.1.0"
+             },
+    "paths":  {
+                  "/translate":  {
+                                     "post":  {
+                                                  "tags":  [
+                                                               "translator"
+                                                           ],
+                                                  "summary":  "Translate One",
+                                                  "description":  "Generate target translation",
+                                                  "operationId":  "translate_one_translate_post",
+                                                  "parameters":  [
+                                                                     {
+                                                                         "required":  false,
+                                                                         "schema":  {
+                                                                                        "type":  "boolean",
+                                                                                        "title":  "Return Only First Query",
+                                                                                        "default":  false
+                                                                                    },
+                                                                         "name":  "return_only_first_query",
+                                                                         "in":  "query"
+                                                                     }
+                                                                 ],
+                                                  "requestBody":  {
+                                                                      "content":  {
+                                                                                      "application/json":  {
+                                                                                                               "schema":  {
+                                                                                                                              "$ref":  "#/components/schemas/Body_translate_one_translate_post"
+                                                                                                                          }
+                                                                                                           }
+                                                                                  },
+                                                                      "required":  true
+                                                                  },
+                                                  "responses":  {
+                                                                    "200":  {
+                                                                                "description":  "Successful Response",
+                                                                                "content":  {
+                                                                                                "application/json":  {
+                                                                                                                         "schema":  {
+                                                                                                                                        "$ref":  "#/components/schemas/OneTranslationData"
+                                                                                                                                    }
+                                                                                                                     }
+                                                                                            }
+                                                                            },
+                                                                    "422":  {
+                                                                                "description":  "Validation Error",
+                                                                                "content":  {
+                                                                                                "application/json":  {
+                                                                                                                         "schema":  {
+                                                                                                                                        "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                    }
+                                                                                                                     }
+                                                                                            }
+                                                                            }
+                                                                }
+                                              }
+                                 },
+                  "/translate/all":  {
+                                         "post":  {
+                                                      "tags":  [
+                                                                   "translator"
+                                                               ],
+                                                      "summary":  "Translate All",
+                                                      "description":  "Generate all translations",
+                                                      "operationId":  "translate_all_translate_all_post",
+                                                      "parameters":  [
+                                                                         {
+                                                                             "required":  false,
+                                                                             "schema":  {
+                                                                                            "type":  "boolean",
+                                                                                            "title":  "Return Only First Query",
+                                                                                            "default":  false
+                                                                                        },
+                                                                             "name":  "return_only_first_query",
+                                                                             "in":  "query"
+                                                                         }
+                                                                     ],
+                                                      "requestBody":  {
+                                                                          "content":  {
+                                                                                          "application/json":  {
+                                                                                                                   "schema":  {
+                                                                                                                                  "$ref":  "#/components/schemas/Body_translate_all_translate_all_post"
+                                                                                                                              }
+                                                                                                               }
+                                                                                      },
+                                                                          "required":  true
+                                                                      },
+                                                      "responses":  {
+                                                                        "200":  {
+                                                                                    "description":  "Successful Response",
+                                                                                    "content":  {
+                                                                                                    "application/json":  {
+                                                                                                                             "schema":  {
+                                                                                                                                            "items":  {
+                                                                                                                                                          "$ref":  "#/components/schemas/OneTranslationData"
+                                                                                                                                                      },
+                                                                                                                                            "type":  "array",
+                                                                                                                                            "title":  "Response Translate All Translate All Post"
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                                }
+                                                                                },
+                                                                        "422":  {
+                                                                                    "description":  "Validation Error",
+                                                                                    "content":  {
+                                                                                                    "application/json":  {
+                                                                                                                             "schema":  {
+                                                                                                                                            "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                                }
+                                                                                }
+                                                                    }
+                                                  }
+                                     },
+                  "/platforms":  {
+                                     "get":  {
+                                                 "tags":  [
+                                                              "translator"
+                                                          ],
+                                                 "summary":  "Get Translator Platforms",
+                                                 "description":  "Get translator platforms",
+                                                 "operationId":  "get_translator_platforms_platforms_get",
+                                                 "responses":  {
+                                                                   "200":  {
+                                                                               "description":  "Successful Response",
+                                                                               "content":  {
+                                                                                               "application/json":  {
+                                                                                                                        "schema":  {
+                                                                                                                                       "$ref":  "#/components/schemas/TranslatorPlatforms"
+                                                                                                                                   }
+                                                                                                                    }
+                                                                                           }
+                                                                           }
+                                                               }
+                                             }
+                                 },
+                  "/all_platforms":  {
+                                         "get":  {
+                                                     "summary":  "Get All Platforms",
+                                                     "description":  "Get Sigma, RootA and iocs platforms",
+                                                     "operationId":  "get_all_platforms_all_platforms_get",
+                                                     "responses":  {
+                                                                       "200":  {
+                                                                                   "description":  "Successful Response",
+                                                                                   "content":  {
+                                                                                                   "application/json":  {
+                                                                                                                            "schema":  {
+                                                                                                                                           "items":  {
+
+                                                                                                                                                     },
+                                                                                                                                           "type":  "array",
+                                                                                                                                           "title":  "Response Get All Platforms All Platforms Get"
+                                                                                                                                       }
+                                                                                                                        }
+                                                                                               }
+                                                                               }
+                                                                   }
+                                                 }
+                                     },
+                  "/iocs/translate":  {
+                                          "post":  {
+                                                       "summary":  "Parse And Translate Iocs",
+                                                       "description":  "Parse IOCs from text.",
+                                                       "operationId":  "parse_and_translate_iocs_iocs_translate_post",
+                                                       "requestBody":  {
+                                                                           "content":  {
+                                                                                           "application/json":  {
+                                                                                                                    "schema":  {
+                                                                                                                                   "$ref":  "#/components/schemas/Body_parse_and_translate_iocs_iocs_translate_post"
+                                                                                                                               }
+                                                                                                                }
+                                                                                       },
+                                                                           "required":  true
+                                                                       },
+                                                       "responses":  {
+                                                                         "200":  {
+                                                                                     "description":  "Successful Response",
+                                                                                     "content":  {
+                                                                                                     "application/json":  {
+                                                                                                                              "schema":  {
+                                                                                                                                             "$ref":  "#/components/schemas/OneTranslationCTIData"
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                 }
+                                                                                 },
+                                                                         "422":  {
+                                                                                     "description":  "Validation Error",
+                                                                                     "content":  {
+                                                                                                     "application/json":  {
+                                                                                                                              "schema":  {
+                                                                                                                                             "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                 }
+                                                                                 }
+                                                                     }
+                                                   }
+                                      },
+                  "/suggestions/{parser_id}":  {
+                                                   "get":  {
+                                                               "tags":  [
+                                                                            "assistance"
+                                                                        ],
+                                                               "summary":  "Get Suggestions",
+                                                               "description":  "Get suggestions",
+                                                               "operationId":  "get_suggestions_suggestions__parser_id__get",
+                                                               "parameters":  [
+                                                                                  {
+                                                                                      "required":  true,
+                                                                                      "schema":  {
+                                                                                                     "type":  "string",
+                                                                                                     "title":  "Parser Id"
+                                                                                                 },
+                                                                                      "name":  "parser_id",
+                                                                                      "in":  "path"
+                                                                                  }
+                                                                              ],
+                                                               "responses":  {
+                                                                                 "200":  {
+                                                                                             "description":  "Successful Response",
+                                                                                             "content":  {
+                                                                                                             "application/json":  {
+                                                                                                                                      "schema":  {
+                                                                                                                                                     "items":  {
+                                                                                                                                                                   "type":  "object"
+                                                                                                                                                               },
+                                                                                                                                                     "type":  "array",
+                                                                                                                                                     "title":  "Response Get Suggestions Suggestions  Parser Id  Get"
+                                                                                                                                                 }
+                                                                                                                                  }
+                                                                                                         }
+                                                                                         },
+                                                                                 "422":  {
+                                                                                             "description":  "Validation Error",
+                                                                                             "content":  {
+                                                                                                             "application/json":  {
+                                                                                                                                      "schema":  {
+                                                                                                                                                     "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                                 }
+                                                                                                                                  }
+                                                                                                         }
+                                                                                         }
+                                                                             }
+                                                           }
+                                               }
+              },
+    "components":  {
+                       "schemas":  {
+                                       "Body_parse_and_translate_iocs_iocs_translate_post":  {
+                                                                                                 "properties":  {
+                                                                                                                    "text":  {
+                                                                                                                                 "type":  "string",
+                                                                                                                                 "title":  "Text",
+                                                                                                                                 "description":  "Text to parse IOCs from"
+                                                                                                                             },
+                                                                                                                    "iocs_per_query":  {
+                                                                                                                                           "type":  "integer",
+                                                                                                                                           "title":  "Iocs Per Query",
+                                                                                                                                           "description":  "IOCs per query limit",
+                                                                                                                                           "default":  25
+                                                                                                                                       },
+                                                                                                                    "platform":  {
+                                                                                                                                     "allOf":  [
+                                                                                                                                                   {
+                                                                                                                                                       "$ref":  "#/components/schemas/CTIPlatform"
+                                                                                                                                                   }
+                                                                                                                                               ],
+                                                                                                                                     "title":  "Platform",
+                                                                                                                                     "description":  "Platform to parse IOCs to"
+                                                                                                                                 },
+                                                                                                                    "include_ioc_types":  {
+                                                                                                                                              "items":  {
+                                                                                                                                                            "type":  "string",
+                                                                                                                                                            "enum":  [
+                                                                                                                                                                         "ip",
+                                                                                                                                                                         "domain",
+                                                                                                                                                                         "url",
+                                                                                                                                                                         "hash"
+                                                                                                                                                                     ]
+                                                                                                                                                        },
+                                                                                                                                              "type":  "array",
+                                                                                                                                              "title":  "Include Ioc Types",
+                                                                                                                                              "description":  "List of IOC types to include. By default all types are enabled."
+                                                                                                                                          },
+                                                                                                                    "include_hash_types":  {
+                                                                                                                                               "items":  {
+                                                                                                                                                             "type":  "string",
+                                                                                                                                                             "enum":  [
+                                                                                                                                                                          "md5",
+                                                                                                                                                                          "sha1",
+                                                                                                                                                                          "sha256",
+                                                                                                                                                                          "sha512"
+                                                                                                                                                                      ]
+                                                                                                                                                         },
+                                                                                                                                               "type":  "array",
+                                                                                                                                               "title":  "Include Hash Types",
+                                                                                                                                               "description":  "List of hash types to include. By default all hash types are enabled."
+                                                                                                                                           },
+                                                                                                                    "exceptions":  {
+                                                                                                                                       "items":  {
+                                                                                                                                                     "type":  "string"
+                                                                                                                                                 },
+                                                                                                                                       "type":  "array",
+                                                                                                                                       "title":  "Exceptions",
+                                                                                                                                       "description":  "List of exceptions. IOC is ignored if it contains one of exception values."
+                                                                                                                                   },
+                                                                                                                    "ioc_parsing_rules":  {
+                                                                                                                                              "items":  {
+                                                                                                                                                            "type":  "string",
+                                                                                                                                                            "enum":  [
+                                                                                                                                                                         "replace_dots",
+                                                                                                                                                                         "remove_private_and_reserved_ips",
+                                                                                                                                                                         "replace_hxxp"
+                                                                                                                                                                     ]
+                                                                                                                                                        },
+                                                                                                                                              "type":  "array",
+                                                                                                                                              "title":  "Ioc Parsing Rules",
+                                                                                                                                              "description":  "Additional parsing parameters."
+                                                                                                                                          },
+                                                                                                                    "include_source_ip":  {
+                                                                                                                                              "type":  "boolean",
+                                                                                                                                              "title":  "Include Source Ip",
+                                                                                                                                              "description":  "Include source IP in query. By default it is false.",
+                                                                                                                                              "default":  false
+                                                                                                                                          }
+                                                                                                                },
+                                                                                                 "type":  "object",
+                                                                                                 "required":  [
+                                                                                                                  "text",
+                                                                                                                  "platform"
+                                                                                                              ],
+                                                                                                 "title":  "Body_parse_and_translate_iocs_iocs_translate_post"
+                                                                                             },
+                                       "Body_translate_all_translate_all_post":  {
+                                                                                     "properties":  {
+                                                                                                        "source_platform_id":  {
+                                                                                                                                   "type":  "string",
+                                                                                                                                   "title":  "Source Platform Id"
+                                                                                                                               },
+                                                                                                        "text":  {
+                                                                                                                     "type":  "string",
+                                                                                                                     "title":  "Text"
+                                                                                                                 }
+                                                                                                    },
+                                                                                     "type":  "object",
+                                                                                     "required":  [
+                                                                                                      "source_platform_id",
+                                                                                                      "text"
+                                                                                                  ],
+                                                                                     "title":  "Body_translate_all_translate_all_post"
+                                                                                 },
+                                       "Body_translate_one_translate_post":  {
+                                                                                 "properties":  {
+                                                                                                    "source_platform_id":  {
+                                                                                                                               "type":  "string",
+                                                                                                                               "title":  "Source Platform Id"
+                                                                                                                           },
+                                                                                                    "target_platform_id":  {
+                                                                                                                               "type":  "string",
+                                                                                                                               "title":  "Target Platform Id"
+                                                                                                                           },
+                                                                                                    "text":  {
+                                                                                                                 "type":  "string",
+                                                                                                                 "title":  "Text"
+                                                                                                             }
+                                                                                                },
+                                                                                 "type":  "object",
+                                                                                 "required":  [
+                                                                                                  "source_platform_id",
+                                                                                                  "target_platform_id",
+                                                                                                  "text"
+                                                                                              ],
+                                                                                 "title":  "Body_translate_one_translate_post"
+                                                                             },
+                                       "CTIPlatform":  {
+                                                           "properties":  {
+                                                                              "id":  {
+                                                                                         "type":  "string",
+                                                                                         "title":  "Id"
+                                                                                     }
+                                                                          },
+                                                           "type":  "object",
+                                                           "required":  [
+                                                                            "id"
+                                                                        ],
+                                                           "title":  "CTIPlatform"
+                                                       },
+                                       "HTTPValidationError":  {
+                                                                   "properties":  {
+                                                                                      "detail":  {
+                                                                                                     "items":  {
+                                                                                                                   "$ref":  "#/components/schemas/ValidationError"
+                                                                                                               },
+                                                                                                     "type":  "array",
+                                                                                                     "title":  "Detail"
+                                                                                                 }
+                                                                                  },
+                                                                   "type":  "object",
+                                                                   "title":  "HTTPValidationError"
+                                                               },
+                                       "InfoMessage":  {
+                                                           "properties":  {
+                                                                              "message":  {
+                                                                                              "type":  "string",
+                                                                                              "title":  "Message"
+                                                                                          },
+                                                                              "severity":  {
+                                                                                               "type":  "string",
+                                                                                               "title":  "Severity"
+                                                                                           }
+                                                                          },
+                                                           "type":  "object",
+                                                           "required":  [
+                                                                            "message",
+                                                                            "severity"
+                                                                        ],
+                                                           "title":  "InfoMessage"
+                                                       },
+                                       "OneTranslationCTIData":  {
+                                                                     "properties":  {
+                                                                                        "info":  {
+                                                                                                     "$ref":  "#/components/schemas/InfoMessage"
+                                                                                                 },
+                                                                                        "status":  {
+                                                                                                       "type":  "boolean",
+                                                                                                       "title":  "Status"
+                                                                                                   },
+                                                                                        "translations":  {
+                                                                                                             "items":  {
+
+                                                                                                                       },
+                                                                                                             "type":  "array",
+                                                                                                             "title":  "Translations"
+                                                                                                         },
+                                                                                        "target_platform_id":  {
+                                                                                                                   "type":  "string",
+                                                                                                                   "title":  "Target Platform Id"
+                                                                                                               }
+                                                                                    },
+                                                                     "type":  "object",
+                                                                     "required":  [
+                                                                                      "status",
+                                                                                      "target_platform_id"
+                                                                                  ],
+                                                                     "title":  "OneTranslationCTIData"
+                                                                 },
+                                       "OneTranslationData":  {
+                                                                  "properties":  {
+                                                                                     "info":  {
+                                                                                                  "$ref":  "#/components/schemas/InfoMessage"
+                                                                                              },
+                                                                                     "status":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "title":  "Status"
+                                                                                                },
+                                                                                     "translation":  {
+                                                                                                         "type":  "string",
+                                                                                                         "title":  "Translation"
+                                                                                                     },
+                                                                                     "target_platform_id":  {
+                                                                                                                "type":  "string",
+                                                                                                                "title":  "Target Platform Id"
+                                                                                                            }
+                                                                                 },
+                                                                  "type":  "object",
+                                                                  "required":  [
+                                                                                   "status",
+                                                                                   "target_platform_id"
+                                                                               ],
+                                                                  "title":  "OneTranslationData"
+                                                              },
+                                       "TranslatorPlatforms":  {
+                                                                   "properties":  {
+                                                                                      "renders":  {
+                                                                                                      "items":  {
+
+                                                                                                                },
+                                                                                                      "type":  "array",
+                                                                                                      "title":  "Renders"
+                                                                                                  },
+                                                                                      "parsers":  {
+                                                                                                      "items":  {
+
+                                                                                                                },
+                                                                                                      "type":  "array",
+                                                                                                      "title":  "Parsers"
+                                                                                                  }
+                                                                                  },
+                                                                   "type":  "object",
+                                                                   "required":  [
+                                                                                    "renders",
+                                                                                    "parsers"
+                                                                                ],
+                                                                   "title":  "TranslatorPlatforms"
+                                                               },
+                                       "ValidationError":  {
+                                                               "properties":  {
+                                                                                  "loc":  {
+                                                                                              "items":  {
+                                                                                                            "anyOf":  [
+                                                                                                                          {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                                          {
+                                                                                                                              "type":  "integer"
+                                                                                                                          }
+                                                                                                                      ]
+                                                                                                        },
+                                                                                              "type":  "array",
+                                                                                              "title":  "Location"
+                                                                                          },
+                                                                                  "msg":  {
+                                                                                              "type":  "string",
+                                                                                              "title":  "Message"
+                                                                                          },
+                                                                                  "type":  {
+                                                                                               "type":  "string",
+                                                                                               "title":  "Error Type"
+                                                                                           }
+                                                                              },
+                                                               "type":  "object",
+                                                               "required":  [
+                                                                                "loc",
+                                                                                "msg",
+                                                                                "type"
+                                                                            ],
+                                                               "title":  "ValidationError"
+                                                           }
+                                   }
+                   }
+}

@@ -1,0 +1,16 @@
+// Regla YARA: Prueba_SHA256
+// Archivo: 01_hash.yar
+// Descripción: 
+// Estado: EXITOSA
+// Cobertura: 100.0%
+// Elementos no convertidos: 
+// Consulta generada para hunting en Microsoft Defender XDR.
+// Requiere validación antes de producción.
+
+(
+    DeviceFileEvents
+    | where SHA256 =~ "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    | project Timestamp, DeviceName, FileName, FolderPath, SHA1, SHA256, MD5,
+        IndicatorType = "FileHash",
+        Evidence = FileName
+)
